@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title><?php the_title(); ?></title>
+        <title><?php wp_title(); ?></title>
         <?php wp_head(); ?>
         <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css"/>
         <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
@@ -15,6 +15,7 @@
             <div class="header">
                 <div class="logo">
                     <img src="<?php $options = get_option('sample_theme_options'); echo $options['logo']; ?>">
+                    <h1>Glue Stick Marketing</h1>
                 </div>
                 <div class="searchform">
                     <form>

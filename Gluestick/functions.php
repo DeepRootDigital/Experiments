@@ -2,15 +2,13 @@
 
 /* Create theme Options */
 require_once ( get_template_directory() . '/theme-options.php' );
-
 /* Add Menu First/Last support */
-
 function add_first_and_last($output) {
-    $output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
-    $output = substr_replace($output, 'class="last-menu-item menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
-    return $output;
+  $output = preg_replace('/class="menu-item/', 'class="first', $output, 1);
+  $output = substr_replace($output, 'class="last-menu-item menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
+  return $output;
 }
-
+add_filter('wp_nav_menu', 'add_first_and_last');
 function social_media_display() {
     /* Check the correct outputs for social media icons */
     $options = get_option('sample_theme_options');
@@ -27,13 +25,17 @@ function social_media_display() {
     };
 }
 
-// WORDPRESS 3.4 THEME OPTIONS
+// Register Color Options
 add_action( 'customize_register', 'hg_customize_register' );
 function hg_customize_register($wp_customize)
 {
   $colors = array();
-  $colors[] = array( 'slug'=>'content_bg_color', 'default' => '#ffffff', 'label' => __( 'Content Background Color', 'YOUR_THEME_NAME' ) );
-  $colors[] = array( 'slug'=>'content_text_color', 'default' => '#000000', 'label' => __( 'Content Text Color', 'YOUR_THEME_NAME' ) );
+  $colors[] = array( 'slug'=>'bgcolor', 'default' => '#ffffff', 'label' => __( 'Content Background Color', 'YOUR_THEME_NAME' ) );
+  $colors[] = array( 'slug'=>'maincolor', 'default' => '#000000', 'label' => __( 'Content Text Color', 'YOUR_THEME_NAME' ) );
+  $colors[] = array( 'slug'=>'logocolor1', 'default' => '#000000', 'label' => __( 'Logo Color 1', 'YOUR_THEME_NAME' ) );
+  $colors[] = array( 'slug'=>'logocolor2', 'default' => '#000000', 'label' => __( 'Logo Color 2', 'YOUR_THEME_NAME' ) );
+  $colors[] = array( 'slug'=>'logocolor3', 'default' => '#000000', 'label' => __( 'Logo Color 3', 'YOUR_THEME_NAME' ) );
+
 
   foreach($colors as $color)
   {

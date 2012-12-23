@@ -13,14 +13,32 @@
     </div>
     <div class="boxwrap">
         <div class="box">
-            <h2><img src="">Test Block</h2>
+            <h2><img src="<?php echo get_template_directory_uri(); ?>/images/pencil.png">About Us</h2>
+            <p>
+                Lorem Ipsum Dummy Text goes here and its super awesome, please repeat this text everywhere else.
+                Lorem Ipsum Dummy Text goes here and its super awesome, please repeat this text everywhere else.
+            </p>
         </div>
         <div id="midbox" class="box">
-            <h2><img src="">Test Block</h2>
+            <h2><img src="<?php echo get_template_directory_uri(); ?>/images/mail.png">Contact Us</h2>
+            <p>
+                Lorem Ipsum Dummy Text goes here and its super awesome, please repeat this text everywhere else.
+                Lorem Ipsum Dummy Text goes here and its super awesome, please repeat this text everywhere else.
+            </p>
         </div>
         <div class="box">
-            <h2><img src="">Test Block</h2>
+            <h2><img src="<?php echo get_template_directory_uri(); ?>/images/wrench.png">Daily Deals</h2>
+            <p>
+                Lorem Ipsum Dummy Text goes here and its super awesome, please repeat this text everywhere else.
+                Lorem Ipsum Dummy Text goes here and its super awesome, please repeat this text everywhere else.
+            </p>
         </div>
+    </div>
+    <div class="newsfeed">
+        This is a newsfeed! Please make it more awesome.
+    </div>
+    <div class="quote">
+        <span class="marker">“</span><h3>This is a quote, and it makes this design a little better.</h3>
     </div>
 </div>
 
