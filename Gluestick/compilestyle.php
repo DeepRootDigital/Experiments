@@ -1,6 +1,7 @@
+<?php $content_text_color = get_option('content_text_color'); ?>
 <style>
     body {
-        background-color:<?php $options = get_option('sample_theme_options'); echo $options['bkgcolor']; ?>;
+       background-color:  <?php echo $content_text_color; ?>;
     }
     
     .navigation ul li a:hover {

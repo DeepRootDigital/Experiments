@@ -20,13 +20,11 @@ function theme_options_add_page() {
  * Create the options page
  */
 function theme_options_do_page() {
-    wp_enqueue_style('farbtastic');
-    wp_enqueue_script('farbtastic');
     wp_enqueue_script('media-upload');
     wp_enqueue_script('thickbox');
     wp_enqueue_script('jquery');
     wp_enqueue_style('thickbox');
-    wp_enqueue_script('my-theme-options', get_template_directory_uri() . '/js/theme-options.js', array('farbtastic', 'jquery'));
+    wp_enqueue_script('my-theme-options', get_template_directory_uri() . '/js/theme-options.js');
     ?>
     <div class="wrap">
         <?php
@@ -43,20 +41,6 @@ function theme_options_do_page() {
             <?php $options = get_option('sample_theme_options'); ?>
 
             <table class="form-table">    
-               <th><h3>Style Options</h3></th>
-                <tr valign="top"><th scope="row">Background Color</th>
-                    <td class="color-picker" style="position: relative; z-index:999;">
-                        <input class="color" type="text" name="sample_theme_options[bkgcolor]" value="<?php esc_attr_e($options['bkgcolor']); ?>" />
-                        <div style="position: absolute; border:1px solid #ccc; background:#fff;" class="colorpicker"></div>
-                    </td>
-                </tr>
-
-                <tr valign="top"><th scope="row">Main Theme Color</th>
-                    <td class="color-picker" style="position: relative; z-index:998;">
-                        <input class="color2" type="text" name="sample_theme_options[maincolor]" value="<?php esc_attr_e($options['maincolor']); ?>" />
-                        <div style="position: absolute; border:1px solid #ccc; background:#fff;" class="colorpicker2"></div>
-                    </td>
-                </tr>
 
                 <tr valign="top">
                     <td>Upload Image</td>
