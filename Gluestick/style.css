@@ -1,0 +1,150 @@
+/*
+Theme Name: GlueStick
+Theme URI: http://gluestickmarketing.com
+Description:
+Author: Gluestick Marketing
+Version:
+Tags: white, gray ,awesome
+*/
+
+/* =Reset default browser CSS. 
+-------------------------------------------------------------- */
+
+body {
+    margin:0px;
+    padding:0px;
+}
+
+.container {
+    width:875px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.header {
+    float:left;
+    height:150px;
+    width:100%;
+}
+
+.logo {
+    float:left;
+}
+
+.logo img {
+    max-width:130px;
+    max-height:130px;
+}
+
+.navigation {
+    float:left;
+    font-family:arial;
+    font-size:11px;
+    min-width:90%;
+}
+
+.navigation ul {
+    float:left;
+    margin:0px;
+    padding:0px;
+    margin-top:15px;
+    margin-left:30px;
+}
+
+.navigation ul li {
+    float:left;
+    margin-right:15px;
+    margin-left:11px;
+    color:#6d6d6d;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color:#6d6d6d;
+}
+
+.socialmedia {
+    float:right;
+    max-width:10%;
+    margin-top:3px;
+}
+
+.socialmedia img {
+    vertical-align:bottom;
+}
+
+.searchform {
+    float:right;
+    margin-top:30px;
+}
+
+.searchform input[type=text] {
+    border:1px solid #c3c1c1;
+    background:transparent;
+}
+
+.searchform input[type=submit] {
+    border:none;
+    background:transparent;
+    background-image:url('images/searchicon.png');
+    background-repeat:no-repeat;
+    text-indent:-9999px;
+    width:12px;
+    height:14px;
+}
+
+/* Homepage Styles */
+
+.homepage {
+    width:100%;
+    float:left;
+}
+
+.slider {
+    width:630px;
+    height:300px;
+    overflow:hidden;
+    position:relative;
+    float:left;
+}
+.slider ul{
+    margin:0px;
+}
+.slider ul li {
+    display:inline;
+    position:absolute;
+    left:0px;
+    
+}
+.homesidebar {
+    float:right;
+    width:235px;
+    height:300px;
+    background-color:#ccc;
+}
+
+.boxwrap {
+    float:left;
+    width:100%;
+    margin-top:10px;
+}
+.box {
+    float:left;
+    width:289px;
+    height:160px;
+    }
+    
+    .box h2 {
+        float:left;
+        margin:0px;
+        font-weight:normal;
+        font-size:15px;
+    }
+
+#midbox {
+    float:left;
+    border-right:groove 2px #fff;
+    border-left:groove 2px #fff;
+    width:289px;
+    height:160px;
+}
