@@ -5,34 +5,29 @@
         <title></title>
         <link href="style.css" type="text/css" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-        <script>
-        $(function () {
-				$("#js-mainnav li:hover ul").hover(function () {
-                                var navwidth = $("#js-mainnav li:hover ul li").css("width");
-				$("#js-mainnav li:hover ul li").css({ 'width': navwidth });
-				
-			});
-                        });
-        </script>
+
     </head>
     <body>
-        <img class="js-leftnav" src="images/nav-left.png"><ul id="js-mainnav">
-            <li>
-                News
-            </li>
-            <li>
-                Real Estate Legislation
+        <img class="js-leftnav" src="images/nav-left.png">
+        <ul id="jMenu">
+            <li><a>Category 1.2</a><ul>
+                    <li><a> 1.3</a></li>
+                    <li><a>hhjoh gjkgwerqgrgergergergergeklgn</a>
+
+                    </li>
+                </ul></li>
+            <li><a>Categoryg1.34234232</a>
                 <ul>
-                    <li>test</li>
+                    <li><a> 1.3</a></li>
+                    <li><a>hhjoh gjkgwerqgrgergergergergeklgn</a>
+
+                    </li>
                 </ul>
             </li>
-            <li>
-                Statistics
-            </li>
-            <li class="last">
-                About Us
-            </li>
+            <li><a>Category 1.2</a></li>
         </ul>
+
+
         <img class="js-rightnav" src="images/nav-right.png">
     </body>
 </html>

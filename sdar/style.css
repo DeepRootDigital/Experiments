@@ -16,7 +16,7 @@
     display:inline;
 }
 
-#js-mainnav {
+#jMenu {
     float:left;
     width:927px;
     height:45px;
@@ -27,15 +27,16 @@
     display:inline;
 }
 
-#js-mainnav li {
+#jMenu li {
     float:left;
     min-width:50px;
     padding-left:58px;
     padding-right:58px;
     list-style:none;
     color:#fff;
+    position:relative;
     text-transform: uppercase;
-    font-family:“helvetica neue”, helvetica, arial, sans-serif;
+    font-family:helvetica, arial, sans-serif;
     font-weight:bold;
     font-family:arial;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 1);
@@ -45,28 +46,48 @@
     width:auto;
 }
 
-#js-mainnav li.last {
+#jMenu li.last {
     border-right:none;
 }
 
-#js-mainnav li:hover {
+#jMenu li:hover {
     background-color:#314968;
     background-image:none;
     list-style-image: url('images/arrow.png');
     list-style-position: inside;
-    padding-left:54px;
-    padding-right:54px;
+    
 }
 
-#js-mainnav li:hover ul {
+#jMenu li:hover ul {
     display:block;
 }
 
-#js-mainnav li ul {
+#jMenu li ul {
     position:absolute;
     display:none;
     background-color:#314968;
     text-align:center;
-    margin-left:-54px;
+    margin-left:-58px;
     margin-top:-1px;
-    }
+    width:100%;
+    max-width:100%;
+    padding:0px;
+   word-wrap:break-word;
+    
+}
+
+#jMenu li ul li {
+    float:none;
+    text-align:left;
+    background-color:#314968;
+    height:auto;
+    width:100%;
+    max-width:100%;
+    word-wrap:break-word;
+    padding:0px;
+    margin:0px;
+}
+
+#jMenu li ul li {
+    
+}
