@@ -1,0 +1,72 @@
+/* 
+    Document   : style
+    Created on : Jan 31, 2013, 4:10:35 PM
+    Author     : Nick
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.js-leftnav {
+    float:left;
+    display:inline;
+}
+
+.js-rightnav {
+    float:left;
+    display:inline;
+}
+
+#js-mainnav {
+    float:left;
+    width:927px;
+    height:45px;
+    background-image:url('images/nav.png');
+    margin:0px;
+    padding:0px;
+    padding-left:10px;
+    display:inline;
+}
+
+#js-mainnav li {
+    float:left;
+    min-width:50px;
+    padding-left:58px;
+    padding-right:58px;
+    list-style:none;
+    color:#fff;
+    text-transform: uppercase;
+    font-family:“helvetica neue”, helvetica, arial, sans-serif;
+    font-weight:bold;
+    font-family:arial;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 1);
+    height:45px;
+    line-height:46px;
+    border-right:1px groove rgba(255, 255, 255, .9);
+    width:auto;
+}
+
+#js-mainnav li.last {
+    border-right:none;
+}
+
+#js-mainnav li:hover {
+    background-color:#314968;
+    background-image:none;
+    list-style-image: url('images/arrow.png');
+    list-style-position: inside;
+    padding-left:54px;
+    padding-right:54px;
+}
+
+#js-mainnav li:hover ul {
+    display:block;
+}
+
+#js-mainnav li ul {
+    position:absolute;
+    display:none;
+    background-color:#314968;
+    text-align:center;
+    margin-left:-54px;
+    margin-top:-1px;
+    }
