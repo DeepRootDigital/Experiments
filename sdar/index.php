@@ -10,21 +10,19 @@
     <body>
         <img class="js-leftnav" src="images/nav-left.png">
         <ul id="jMenu">
-            <li><a>Category 1.2</a><ul>
-                    <li><a> 1.3</a></li>
-                    <li><a>hhjoh gjkgwerqgrgergergergergeklgn</a>
-
+            <li><a>News</a><ul>
+                    <li><a>SDAR Legislative</a></li>
+                    <li><a>Sdar Local PAC</a>
                     </li>
                 </ul></li>
-            <li><a>Categoryg1.34234232</a>
+            <li><a>Real Estate Legislation</a>
                 <ul>
-                    <li><a> 1.3</a></li>
-                    <li><a>hhjoh gjkgwerqgrgergergergergeklgn</a>
-
-                    </li>
+                    <li><a>SDAR Legislative</a></li>
+                    <li><a>SDAR ROC Program</a></li>
                 </ul>
             </li>
-            <li><a>Category 1.2</a></li>
+            <li><a>Statistics</a></li>
+            <li class="last"><a>About Us</a></li>
         </ul>
 
 

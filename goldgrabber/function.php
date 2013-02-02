@@ -8,11 +8,14 @@ function gold_scrap_cal($qty, $purepercent) {
     $result = number_format($result2, 1) * $qty;
     return $result;
 }
+echo gold_scrap_cal(1, 41.6);
 ?>
+
+<?php echo gold_scrap_cal(1, 41.6); ?> 
 
 
 <div class="goldgrabber">
     <form action="process.php" method="get" />
-    
-</form>
+		
+	</form>
 </div>

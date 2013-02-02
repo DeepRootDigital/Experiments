@@ -18,12 +18,12 @@
 
 #jMenu {
     float:left;
-    width:927px;
+    width:940px;
     height:45px;
     background-image:url('images/nav.png');
     margin:0px;
     padding:0px;
-    padding-left:10px;
+    padding-left:0px;
     display:inline;
 }
 
@@ -89,5 +89,15 @@
 }
 
 #jMenu li ul li {
+    font-size:14px;
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+    font-weight:normal;
+    text-transform:none;
+    text-indent:40px;
+}
+
+#jMenu li ul li:hover {
+    list-style-position: inside;
+    list-style-image: url('images/arrow-red.png');
     
 }
