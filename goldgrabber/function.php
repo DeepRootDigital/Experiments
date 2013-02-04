@@ -26,7 +26,7 @@
             <form action="#" method="get" />
             <div class="int">
                 <div class="row">
-                    <input type="text" name="10kqty" value="" class="qty"><input type="text" class="payout" value="<?php echo gold_scrap_cal(50); ?>">
+                    <input type="text" name="10kqty" value="<?php if (isset($_GET["10kqty"])) {echo $_GET["10kqty"];} else {echo 0;} ?>" class="qty"><input type="text" class="payout" value="<?php echo gold_scrap_cal(50); ?>">
                 </div>
                 <div class="row">
                     <input type="text" name="14kqty" value="" class="qty"><input type="text" class="payout" value="<?php echo gold_scrap_cal(50); ?>">
