@@ -1,0 +1,828 @@
+/*
+Theme Name: BMS
+Theme URI: http://wordpress.org/
+Description: The 2010 default theme for WordPress.
+Author: Ray
+Author URI: http://wordpress.org/
+Version: 1.0
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu (optional)
+
+License:
+License URI:
+
+General comments (optional).
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Roboto Condensed, helvetica;
+	color: #343533;
+	background-color: #eceded;
+}
+
+input,
+button{
+	font-family: Roboto Condensed;
+}
+
+.center{
+	width: 1000px;
+	margin: 0 auto 0 auto;
+}
+
+@media (min-width: 1200px){
+    .canvas{
+    	width: 1200px;
+    	margin: 0 auto;
+    	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+    	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    	box-shadow:         3px 3px 5px 6px #ccc;
+    	background: #eceded;
+    }
+
+}
+.clear{
+	clear: both;
+}
+
+header{
+	background-image: url("http://localhost/bms/images/header-bg.gif"); 
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+	height: 134px;
+    padding: 10px 0px 0px 0px;
+	
+}
+
+
+
+header h1 {
+    border-bottom: 1px solid #2A2A29;
+    border-top: 1px solid #2A2A29;
+    box-shadow: 0 7px 0 -6px #494A48 inset, 0 1px 0 0 #494A48;
+    color: #FFFFFF;
+    font-size: 15.5px;
+    font-weight: normal;
+    margin: 0 0 0 65px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    width: 155px;
+}
+
+header h1 span {
+    font-size: 20px;
+    margin: -9px 0 0 -13px;
+    position: absolute;
+}
+
+header h1 span:last-of-type {
+    padding: 0px 0 0 21px;
+}
+
+.header-meta {
+    margin: -40px 0 0 660px;
+    position: absolute;
+}
+
+.header-meta li {
+    border-bottom: 1px solid #494A48;
+    border-top: 1px solid #494A48;
+    margin: 0 0 -1px;
+}
+
+
+.header-meta ul li input {
+    background: none repeat scroll 0 0 #343533;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 9px;
+    height: 10px;
+    text-transform: uppercase;
+    width: 95px;
+}
+
+
+.login-button input {
+    background: url("http://localhost/bms/images/header-submit.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 30px;
+    margin: -36px 0 0 100px;
+    position: absolute;
+    text-indent: -9999px;
+    width: 30px;
+}
+
+.search-button input{
+    background: url("http://localhost/bms/images/header-search.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    text-indent: -9999px;
+    width: 30px;
+    margin: -27px 0 0 110px;
+}
+
+
+.header-search ul li input{
+    background: none repeat scroll 0 0 #343533;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 9px;
+    height: 10px;
+    text-transform: uppercase;
+    width: 95px;
+    margin: 0 0 0 0;
+    background: url(background: url("http://localhost/bms/images/header-search.png") no-repeat scroll 0 0 transparent;);
+}
+
+.header-search {
+    margin: -30px 0 0 826px;
+    position: absolute;
+    width: 95px;
+}
+
+.header-search li:last-child {
+    border-bottom: 1px solid #494A48;
+    border-top: 1px solid #494A48;
+    height: 20px;
+    margin: -18px 0 0;
+}
+
+.no-border > li {
+    border: medium none;
+}
+
+
+.border {
+    margin: -39px 0 0;
+}
+
+
+.border > li:first-child {
+    height: 20px;
+}
+
+.border > li:last-child {
+    border-top: none;
+    height: 20px;
+    margin: -1px 0 0;
+}
+
+nav {
+    margin: 40px 0 0;
+}
+
+nav ul {
+    border-bottom: 1px solid black;
+    margin: -18px 0 0 35px;
+    height: 40px;
+    width: 390px;
+    float: left;
+}
+
+nav li {
+    list-style: none outside none;
+}
+
+nav a {
+    color: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+	border-bottom: 2px solid black;
+	padding: 0 0 5px;
+}
+
+.header-left-nav li {
+    float: right;
+    margin: 0 0 0 45px;
+}
+
+
+.header-right-nav {
+    float: right;
+    margin: -18px 35px 0;
+}
+
+.header-right-nav li {
+    float: left;
+    margin: 0 45px 0 0;
+}
+
+.logo {
+    background: url("http://localhost/bms/images/header-shape.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    margin: -71px 0 0 450px;
+    position: absolute;
+    width: 100px;
+}
+
+.logo img {
+    padding: 11px 0 0 5px;
+}
+
+/*
+Slider
+*********************/
+.slider-bg {
+    
+    background-color: #eceded;
+    height: 505px;
+    margin-bottom: 55px;
+}
+@media (min-width: 1200px){
+    .slider-bg{
+        background: url("http://localhost/bms/images/slider-bg-left.gif") no-repeat scroll 0 -1px, 
+        url("http://localhost/bms/images/slider-bg-right.gif") no-repeat scroll 1115px -1px transparent;
+        width: 1200px;
+    }
+}
+
+
+.slider-tab {
+    /*background: url("http://localhost/bms/images/slider-tab.png") no-repeat scroll 0 0 transparent;*/
+    height: 60px;
+    margin: -80px 0 0 300px;
+    position: absolute;
+    width: 380px;
+}
+
+.nivo-controlNav {
+    margin: -45px 0 0 390px;
+    padding: 15px 0;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+
+.nivo-controlNav a:first-child {
+    background: url("http://localhost/bms/images/tab-1.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 30px;
+    padding: 0 0 7px 20px;
+    width: 34px;
+}
+
+
+
+/*
+Homepage Content
+***************************************/
+
+
+.slogan {
+    width: 890px;
+}
+
+
+.slogan h1 {
+    border-bottom: 2px solid #909190;
+    border-top: 2px solid #909190;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 1.2px;
+    margin-bottom: 25px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+
+.slogan h1 span {
+    color: #7E1416;
+}
+
+
+
+.slogan img {
+    margin: 0 9px -3px 25px;
+}
+
+.col{
+	width: 285px;
+    margin: -15px 0 0 0;
+}
+
+.col p{
+    width: 220px;
+}
+
+
+
+.col img {
+    margin: -16px 0 0 240px;
+    position: absolute;
+    display: none;
+}/*
+
+.col img:nth-child(2){
+    margin: 0 0 0 0;
+}*/
+
+.col h2{
+    margin-left: 10px;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase
+}
+
+.col ul {
+    border-bottom: 4px solid #7E1416;
+    border-top: 4px solid #7E1416;
+    list-style: none outside none;
+}
+
+.col li {
+    border-bottom: 1px solid #CCCCCC;
+    height: 35px;
+    line-height: 13px;
+    margin: 0 0 0 10px;
+    padding: 5px 0 0;
+    width: 275px;
+}
+
+.col a {
+    color: inherit;
+    font-size: 11.5px;
+    text-decoration: none;
+}
+
+.border-bottom{
+    border-bottom: 4px solid #7E1416;
+}
+
+
+
+.col input {
+    background: url("http://localhost/bms/images/input-bg.png") no-repeat scroll -6px 0 transparent;
+    border: medium none;
+    box-shadow: none;
+    height: 35px;
+    margin: 0 0 0 10px;
+    width: 260px;
+}
+
+
+
+.submit {
+    margin: 15px 0 0;
+}
+
+
+.submit input {
+    background: url("http://localhost/bms/images/submit-button.png") no-repeat scroll 0 -56px transparent;
+    border: medium none;
+    box-shadow: none;
+    cursor: pointer;
+    height: 60px;
+    margin: 0 0 0 134px;
+    text-indent: -9999px;
+    width: 135px;
+}
+
+.submit input:hover {
+    background: url("http://localhost/bms/images/submit-button.png") no-repeat scroll 0 0 transparent;
+}
+
+
+.col-1{
+    float: left;
+}
+
+.col-2 {
+    background: url("http://localhost/bms/images/col-2-img.png") no-repeat scroll 55% 0%, url("http://localhost/bms/images/col-2-bg.gif") repeat scroll 0 0 transparent;
+    float: left;
+    height: 490px;
+    margin: 0 0 0 25px;
+    width: 390px;
+}
+
+.col-2 > h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 8px 0 0 20px;
+}
+
+.col-2 div{
+    border-top: 2px solid #7E1416;
+    width: 366px;
+    margin: 235px 0 0 12px;
+}
+
+.col-2 h3 {   
+    color: #fff;
+    font-size: 20px;    
+    padding: 5px 0;
+    
+    font-weight: normal;
+}
+
+.col-2 h3 strong{  
+    color: #7E1416;
+    text-transform: uppercase;
+}
+
+
+.col-2 p {
+    color: white;
+    font-size: 11px;
+    line-height: 18px;
+    width: 330px;
+}
+
+.col-2 div a p {
+    margin: 0 0 0 210px;
+}
+
+
+.col-2 div a p {
+    background: url("http://localhost/bms/images/more-button.png") no-repeat scroll 0 -114px transparent;
+    height: 53px;
+    width: 125px;
+}
+
+.col-2 div a p:hover {
+    background: url("http://localhost/bms/images/more-button.png") no-repeat scroll 0 -18px transparent;
+}
+
+
+
+
+.col-3{
+    float: right;
+}
+
+
+/*
+Footer
+***********************/
+
+.footer-nav {
+    padding: 30px 0 0 120px;
+}
+
+footer{
+    background: url("http://localhost/bms/images/footer-bg.png") no-repeat scroll 0% 0%,
+    #30312f;
+    height: 375px;
+    margin-top: 50px;
+}
+
+footer ul{
+    list-style: none;
+    color: #fff;
+}
+
+.footer-nav li {
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    padding: 0 0 5px;
+    text-transform: uppercase;
+}
+
+.footer-nav a {
+    color: inherit;
+    margin: 0 28px 0 0;
+    text-decoration: none;
+}
+
+
+footer li:last-child a {
+    margin: 0;
+}
+
+
+.bms-info h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.bms-info > li {
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+
+
+.bms-info {
+    float: right;
+    margin: 0 120px;
+    width: 160px;
+}
+
+.bms-info > img {
+    margin: 0 0 -5px;
+}
+
+/*
+Services
+**************************************/
+
+.shadow{
+    box-shadow: 0 7px 8px -4px #CCCCCC;
+}
+.page-title {
+    height: 80px;
+    margin: 20px 0 0;
+}
+
+.page-title > h1 {
+    font-size: 46px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.page-title h1 span{
+    color: #a9a9a9;
+}
+
+.page-title h1 a {    
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.page-title h1 em {
+    color: #7E1416;
+    font-style: normal;
+}
+
+
+
+.page-title h1 img {
+    margin: 0 0 -4px 10px;
+    width: 20px;
+}
+
+
+.left-col {
+    float: left;
+    width: 200px;
+}
+
+
+.left-col a {
+    color: inherit;
+    margin: 15px 0 0 65px;
+    position: absolute;
+    text-decoration: none;
+}
+
+
+.left-col > ul {
+    font-size: 14px;
+    list-style: none outside none;
+    margin: 65px 0 0;
+    text-transform: uppercase;
+}
+
+
+.left-col li {
+    margin: 0 0 20px;
+    height: 50px;
+    width: 50px;
+    background: url("http://localhost/bms/images/services-icons.png") no-repeat scroll 0% 0%
+}
+
+
+
+.left-col li:nth-child(2){
+    background-position: 0px -70px;
+}
+
+.left-col li:nth-child(3){
+    background-position: 0px -140px;
+}
+
+.left-col li:nth-child(4){
+    background-position: 0px -210px;
+}
+
+.left-col li:nth-child(5){
+    background-position: 0px -280px;
+}
+.left-col li:nth-child(6){
+    background-position: 0px -350px;
+}
+.left-col li:nth-child(7){
+    background-position: 0px -420px;
+}
+
+.left-col ul li:hover{
+    background-position: -66px 0px;
+}
+
+.left-col li:nth-child(2):hover{
+    background-position: -66px -70px;
+}
+
+.left-col li:nth-child(3):hover{
+    background-position: -66px -140px;
+}
+
+.left-col li:nth-child(4):hover{
+    background-position: -66px -210px;
+}
+
+.left-col li:nth-child(5):hover{
+    background-position: -66px -280px;
+}
+.left-col li:nth-child(6):hover{
+    background-position: -66px -350px;
+}
+.left-col li:nth-child(7):hover{
+    background-position: -66px -420px;
+}
+
+
+.right-col{
+    float: right;
+    width: 700px;
+}
+
+article {
+    border-bottom: 1px solid #C7C7C7;
+    margin: 70px 0 0;
+    padding: 0 0 95px;
+    width: 700px;
+}
+
+article p {
+    font-size: 12px;
+}
+
+
+.right-col article h2 {
+    font-family: serif;
+    font-size: 21px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+
+
+
+.right-col article h3 {
+    color: #005B7F;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0 15px;
+}
+
+
+
+
+
+
+
+
+
+.article-content {
+    float: left;
+    letter-spacing: 0.33px;
+    line-height: 25px;
+    width: 310px;
+}
+
+
+.article-content a {
+    color: #005B7F;
+    text-decoration: none;
+}
+
+.article-content a span{
+    color: #7e1416;
+}
+
+.article-slider{
+    float: right;
+}
+
+
+
+.article-slider-control {
+    margin: 290px 0 0 520px;
+    position: absolute;
+}
+.article-slider-control a img{
+    width: 30px;
+}
+
+
+
+.article-slider-control a:first-of-type img {
+    transform: rotate(-90deg);    
+}
+
+
+.article-slider-control a:last-of-type  img {
+    margin: 0 0 0 20px;
+    transform: rotate(90deg);
+}
+
+/*
+Testimonial
+***********************************/
+
+.testimonial-nav{
+    height: 250px;
+    background: #484947;
+}
+
+.testimonial-quote{
+    text-align: center;
+    padding: 15px 0 0;
+}
+
+.testimonial-quote > h1 {
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: normal;
+    text-shadow: 3px 3px 2px #000000;
+}
+
+.testimonial-quote p em {
+    color: #F7941D;
+}
+
+.testimonial-quote p {
+    color: #C2C2C2;
+    font-size: 12px;
+}
+
+
+.case-no {
+    border-bottom: 1px solid #5B5B5B;
+    padding: 20px 0 0;
+}
+
+.case-no li {
+    color: #CCCCCC;
+    float: left;
+    font-family: Libre Baskerville,serif;
+    font-size: 14px;
+    list-style: none outside none;
+    margin: 0 28px 0 0;
+    text-transform: uppercase;
+}
+
+
+.case-no span {
+    color: #FFFFFF;
+}
+
+
+.case-number {
+    border-bottom: 1px solid #5b5b5b;
+    padding: 0 0 40px;
+}
+
+.case-number > ul {
+    margin: 15px 0 0 -7px;
+}
+
+.case-number li {
+    border-right: 1px solid #5b5b5b;
+    color: #D0D0D0;
+    float: left;
+    font-size: 107px;
+    height: 40px;
+    list-style: none outside none;
+    margin: 20px 0 0 -2px;
+    padding: 0;
+    width: 100px;
+}
+
+.case-number p {
+    margin: -45px 0 0 25px;
+}
+
+.case-number li:last-of-type {
+    border: medium none;
+    margin: 20px -2px 0 -17px;
+}
+
+
+.service-page-title {
+    border-bottom: 1px solid #CCCCCC;
+}
