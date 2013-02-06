@@ -14,13 +14,9 @@
 			<div class="center">
 				<h1><span>.</span>Curb the Competition<span>.</span></h1>
 				<form class="header-meta">
-					<ul class="no-border">
+					<ul class="border">
 						<li><input name="name" type="text" placeholder="name"></li>
 						<li><input name="password" type="password" placeholder="password"></li>
-					</ul>
-					<ul class="border">
-						<li></li>
-						<li></li>
 					</ul>
 					<div class="login-button">
 						<input name="submit" type="submit" value="">
@@ -29,7 +25,6 @@
 				<form class="header-search">
 					<ul>
 						<li><input name="search" value="Search"></li>
-						<li></li>
 					</ul>
 					<div id="submit-button" class="search-button">
 						<input name="submit" type="submit" value="submit">
@@ -37,21 +32,23 @@
 				</form>	
 
 				<nav>
-					<ul class="header-left-nav">	
-						<li><a href="testimonial.php">Testimonials</a></li>
-						<li><a href="services.php">Services</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="index.php">Home</a></li>
-					</ul>
+					<?php
+					$defaults = array(
+					 'menu'            => 'top-left',
+					 'menu_class'      => 'header-left-nav',
+					);
+					wp_nav_menu( $defaults );
+					?>
 					<div class="logo">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
 					</div>
-					<ul class="header-right-nav">
-						<li><a href="#">eGuides</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact Us</a></li>
-					</ul>
+					<?php
+					$defaults = array(
+					 'menu'            => 'top-right',
+					 'menu_class'      => 'header-right-nav',
+					);
+					wp_nav_menu( $defaults );
+					?>
 					<div class="clear"></div>
 				</nav>
 			</div>

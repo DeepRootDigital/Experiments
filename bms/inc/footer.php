@@ -10,7 +10,7 @@
 			<div class="clear"></div>
 			
 			<ul class="bms-info">
-				<img src="images/footer-logo.png">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/footer-logo.png">
 				<li><h1>Business on<br>Market St</h1></li>
 				<li>858 598 5477</li>
 				<li>Info@<br>businessonmarketst.com</li>

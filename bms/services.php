@@ -1,6 +1,8 @@
+<?php /* Template name: Services Page */ ?>
+
 <?php include('inc/header.php') ?>
 <div class="page-title shadow">
-	<h1 class="center"><em>BMS</em> Services <span>// <a href="#">See client case studies <img src=""><img src="<?php echo get_template_directory_uri(); ?>/images/page-title.png"></a></span></h1>
+	<h1 class="center"><em>BMS</em> Services <span>// <a href="#">See client case studies <img src="<?php echo get_template_directory_uri(); ?>/images/page-title.png"></a></span></h1>
 </div>
 <div class="center">
 	<div class="left-col">
@@ -15,7 +17,7 @@
 		</ul>
 	</div>
 	<div class="right-col">
-		<article>
+		<div class="service-content">
 			<div class="article-content">
 				<h2>Marketing</h2>
 				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper aliquam sapien.</h3>
@@ -24,8 +26,8 @@
 			<div class="article-slider"><img src="<?php echo get_template_directory_uri(); ?>/images/article-pic.png"></div>
 			<div class="article-slider-control"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/arrow.png"></a><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/arrow.png"></a></div>
 			<div class="clear"></div>
-		</article>
-		<article>
+		</div>
+		<div class="service-content">
 			<div class="article-content">
 				<h2>Marketing</h2>
 				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper aliquam sapien.</h3>
@@ -34,7 +36,7 @@
 			<div class="article-slider"><img src="<?php echo get_template_directory_uri(); ?>/images/article-pic.png"></div>
 			<div class="article-slider-control"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/arrow.png"></a><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/arrow.png"></a></div>
 			<div class="clear"></div>
-		</article>
+		</div>
 
 
 	</div>

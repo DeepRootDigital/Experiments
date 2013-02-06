@@ -12,6 +12,16 @@ License URI:
 
 General comments (optional).
 */
+@font-face {
+    font-family: 'din_mediumregular';
+    src: url('fonts/din_medium-webfont.eot');
+    src: url('fonts/din_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/din_medium-webfont.woff') format('woff'),
+         url('fonts/din_medium-webfont.ttf') format('truetype'),
+         url('fonts/din_medium-webfont.svg#din_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
@@ -22,7 +32,7 @@ General comments (optional).
 }
 
 body{
-	font-family: Roboto Condensed, helvetica;
+	font-family: din_mediumregular, helvetica;
 	color: #343533;
 	background-color: #eceded;
 }
@@ -35,6 +45,7 @@ button{
 .center{
 	width: 1000px;
 	margin: 0 auto 0 auto;
+
 }
 
 @media (min-width: 1200px){
@@ -52,14 +63,19 @@ button{
 	clear: both;
 }
 
+.border-bottom-light{
+    border-bottom: 1px solid #CCCCCC;
+}
+
 header{
-	background-image: url("http://localhost/bms/images/header-bg.gif"); 
+	background-image: url("images/header-bg.gif"); 
     background-repeat: repeat-x;
     background-position: 0px 0px;
 	height: 134px;
     padding: 10px 0px 0px 0px;
 	
 }
+
 
 
 
@@ -71,9 +87,9 @@ header h1 {
     font-size: 15.5px;
     font-weight: normal;
     margin: 0 0 0 65px;
-    padding: 5px 0;
+    padding: 8px 0 5px;
     text-transform: uppercase;
-    width: 155px;
+    width: 185px;
 }
 
 header h1 span {
@@ -87,7 +103,7 @@ header h1 span:last-of-type {
 }
 
 .header-meta {
-    margin: -40px 0 0 660px;
+    margin: 0px 0 0 660px;
     position: absolute;
 }
 
@@ -110,7 +126,7 @@ header h1 span:last-of-type {
 
 
 .login-button input {
-    background: url("http://localhost/bms/images/header-submit.png") no-repeat scroll 0 0 transparent;
+    background: url("images/header-submit.png") no-repeat scroll 0 0 transparent;
     border: medium none;
     cursor: pointer;
     height: 30px;
@@ -121,7 +137,7 @@ header h1 span:last-of-type {
 }
 
 .search-button input{
-    background: url("http://localhost/bms/images/header-search.png") no-repeat scroll 0 0 transparent;
+    background: url("images/header-search.png") no-repeat scroll 0 0 transparent;
     border: medium none;
     cursor: pointer;
     height: 30px;
@@ -141,20 +157,19 @@ header h1 span:last-of-type {
     text-transform: uppercase;
     width: 95px;
     margin: 0 0 0 0;
-    background: url(background: url("http://localhost/bms/images/header-search.png") no-repeat scroll 0 0 transparent;);
 }
 
 .header-search {
-    margin: -30px 0 0 826px;
+    margin: 0 0 0 826px;
     position: absolute;
     width: 95px;
 }
 
-.header-search li:last-child {
+.header-search li {
     border-bottom: 1px solid #494A48;
     border-top: 1px solid #494A48;
     height: 20px;
-    margin: -18px 0 0;
+    margin: -28px 0 0;
 }
 
 .no-border > li {
@@ -183,8 +198,8 @@ nav {
 
 nav ul {
     border-bottom: 1px solid black;
-    margin: -18px 0 0 35px;
-    height: 40px;
+    margin: -10px 0 0 35px;
+    height: 31px;
     width: 390px;
     float: left;
 }
@@ -196,14 +211,13 @@ nav li {
 nav a {
     color: inherit;
     font-size: 12px;
-    font-weight: bold;
     letter-spacing: 0;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 nav a:hover{
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
 	padding: 0 0 5px;
 }
 
@@ -213,9 +227,18 @@ nav a:hover{
 }
 
 
+.header-left-nav li:last-child {
+    margin: 0;
+}
+
 .header-right-nav {
     float: right;
-    margin: -18px 35px 0;
+    margin: -10px 35px 0;
+}
+
+
+.header-right-nav li:last-child {
+    margin: 0;
 }
 
 .header-right-nav li {
@@ -224,7 +247,7 @@ nav a:hover{
 }
 
 .logo {
-    background: url("http://localhost/bms/images/header-shape.png") no-repeat scroll 0 0 transparent;
+    background: url("images/header-shape.png") no-repeat scroll 0 0 transparent;
     float: left;
     margin: -71px 0 0 450px;
     position: absolute;
@@ -235,9 +258,9 @@ nav a:hover{
     padding: 11px 0 0 5px;
 }
 
-/*
-Slider
-*********************/
+/*********************************
+* Slider
+**********************************/
 .slider-bg {
     
     background-color: #eceded;
@@ -246,15 +269,15 @@ Slider
 }
 @media (min-width: 1200px){
     .slider-bg{
-        background: url("http://localhost/bms/images/slider-bg-left.gif") no-repeat scroll 0 -1px, 
-        url("http://localhost/bms/images/slider-bg-right.gif") no-repeat scroll 1115px -1px transparent;
+        background: url("images/slider-bg-left.gif") no-repeat scroll 0 -1px, 
+        url("images/slider-bg-right.gif") no-repeat scroll 1115px -1px transparent;
         width: 1200px;
     }
 }
 
 
 .slider-tab {
-    /*background: url("http://localhost/bms/images/slider-tab.png") no-repeat scroll 0 0 transparent;*/
+    /*background: url("images/slider-tab.png") no-repeat scroll 0 0 transparent;*/
     height: 60px;
     margin: -80px 0 0 300px;
     position: absolute;
@@ -270,7 +293,7 @@ Slider
 }
 
 .nivo-controlNav a:first-child {
-    background: url("http://localhost/bms/images/tab-1.png") no-repeat scroll 0 0 transparent;
+    background: url("images/tab-1.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     height: 30px;
     padding: 0 0 7px 20px;
@@ -279,36 +302,29 @@ Slider
 
 
 
-/*
-Homepage Content
+/**************************************
+* Homepage Content
 ***************************************/
-
-
 .slogan {
     width: 890px;
 }
-
 
 .slogan h1 {
     border-bottom: 2px solid #909190;
     border-top: 2px solid #909190;
     font-size: 25px;
     font-weight: normal;
-    letter-spacing: 1.2px;
     margin-bottom: 25px;
     padding: 10px 0;
     text-transform: uppercase;
 }
 
-
 .slogan h1 span {
     color: #7E1416;
 }
 
-
-
 .slogan img {
-    margin: 0 9px -3px 25px;
+    margin: 0 5px -3px 15px;
 }
 
 .col{
@@ -319,8 +335,6 @@ Homepage Content
 .col p{
     width: 220px;
 }
-
-
 
 .col img {
     margin: -16px 0 0 240px;
@@ -368,7 +382,7 @@ Homepage Content
 
 
 .col input {
-    background: url("http://localhost/bms/images/input-bg.png") no-repeat scroll -6px 0 transparent;
+    background: url("images/input-bg.png") no-repeat scroll -6px 0 transparent;
     border: medium none;
     box-shadow: none;
     height: 35px;
@@ -384,7 +398,7 @@ Homepage Content
 
 
 .submit input {
-    background: url("http://localhost/bms/images/submit-button.png") no-repeat scroll 0 -56px transparent;
+    background: url("images/submit-button.png") no-repeat scroll 0 -56px transparent;
     border: medium none;
     box-shadow: none;
     cursor: pointer;
@@ -395,7 +409,7 @@ Homepage Content
 }
 
 .submit input:hover {
-    background: url("http://localhost/bms/images/submit-button.png") no-repeat scroll 0 0 transparent;
+    background: url("images/submit-button.png") no-repeat scroll 0 0 transparent;
 }
 
 
@@ -404,7 +418,7 @@ Homepage Content
 }
 
 .col-2 {
-    background: url("http://localhost/bms/images/col-2-img.png") no-repeat scroll 55% 0%, url("http://localhost/bms/images/col-2-bg.gif") repeat scroll 0 0 transparent;
+    background: url("images/col-2-img.png") no-repeat scroll 55% 0%, url("images/col-2-bg.gif") repeat scroll 0 0 transparent;
     float: left;
     height: 490px;
     margin: 0 0 0 25px;
@@ -451,13 +465,13 @@ Homepage Content
 
 
 .col-2 div a p {
-    background: url("http://localhost/bms/images/more-button.png") no-repeat scroll 0 -114px transparent;
+    background: url("images/more-button.png") no-repeat scroll 0 -114px transparent;
     height: 53px;
     width: 125px;
 }
 
 .col-2 div a p:hover {
-    background: url("http://localhost/bms/images/more-button.png") no-repeat scroll 0 -18px transparent;
+    background: url("images/more-button.png") no-repeat scroll 0 -18px transparent;
 }
 
 
@@ -468,16 +482,16 @@ Homepage Content
 }
 
 
-/*
-Footer
-***********************/
+/*****************************
+*  Footer
+******************************/
 
 .footer-nav {
     padding: 30px 0 0 120px;
 }
 
 footer{
-    background: url("http://localhost/bms/images/footer-bg.png") no-repeat scroll 0% 0%,
+    background: url("images/footer-bg.png") no-repeat scroll 0% 0%,
     #30312f;
     height: 375px;
     margin-top: 50px;
@@ -533,8 +547,8 @@ footer li:last-child a {
     margin: 0 0 -5px;
 }
 
-/*
-Services
+/**************************************
+* Services
 **************************************/
 
 .shadow{
@@ -542,7 +556,7 @@ Services
 }
 .page-title {
     height: 80px;
-    margin: 20px 0 0;
+    margin: 25px 0 0;
 }
 
 .page-title > h1 {
@@ -601,7 +615,7 @@ Services
     margin: 0 0 20px;
     height: 50px;
     width: 50px;
-    background: url("http://localhost/bms/images/services-icons.png") no-repeat scroll 0% 0%
+    background: url("images/services-icons.png") no-repeat scroll 0% 0%
 }
 
 
@@ -660,19 +674,19 @@ Services
     width: 700px;
 }
 
-article {
+.service-content {
     border-bottom: 1px solid #C7C7C7;
     margin: 70px 0 0;
     padding: 0 0 95px;
     width: 700px;
 }
 
-article p {
+.service-content p {
     font-size: 12px;
 }
 
 
-.right-col article h2 {
+.right-col.service-content h2 {
     font-family: serif;
     font-size: 21px;
     letter-spacing: 0.9px;
@@ -682,7 +696,7 @@ article p {
 
 
 
-.right-col article h3 {
+.right-col.service-content h3 {
     color: #005B7F;
     font-size: 16px;
     font-weight: normal;
@@ -690,10 +704,11 @@ article p {
 }
 
 
-
-
-
-
+.article-content h2 {
+    color: #585656;
+    text-transform: uppercase;
+    font-family: Libre Baskerville
+}
 
 
 
@@ -713,6 +728,14 @@ article p {
 .article-content a span{
     color: #7e1416;
 }
+
+
+.article-content h3 {
+    font-weight: normal;
+    color: #005b7f;
+    margin: 5px 0 10px;
+}
+
 
 .article-slider{
     float: right;
@@ -740,8 +763,8 @@ article p {
     transform: rotate(90deg);
 }
 
-/*
-Testimonial
+/***********************************
+*  Testimonial
 ***********************************/
 
 .testimonial-nav{
@@ -794,7 +817,7 @@ Testimonial
 
 .case-number {
     border-bottom: 1px solid #5b5b5b;
-    padding: 0 0 40px;
+    padding: 0 0 35px;
 }
 
 .case-number > ul {
@@ -813,8 +836,12 @@ Testimonial
     width: 100px;
 }
 
+.case-number li:hover {
+    color: #f4921d;
+
+}
 .case-number p {
-    margin: -45px 0 0 25px;
+    margin: -30px 0 0 25px;
 }
 
 .case-number li:last-of-type {
@@ -822,7 +849,343 @@ Testimonial
     margin: 20px -2px 0 -17px;
 }
 
+.case-number a{
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: none;
+}
 
-.service-page-title {
+.testimonial-slide {
+    margin: 0 0 0 0px;
+}
+
+.testimonial-slide > img {
+    width: 1000px;
+}
+
+.testimonial-slide-control{
     border-bottom: 1px solid #CCCCCC;
+    margin: 0 0 30px;
+    height: 100px;
+}
+
+
+.testimonial-slide-control li {
+    background: url("images/testimonial-nav.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 51px;
+    list-style: none outside none;
+    margin: 20px 15px 0 0;
+    width: 50px;
+    cursor: pointer;
+}
+
+.testimonial-slide-control li:nth-child(2){
+    background-position: -68px 0px;
+}
+
+.testimonial-slide-control li:nth-child(3){
+    background-position: -135px 0px;
+}
+
+.testimonial-slide-control li:nth-child(4){
+    background-position: -202px 0px;
+}
+
+.testimonial-slide-control li:first-child:hover{
+    background-position: 0px -55px;
+}
+
+.testimonial-slide-control li:nth-child(2):hover{
+    background-position: -68px -55px;
+}
+
+.testimonial-slide-control li:nth-child(3):hover{
+    background-position: -135px -55px;
+}
+
+.testimonial-slide-control li:nth-child(4):hover{
+    background-position: -202px -55px;
+}
+
+.testimonial-sub-nav{
+    position: relative;
+    width: 200px;
+    float: left;
+}
+
+.testimonial-sub-nav li{
+    position: absolute;
+}
+
+.testimonial-sub-nav li:first-child{
+    background: url("images/arrows.png") no-repeat scroll 0 0 transparent;
+    height: 50px;
+    width: 50px;
+    top: 155px;
+    width: 50px;
+}
+
+.testimonial-sub-nav li:nth-child(2){
+    left: 25px;
+    top: 55px;
+
+}
+
+
+.testimonial-sub-nav li:last-child {
+    background: url("images/arrows.png") no-repeat scroll -134px 0 transparent;
+    height: 50px;
+    right: 0;
+    top: 154px;
+    width: 50px;
+}
+
+.testimonial-sub-nav li a{
+    cursor: pointer;
+}
+
+.case-number-title {
+    padding: 0 0 15px;
+}
+
+.case-number-title h2 {
+    font-family: libre baskerville;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.case-number-title h2 span{
+    color: #7e1619;
+}
+
+.testimonial-sub-nav-control{
+    font-weight: bold;
+    font-size: 279.5px;
+}
+
+.testimonial-sub-nav-control li{
+    list-style: none;
+}
+
+
+
+.testimonial-sub-quote {
+    border-left: 1px solid #CCCCCC;
+    float: right;
+    padding-left: 30px;
+    width: 730px;
+}
+
+.testimonial-sub-quote h1{
+    font-family: roboto condensed;
+    font-size: 70px;
+    letter-spacing: -3px;
+    line-height: 80px;
+    margin: -10px 0 0;
+    font-weight: normal;
+}
+
+.testimonial-sub-quote p em {
+    color: #7e1416;
+    font-style: normal;
+}
+
+
+.testimonial-sub-quote p {
+    color: #C2C2C2;
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: -25px 0 0 230px;
+    position: absolute;
+    width: 200px;
+}
+
+
+.testimonial-content {
+    border-top: 1px solid #CCCCCC;
+    line-height: 20px;
+    margin: 30px 0 0;
+    padding: 30px 0 0;
+}
+
+.testimonial-content p{
+    font-size: 12px;
+}
+
+.testimonial-content div{
+    width: 430px;
+}
+
+.testimonial-content div:first-child h2{
+    font-weight: normal;
+    font-size: 16px;
+    color: #7e1416;
+    padding: 0 0 10px;
+}
+
+.testimonial-content div:first-child{
+    float: left;
+}
+
+.testimonial-content div:last-child{
+    float: right;
+    border-left: 1px solid #CCCCCC;
+    padding: 0 0 0 70px;
+    min-height: 250px;
+}
+
+
+/**************************************
+** Blog Page
+***************************************/
+
+.blog-slider-flag {
+    background: url("images/blog-slide-flag.png") no-repeat scroll 0 0 transparent;
+    height: 210px;
+    position: absolute;
+    left: 760px;
+    top: 420px;
+    width: 363px;
+}
+
+.blog-slide {
+    position: relative;
+}
+
+
+
+.blog-slider-flag > h1 {
+    color: #FFFFFF;
+    font-family: roboto condensed;
+    font-size: 37px;
+    font-weight: normal;
+    line-height: 42px;
+    margin: 10px 0 0 35px;
+    width: 294px;
+}
+
+
+.blog-img-wrap {
+    border-radius: 5px 100px 0 0;
+    box-shadow: 3px 3px 25px #000000;
+    position: relative;
+    margin: 50px 0 25px;
+    height: 291px;
+    width: 524px;
+}
+
+
+.blog-img-wrap p {
+    color: #FFFFFF;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    left: -70px;
+    letter-spacing: 1px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 45px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+}
+
+.blog-img {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+
+.blog-flag {
+    left: -45px;
+    position: absolute;
+    top: 40px;
+}
+
+.blog-left-col {
+    width: 530px;
+    float: left;
+}
+
+.blog-post-flag{
+    background: url("images/blog-blue-flag.pn") no-repeat scroll 0 0 transparent;
+    height: 151px;
+    width: 200px;
+
+}
+
+article h2 {
+    color: #681215;
+    font-family: Libre Baskerville;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+article h2 span {
+    font-size: 10px;
+    color: #000;
+    margin: -5px 0 0;
+    position: absolute;
+
+}
+
+
+article h2 span em {
+    color: #681215;
+}
+
+
+article p {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 40px 0 0;
+    padding: 0 10px 0 0;
+}
+
+
+article p a {
+    color: #681215;
+}
+
+
+
+.blog-right-col {
+    float: right;
+    margin: 240px 0 0;
+    width: 325px;
+    text-transform: uppercase;
+}
+
+
+
+.blog-right-col div {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.blog-social-media li{
+    
+    list-style: none;
+}
+
+.blog-social-media li a{
+    background: url("images/blog-social-icons.png") no-repeat scroll 0 0 transparent;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.blog-social-media li:nth-child(2) a{
+    background-position: -46px 0;
+}
+
+.blog-social-media li:nth-child(3) a{
+    background-position: -95px 0;
+}
+
+.blog-social-media li:nth-child(4) a{
+    background-position: -143px 0;
 }
