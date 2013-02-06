@@ -1,0 +1,562 @@
+/*
+Theme Name: Carrot Top
+Theme URI: http://businessonmarketst.com
+Description:
+Author: Dan Deller
+Version:
+Tags: white, gray ,awesome
+*/
+
+/* =Reset default browser CSS. 
+-------------------------------------------------------------- */
+
+
+
+body {
+margin:0px;
+border:0px;
+padding:0px;
+background-image:url('images/back1.png');
+background-repeat:repeat-x;
+}
+
+
+/* Font Styles */
+a {
+
+}
+
+a:hover {
+   
+}
+
+hr {
+    color: #c4c4c4;
+    border: 1px dotted;
+    width: 95%;
+}
+
+h1 {
+font-family:Signika Negative, sans-serif;
+margin:0px;
+float:left;
+}
+
+h2 {
+font-family:Signika Negative, sans-serif;
+float:left;
+}
+
+h3 {
+font-family:Signika Negative, sans-serif;
+float:left;
+}
+
+h4 {
+font-family:Signika Negative, sans-serif;
+float:left;
+}
+
+h5 {
+font-family:Signika Negative, sans-serif;
+float:left;
+}
+
+h6 {
+font-family:Signika Negative, sans-serif;
+float:left;
+}
+
+p {
+    font-family:verdana;
+    font-size:12px;
+}
+
+
+/* Universal Styles */
+#container {
+width:900px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.header {
+float:left;
+width:100%;
+margin-top:52px
+}
+
+.header h1 {
+    font-weight:normal;
+    font-size:28px;
+    margin-top:-20px;
+    margin-bottom:25px;
+}
+
+.social {
+    float:right;
+    margin-top:-15px;
+}
+
+.nav {
+    float:left;
+    width:100%;
+    height:50px;
+    background-color:#d27e2e;
+    
+}
+
+.nav ul {
+    margin:0px;
+    padding:0px;
+    font-size:16px;
+    font-family:Signika Negative, sans-serif;
+}
+
+.nav ul li {
+    float:left;
+    height:35px;
+    background-color:#d27e2e;
+    padding-left:20px;
+    padding-right:20px;
+    font-weight:bold;
+    padding-top:15px;
+}
+
+.nav ul li a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.nav ul li:hover {
+    background-color:#fff;
+}
+
+.nav ul li:hover a {
+    color:#d27e2e;
+}
+
+
+/* HomePage Styles */
+
+#homepage {
+
+}
+
+.slider {
+    float:left;
+}
+
+.caption {
+    position:absolute;
+    width:900px;
+    height:50px;
+    margin-top:-65px;
+    opacity: .8;
+    background-color:#fff;
+    text-align:center;
+    font-family:georgia;
+    font-size:12px;
+    font-style:italic;
+    color:#000000;
+    padding-top:15px;
+}
+
+.bodytexture {
+    float: left;
+    width: 100%;
+    height: 830px;
+    background-image: url('images/texturedback.png');   
+}
+
+.whatwedo {
+    float:left;
+    height:230px;
+    width:100%;
+}
+
+.whatwedo p {
+    float:left;
+    width:530px;
+    max-width:530px;
+    margin-top:65px;
+    line-height:20px;
+    margin-top: 82px;
+}
+
+.submit {
+    float: right;
+    color: #fff;
+    background-image: url('images/gears1rightbox.png');
+    background-repeat: no-repeat;
+    margin-right: 35px;
+    margin-top: 8px;
+    padding: 3px;
+    height: 40px;
+    width: 85px;
+    text-align: center;     
+    font-family: Signika Negative, sans-serif;
+}
+
+.submit:hover {
+    color: #fdb913;
+}
+
+.lftalign {
+    float:left;
+    width:320px;
+    height:230px;
+}
+
+.lftalign h2 {
+    width:100%;
+    color: #565656;
+    font-size:30px;
+    text-align:center;
+    font-weight:normal;
+}
+
+.arrow {
+    float:left;
+    margin-top: 8px;
+}
+
+.whoweare {
+    float:right;
+    height:230px;
+    width:100%;
+}
+
+.rightalign {
+    float:right;
+    width:320px;
+    height:230px;
+    margin-top: -22px;
+}
+
+.rightalign h2 {
+    width:100%;
+    color: #565656;
+    font-size:30px;
+    text-align:center;
+    font-weight:normal;
+    margin-top: 40px;
+}
+
+.rightalign img {
+    float:right;
+    margin-top: -10px;
+    margin-right: 100px;
+}
+
+.arrow2 {
+    float: right;  
+    margin-right: -30px;
+    margin-top: 15px;
+}
+
+.whoweare p {
+    float: right;
+    width:530px;
+    max-width:530px;
+    margin-top:65px;
+    line-height:20px;
+}
+
+.whoweare .submit {
+    margin-right: -4px;
+}
+
+.readmore1 {
+    float: right;
+    margin-right: -4px;
+    margin-top: -10px;
+}
+
+.readmore2 {
+    float: right;
+    margin-right: 30px;
+    margin-top: -10px;
+}
+
+.readmore3 {
+    float: right;
+    margin-right: -20px;
+    margin-top: -10px;
+}
+
+.contactinfo {
+    float:left;
+    height:250px;
+    width:100%;
+}
+
+.contactus {
+    float:left;
+    width:320px;
+    height:230px;
+}
+
+.contactus h2 {
+    width:100%;
+    color: #565656;
+    font-size:30px;
+    text-align:center;
+    font-weight:normal;
+}
+
+.contactus img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.arrow3 {
+    float: left;
+    margin-left: -24px;
+}
+
+.arrow4 {
+    float: left;
+    margin-left: 50px;
+}
+
+.address {
+    float:left; 
+    width:200px;
+    height:230px;
+    margin-left: 10px;
+    margin-top: 18px;
+}
+
+.address h3 {
+    color: #7f7f7f;
+    margin-left: 20px;
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+}
+
+.address h5 {
+    color: #7f7f7f;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.message {
+    float: right;
+    width:200px;
+    height:230px;
+    margin-right: 50px;
+}
+
+.message h4 {
+    color: #555555;
+    margin-left: 8px;
+}
+
+.inputs {
+    float: right;
+    margin-top: -20px;  
+}
+
+.inputs [type=text] {
+    width: 180px;
+    margin-right: 12px;
+}
+
+.message input {
+    float: right;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 35px;
+    width: 160px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #a3a3a3;
+}
+
+.textbox {
+    float: right;
+    height: 55px;
+}
+
+.submit {
+    float: right;
+    margin-top: 20px;
+    margin-right: 34px;
+}
+
+.bloginfo {
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.bloginfo img {
+    float: left;
+    margin-left: 75px;
+}
+
+.bloginfo p {
+    float: left;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #a0a0a0;
+}
+
+.footer {
+    float: left;
+    width: 900px;
+    height: 321px;
+    margin-top: 10px;
+    background-image: url('images/footerback.png');
+    background-repeat: repeat-x;
+    color: #e7e7e7;
+}
+
+.footer hr {
+    border: 1px solid #4c4c4c;
+}
+
+.bottomnav {
+    float: left;
+    width: 100%;
+    height: 52px;
+}
+
+.bottomnav ul {
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+    font-size: 16px;
+    font-family:Signika Negative, sans-serif;
+}
+
+.bottomnav ul li {
+    margin-top: 18px; 
+    margin-left: 13px;
+}
+
+.bottomnav ul li a {
+    text-decoration: none;
+    float: left;
+    padding-left: 40px;
+    color:#fff;
+}
+
+.bottomnav ul li:hover a {
+    color: #e5ab2d;
+}
+
+.footerleftcontent {
+    float: left;
+    width: 260px;
+    height: 270px;
+}
+
+.footerleftcontent p {
+    margin-left: 55px;
+    line-height: 10px;
+}
+
+.footerleftcontent input {
+    float: left;
+    margin-left: 55px;
+    margin-top: 10px;
+    width: 160px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #a3a3a3;
+}
+
+.footersubmit {
+    float: right;
+    background-image: url('images/orange_submit.png');
+    color: #fff;
+    background-repeat: no-repeat;
+    margin-right: 45px;
+    margin-top: 15px;
+    padding: 3px;
+    height: 40px;
+    width: 85px;
+    text-align: center;     
+    font-family: Signika Negative, sans-serif;
+}
+
+.footersubmit:hover {
+    color: #4c4c4c;
+}
+
+.footermiddlecontent {
+    float: left;
+    width: 300px;
+    height: 270px;
+    font-family: Signika Negative, sans-serif;
+    
+}
+
+.facebook {
+    float: left;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.footer hr {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.footermiddlecontent p {
+    float: left;
+    margin-top: 1px;
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.footerrightcontent {
+    float: right;
+    margin-right: 20px;
+    width: 300px;
+    height: 270px;
+    font-family: Signika Negative, sans-serif;
+}
+
+.latestblogs {
+    float: left;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.footerrightcontent p {
+    float: left;
+    margin-top: 1px;
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+
+}
+
+/* Blog Loop Style */
+
+#blog-loop {
+
+}
+
+/* Single Post Style */
+
+#single-post {
+
+}
+
+/* Plugin Styles */
