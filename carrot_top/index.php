@@ -12,8 +12,11 @@
     <div class="whatwedo">
         <div class="lftalign">
             <h2>WHAT WE DO</h2>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/gears1.png" style="display: block; margin-left: auto; margin-right: auto;" />
-        </div><img class="arrow" src="<?php echo get_template_directory_uri(); ?>/images/contactusarrow.png"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/gears1.png" />
+        </div>
+        <div class="arrow">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/contactusarrow.png"/>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 

@@ -106,6 +106,17 @@ margin-top:52px
     
 }
 
+.homebutton {
+    float: left;
+    margin-left: 20px;
+    margin-top: 11px;
+}
+
+.homeshadow {
+    float: left;
+    margin-left: -45px;
+}
+
 .nav ul {
     margin:0px;
     padding:0px;
@@ -119,8 +130,8 @@ margin-top:52px
     background-color:#d27e2e;
     padding-left:20px;
     padding-right:20px;
-    font-weight:bold;
     padding-top:15px;
+    margin-left: 15px;
 }
 
 .nav ul li a {
@@ -145,6 +156,7 @@ margin-top:52px
 
 .slider {
     float:left;
+    margin-top: -1px;
 }
 
 .caption {
@@ -181,7 +193,14 @@ margin-top:52px
     max-width:530px;
     margin-top:65px;
     line-height:20px;
-    margin-top: 82px;
+    margin-top: 72px;
+    margin-left: 35px;
+}
+
+.whatwedo img {
+    float: left;
+    margin-left: 45px;
+    margin-top: -20px;
 }
 
 .submit {
@@ -204,21 +223,25 @@ margin-top:52px
 
 .lftalign {
     float:left;
-    width:320px;
+    width:200px;
     height:230px;
+    margin-left: 35px;
 }
 
 .lftalign h2 {
+    float: left;
     width:100%;
     color: #565656;
     font-size:30px;
     text-align:center;
     font-weight:normal;
+    margin-left: 15px;
+    margin-top: 30px;
 }
 
 .arrow {
     float:left;
-    margin-top: 8px;
+    margin-top: 20px;
 }
 
 .whoweare {
@@ -252,7 +275,7 @@ margin-top:52px
 .arrow2 {
     float: right;  
     margin-right: -30px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .whoweare p {

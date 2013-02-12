@@ -8,7 +8,8 @@
             <div class="header">
             <h1>gluestick marketing</h1>
             <img class="social" src="<?php echo get_template_directory_uri(); ?>/images/social.png"/>
-            <div class="nav">                    
+            <div class="nav">
+                <div class="homebutton"><img src="<?php echo get_template_directory_uri(); ?>/images/house.png"/></div>
                     <?php wp_nav_menu(); ?>
             </div>
             </div>
