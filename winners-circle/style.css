@@ -1,0 +1,362 @@
+@font-face {
+font-family: 'social-icon';
+src: url(http://localhost/coffee-shop/fonts/Socialico.otf);
+src: url(http://localhost/coffee-shop/fonts/Socialico.ttf);
+} 
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: georgia, helvetica;
+	color: #343533;
+	
+    
+}
+.page-wrap{
+    background: url("http://localhost/winners-circle/images/background.png") repeat;
+    background-color: #e7e6e0;
+}
+.center{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+.canvas {
+    box-shadow: 0 0 30px -5px #000000;
+}
+
+header {
+    position: relative;
+}
+
+
+nav {
+    background: url("http://localhost/winners-circle/images/nav-bg.jpg") repeat scroll 0 0 transparent;
+    border-radius: 5px 5px 5px 5px;
+    height: 30px;
+    left: 30px;
+    position: absolute;
+    top: 15px;
+    width: 790px;
+}
+
+nav ul{
+	list-style: none;
+	float: right;
+
+}
+
+
+
+
+nav li {
+    border-right: 1px solid #463732;
+    box-shadow: 1px 0 0 #6C5B55;
+    color: #FFFFFF;
+    float: left;
+    list-style: none outside none;
+    margin: 5px 15px 0 0;
+    padding: 0 15px 0 0;
+}
+
+
+nav li:last-child {
+    border: medium none;
+    box-shadow: none;
+}
+
+nav a {
+    color: inherit;
+    font-family: Soho w1 light;
+    font-size: 11px;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.social-media {
+    background: url("http://localhost/winners-circle/images/social-bg.jpg") repeat scroll 0 0 transparent;
+    border-radius: 5px 5px 5px 5px;
+    height: 30px;
+    left: 840px;
+    position: absolute;
+    top: 15px;
+    width: 120px;
+}
+
+
+.social-media ul {
+    padding: 0 0 0 8px;
+}
+
+
+.social-media li {
+    
+    float: left;
+    font-family: social-icon;
+    height: 30px;
+    list-style: none outside none;
+    
+}
+
+
+.social-media li:last-child a {
+    border: medium none;
+    box-shadow: none;
+    padding-right: 0;
+}
+
+
+.social-media a{
+	color: #abb8af;
+	text-decoration: none;
+	font-size: 25px;
+	-webkit-transition: all 0.5s linear; 
+    -moz-transition:    all 0.5s linear; 
+    -o-transition:      all 0.5s linear; 
+    transition:         all 0.5s linear; 
+    border-right: 1px solid #485E50;
+    box-shadow: 1px 0 0 #607869;
+    padding: 0 10px;
+
+}
+
+.social-media a:hover {
+	color: #fff;
+}
+
+
+
+
+.tour-contact {
+    background: url("http://localhost/winners-circle/images/logo-bg.jpg") no-repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #FFFFFF;
+    box-shadow: 0 1px 0 #D0D0D0;
+    height: 100px;
+    left: 65px;
+    position: absolute;
+    top: 0;
+    width: 185px;
+}
+
+.tour-contact > img {
+    margin: 6px 0 0 22px;
+}
+
+
+.tour-contact-bottom {
+    background: url("http://localhost/winners-circle/images/logo-bg-bottom.png") no-repeat scroll 0 0 transparent;
+    height: 60px;
+    left: 65px;
+    position: absolute;
+    top: 102px;
+    width: 185px;
+}
+
+
+.tour-contact-bottom > img {
+    margin: 10px 0 0 22px;
+}
+
+/******************************************
+***      SLIDER 
+*******************************************/
+
+.slide > img {
+    width: 100%;
+}
+
+
+/******************************************
+***      HOME OPTIONS
+*******************************************/
+
+
+.home-options{
+	background: url("http://localhost/winners-circle/images/home-options-bg.png") repeat-x scroll 0 0 transparent;
+	height: 293px;
+	margin: -5px 0 0;
+}
+
+.home-option-img ul{
+    padding: 20px 0 0 100px;
+	list-style: none;
+}
+
+
+.home-option-img li {
+    float: left;
+    margin: 0 120px 0 0;
+}
+
+.home-option-img li:last-child{
+    margin-right: 0px;
+    margin-left: -15px;
+}
+
+
+
+.home-option-select ul {
+    margin: 180px 0 0 115px;
+}
+
+
+.home-option-select li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 150px 0 0;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.home-option-select li:last-child {
+    margin-right: 0;
+}
+
+.home-option-select a{
+    color: #f7941d;
+    text-decoration: none;
+    font-family: Soho W01 Medium;
+    font-size: 20px;
+}
+
+.home-option-select span {
+    color: #FFFFFF;
+    font-family: Soho W01 Light;
+}
+
+/******************************************
+***      HOME PAGE CONTENT
+*******************************************/
+
+
+.home-content {
+    background: url("http://localhost/winners-circle/images/content-bg.png") repeat scroll 0 0 transparent;
+    height: 540px;
+    padding: 35px 0 0 65px;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    z-index: 50;
+}
+
+.home-col {   
+    width: 270px;
+    height: 440px;
+    float: left;
+    margin: 0 35px 0 0;
+}
+
+
+
+.home-col h2 {
+    color: #5E4C44;
+    font-family: Soho W01 Light;
+    font-size: 25px;
+    font-weight: normal;
+    padding: 160px 0 0;
+    text-transform: lowercase;
+}
+
+
+.home-col h2 em {
+    color: #56705F;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+.home-col > img {
+    padding: 10px 0 15px;
+}
+
+.home-col p {
+    padding: 0 0 20px 0;
+    font-size: 15px;
+    line-height: 24px;
+    width: 260px;
+}
+
+
+.home-col > a {
+    font-family: Soho W01 Light;
+    font-size: 15px;
+    text-decoration: none;
+    color: #5b4942;
+    text-transform: lowercase;
+    margin: 0 0 0 170px;
+}
+
+.home-col > a em{
+    font-weight: bold;
+    font-style: normal;
+    color: #56705f;
+}
+
+
+.home-col a img {
+    margin: 0 0 0 5px;
+}
+
+.home-col-1{
+    background: url("http://localhost/winners-circle/images/graphic1.png") no-repeat scroll 55px 0 transparent;
+}
+
+.home-col-2{
+    background: url("http://localhost/winners-circle/images/graphic2.png") no-repeat scroll 55px 0 transparent;
+}
+
+.home-col-3{
+    background: url("http://localhost/winners-circle/images/graphic3.png") no-repeat scroll 55px 0 transparent;
+    margin: 0;
+}
+
+/******************************************
+***      FOOTER
+*******************************************/
+
+
+footer {
+    background: none repeat scroll 0 0 #5C4A43;
+    margin: -28px 0 0;
+    min-height: 250px;
+    padding: 50px 0 0;
+    position: relative;
+    width: 100%;
+    z-index: 30;
+}
+
+
+.widgets-container {
+    padding: 0 0 0 275px;
+}
+
+.footer-widget{
+    width: 180px;
+    height: 200px;
+    margin: 0 100px 0 0;
+    float: left;
+}
+
+.footer-widget h2{
+    font-family: Soho W01 Light;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px solid #463732;
+    box-shadow: 0px 1px 0px #6C5B55;
+    color: #fff;
+    text-transform: lowercase;
+    padding: 0 0 5px;
+}
+
+
+.footer-widget h2 em{
+    color: #f8941d;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Soho W01 Medium;
+}

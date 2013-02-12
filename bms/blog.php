@@ -32,7 +32,7 @@
 		</article>
 	</div>
 	<div class="blog-right-col">
-		<div class="blog-social-media">
+		<div class="blog-social-media border-bottom-light">
 			<ul>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
@@ -41,10 +41,10 @@
 			</ul>
 			<div class="clear"></div>
 		</div>
-		<div><p>Improving your proposals mobile experience</p></div>
-		<div><p>Other title or article headline can go here</p></div>
-		<div><p>Other title or article headline can go here</p></div>
-		<div><h2>Read our<br>clients<br><em>Case Studies</em></h2></div>
+		<div class="border-bottom-light"><p>Improving your proposals mobile experience</p></div>
+		<div class="border-bottom-light"><p>Other title or article headline can go here</p></div>
+		<div class="border-bottom-light"><p>Other title or article headline can go here</p></div>
+		<div class="border-bottom-light"><h2>Read our<br>clients<br><em>Case Studies</em></h2></div>
 	</div>
 	<div class="clear"></div>
 </div>
