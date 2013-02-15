@@ -1,7 +1,21 @@
+/*
+Theme Name: Winners Circle
+Theme URI: http://businessonmarketst.com/
+Description: Theme for winners circle website
+Author: Business on Market St dot Com
+Author URI: http://businessonmarketst.com/
+Version: 1.0
+
+License: Beerware
+License URI: http://businessonmarketst.com/
+
+General comments (optional).
+*/
+
 @font-face {
 font-family: 'social-icon';
-src: url(http://localhost/coffee-shop/fonts/Socialico.otf);
-src: url(http://localhost/coffee-shop/fonts/Socialico.ttf);
+src: url(fonts/Socialico.otf);
+src: url(fonts/Socialico.ttf);
 } 
 
 *{
@@ -16,12 +30,13 @@ body{
     
 }
 .page-wrap{
-    background: url("http://localhost/winners-circle/images/background.png") repeat;
+    background: url("images/background-texture.jpg") repeat;
     background-color: #e7e6e0;
 }
 .center{
 	width: 1000px;
 	margin: 0 auto;
+    position: relative;
 }
 
 
@@ -35,7 +50,7 @@ header {
 
 
 nav {
-    background: url("http://localhost/winners-circle/images/nav-bg.jpg") repeat scroll 0 0 transparent;
+    background: url("images/nav-bg.jpg") repeat scroll 0 0 transparent;
     border-radius: 5px 5px 5px 5px;
     height: 30px;
     left: 30px;
@@ -55,7 +70,7 @@ nav ul{
 
 nav li {
     border-right: 1px solid #463732;
-    box-shadow: 1px 0 0 #6C5B55;
+    box-shadow: .8px 0 0 #6C5B55;
     color: #FFFFFF;
     float: left;
     list-style: none outside none;
@@ -80,7 +95,7 @@ nav a {
 
 
 .social-media {
-    background: url("http://localhost/winners-circle/images/social-bg.jpg") repeat scroll 0 0 transparent;
+    background: url("images/social-bg.jpg") repeat scroll 0 0 transparent;
     border-radius: 5px 5px 5px 5px;
     height: 30px;
     left: 840px;
@@ -116,12 +131,12 @@ nav a {
 	color: #abb8af;
 	text-decoration: none;
 	font-size: 25px;
-	-webkit-transition: all 0.5s linear; 
-    -moz-transition:    all 0.5s linear; 
-    -o-transition:      all 0.5s linear; 
-    transition:         all 0.5s linear; 
-    border-right: 1px solid #485E50;
-    box-shadow: 1px 0 0 #607869;
+	-webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear; 
+    border-right: 1px solid #364A3D;
+    box-shadow: .8px 0 0 #607869;
     padding: 0 10px;
 
 }
@@ -134,7 +149,7 @@ nav a {
 
 
 .tour-contact {
-    background: url("http://localhost/winners-circle/images/logo-bg.jpg") no-repeat scroll 0 0 transparent;
+    background: url("images/logo-bg.jpg") no-repeat scroll 0 0 transparent;
     border-bottom: 1px solid #FFFFFF;
     box-shadow: 0 1px 0 #D0D0D0;
     height: 100px;
@@ -150,7 +165,7 @@ nav a {
 
 
 .tour-contact-bottom {
-    background: url("http://localhost/winners-circle/images/logo-bg-bottom.png") no-repeat scroll 0 0 transparent;
+    background: url("images/logo-bg-bottom.png") no-repeat scroll 0 0 transparent;
     height: 60px;
     left: 65px;
     position: absolute;
@@ -161,6 +176,11 @@ nav a {
 
 .tour-contact-bottom > img {
     margin: 10px 0 0 22px;
+}
+
+
+.slide {
+    height: 480px;
 }
 
 /******************************************
@@ -177,10 +197,11 @@ nav a {
 *******************************************/
 
 
-.home-options{
-	background: url("http://localhost/winners-circle/images/home-options-bg.png") repeat-x scroll 0 0 transparent;
-	height: 293px;
-	margin: -5px 0 0;
+
+.home-options {
+    background: url("images/home-layout-bg.jpg") repeat-x scroll 0 0 transparent;
+    border-top: 1px solid #6B8172;
+    height: 290px;
 }
 
 .home-option-img ul{
@@ -202,14 +223,14 @@ nav a {
 
 
 .home-option-select ul {
-    margin: 180px 0 0 115px;
+    margin: 190px 0 0 115px;
 }
 
 
 .home-option-select li {
     float: left;
     list-style: none outside none;
-    margin: 0 150px 0 0;
+    margin: 0 142px 0 0;
     text-align: center;
     text-transform: lowercase;
 }
@@ -236,7 +257,7 @@ nav a {
 
 
 .home-content {
-    background: url("http://localhost/winners-circle/images/content-bg.png") repeat scroll 0 0 transparent;
+    background: url("images/content-bg.png") repeat scroll 0 0 transparent;
     height: 540px;
     padding: 35px 0 0 65px;
     border-radius: 0 0 5px 5px;
@@ -263,10 +284,11 @@ nav a {
 }
 
 
+
 .home-col h2 em {
     color: #56705F;
+    font-family: Soho W01 Bold;
     font-style: normal;
-    font-weight: bold;
 }
 
 
@@ -303,15 +325,15 @@ nav a {
 }
 
 .home-col-1{
-    background: url("http://localhost/winners-circle/images/graphic1.png") no-repeat scroll 55px 0 transparent;
+    background: url("images/graphic1.png") no-repeat scroll 65px 0 transparent;
 }
 
 .home-col-2{
-    background: url("http://localhost/winners-circle/images/graphic2.png") no-repeat scroll 55px 0 transparent;
+    background: url("images/graphic2.png") no-repeat scroll 65px 0 transparent;
 }
 
 .home-col-3{
-    background: url("http://localhost/winners-circle/images/graphic3.png") no-repeat scroll 55px 0 transparent;
+    background: url("images/graphic3.png") no-repeat scroll 65px 0 transparent;
     margin: 0;
 }
 
@@ -322,17 +344,22 @@ nav a {
 
 footer {
     background: none repeat scroll 0 0 #5C4A43;
+    background: url("images/footer-bg.jpg") repeat-x;
     margin: -28px 0 0;
-    min-height: 250px;
+    height: 199px;
     padding: 50px 0 0;
     position: relative;
     width: 100%;
     z-index: 30;
+    border-bottom: 1px solid #493A35;
 }
 
 
+
 .widgets-container {
-    padding: 0 0 0 275px;
+    left: 130px;
+    position: absolute;
+    top: 0;
 }
 
 .footer-widget{
@@ -340,6 +367,7 @@ footer {
     height: 200px;
     margin: 0 100px 0 0;
     float: left;
+    position: relative;
 }
 
 .footer-widget h2{
@@ -347,16 +375,134 @@ footer {
     font-size: 20px;
     font-weight: normal;
     border-bottom: 1px solid #463732;
-    box-shadow: 0px 1px 0px #6C5B55;
+    box-shadow: 0px .8px 0px #6C5B55;
     color: #fff;
     text-transform: lowercase;
     padding: 0 0 5px;
+    text-align: center;
+    margin: 0 0 10px;
 }
 
 
-.footer-widget h2 em{
-    color: #f8941d;
-    font-weight: bold;
-    font-style: normal;
+
+.footer-widget h2 em {
+    color: #F8941D;
     font-family: Soho W01 Medium;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 0.5px -1.1px 0 #000000;
+}
+
+
+.footer-widget > img {
+    left: 11px;
+    position: absolute;
+    top: 57px;
+    width: 160px;
+}
+
+
+
+
+.blog-widget li {
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 180px;
+}
+
+.blog-widget a {
+    color: #FFFFFF;
+    font-family: georgia;
+    font-size: 13.5px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear; 
+}
+
+.blog-widget a:hover{
+    color: #F8941D;
+}
+
+.dotted-line {
+    color: #362B26;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #766761;
+}
+
+
+.social-media-widget {
+}
+
+.social-media-widget li {
+    list-style: none;
+}
+
+
+.social-media-widget > ul {
+    width: 150px;
+}
+
+
+.social-media-widget li {
+    float: left;
+    height: 60px;
+    list-style: none outside none;
+}
+
+
+.social-media-widget a {
+    color: #FFFFFF;
+    font-family: social-icon;
+    font-size: 50px;
+    margin: 0 0 0 35px;
+    text-decoration: none;
+    text-shadow: 0.5px -1.1px 0 #000000;
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear; 
+}
+
+
+.social-media-widget li:nth-child(3) a {
+    font-size: 82px;
+    left: 68px;
+    position: absolute;
+    top: 81px;
+
+}
+.social-media-widget a:hover {
+    color: #F8941D;
+}
+
+/******************************************
+***      FOOTER LOWER
+*******************************************/
+
+
+.footer-lower {
+    background: url("images/footer-lower-bg.jpg") repeat-x scroll 0 0%;
+    border-top: 1px solid #60524B;
+    height: 58px;
+}
+
+
+.footer-lower p {
+    color: #968C85;
+    font-size: 12px;
+    font-style: italic;
+    left: 40px;
+    position: absolute;
+    top: 25px;
+}
+
+.footer-lower img {
+    left: 910px;
+    position: absolute;
+    top: 10px;
 }
