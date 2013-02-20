@@ -84,15 +84,15 @@
 					<div class="footer-widget blog-widget">
 						<h2>WC <em>Blog</em></h2>
 						<ul>
-							<li><a href="#">Interesting Blog Entry</a></li>
+							<li><a href="#"><p>Interesting Blog Entry</p></a></li>
 							<li class="dotted-line">.....................................................................</li>
-							<li><a href="#">Cool, Another Article</a></li>
+							<li><a href="#"><p>Cool, Another Article</p></a></li>
 							<li class="dotted-line">.....................................................................</li>
-							<li><a href="#">This is a cool post</a></li>
+							<li><a href="#"><p>This is a cool post</p></a></li>
 							<li class="dotted-line">.....................................................................</li>
-							<li><a href="#">A good article is worth</a></li>
+							<li><a href="#"><p>A good article is worth</p></a></li>
 							<li class="dotted-line">.....................................................................</li>
-							<li><a href="#">Blog Content Helps SEO</a></li>
+							<li><a href="#"><p>Blog Content Helps SEO</p></a></li>
 						</ul>
 					</div>
 					<div class="footer-widget social-media-widget">

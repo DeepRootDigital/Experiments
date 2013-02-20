@@ -11,11 +11,21 @@ License URI: http://businessonmarketst.com/
 
 General comments (optional).
 */
+img{
+    background: none;
+    border: none;
+}
 
 @font-face {
-font-family: 'social-icon';
-src: url(fonts/Socialico.otf);
-src: url(fonts/Socialico.ttf);
+    font-family: 'social-icon';
+    src: url('fonts/socialico-webfont.eot');
+    src: url('fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/socialico-webfont.woff') format('woff'),
+         url('fonts/socialico-webfont.ttf') format('truetype'),
+         url('fonts/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 } 
 
 *{
@@ -29,9 +39,11 @@ body{
 	
     
 }
-.page-wrap{
-    background: url("images/background-texture.jpg") repeat;
-    background-color: #e7e6e0;
+
+.page-wrap {
+    background: url("images/background-texture.jpg") repeat scroll 0 0 #E7E6E0;
+    position: relative;
+    z-index: 0;
 }
 .center{
 	width: 1000px;
@@ -40,8 +52,9 @@ body{
 }
 
 
+
 .canvas {
-    box-shadow: 0 0 30px -5px #000000;
+    box-shadow: 0 5px 52px -31px #000000;
 }
 
 header {
@@ -70,12 +83,13 @@ nav ul{
 
 nav li {
     border-right: 1px solid #463732;
-    box-shadow: .8px 0 0 #6C5B55;
+    box-shadow: 1px 0 0 #6C5B55;
     color: #FFFFFF;
     float: left;
     list-style: none outside none;
     margin: 5px 15px 0 0;
     padding: 0 15px 0 0;
+    line-height: 18px;
 }
 
 
@@ -110,17 +124,20 @@ nav a {
 }
 
 
+
 .social-media li {
-    
+    border-right: 1px solid #364A3D;
+    box-shadow: 1px 0 0 #607869;
     float: left;
     font-family: social-icon;
-    height: 30px;
+    line-height: 18px;
     list-style: none outside none;
-    
+    margin-top: 5px;
+    padding: 0 10px;
 }
 
 
-.social-media li:last-child a {
+.social-media li:last-child {
     border: medium none;
     box-shadow: none;
     padding-right: 0;
@@ -135,9 +152,7 @@ nav a {
     -moz-transition:    all 0.2s linear; 
     -o-transition:      all 0.2s linear; 
     transition:         all 0.2s linear; 
-    border-right: 1px solid #364A3D;
-    box-shadow: .8px 0 0 #607869;
-    padding: 0 10px;
+
 
 }
 
@@ -258,8 +273,8 @@ nav a {
 
 .home-content {
     background: url("images/content-bg.png") repeat scroll 0 0 transparent;
-    height: 540px;
-    padding: 35px 0 0 65px;
+    height: 500px;
+    padding: 40px 0 0 65px;
     border-radius: 0 0 5px 5px;
     position: relative;
     z-index: 50;
@@ -293,14 +308,17 @@ nav a {
 
 
 .home-col > img {
-    padding: 10px 0 15px;
+    padding: 10px 0 11px;
 }
 
 .home-col p {
-    padding: 0 0 20px 0;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    padding: 0 0 16px 0;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 23px;
     width: 260px;
+    color: #707070;
+    height: 184px;
 }
 
 
@@ -313,27 +331,28 @@ nav a {
     margin: 0 0 0 170px;
 }
 
-.home-col > a em{
-    font-weight: bold;
+
+.home-col > a em {
+    color: #56705F;
+    font-family: Soho W01 Bold;
     font-style: normal;
-    color: #56705f;
 }
 
 
 .home-col a img {
-    margin: 0 0 0 5px;
+    margin: 0 0 0 7px;
 }
 
 .home-col-1{
-    background: url("images/graphic1.png") no-repeat scroll 65px 0 transparent;
+    background: url("images/graphic1.png") no-repeat scroll 65px -2px transparent;
 }
 
 .home-col-2{
-    background: url("images/graphic2.png") no-repeat scroll 65px 0 transparent;
+    background: url("images/graphic2.png") no-repeat scroll 65px -2px transparent;
 }
 
 .home-col-3{
-    background: url("images/graphic3.png") no-repeat scroll 65px 0 transparent;
+    background: url("images/graphic3.png") no-repeat scroll 65px -2px transparent;
     margin: 0;
 }
 
@@ -345,12 +364,12 @@ nav a {
 footer {
     background: none repeat scroll 0 0 #5C4A43;
     background: url("images/footer-bg.jpg") repeat-x;
-    margin: -28px 0 0;
+    margin: -25px 0 0;
     height: 199px;
     padding: 50px 0 0;
     position: relative;
     width: 100%;
-    z-index: 30;
+    z-index: -1;
     border-bottom: 1px solid #493A35;
 }
 
@@ -390,14 +409,13 @@ footer {
     font-family: Soho W01 Medium;
     font-style: normal;
     font-weight: bold;
-    text-shadow: 0.5px -1.1px 0 #000000;
+    text-shadow: 0 -1.1px 0 #302825;
 }
 
 
+
 .footer-widget > img {
-    left: 11px;
-    position: absolute;
-    top: 57px;
+    margin: 24px 0 0 14px;
     width: 160px;
 }
 
@@ -427,6 +445,11 @@ footer {
     color: #F8941D;
 }
 
+
+.blog-widget p {
+    text-shadow: 0 -1px 0 #483A35;
+}
+
 .dotted-line {
     color: #362B26;
     font-size: 8px;
@@ -443,7 +466,10 @@ footer {
 }
 
 
+
 .social-media-widget > ul {
+    margin: 34px 0 0;
+    position: relative;
     width: 150px;
 }
 
@@ -473,7 +499,7 @@ footer {
     font-size: 82px;
     left: 68px;
     position: absolute;
-    top: 81px;
+    top: 50px;
 
 }
 .social-media-widget a:hover {
