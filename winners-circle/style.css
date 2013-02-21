@@ -75,11 +75,9 @@ nav {
 nav ul{
 	list-style: none;
 	float: right;
+    position: relative;
 
 }
-
-
-
 
 nav li {
     border-right: 1px solid #463732;
@@ -90,6 +88,7 @@ nav li {
     margin: 5px 15px 0 0;
     padding: 0 15px 0 0;
     line-height: 18px;
+    position: relative;
 }
 
 
@@ -106,6 +105,66 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+/*********************************
+**** Dropdown Menu
+**********************************/
+
+
+
+
+nav ul li ul {
+    background: url("images/nav-dropdown-bg.png") no-repeat scroll 0 0 transparent;
+    border-color: transparent;
+    border-top: 11px solid transparent;
+    display: none;
+    height: 118px;
+    left: -6px;
+    padding: 0 0 0 14px;
+    position: absolute;
+    top: 16px;
+    width: 163px;
+}
+
+
+nav ul li:hover ul{
+    display: block;
+    float: none;
+
+}
+
+nav ul li ul li {
+    border-bottom: 1px solid #6C5B55;
+    border-right: medium none;
+    box-shadow: 0 1px 0 #463732;
+    height: 14px;
+    line-height: 8px;
+    padding: 0 0 3px;
+    width: 135px;
+}
+
+nav ul li ul li a{
+    text-transform: none;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+}
+
+
+nav ul li ul li img {
+    left: -7px;
+    position: absolute;
+    top: 3px;
+    display: none;
+}
+
+nav ul li ul li:hover img{
+    display: inline;
+}
+
+
+/*********************************
+**** Social Media top
+**********************************/
 
 
 .social-media {
@@ -161,16 +220,23 @@ nav a {
 }
 
 
+/*********************************
+**** Tour Contact
+**********************************/
 
+
+.tour-contact-container {
+    left: 70px;
+    width: 185px;
+    position: absolute;
+    top: 0;
+}
 
 .tour-contact {
     background: url("images/logo-bg.jpg") no-repeat scroll 0 0 transparent;
     border-bottom: 1px solid #FFFFFF;
     box-shadow: 0 1px 0 #D0D0D0;
     height: 100px;
-    left: 65px;
-    position: absolute;
-    top: 0;
     width: 185px;
 }
 
@@ -178,29 +244,47 @@ nav a {
     margin: 6px 0 0 22px;
 }
 
+.tour-contact-dropdown{
+    background: url("images/drop-down-form.png") no-repeat scroll 0 0 transparent;
+    height: 0px;
+    width: 185px;
+    float: left;
+}
 
 .tour-contact-bottom {
     background: url("images/logo-bg-bottom.png") no-repeat scroll 0 0 transparent;
     height: 60px;
-    left: 65px;
-    position: absolute;
-    top: 102px;
     width: 185px;
+    float: left;
 }
-
 
 .tour-contact-bottom > img {
     margin: 10px 0 0 22px;
 }
 
 
-.slide {
-    height: 480px;
+.tour-contact-dropdown form {
+    margin: 20px 0 0 55px;
 }
+
+.tour-contact-dropdown form input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #636363;
+    font-size: 11px;
+    font-style: italic;
+    margin: 0 0 14px;
+}
+
+
+
 
 /******************************************
 ***      SLIDER 
 *******************************************/
+.slide {
+    height: 480px;
+}
 
 .slide > img {
     width: 100%;
