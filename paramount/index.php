@@ -1,3 +1,9 @@
+<?php
+/*
+   Template Name: Paramout Index
+ */
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,9 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/7fae6fe2-5b59-4099-96aa-619fda1b22d5.css"/>
         <script type="text/javascript" src="http://fast.fonts.com/jsapi/7fae6fe2-5b59-4099-96aa-619fda1b22d5.js"></script>
-
         <script src="<?php echo get_template_directory_uri(); ?>/paramount.js" type="text/javascript"></script>
-
     </head>
     <body>
         <div class="container">
@@ -37,7 +41,7 @@
                             <li><img class="link" src="<?php echo get_template_directory_uri(); ?>/images/linkedin.png" width="35" height="37" alt="facebook"/></li>
                             <li><img src="<?php echo get_template_directory_uri(); ?>/images/pintrest2.png" alt="facebook"/></li>
                             <li><img class="twit" src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" width="35" height="37" alt="facebook"/></li>
-                            <li><img class="twit" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" width="35" height="37" alt="facebook"/></li>
+                            <li><img class="face" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" width="35" height="37" alt="facebook"/></li>
                         </ul>                   
                     </div>
                 </div>
@@ -56,7 +60,7 @@
                         <input type="text" name="email" value="email" />
                         <input type="text" name="phone" value="phone" />
                         <img class="submitbutton" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
-                        <span style="font-family: Helvetica Neue ; float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 10px; ; margin-left: -6px">[ No Cost ]</span>                      
+                        <span style="font-family: Helvetica Neue ; float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 2px; ; margin-left: 5px">[ No Cost ]</span>                      
                     </div>
                 </div>
 
@@ -130,11 +134,13 @@
 
                 <div class="bodycontent3">
                     <div class="quote">
+                        <img class="quoteimage" src="<?php echo get_template_directory_uri(); ?>/images/quote.png" alt="rightlogo"/>
                         <p>
-                            "<span style="color: #154174">PARAMOUNT</span> SIGNIFICANTLY REDUCED MY TAX BILL. THEIR CONSTANT COMMUNICATION 
+                            <span style="color: #154174">PARAMOUNT</span> SIGNIFICANTLY REDUCED 
+                            MY TAX BILL. THEIR CONSTANT COMMUNICATION 
                             AND EXPERTISE MADE THE TAX APPEAL PROCESS PAINLESS FOR ME. 
                             <br />
-                            <span style="color: #9d9d9d ; font-size: 24px">– GEORGE MAYER, COASTLINE EQUITY</span>
+                            <span style="color: #9d9d9d ; font-size: 24px ; letter-spacing: -1px;">– GEORGE MAYER, COASTLINE EQUITY</span>
                         </p>
                     </div>
 
@@ -151,7 +157,7 @@
                             <input type="text" name="email" value="email" />
                             <input type="text" name="phone" value="phone" />
                             <img class="submitbutton2" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
-                            <span style="font-family: Helvetica Neue ;float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 10px; ; margin-left: -6px">[ No Cost ]</span> 
+                            <span style="font-family: Helvetica Neue ;float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 2px ; margin-left: 5px">[ No Cost ]</span> 
                         </div>
                     </div>
                 </div>
@@ -172,7 +178,7 @@
                 </div> 
 
                 <div class="blogfeed">
-                    <span style="color: #154174 ; font-size: 18px ; margin-left: 14px;">LATEST BLOG FEED</span>
+                    <span style="color: #154174 ; font-size: 22px ; margin-left: 14px;">LATEST BLOG FEED</span>
                     <input type="text" name="place holder" value="place holder " />
                 </div>
 
