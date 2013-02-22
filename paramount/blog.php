@@ -50,10 +50,11 @@
 
                 <div class="blogcontainer">
                     <div class="leftbloginfo">
+
+                        <!-- FIRST BLOG CONTENT AREA -->
                         <div class="blogbluebar">
                             <h2>Blog</h2>
                         </div>
-
                         <div class="bloginfo1">
                             <h2><span style="color: #154174">THIS</span> COULD BE THE TITLE OF THE FIRST BLOG.</h2>
                             <p>
@@ -72,6 +73,7 @@
                             </div>
                         </div>
 
+                        <!-- SECOND BLOG CONTENT AREA -->
                         <div class="bloginfo2">
                             <div class="previousblogs"></div>
                             <h2><span style="color: #bac2cf">ANOTHER</span> TITLE FOR THIS BLOG.</h2>
@@ -91,6 +93,7 @@
                             </div>
                         </div>
 
+                        <!-- THIRD BLOG CONTENT AREA -->
                         <div class="bloginfo3">
                             <h2><span style="color: #bac2cf">ANOTHER</span> LONG TITLE FOR THIS BLOG.</h2>
                             <p style="color: #c8c3c8">
@@ -109,6 +112,7 @@
                             </div>
                         </div>
 
+                        <!-- FOURTH BLOG CONTENT AREA -->
                         <div class="bloginfo3">
                             <h2><span style="color: #bac2cf">LAST</span> LONG TITLE FOR THIS BLOG PAGE.</h2>
                             <p>
@@ -129,6 +133,7 @@
                         </div>
                     </div>
 
+                    <!-- RIGHT SIDE INFO CONTENT AREA -->
                     <div class="rightbloginfo">
                         <div class="bloginfoimg"></div>
                         <div class="blogparagraph">
@@ -194,9 +199,10 @@
                             <h4>Reply</h4>
                         </div>
                     </div>
-
                 </div>  
             </div>
+
+
             <div class="footer">
                 <div class="bottomnav">
                     <ul>
@@ -234,5 +240,7 @@
                 <div class="bottomtexture"></div>
             </div>
         </div>
+
+
     </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 /*
-   Template Name: Paramount Services
+   Template Name: Paramount Contact Us
  */
 ?>
 
@@ -17,7 +17,9 @@
 
     </head>
     <body>
+        <!-- HEADER CONTENT -->
         <div class="servicescontainer">
+            <div class="shadow"></div>
             <div class="header">
                 <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" width="347" height="85" alt="logo"/>
                 <img class="phoneinfo" src="<?php echo get_template_directory_uri(); ?>/images/phoneinfo.png" width="164" height="22" alt="phoneinfo"/>
@@ -25,7 +27,6 @@
                 <input type="text" name="email" value="email" />
                 <img class="gobutton" src="<?php echo get_template_directory_uri(); ?>/images/gobutton.png" width="33" height="29" alt="gobutton"/>
             </div>
-
 
             <div class="content2">
                 <img class="homeimage" src="<?php echo get_template_directory_uri(); ?>/images/homeimage.png" width="18" height="17" alt="homeimage"/>
@@ -47,68 +48,56 @@
                             <li><img class="face" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" width="35" height="37" alt="facebook"/></li>
                         </ul>                   
                     </div>
+                </div>     
+
+                <div class="contactcontainer">
+                    <div class="contactleftcontent">
+                        <!-- CONTACT BOX INFORMATION FIELDS -->
+                        <div class="blogbluebar">
+                            <h2>CONTACT US</h2>
+                        </div>
+                        <div class="contactaddress">
+                            <p>10509 VISTA SORRENTO PRWY.<br />
+                            SUITE 201<br />
+                            SAN DIEGO, CA 92121</p>
+                        </div>
+                        <div class="contactmain">
+                            <p><span style="color: #4a698d">MAIN</span><br />
+                                  858.225.1200</p>
+                        </div>
+                        <div class="contactfax">
+                            <p><span style="color: #4a698d">FAX</span><br />
+                                    866.823.5577</p>
+                        </div>
+                        <div class="contactmailing">
+                            <p><span style="color: #4a698d">MAILING ADDRESS</span><br />
+                                8895 TOWNE CENTRE DR<br />
+                                105-280<br />
+                                SAN DIEGO, CA 92122</p>  
+                        </div>
+                        <div class="contactemail">
+                            <p>INFO@PPTAXAPPEAL.COM</p>
+                        </div>
+
+                    </div>
+
+                    <div class="contactrightcontent">
+                        <div class="bloginputs2">
+                            <div class="name_email">
+                                <input type="text" name="name" value="name" />
+                                <input type="text" name="email" value="email" />
+                            </div>
+
+                            <input class="blogcomment" type="text" name="comment" value="comment" />
+                            <p>*If you would like to email us directly, you can do so at <span style="color: #154174;font-size: 15px">info@pptaxappeal.com</span></p>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/blogsubmitbutton.png" width="74" height="26" alt="blogsubmitbutton"/>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="servicesleftcontent">
-                    <div class="servicelist">
-                        <div class="services">SERVICES</div>   
-                        <ul>
-                            <li>SERVICE NUMBER ONE</li>
-                            <li>REAL PROPERTY</li>
-                            <li>PERSONAL PROPERTY</li>
-                            <li>SERVICE NUMBER THREE</li>
-                            <li>SERVICE NUMBER FOUR</li>
-                            <li>SERVICE NUMBER FIVE</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="servicesrightcontent">
-                    <div class="personalproperty">
-                        <p>Personal Property</p>                     
-                    </div>
-                    <div class="personalpropertytext">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
-                            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque 
-                            porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
-                            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                            dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
-                            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                            ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea 
-                            voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem 
-                            eum fugiat quo voluptas nulla pariatur?
-                        </p>
-                        <p>
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                            excepturi sint occaecati cupiditate non provident, similique sunt in culpa 
-                            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
-                            quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum 
-                            soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor 
-                            repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum 
-                            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
-                            non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut 
-                            reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus 
-                            asperiores repellat.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        
-        <div class="footer">
+            </div> 
+            <!-- FOOTER CONTENT -->
+            <div class="footer">
                 <div class="bottomnav">
                     <ul>
                         <li>HOME</li>
@@ -126,7 +115,7 @@
                 </div> 
 
                 <div class="blogfeed">
-                    <span style="color: #154174 ; font-size: 22px ; margin-left: 14px;">LATEST BLOG FEED</span>
+                    <span style="color: #154174 ; font-size: 22px ; margin-left: 55px;">LATEST BLOG FEED</span>
                     <input type="text" name="place holder" value="place holder " />
                 </div>
 
@@ -144,8 +133,8 @@
                 </div>
                 <div class="bottomtexture"></div>
             </div>
-           </div>
+
+        </div>
+
     </body>
 </html>
-
-

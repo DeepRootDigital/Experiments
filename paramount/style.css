@@ -1,8 +1,8 @@
 /*
-Theme Name: AlKhanFoods
+Theme Name: Paramount
 Theme URI: http://businessonmarketst.com
 Description:
-Author: Nicholas Koskowski
+Author: Dan Deller
 Version:
 Tags: white, gray ,awesome
 */
@@ -123,7 +123,7 @@ body {
 
 .topsocialmedia {
     float: right;
-    width: 238px;  
+    width: 238px;
 }
 
 .topsocialmedia ul {
@@ -466,6 +466,7 @@ body {
     width: 260px;
     height: 140px;
     border-radius: 5px;
+    color: #7f8082;
 }
 
 .rightfootercontent {
@@ -571,10 +572,6 @@ ANIMATION PLACEHOLDERS
     -webkit-transition:height .35s; /* Safari and Chrome */
     -o-transition:height .35s; /* Opera */
 }
-
-/*
-SERVICES STYLES
-*/
 
 .servicescontainer {
     width: 1000px;
@@ -749,7 +746,6 @@ SERVICES STYLES
     border-bottom: 1px dotted;
 }
 
-
 .bloginfo2 h2 {
     float: left;
     margin-top: 5px;
@@ -770,7 +766,7 @@ SERVICES STYLES
     float: left;
     width: 250px;
     height: 20px;
-    margin-top: -12px;
+    margin-top: -8px;
 }
 
 .orangecommentbox{
@@ -788,7 +784,6 @@ SERVICES STYLES
     background-image: url('images/sharethisorangebox.png');
     background-repeat: no-repeat;
 }
-
 
 .previousblogs {
     float: left;
@@ -858,10 +853,10 @@ SERVICES STYLES
 
 .bloginputs {
     float: left;
-    width: 630px;
-    height: 250px;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 580px;
+    height: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
     border-bottom: 1px dotted;
 }
 
@@ -869,23 +864,38 @@ SERVICES STYLES
     float: left;
     width: 190px;
     height: 20px;
-    margin-left: 10px;
+   
     margin-right: 10px;
     border-radius: 3px;
+    
+    -webkit-box-shadow:inset 1px 2px 5px rgba(0,0,0,.3);
+    -moz-box-shadow:inset 1px 2px 5px rgba(0,0,0,.3);
+    -o-box-shadow:inset 1px 2px 5px rgba(0,0,0,.3);
+    box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
+    border: 1px  solid #c5c1c8;
+    padding:5px;
+    color: #7f8082;
 }
 
 .blogcomment {
     float: left;
     height: 160px;
     width: 570px;
-    margin-left: 10px;
+    
     margin-top: 10px;
     border-radius: 3px;
+    
+    -webkit-box-shadow:inset 1px 2px 5px rgba(0,0,0,.3);
+    -moz-box-shadow:inset 1px 2px 5px rgba(0,0,0,.3);
+    -o-box-shadow:inset 1px 2px 5px rgba(0,0,0,.3);
+    box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
+    border: 1px  solid #c5c1c8;
+    padding:5px;
+    color: #7f8082;
 }
 
 .bloginputs img {
     float: right;
-    margin-right: 45px;
     margin-top: 10px;
 }
 
@@ -917,4 +927,226 @@ SERVICES STYLES
     margin-top: 15px;
     color: #f69100;
     font-family:'GrotesqueMTW01-Condense';
+}
+
+.blog2container {
+    float: left;
+    width: 955px;
+    height: 720px;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+.blog2topcontent {
+    float: left;
+    width: 958px;
+    height: 245px;
+    border-bottom: 1px dotted;
+}
+
+.blog2topcontentleft {
+    float: left;
+    width: 300px;
+    height: 238px;
+}
+
+.blog2topcontentleft h3 {
+    float: left;
+    margin-top: 5px;
+    font-family:'GrotesqueMTW01-Condense';
+    font-size: 28px;
+    color: #5c5c5c;
+}
+
+.blog2topcontentleft p {
+    float: left;
+    margin-top: -40px;
+    line-height: 25px;
+    color: #9d9d9d;
+    font-family:'GrotesqueMTW01-Condense'; 
+}
+
+.blog2topcontentright {
+    float: right;
+    width: 638px;
+    height: 238px;
+    background-image: url('images/blog2topimage.png');
+    background-repeat: no-repeat;
+}
+
+.blog2middlecontent {
+    float: left;
+    width: 958px;
+    height: 240px;
+    border-bottom: 1px dotted;
+}
+
+.blog2middlecontentleft {
+    float: left;
+    width: 300px;
+    height: 175px;
+    margin-top: 15px;
+}
+
+.blog2contentstyles p {
+    float: left;
+    margin-top: -40px;
+    line-height: 25px;
+    color: #9d9d9d;
+    font-family:'GrotesqueMTW01-Condense'; 
+}
+
+.blog2contentstyles h3 {
+    float: left;
+    margin-top: 5px;
+    font-family:'GrotesqueMTW01-Condense';
+    font-size: 28px;
+    color: #5c5c5c;
+}
+
+.blog2middlecontentright {
+    float: right;
+    width: 638px;
+    height: 238px;
+    margin-top: 20px;
+    background-image: url('images/blog2middleimage.png');
+    background-repeat: no-repeat;
+}
+
+.blog2bottomcontentright {
+    float: right;
+    width: 638px;
+    height: 238px;
+    margin-top: 20px;
+    background-image: url('images/blog2bottomimage.png');
+    background-repeat: no-repeat;
+}
+
+.contactcontainer {
+    float: left;
+    width: 958px;
+    height: 475px;
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+.contactleftcontent {
+    float: left;
+    width: 300px;
+    height: 418px;
+    background-image: url('images/contactcontentimage.png');
+    background-repeat: no-repeat;
+}
+
+.contactrightcontent {
+    float: right;
+    width: 640px;
+    height: 300px;
+    border-top: 1px dotted;
+}
+
+.bloginputs2 {
+    float: left;
+    width: 630px;
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.bloginputs2 input {
+    -webkit-box-shadow:inset 1px 2px 5px rgba(0,0,0,.3);
+    -moz-box-shadow:inset 1px 2px 5px rgba(0,0,0,.3);
+    -o-box-shadow:inset 1px 2px 5px rgba(0,0,0,.3);
+    box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
+    border: 1px  solid #c5c1c8;
+    padding:5px;
+    color: #7f8082;
+}
+
+.bloginputs2 img {
+    float: right;
+    margin-right: 45px;
+    margin-top: 10px;
+}
+
+.bloginputs2 p {
+    float: left;
+    margin-left: 20px;
+    font-family: arial;
+    color: #58585a;
+    font-size: 12px;
+}
+
+.contactaddress {
+    float: left;
+    width: 265px;
+    height: 90px;
+    margin-left: 18px;
+    color: #7f7f81;
+    font-family:'GrotesqueMTW01-Condense';
+    border-bottom: 1px dotted;
+}
+
+.contactaddress p {
+    margin-top: 20px;
+    margin-left: 50px
+}
+
+.contactmain {
+    float: left;
+    width: 265px;
+    height: 60px;
+    margin-left: 18px;
+    color: #7f7f81;
+    font-family:'GrotesqueMTW01-Condense';
+    border-bottom: 1px dotted;
+}
+
+.contactmain p {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.contactfax {
+    float: left;
+    width: 265px;
+    height: 60px;
+    margin-left: 18px;
+    color: #7f7f81;
+    font-family:'GrotesqueMTW01-Condense';
+    border-bottom: 1px dotted; 
+}
+
+.contactfax p {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.contactmailing {
+    float: left;
+    width: 265px;
+    height: 100px;
+    margin-left: 18px;
+    color: #7f7f81;
+    font-family:'GrotesqueMTW01-Condense';
+    border-bottom: 1px dotted; 
+}
+
+.contactmailing p {
+    margin-top: 10px;
+    margin-left: 50px;  
+}
+
+.contactemail {
+    float: left;
+    width: 265px;
+    height: 30px;
+    margin-left: 18px;
+    color: #7f7f81;
+    font-family:'GrotesqueMTW01-Condense';
+}
+
+.contactemail p {
+    margin-top: 15px;
+    margin-left: 50px;
 }
