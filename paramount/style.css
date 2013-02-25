@@ -1150,3 +1150,13 @@ ANIMATION PLACEHOLDERS
     margin-top: 15px;
     margin-left: 50px;
 }
+
+.contactbluebar h2 {
+    float: left;
+    margin-left: 70px;
+    margin-top: 12px;
+    color: #fff;
+    font-family:'GrotesqueMTW01-Condense';
+    font-size: 24px;   
+    letter-spacing: 2px;
+}

@@ -53,7 +53,7 @@
                 <div class="contactcontainer">
                     <div class="contactleftcontent">
                         <!-- CONTACT BOX INFORMATION FIELDS -->
-                        <div class="blogbluebar">
+                        <div class="contactbluebar">
                             <h2>CONTACT US</h2>
                         </div>
                         <div class="contactaddress">
