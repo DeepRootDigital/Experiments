@@ -158,7 +158,7 @@ body {
     background-image: url('images/submitbox.png');
     background-repeat: no-repeat;  
 }
-
+/**
 .submitboxtext  {
     float: right;
     width: 195px;
@@ -170,15 +170,20 @@ body {
     margin-top: 20px;
     font-family:'GrotesqueMTW01-Condense';
 }
+**/
 
-.submitboxtext p {
-    float: left;   
-    margin-top: -65px;
-    font-size: 15px;
-    line-height: 20px;
+.submitbox h1 {
+    color: #FFFFFF;
+    font-family: 'GrotesqueMTW01-Condense';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 35px;
+    margin: 25px 0 0 40px;
 }
 
-.submitboxtext input {
+
+.submitbox input {
     float: left;
     width: 185px;
     height: 17px;
@@ -354,6 +359,23 @@ body {
     color: #5c5c5c;
     letter-spacing: -3px; 
     line-height: 45px;
+}
+
+
+.quote h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.quote h1 span{
+
+    color: #154174;
+}
+
+.quote h2{
+    color: #9d9d9d ; 
+    font-size: 24px ; 
+    letter-spacing: -1px;
 }
 
 .quoteimage {
