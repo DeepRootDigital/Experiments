@@ -6,13 +6,16 @@
 <?php get_header(); ?>
 
                 <div class="slider"></div>
-                <div class="submitbox">
-                        <h1>PROPERTY<br>TAX<br>REDUCTION<br><span>FEASIBILITY<br>STUDY</span></h1>
-                        <input type="text" name="name" value="name" />
-                        <input type="text" name="email" value="email" />
-                        <input type="text" name="phone" value="phone" />
-                        <img class="submitbutton" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
-                        <span style="font-family: Helvetica Neue ; float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 2px; ; margin-left: 5px">[ No Cost ]</span>                      
+                <div class="submitbox submitbox-top">
+                        <h1>PROPERTY TAX REDUCTION</h1>
+                        <p>Feasibility Study</p>
+                        <form>
+                            <input type="text" name="name" value="name" />
+                            <input type="text" name="email" value="email" />
+                            <input type="text" name="phone" value="phone" />
+                            <input id="submitbox-submit" type="submit">         
+                        </form> 
+                        <span>[No Cost]</span>          
                 </div>
 
                 <div class="bodycontent1">
@@ -50,23 +53,15 @@
                 <div class="bodycontent2">
                     <div class="lefttext">
                         <h2>HOW ARE WE DIFFERENT?</h2>
-                        <hr />
+
                         <p>We pride our selves on our team of experts who are here to service your needs 
                             and provide the results you deserve. Property tax appeal is just the first 
                             step, our goal is to build a long term relationship with you by servicing all 
                             of your real estate needs. We work on a Performance Based Fee, which means 
                             that if we don’t save you anything, you pay nothing. Or if you prefer, we 
                             will work on an hourly fee basis or flat rate fee.</p>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
+
                         <h2>WHO IS PARAMOUNT?</h2>
-                        <hr />
                         <p>Paramount is more than a commercial brokerage firm. Our Property Tax Appeal 
                             Division specializes in reducing secured and unsecured property tax liabilities. 
                             Our staff, which includes former supervising county appraisers and senior brokers,
@@ -90,22 +85,17 @@
                         <h2>-George Mayer, Coastline Equity</h2>
                     </div>
 
-                    <div class="sumbitbox2">
-                        <div class="submitbox2text">
-                            PROPERTY<br />
-                            TAX<br />
-                            REDUCTION
-                            <br />
-                            <br />
-                            <br />
-                            <p><span style="font-size: 15px ; margin-top: -20px;"><i>FEASIBILITY<br /> STUDY</i></span></p>
+                    <div class="submitbox submitbox-bottom">
+                        <h1>PROPERTY TAX REDUCTION</h1>
+                        <p>Feasibility Study</p>
+                        <form>
                             <input type="text" name="name" value="name" />
                             <input type="text" name="email" value="email" />
                             <input type="text" name="phone" value="phone" />
-                            <img class="submitbutton2" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
-                            <span style="font-family: Helvetica Neue ;float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 2px ; margin-left: 5px">[ No Cost ]</span> 
-                        </div>
-                    </div>
+                            <input id="submitbox-submit" type="submit">         
+                        </form> 
+                        <span>[No Cost]</span>          
+                </div>
                 </div>
             </div>
 <?php get_footer(); ?>

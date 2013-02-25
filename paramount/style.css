@@ -149,6 +149,17 @@ body {
     background-repeat: no-repeat;
 }
 
+/***********************************
+** SUBMIT BOX
+************************************/
+.submitbox-top{
+
+}
+
+.submitbox-bottom{
+    
+}
+
 .submitbox {
     float: right;
     width: 250px;
@@ -157,20 +168,10 @@ body {
     margin-top: 22px;
     background-image: url('images/submitbox.png');
     background-repeat: no-repeat;  
+    position: relative;
 }
-/**
-.submitboxtext  {
-    float: right;
-    width: 195px;
-    height: 170px;
-    color: #fff;
-    font-size: 40px;
-    line-height: 35px;
-    margin-right: 20px;
-    margin-top: 20px;
-    font-family:'GrotesqueMTW01-Condense';
-}
-**/
+
+
 
 .submitbox h1 {
     color: #FFFFFF;
@@ -180,34 +181,68 @@ body {
     font-weight: normal;
     line-height: 35px;
     margin: 25px 0 0 40px;
+    width: 200px;
 }
+
+
+.submitbox p {
+    color: #FFFFFF;
+    font-family: 'GrotesqueMTW01-Condense';
+    font-size: 18px;
+    font-style: italic;
+    line-height: 19px;
+    margin: 0 0 0 40px;
+    text-transform: uppercase;
+    width: 112px;
+}
+
+
+.submitbox form {
+    left: 30px;
+    position: absolute;
+    top: 190px;
+    width: 200px;
+}
+
+
 
 
 .submitbox input {
+    background: url("images/inputbox-bg.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: none;
     float: left;
-    width: 185px;
-    height: 17px;
-    margin-left: -8px;
-    margin-top: 5px;
+    font-family: arial;
+    font-size: 12px;
+    height: 28px;
     margin-bottom: 5px;
-    padding: 5px;
-    border-radius: 3px;
-    margin-bottom: 7px;
-    color: #7f8082;
-
-    -webkit-box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
-    -moz-box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
-    -o-box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
-    box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
-    border:none;
-    padding:5px;
+    margin-top: 5px;
+    padding: 0 0 0 6px;
+    width: 202px;
 }
 
-.submitbutton {
-    float: right;
-    margin-right: 5px;
-    margin-top: 10px;
+#submitbox-submit{
+    background: url("images/submitbutton.png") no-repeat scroll 0 0 transparent;
+    height: 36px;
+    width: 199px;
+    text-indent: -9999px;
+    cursor: pointer;
 }
+
+
+.submitbox > span {
+    color: #C3C3C3;
+    font-family: 'GrotesqueMTW01-Condense';
+    font-size: 11px;
+    left: 30px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 350px;
+}
+
+/***********************************
+** BODY CONTENT
+************************************/
 
 .bodycontent1 {
     float: left;
