@@ -3,19 +3,67 @@
    Template Name: Paramout Index
  */
 ?>
-<?php get_header(); ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paramount</title>
+        <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/7fae6fe2-5b59-4099-96aa-619fda1b22d5.css"/>
+        <script type="text/javascript" src="http://fast.fonts.com/jsapi/7fae6fe2-5b59-4099-96aa-619fda1b22d5.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/paramount.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" width="347" height="85" alt="logo"/>
+                <img class="phoneinfo" src="<?php echo get_template_directory_uri(); ?>/images/phoneinfo.png" width="164" height="22" alt="phoneinfo"/>
+                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <form class="form">
+                    <input class="topemail "type="text" value="" />
+                    <input class="topsubmit" type="submit" value="" />
+                </form>
+            </div>
+
+            <div class="content">
+                <img class="homeimage" src="<?php echo get_template_directory_uri(); ?>/images/homeimage.png" width="18" height="17" alt="homeimage"/>
+                <div class="nav">
+                    <ul>
+                        <li>about us</li>
+                        <li>services</li>
+                        <li>blog</li>
+                        <li>success stories</li>
+                        <li>free evaluation</li>
+                        <li>contact us</li>
+                    </ul>
+
+                    <div class="topsocialmedia">                  
+                        <ul><!-- DON'T FORGET THE ANIMATED CLASSES BELLOW! -->
+                            <li><img class="link" src="<?php echo get_template_directory_uri(); ?>/images/linkedin.png" width="35" height="37" alt="facebook"/></li>
+                            <li><img src="<?php echo get_template_directory_uri(); ?>/images/pintrest2.png" alt="facebook"/></li>
+                            <li><img class="twit" src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" width="35" height="37" alt="facebook"/></li>
+                            <li><img class="face" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" width="35" height="37" alt="facebook"/></li>
+                        </ul>                   
+                    </div>
+                </div>
 
                 <div class="slider"></div>
-                <div class="submitbox submitbox-top">
-                        <h1>PROPERTY TAX REDUCTION</h1>
-                        <p>Feasibility Study</p>
-                        <form>
-                            <input type="text" name="name" value="name" />
-                            <input type="text" name="email" value="email" />
-                            <input type="text" name="phone" value="phone" />
-                            <input id="submitbox-submit" type="submit">         
-                        </form> 
-                        <span>[No Cost]</span>          
+                <div class="submitbox">
+                    <div class="submitboxtext">
+                        PROPERTY<br />
+                        TAX<br />
+                        REDUCTION
+                        <br />
+                        <br />
+                        <br />
+                        <p><i>FEASIBILITY<br /> STUDY</i></p>
+                        <input type="text" name="name" value="name" />
+                        <input type="text" name="email" value="email" />
+                        <input type="text" name="phone" value="phone" />
+                        <img class="submitbutton" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
+                        <span style="font-family: Helvetica Neue ; float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 2px; ; margin-left: 5px">[ No Cost ]</span>                      
+                    </div>
                 </div>
 
                 <div class="bodycontent1">
@@ -52,16 +100,14 @@
 
                 <div class="bodycontent2">
                     <div class="lefttext">
-                        <h2>HOW ARE WE DIFFERENT?</h2>
-
+                        <h2>how are we different?</h2>
                         <p>We pride our selves on our team of experts who are here to service your needs 
                             and provide the results you deserve. Property tax appeal is just the first 
                             step, our goal is to build a long term relationship with you by servicing all 
                             of your real estate needs. We work on a Performance Based Fee, which means 
                             that if we don’t save you anything, you pay nothing. Or if you prefer, we 
                             will work on an hourly fee basis or flat rate fee.</p>
-
-                        <h2>WHO IS PARAMOUNT?</h2>
+                        <h2>who is paramount?</h2>
                         <p>Paramount is more than a commercial brokerage firm. Our Property Tax Appeal 
                             Division specializes in reducing secured and unsecured property tax liabilities. 
                             Our staff, which includes former supervising county appraisers and senior brokers,
@@ -81,22 +127,71 @@
                 <div class="bodycontent3">
                     <div class="quote">
                         <img class="quoteimage" src="<?php echo get_template_directory_uri(); ?>/images/quote.png" alt="rightlogo"/>
-                        <h1><span>Paramount</span> significantly reduced my tax bill. Their constant communication and expertise made the tax appeal process painless for me.</h1>
-                        <h2>-George Mayer, Coastline Equity</h2>
+                        <p>
+                            <span style="color: #154174">PARAMOUNT</span> SIGNIFICANTLY REDUCED 
+                            MY TAX BILL. THEIR CONSTANT COMMUNICATION 
+                            AND EXPERTISE MADE THE TAX APPEAL PROCESS PAINLESS FOR ME. 
+                            <br />
+                            <span style="color: #9d9d9d ; font-size: 24px ; letter-spacing: -1px;">– GEORGE MAYER, COASTLINE EQUITY</span>
+                        </p>
                     </div>
 
-                    <div class="submitbox submitbox-bottom">
-                        <h1>PROPERTY TAX REDUCTION</h1>
-                        <p>Feasibility Study</p>
-                        <form>
+                    <div class="sumbitbox2">
+                        <div class="submitbox2text">
+                            PROPERTY<br />
+                            TAX<br />
+                            REDUCTION
+                            <br />
+                            <br />
+                            <br />
+                            <p><span style="font-size: 15px ; margin-top: -20px;"><i>FEASIBILITY<br /> STUDY</i></span></p>
                             <input type="text" name="name" value="name" />
                             <input type="text" name="email" value="email" />
                             <input type="text" name="phone" value="phone" />
-                            <input id="submitbox-submit" type="submit">         
-                        </form> 
-                        <span>[No Cost]</span>          
-                </div>
+                            <img class="submitbutton2" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
+                            <span style="font-family: Helvetica Neue ;float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 2px ; margin-left: 5px">[ No Cost ]</span> 
+                        </div>
+                    </div>
                 </div>
             </div>
-<?php get_footer(); ?>
-            
+
+            <div class="footer">
+                <div class="bottomnav">
+                    <ul>
+                        <li>home</li>
+                        <li>about us</li>
+                        <li>services</li>
+                        <li>success stories</li>
+                    </ul>
+                    <ul>
+                        <li>blog</li>
+                        <li>free evaluation</li>
+                        <li>contact us</li>
+                        <br />
+                        <li> </li>
+                    </ul>
+                </div> 
+
+                <div class="blogfeed">
+                    <span style="color: #154174 ; font-size: 22px ; margin-left: 14px;">LATEST BLOG FEED</span>
+                    <input type="text" name="place holder" value="place holder " />
+                </div>
+
+                <div class="rightfootercontent">
+                    <ul><!-- DON'T FORGET THE ANIMATED CLASSES BELLOW! -->
+                        <li><img class="face" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" width="35" height="37" alt="facebook"/></li>
+                        <li><img class="twit" src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" width="35" height="37" alt="facebook"/></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/pintrest.png" alt="pintrest"/></li>
+                        <li><img class="link" src="<?php echo get_template_directory_uri(); ?>/images/linkedin.png" width="35" height="37" alt="facebook"/></li>
+                    </ul>
+                    <p>SIGN UP FOR OUR NEWSLETTER</p>
+                    <form class="form2">
+                        <input type="text" name="email" value="email" />
+                        <input class="bottomsubmit" type="submit" value="" />
+                    </form>
+                    <img class="bottomphoneinfo" src="<?php echo get_template_directory_uri(); ?>/images/phoneinfo.png" width="164" height="22" alt="phoneinfo"/>
+                </div>
+                <div class="bottomtexture"></div>
+            </div>
+    </body>
+</html>
