@@ -10,6 +10,7 @@ Tags: white, gray ,awesome
 /* =Reset default browser CSS. 
 -------------------------------------------------------------- */
 
+
 body {
     margin: 0px;
     padding: 0px;
@@ -91,12 +92,14 @@ body {
     width: 1000px;
     height: 1990px;
     margin-top: 10px;
-    background-image: url('images/background.png');
-    background-repeat: repeat-x;
+    background-image: url('images/background.png'), url('images/shadows.png');
+    background-repeat: repeat-x, no-repeat;
 
+    /*
     -moz-box-shadow: 0 0 3px 3px #888;
     -webkit-box-shadow: 0 0 3px 3px#888;
     box-shadow: 0 0 3px 3px #888;
+    */
 }
 
 .homeimage {
@@ -129,7 +132,7 @@ body {
     text-transform: uppercase;
 }
 
-.nav ul li:hover {
+.nav ul li a:hover {
     color: #c8c8c8;
 }
 
@@ -461,7 +464,7 @@ body {
     text-transform: uppercase;
 }
 
-.bottomnav ul li:hover {
+.bottomnav ul li a:hover {
     color: #154174;
 }
 

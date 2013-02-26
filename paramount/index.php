@@ -30,12 +30,12 @@
                 <img class="homeimage" src="<?php echo get_template_directory_uri(); ?>/images/homeimage.png" width="18" height="17" alt="homeimage"/>
                 <div class="nav">
                     <ul>
-                        <li>about us</li>
-                        <li>services</li>
-                        <li>blog</li>
-                        <li>success stories</li>
-                        <li>free evaluation</li>
-                        <li>contact us</li>
+                        <li><a href = "#">about us</a></li>
+                        <li><a href = "#">services</a></li>
+                        <li><a href = "#">blog</a></li>
+                        <li><a href = "#">success stories</a></li>
+                        <li><a href = "#">free evaluation</a></li>
+                        <li><a href = "#">contact us</a></li>
                     </ul>
 
                     <div class="topsocialmedia">                  
@@ -158,15 +158,15 @@
             <div class="footer">
                 <div class="bottomnav">
                     <ul>
-                        <li>home</li>
-                        <li>about us</li>
-                        <li>services</li>
-                        <li>success stories</li>
+                        <li><a href = "#">home</a></li>
+                        <li><a href = "#">about us</a></li>
+                        <li><a href = "#">services</a></li>
+                        <li><a href = "#">success stories</a></li>
                     </ul>
                     <ul>
-                        <li>blog</li>
-                        <li>free evaluation</li>
-                        <li>contact us</li>
+                        <li><a href = "#">blog</a></li>
+                        <li><a href = "#">free evaluation</a></li>
+                        <li><a href = "#">contact us</a></li>
                         <br />
                         <li> </li>
                     </ul>
