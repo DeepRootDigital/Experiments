@@ -174,7 +174,8 @@
 
                 <div class="blogfeed">
                     <span style="color: #154174 ; font-size: 22px ; margin-left: 14px;">LATEST BLOG FEED</span>
-                    <input type="text" name="place holder" value="place holder " />
+                    <div class="blogbox">
+                    </div>
                 </div>
 
                 <div class="rightfootercontent">
