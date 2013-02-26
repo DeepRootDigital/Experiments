@@ -55,11 +55,12 @@ body {
 .topemail {
     float: left;
     margin-left: 65px;
-    margin-top: -5px;   
+    margin-top: -10px;
+    padding-left: 10px;
+    color: #838385;
 }
 
 .form input[type=submit] { 
-    float: right;
     width: 33px;
     height: 28px;
     background-image: url('images/gobutton.png');
@@ -71,17 +72,18 @@ body {
 
 .topsubmit {
     float: right;
-    margin-top: -5px;
+    margin-top: -31px;
     margin-right: 22px;
 }
 
-.header p {
+.header h4 {
     float: left;
     font-size: 11px;
     margin-left: 75px;
     margin-top: 10px;
     color: #88898c;
     font-family: arial;
+    text-transform: uppercase;
 }
 
 .content {
@@ -498,37 +500,35 @@ body {
     padding-left: 14px;
 }
 
-.rightfootercontent p {
+.rightfootercontent h4 {
     float: left;
     font-size: 11px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 8px;
     color: #88898c;
     font-family: arial;
+    text-transform: uppercase;
 }
 
-.rightfootercontent input {
-    float: left;
+.form2 input[type=text] {
     width: 200px;
-    height: 18px;
-    margin-top: -5px;
-    margin-left: 3px;
-    padding: 5px;
-    border-radius: 5px;
-    color: #7f8082;
+    height: 30px;
+    background-image: url('images/submitinputs.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
 
-    -webkit-box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
-    -moz-box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
-    -o-box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
-    box-shadow:inset 0 2px 5px rgba(0,0,0,.3);
-    border:none;
-    padding:5px;
+.bottomemail {
+    float: left;
+    margin-left: 10px;
+    margin-top: -10px;
+    padding-left: 10px;
+    color: #838385;
 }
 
 .form2 input[type=submit] {
-    float: right;
-    width: 33px;
-    margin-right: 22px;
     height: 28px;
     background-image: url('images/gobutton.png');
     background-repeat: no-repeat;
@@ -537,10 +537,17 @@ body {
     border: none;
 }
 
+.bottomsubmit {
+    float: right;
+    width: 33px;
+    margin-right: 22px;
+    margin-top: -31px;
+}
+
 .bottomphoneinfo {
     float: right;
     margin-right: 21px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .bottomtexture {

@@ -1,6 +1,6 @@
 <?php
 /*
-   Template Name: Paramout Index
+   Template Name: Paramount Index
  */
 ?>
 
@@ -19,9 +19,9 @@
             <div class="header">
                 <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" width="347" height="85" alt="logo"/>
                 <img class="phoneinfo" src="<?php echo get_template_directory_uri(); ?>/images/phoneinfo.png" width="164" height="22" alt="phoneinfo"/>
-                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <h4>sign up for our news letter</h4>
                 <form class="form">
-                    <input class="topemail "type="text" value="" />
+                    <input class="topemail "type="text" value="email" />
                     <input class="topsubmit" type="submit" value="" />
                 </form>
             </div>
@@ -184,9 +184,9 @@
                         <li><img src="<?php echo get_template_directory_uri(); ?>/images/pintrest.png" alt="pintrest"/></li>
                         <li><img class="link" src="<?php echo get_template_directory_uri(); ?>/images/linkedin.png" width="35" height="37" alt="facebook"/></li>
                     </ul>
-                    <p>SIGN UP FOR OUR NEWSLETTER</p>
+                    <h4>sign up for our news letter</h4>
                     <form class="form2">
-                        <input type="text" name="email" value="email" />
+                        <input class="bottomemail" type="text" value="email" />
                         <input class="bottomsubmit" type="submit" value="" />
                     </form>
                     <img class="bottomphoneinfo" src="<?php echo get_template_directory_uri(); ?>/images/phoneinfo.png" width="164" height="22" alt="phoneinfo"/>
