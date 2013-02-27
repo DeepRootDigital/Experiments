@@ -27,6 +27,7 @@
                 <input type="text" name="email" value="email" />
                 <img class="gobutton" src="<?php echo get_template_directory_uri(); ?>/images/gobutton.png" width="33" height="29" alt="gobutton"/>
             </div>
+        
 
             <div class="content2">
                 <img class="homeimage" src="<?php echo get_template_directory_uri(); ?>/images/homeimage.png" width="18" height="17" alt="homeimage"/>
@@ -62,15 +63,15 @@
                             SAN DIEGO, CA 92121</p>
                         </div>
                         <div class="contactmain">
-                            <p><span style="color: #4a698d">MAIN</span><br />
+                            <p><span class="contactcolor">MAIN</span><br />
                                   858.225.1200</p>
                         </div>
                         <div class="contactfax">
-                            <p><span style="color: #4a698d">FAX</span><br />
+                            <p><span class="contactcolor">FAX</span><br />
                                     866.823.5577</p>
                         </div>
                         <div class="contactmailing">
-                            <p><span style="color: #4a698d">MAILING ADDRESS</span><br />
+                            <p><span class="contactcolor">MAILING ADDRESS</span><br />
                                 8895 TOWNE CENTRE DR<br />
                                 105-280<br />
                                 SAN DIEGO, CA 92122</p>  
@@ -89,7 +90,7 @@
                             </div>
 
                             <input class="blogcomment" type="text" name="comment" value="comment" />
-                            <p>*If you would like to email us directly, you can do so at <span style="color: #154174;font-size: 15px">info@pptaxappeal.com</span></p>
+                            <p>*If you would like to email us directly, you can do so at <span>info@pptaxappeal.com</span></p>
                             <img src="<?php echo get_template_directory_uri(); ?>/images/blogsubmitbutton.png" width="74" height="26" alt="blogsubmitbutton"/>
                         </div>
                     </div>

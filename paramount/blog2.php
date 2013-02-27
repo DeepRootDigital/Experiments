@@ -57,22 +57,20 @@
                             <div class="blogbluebar">
                                 <h2>Blog</h2>
                             </div>
-                            <h3>
-                                <span style="color: #154174">THIS</span> COULD BE THE TITLE OF THE FIRST BLOG.
-                            </h3>
+                            <h3><span class="this">THIS</span> COULD BE THE TITLE OF THE FIRST BLOG.</h3>                        
                             <p>
                                 <br />
                                 February 12th, 2013
                                 <br />
                                 San Diego, CA
                                 <br />
-                                <span style="color: #b7b7b7;font-size: 17px;">BY: ALVARO FLORES</span>
+                                <span>BY: ALVARO FLORES</span>
                             </p>
                             <div class="comment_submit">
                                 <div class="orangecommentbox">
-                                    <span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">COMMENTS</span>
+                                    <span>COMMENTS</span>
                                 </div>
-                                <div class="sharethisorangebox"><span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">SHARE</span></div>
+                                <div class="sharethisorangebox"><span>SHARE</span></div>
                             </div> 
                         </div>
 
@@ -85,7 +83,7 @@
                         <div class="blog2middlecontentleft">
                             <div class="blog2contentstyles">
                                 <h3>
-                                    <span style="color: #154174">ANOTHER</span> TITLE FOR THIS BLOG.
+                                    <span class="this">ANOTHER</span> TITLE FOR THIS BLOG.
                                 </h3>
                                 <p>
                                     <br />
@@ -93,14 +91,14 @@
                                     <br />
                                     San Diego, CA
                                     <br />
-                                    <span style="color: #b7b7b7;font-size: 17px;">BY: ALVARO FLORES</span>
+                                    <span>BY: ALVARO FLORES</span>
                                 </p>
                             </div>
                             <div class="comment_submit">
                                 <div class="orangecommentbox">
-                                    <span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">COMMENTS</span>
+                                    <span>COMMENTS</span>
                                 </div>
-                                <div class="sharethisorangebox"><span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">SHARE</span></div>
+                                <div class="sharethisorangebox"><span>SHARE</span></div>
                             </div> 
                         </div>
 
@@ -113,7 +111,7 @@
                         <div class="blog2middlecontentleft">
                             <div class="blog2contentstyles">
                                 <h3>
-                                    <span style="color: #154174">ANOTHER</span> TITLE FOR THIS BLOG.
+                                    <span class="this">ANOTHER</span> TITLE FOR THIS BLOG.
                                 </h3>
                                 <p>
                                     <br />
@@ -126,9 +124,9 @@
                             </div>
                             <div class="comment_submit">
                                 <div class="orangecommentbox">
-                                    <span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">COMMENTS</span>
+                                    <span>COMMENTS</span>
                                 </div>
-                                <div class="sharethisorangebox"><span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">SHARE</span></div>
+                                <div class="sharethisorangebox"><span>SHARE</span></div>
                             </div> 
                         </div>
 

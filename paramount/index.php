@@ -62,7 +62,7 @@
                         <input type="text" name="email" value="email" />
                         <input type="text" name="phone" value="phone" />
                         <img class="submitbutton" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
-                        <span style="font-family: Helvetica Neue ; float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 2px; ; margin-left: 5px">[ No Cost ]</span>                      
+                        <span>[ No Cost ]</span>                      
                     </div>
                 </div>
 
@@ -128,11 +128,11 @@
                     <div class="quote">
                         <img class="quoteimage" src="<?php echo get_template_directory_uri(); ?>/images/quote.png" alt="rightlogo"/>
                         <p>
-                            <span style="color: #154174">PARAMOUNT</span> SIGNIFICANTLY REDUCED 
+                            <span>PARAMOUNT</span> SIGNIFICANTLY REDUCED 
                             MY TAX BILL. THEIR CONSTANT COMMUNICATION 
                             AND EXPERTISE MADE THE TAX APPEAL PROCESS PAINLESS FOR ME. 
                             <br />
-                            <span style="color: #9d9d9d ; font-size: 24px ; letter-spacing: -1px;">– GEORGE MAYER, COASTLINE EQUITY</span>
+                            <span class="personquote">– GEORGE MAYER, COASTLINE EQUITY</span>
                         </p>
                     </div>
 
@@ -144,12 +144,12 @@
                             <br />
                             <br />
                             <br />
-                            <p><span style="font-size: 15px ; margin-top: -20px;"><i>FEASIBILITY<br /> STUDY</i></span></p>
+                            <h3><i>FEASIBILITY<br /> STUDY</i></h3>
                             <input type="text" name="name" value="name" />
                             <input type="text" name="email" value="email" />
                             <input type="text" name="phone" value="phone" />
                             <img class="submitbutton2" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
-                            <span style="font-family: Helvetica Neue ;float: left ; font-size: 10px ; color: #bcbcbc ; margin-top: 2px ; margin-left: 5px">[ No Cost ]</span> 
+                            <span>[ No Cost ]</span> 
                         </div>
                     </div>
                 </div>
@@ -173,8 +173,9 @@
                 </div> 
 
                 <div class="blogfeed">
-                    <span style="color: #154174 ; font-size: 22px ; margin-left: 14px;">LATEST BLOG FEED</span>
+                    <h2>LATEST BLOG FEED</h2>
                     <div class="blogbox">
+
                     </div>
                 </div>
 

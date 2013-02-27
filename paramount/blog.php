@@ -56,81 +56,82 @@
                             <h2>Blog</h2>
                         </div>
                         <div class="bloginfo1">
-                            <h2><span style="color: #154174">THIS</span> COULD BE THE TITLE OF THE FIRST BLOG.</h2>
+                            <h2><span>THIS</span> COULD BE THE TITLE OF THE FIRST BLOG.</h2>
                             <p>
                                 <br />
                                 February 12th, 2013
                                 <br />
                                 San Diego, CA
                                 <br />
-                                <span style="color: #b7b7b7;font-size: 17px;">BY: ALVARO FLORES</span>
+                                <span class="author">BY: ALVARO FLORES</span>
                             </p>
                             <div class="comment_submit">
                                 <div class="orangecommentbox">
-                                    <span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">COMMENTS</span>
+                                    <span>COMMENTS</span>
                                 </div>
-                                <div class="sharethisorangebox"><span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">SHARE</span></div>
+                                <div class="sharethisorangebox"><span>SHARE</span></div>
                             </div>
                         </div>
 
                         <!-- SECOND BLOG CONTENT AREA -->
                         <div class="bloginfo2">
                             <div class="previousblogs"></div>
-                            <h2><span style="color: #bac2cf">ANOTHER</span> TITLE FOR THIS BLOG.</h2>
+                            <h2><span>ANOTHER</span> TITLE FOR THIS BLOG.</h2>
                             <p>
                                 <br />
                                 February 12th, 2013
                                 <br />
                                 San Diego, CA
                                 <br />
-                                <span style="color: #b7b7b7;font-size: 17px;">BY: ALVARO FLORES</span>
+                                <span class="author">BY: ALVARO FLORES</span>
                             </p>
                             <div class="comment_submit">
                                 <div class="orangecommentbox">
-                                    <span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">COMMENTS</span>
+                                    <span>COMMENTS</span>
                                 </div>
-                                <div class="sharethisorangebox"><span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">SHARE</span></div>
+                                <div class="sharethisorangebox"><span>SHARE</span></div>
                             </div>
                         </div>
 
                         <!-- THIRD BLOG CONTENT AREA -->
-                        <div class="bloginfo3">
-                            <h2><span style="color: #bac2cf">ANOTHER</span> LONG TITLE FOR THIS BLOG.</h2>
-                            <p style="color: #c8c3c8">
-                                <br />
-                                February 12th, 2013
-                                <br />
-                                San Diego, CA
-                                <br />
-                                <span style="color: #b7b7b7;font-size: 17px;">BY: ALVARO FLORES</span>
-                            </p>
-                            <div class="comment_submit">
-                                <div class="orangecommentbox">
-                                    <span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">COMMENTS</span>
-                                </div>
-                                <div class="sharethisorangebox"><span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">SHARE</span></div>
-                            </div>
-                        </div>
-
-                        <!-- FOURTH BLOG CONTENT AREA -->
-                        <div class="bloginfo3">
-                            <h2><span style="color: #bac2cf">LAST</span> LONG TITLE FOR THIS BLOG PAGE.</h2>
+                        <div class="bloginfo2">
+                            <h2><span>ANOTHER</span> LONG TITLE FOR THIS BLOG.</h2>
                             <p>
                                 <br />
                                 February 12th, 2013
                                 <br />
                                 San Diego, CA
                                 <br />
-                                <span style="color: #b7b7b7;font-size: 17px;">BY: ALVARO FLORES</span>
+                                <span class="author">BY: ALVARO FLORES</span>
                             </p>
                             <div class="comment_submit">
                                 <div class="orangecommentbox">
-                                    <span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">COMMENTS</span>
+                                    <span>COMMENTS</span>
                                 </div>
-                                <div class="sharethisorangebox"><span style="margin-left: 20px;font-size: 12px;font-family:'GrotesqueMTW01-Condense';color: #797979">SHARE</span></div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/clickformoreblogs.png" width="164" height="22" alt="phoneinfo"/>
+                                <div class="sharethisorangebox"><span>SHARE</span></div>
                             </div>
                         </div>
+
+                        <!-- FOURTH BLOG CONTENT AREA -->
+                        <div class="bloginfo2">
+                            <h2><span>LAST</span> LONG TITLE FOR THIS BLOG PAGE.</h2>
+                            <p>
+                                <br />
+                                February 12th, 2013
+                                <br />
+                                San Diego, CA
+                                <br />
+                                <span class="author">BY: ALVARO FLORES</span>
+                            </p>
+                            <div class="comment_submit">
+                                <div class="orangecommentbox">
+                                    <span>COMMENTS</span>
+                                </div>
+                                <div class="sharethisorangebox"><span>SHARE</span></div>     
+                            </div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/clickformoreblogs.png" width="164" height="22" alt="phoneinfo"/>
+                        </div>
+                        
                     </div>
 
                     <!-- RIGHT SIDE INFO CONTENT AREA -->
@@ -175,8 +176,8 @@
                         </div>
 
                         <div class="bottomrightbloginfo">
-                            <div style="margin-left: 50px;font-family: Helvetica Neue;font-size: 10px;">
-                                <span style="color: #6b6b6b">MARIANNE KOPP</span><br />
+                            <div class="personalinfo">
+                                <span>MARIANNE KOPP</span><br />
                                 February 12th, 2013<br />
 
                                 San Diego, CA
