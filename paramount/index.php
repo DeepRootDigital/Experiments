@@ -98,6 +98,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="clear"></div>
                 <div class="home-content">
                     <div class="lefttext">
                         <h2>how are we different?</h2>
@@ -122,6 +123,7 @@
                         <img src="images/rightlogo.png">
                     </div>
                 </div>
+                <div class="clear"></div>
                 <div class="quote-content">
                     <div class="quote">
                         <img class="quoteimage" src="images/quote.png" alt="rightlogo"/>
@@ -140,6 +142,7 @@
                         <span>[No Cost]</span>          
                     </div>
                 </div>
+                <div class="clear"></div>
             </div><!-- HOME BACKGROUND -->
             <div class="center">
                 <footer>
@@ -184,7 +187,8 @@
                             <input id="signup-button" type="submit">
                         </form>
                     </div>
-                    <img class="phone-bottom" src="images/phoneinfo.png">                    
+                    <img class="phone-bottom" src="images/phoneinfo.png">
+                    <div class="clear"></div>                    
                 </footer>
             </div>
         </div><!-- CANVAS -->
