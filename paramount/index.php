@@ -62,22 +62,40 @@
                 <div class="clear"></div>
                 <div class="info-box">
                     <div class="connect">
-                        <div class="bluebox">Connect</div>
+                        <div class="bluebox">Connect
+                            <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
                     </div>
                     <div class="appeal">
-                        <div class="bluebox">Appeal</div>
+                        <div class="bluebox">Appeal
+                            <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
                     </div>
                     <div class="refund">
-                        <div class="bluebox">Refund</div>
+                        <div class="bluebox">Refund
+                            <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
                     </div>
                     <div class="represent">
-                        <div class="bluebox">Represent</div>
+                        <div class="bluebox">Represent
+                            <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
                     </div>
                     <div class="evaluate">
-                        <div class="bluebox">Evaluate</div>
+                        <div class="bluebox">Evaluate
+                            <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
                     </div>
                     <div class="engage">
-                        <div class="bluebox">Engage</div>
+                        <div class="bluebox">Engage
+                            <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
                     </div>
                 </div>
                 <div class="home-content">

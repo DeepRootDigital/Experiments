@@ -328,6 +328,11 @@ header nav ul li a:hover{
     color: #fff;
 }
 
+.blueboxcontent {
+    font-size:12px;
+    font-family:georgia;
+    display:none;
+}
 
 
 .appeal {
