@@ -1,104 +1,84 @@
-<?php
-/*
-   Template Name: Paramount Index
- */
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Paramount</title>
-        <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/7fae6fe2-5b59-4099-96aa-619fda1b22d5.css"/>
         <script type="text/javascript" src="http://fast.fonts.com/jsapi/7fae6fe2-5b59-4099-96aa-619fda1b22d5.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/paramount.js" type="text/javascript"></script>
     </head>
     <body>
-        <div class="container">
-            <div class="header">
-                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" width="347" height="85" alt="logo"/>
-                <img class="phoneinfo" src="<?php echo get_template_directory_uri(); ?>/images/phoneinfo.png" width="164" height="22" alt="phoneinfo"/>
-                <h4>sign up for our news letter</h4>
-                <form class="form">
-                    <input class="topemail "type="text" value="email" />
-                    <input class="topsubmit" type="submit" value="" />
-                </form>
+        <div class="canvas">
+            <div class="center">
+                <img class="logo" src="images/logo.png">
+                <img class="phone" src="images/phoneinfo.png">
+                <div class="signup">
+                    <form>
+                        <p>Sign up for our newsletter</p>
+                        <input type="text" value="email">
+                        <input id="signup-button" type="submit">
+                    </form>
+                </div>
+                <div class="clear"></div>
             </div>
-
-            <div class="content">
-                <img class="homeimage" src="<?php echo get_template_directory_uri(); ?>/images/homeimage.png" width="18" height="17" alt="homeimage"/>
-                <div class="nav">
-                    <ul>
-                        <li><a href = "#">about us</a></li>
-                        <li><a href = "#">services</a></li>
-                        <li><a href = "#">blog</a></li>
-                        <li><a href = "#">success stories</a></li>
-                        <li><a href = "#">free evaluation</a></li>
-                        <li><a href = "#">contact us</a></li>
-                    </ul>
-
-                    <div class="topsocialmedia">                  
-                        <ul><!-- DON'T FORGET THE ANIMATED CLASSES BELLOW! -->
-                            <li><img class="link" src="<?php echo get_template_directory_uri(); ?>/images/linkedin.png" width="35" height="37" alt="facebook"/></li>
-                            <li><img src="<?php echo get_template_directory_uri(); ?>/images/pintrest2.png" alt="facebook"/></li>
-                            <li><img class="twit" src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" width="35" height="37" alt="facebook"/></li>
-                            <li><img class="face" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" width="35" height="37" alt="facebook"/></li>
+            <div class="center home-bg">
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a href="#"><img src="images/homeimage.png"></a></li>
+                            <li><a href = "#">about us</a></li>
+                            <li><a href = "#">services</a></li>
+                            <li><a href = "#">blog</a></li>
+                            <li><a href = "#">success stories</a></li>
+                            <li><a href = "#">free evaluation</a></li>
+                            <li><a href = "#">contact us</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </nav>
+                    <div class="topsocialmedia social-icons">                  
+                        <ul>
+                            <li class="soc-1"><a href="#"></a></li>
+                            <li class="soc-2"><a href="#"></a></li>
+                            <li class="soc-3"><a href="#"></a></li>
+                            <li class="soc-4"><a href="#"></a></li>
                         </ul>                   
                     </div>
+                </header>
+                <div class="slider">
+                    <img src="images/slider1.png">
                 </div>
-
-                <div class="slider"></div>
-                <div class="submitbox">
-                    <div class="submitboxtext">
-                        PROPERTY<br />
-                        TAX<br />
-                        REDUCTION
-                        <br />
-                        <br />
-                        <br />
-                        <p><i>FEASIBILITY<br /> STUDY</i></p>
+                <div class="submitbox submitbox-top">
+                    <h1>PROPERTY TAX REDUCTION</h1>
+                    <p>Feasibility Study</p>
+                    <form>
                         <input type="text" name="name" value="name" />
                         <input type="text" name="email" value="email" />
                         <input type="text" name="phone" value="phone" />
-                        <img class="submitbutton" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
-                        <span>[ No Cost ]</span>                      
-                    </div>
+                        <input id="submitbox-submit" type="submit">         
+                    </form> 
+                    <span>[No Cost]</span>          
                 </div>
-
-                <div class="bodycontent1">
+                <div class="clear"></div>
+                <div class="info-box">
                     <div class="connect">
-                        <div class="bluebox"></div>
-                        <p>Connect</p>
+                        <div class="bluebox">Connect</div>
                     </div>
-
                     <div class="appeal">
-                        <div class="bluebox"></div>
-                        <p>Appeal</p>
+                        <div class="bluebox">Appeal</div>
                     </div>
-
                     <div class="refund">
-                        <div class="bluebox"></div>
-                        <p>Refund</p>
+                        <div class="bluebox">Refund</div>
                     </div>
-
                     <div class="represent">
-                        <div class="bluebox"></div>
-                        <p>Represent</p>
+                        <div class="bluebox">Represent</div>
                     </div>
-
                     <div class="evaluate">
-                        <div class="bluebox"></div>
-                        <p>Evaluate</p>
+                        <div class="bluebox">Evaluate</div>
                     </div>
-
                     <div class="engage">
-                        <div class="bluebox"></div>
-                        <p>Engage</p>
+                        <div class="bluebox">Engage</div>
                     </div>
                 </div>
-
-                <div class="bodycontent2">
+                <div class="home-content">
                     <div class="lefttext">
                         <h2>how are we different?</h2>
                         <p>We pride our selves on our team of experts who are here to service your needs 
@@ -118,82 +98,75 @@
                             representation and an appraisal that uses multiple approaches to property valuation
                             for the Assessment Appeals Board.</p>
                     </div>
-
                     <div class="rightlogo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/rightlogo.png" width="192" height="225" alt="rightlogo"/>
+                        <img src="images/rightlogo.png">
                     </div>
                 </div>
-
-                <div class="bodycontent3">
+                <div class="quote-content">
                     <div class="quote">
-                        <img class="quoteimage" src="<?php echo get_template_directory_uri(); ?>/images/quote.png" alt="rightlogo"/>
-                        <p>
-                            <span>PARAMOUNT</span> SIGNIFICANTLY REDUCED 
-                            MY TAX BILL. THEIR CONSTANT COMMUNICATION 
-                            AND EXPERTISE MADE THE TAX APPEAL PROCESS PAINLESS FOR ME. 
-                            <br />
-                            <span class="personquote">– GEORGE MAYER, COASTLINE EQUITY</span>
-                        </p>
+                        <img class="quoteimage" src="images/quote.png" alt="rightlogo"/>
+                        <h1><span>PARAMOUNT</span> SIGNIFICANTLY REDUCED MY TAX BILL. THEIR CONSTANT COMMUNICATION AND EXPERTISE MADE THE TAX APPEAL PROCESS PAINLESS FOR ME. </h1>
+                        <h3>– GEORGE MAYER<span>,</span> COASTLINE EQUITY</h3>
                     </div>
-
-                    <div class="sumbitbox2">
-                        <div class="submitbox2text">
-                            PROPERTY<br />
-                            TAX<br />
-                            REDUCTION
-                            <br />
-                            <br />
-                            <br />
-                            <h3><i>FEASIBILITY<br /> STUDY</i></h3>
+                    <div class="submitbox submitbox-bottom">
+                        <h1>PROPERTY TAX REDUCTION</h1>
+                        <p>Feasibility Study</p>
+                        <form>
                             <input type="text" name="name" value="name" />
                             <input type="text" name="email" value="email" />
                             <input type="text" name="phone" value="phone" />
-                            <img class="submitbutton2" src="<?php echo get_template_directory_uri(); ?>/images/submitbutton.png" width="199" height="36" alt="submitbutton"/>
-                            <span>[ No Cost ]</span> 
+                            <input id="submitbox-submit" type="submit">         
+                        </form> 
+                        <span>[No Cost]</span>          
+                    </div>
+                </div>
+            </div><!-- HOME BACKGROUND -->
+            <div class="center">
+                <footer>
+                    <nav>
+                        <ul>
+                            <li><a href = "#">home</a></li>
+                            <li><a href = "#">about us</a></li>
+                            <li><a href = "#">services</a></li>
+                            <li><a href = "#">success stories</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href = "#">blog</a></li>
+                            <li><a href = "#">free evaluation</a></li>
+                            <li><a href = "#">contact us</a></li>
+                            <br />
+                            <li> </li>
+                        </ul>
+                    </nav> 
+                    <div class="blogfeed">
+                        <span>LATEST BLOG FEED</span>
+                        <div class="blogbox">
+                            <ul>
+                                <li><a href="#">Cool title for a blog post.</a></li>
+                                <li><a href="#">Another cool title for a blog post.</a></li>
+                                <li><a href="#">This is a short blog post.</a></li>
+                                <li><a href="#">Blogging is good for SEO.</a></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="footer">
-                <div class="bottomnav">
-                    <ul>
-                        <li><a href = "#">home</a></li>
-                        <li><a href = "#">about us</a></li>
-                        <li><a href = "#">services</a></li>
-                        <li><a href = "#">success stories</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href = "#">blog</a></li>
-                        <li><a href = "#">free evaluation</a></li>
-                        <li><a href = "#">contact us</a></li>
-                        <br />
-                        <li> </li>
-                    </ul>
-                </div> 
-
-                <div class="blogfeed">
-                    <h2>LATEST BLOG FEED</h2>
-                    <div class="blogbox">
-
+                    <div class="social-icons social-icons-bottom">                  
+                        <ul>
+                            <li class="soc-1"><a href="#"></a></li>
+                            <li class="soc-2"><a href="#"></a></li>
+                            <li class="soc-3"><a href="#"></a></li>
+                            <li class="soc-4"><a href="#"></a></li>
+                        </ul>                   
                     </div>
-                </div>
-
-                <div class="rightfootercontent">
-                    <ul><!-- DON'T FORGET THE ANIMATED CLASSES BELLOW! -->
-                        <li><img class="face" src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" width="35" height="37" alt="facebook"/></li>
-                        <li><img class="twit" src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" width="35" height="37" alt="facebook"/></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/pintrest.png" alt="pintrest"/></li>
-                        <li><img class="link" src="<?php echo get_template_directory_uri(); ?>/images/linkedin.png" width="35" height="37" alt="facebook"/></li>
-                    </ul>
-                    <h4>sign up for our news letter</h4>
-                    <form class="form2">
-                        <input class="bottomemail" type="text" value="email" />
-                        <input class="bottomsubmit" type="submit" value="" />
-                    </form>
-                    <img class="bottomphoneinfo" src="<?php echo get_template_directory_uri(); ?>/images/phoneinfo.png" width="164" height="22" alt="phoneinfo"/>
-                </div>
-                <div class="bottomtexture"></div>
+                    <div class="signup signup-bottom">
+                        <form>
+                            <p>Sign up for our newsletter</p>
+                            <input type="text" value="email">
+                            <input id="signup-button" type="submit">
+                        </form>
+                    </div>
+                    <img class="phone-bottom" src="images/phoneinfo.png">                    
+                </footer>
             </div>
+        </div><!-- CANVAS -->
     </body>
 </html>
