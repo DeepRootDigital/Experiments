@@ -336,6 +336,7 @@ header nav ul li a:hover{
     height: 143px;
     background-image: url('images/appeal.png');
     background-repeat: no-repeat;
+    overflow:hidden;
 }
 
 
@@ -345,6 +346,7 @@ header nav ul li a:hover{
     float: right;
     height: 289px;
     width: 340px;
+    overflow:hidden;
 }
 
 
@@ -355,18 +357,7 @@ header nav ul li a:hover{
     height: 140px;
     margin-top: 4px;
     width: 314px;
-}
-
-.representbluebox {
-    float: left;
-    width: 160px;
-    height: 53px;
-    background-image: url('images/representbluebox.png');
-    opacity: .7;
-    color: #fff;
-    font-family:'Fenice ITC W01 Bold';
-    font-size: 24px;
-    text-align: center;
+    overflow:hidden;
 }
 
 .evaluate {
@@ -376,6 +367,7 @@ header nav ul li a:hover{
     height: 116px;
     margin-top: 2px;
     width: 475px;
+    overflow:hidden;
 }
 
 .engage {
@@ -385,6 +377,7 @@ header nav ul li a:hover{
     height: 115px;
     margin-top: 1px;
     width: 480px;
+    overflow:hidden;
 }
 
 /***********************************
