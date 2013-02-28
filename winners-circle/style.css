@@ -237,31 +237,33 @@ nav ul li ul li:hover img{
     border-bottom: 1px solid #FFFFFF;
     box-shadow: 0 1px 0 #D0D0D0;
     height: 100px;
-    width: 185px;
+    width: 186px;
 }
 
 .tour-contact > img {
     margin: 6px 0 0 22px;
 }
 
-.tour-contact-dropdown{
-    background: url("images/drop-down-form.png") no-repeat scroll 0 0 transparent;
-    height: 0px;
-    width: 185px;
-    float: left;
-}
+
 
 .tour-contact-bottom {
     background: url("images/logo-bg-bottom.png") no-repeat scroll 0 0 transparent;
     height: 60px;
-    width: 185px;
+    width: 186px;
     float: left;
+    cursor: pointer;
 }
 
 .tour-contact-bottom > img {
     margin: 10px 0 0 22px;
 }
 
+.tour-contact-dropdown{
+    background: url("images/drop-down-form.png") no-repeat scroll 0 0 transparent;
+    height: 0px;
+    width: 186px;
+    float: left;
+}
 
 .tour-contact-dropdown form {
     margin: 20px 0 0 55px;
@@ -276,6 +278,17 @@ nav ul li ul li:hover img{
     margin: 0 0 14px;
 }
 
+
+#contact-dropdown-submit {
+    background: url("images/drop-down-form-submit.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 9px;
+    left: 23px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 262px;
+    width: 149px;
+}
 
 
 
@@ -295,12 +308,15 @@ nav ul li ul li:hover img{
 ***      HOME OPTIONS
 *******************************************/
 
-
-
 .home-options {
     background: url("images/home-layout-bg.jpg") repeat-x scroll 0 0 transparent;
     border-top: 1px solid #6B8172;
     height: 290px;
+    position: relative;
+}
+
+.home-option-img{
+
 }
 
 .home-option-img ul{
@@ -321,33 +337,130 @@ nav ul li ul li:hover img{
 
 
 
+
 .home-option-select ul {
-    margin: 190px 0 0 115px;
+    left: 120px;
+    position: absolute;
+    top: 143px;
 }
+
+
 
 
 .home-option-select li {
     float: left;
+    height: 105px;
     list-style: none outside none;
-    margin: 0 142px 0 0;
+    margin: 0px 20px 0 -99px;
+    padding: 58px 50px 0 0;
     text-align: center;
     text-transform: lowercase;
-}
-
-.home-option-select li:last-child {
-    margin-right: 0;
-}
-
-.home-option-select a{
+    width: 255px;
     color: #f7941d;
     text-decoration: none;
     font-family: Soho W01 Medium;
     font-size: 20px;
+    cursor: pointer;
+}
+
+
+.home-option-select li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.home-option-select a{
+
 }
 
 .home-option-select span {
     color: #FFFFFF;
     font-family: Soho W01 Light;
+}
+
+/******************************************
+***      HOME OPTIONS: TWO BEDROOM
+*******************************************/
+
+.two-bedroom {
+    left: 70px;
+    position: absolute;
+    top: 49px;
+}
+
+
+.two-bedroom ul {
+    float: left;
+    list-style: none outside none;
+    margin: 0 30px 0 0;
+}
+
+
+.two-bedroom li {
+    background: url("images/green-dotted-border.png") repeat-x scroll 0 20px transparent;
+    color: #FFFFFF;
+    font-size: 14px;
+    height: 20px;
+    padding: 1px 0 2px;
+    text-shadow: 0 -1px 1px #475C4E;
+    text-transform: uppercase;
+    width: 147px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear; 
+}
+.two-bedroom li:last-child{
+    background: none;
+}
+
+.two-bedroom li:hover{
+    color: #f7941d;
+}
+
+.two-bedroom a{
+    color: #FFFFFF;
+}
+
+
+.two-bedroom-img1 {
+    background: url("images/home-select-img-bg.jpg") repeat scroll 0 0 transparent;
+    height: 117px;
+    left: 370px;
+    position: absolute;
+    top: -10px;
+    width: 236px;
+}
+
+
+.two-bedroom-img1 > img {
+    margin: 4px 0 0 5px;
+}
+
+
+.two-bedroom-img2 {
+    background: url("images/home-select-img-bg.jpg") repeat scroll 0 0 transparent;
+    height: 117px;
+    left: 625px;
+    position: absolute;
+    top: -10px;
+    width: 236px;
+}
+
+.two-bedroom-img2 > img {
+    margin: 4px 0 0 5px;
+}
+
+/******************************************
+***      HOME OPTIONS JQUERY CLASSES
+*******************************************/
+.bedroom-select {
+    background: url("images/home-layout-fold.jpg") no-repeat scroll 0px 16px, url("images/home-layout-arrow.png") no-repeat scroll 119px 110px transparent;
+}
+
+.active-bedroom-select {
+    background: url("images/home-layout-fold.jpg") no-repeat scroll 0px 16px, url("images/home-layout-arrow.png") no-repeat scroll 119px 110px transparent;
 }
 
 /******************************************

@@ -49,7 +49,7 @@
 							<input type="text" name="email" value="email">
 							<input type="text" name="phone" value="phone">
 							<input type="text" name="date" value="date/time">
-							<input type="submit" value="submit" name="submit">
+							<input type="submit" value="submit" name="submit" id="contact-dropdown-submit">
 						</form>
 					</div>
 					<div class="tour-contact-bottom">
@@ -68,13 +68,31 @@
 					</ul>
 					<div class="clear"></div>
 				</div>
+				<div class="two-bedroom">
+					<ul>
+						<li>Colonel John</li>
+						<li>Jalpur</li>
+						<li>Java Gold</li>
+					</ul>
+					<ul>
+						<li>Man O' War</li>
+						<li>Native Dancer</li>
+					</ul>
+					<div class="clear"></div>
+					<div class="two-bedroom-img1">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/home-select-img.jpg">
+					</div>
+					<div class="two-bedroom-img2">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/home-select-img.jpg">
+					</div>
+				</div>
 				
 				<div class ="home-option-select">
 					<ul>
-						<li><a href="#">One<br><span>Bedroom</span></a></li>
-						<li><a href="#">Two<br><span>Bedroom</span></a></li>
-						<li><a href="#">Three<br><span>Bedroom</span></a></li>
-						<li><a href="#">1 <span>&amp;</span> 2 floor<br><span>options</span></a></li>
+						<li class="bed-one">One<br><span>Bedroom</span></li>
+						<li class="bed-two">Two<br><span>Bedroom</span></li>
+						<li class="bed-three">Three<br><span>Bedroom</span></li>
+						<li class="bed-floors">1 <span>&amp;</span> 2 floor<br><span>options</span></li>
 					</ul>
 				</div>
 				<div class="clear"></div>
