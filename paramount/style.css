@@ -1,7 +1,21 @@
+/*
+Theme Name: Paramount
+Theme URI: http://businessonmarketst.com
+Description: Website 
+Author: Business On Market St.
+Version: 1.0
+Tags: Paramount, Taxes
+*/
 
+/* =Reset default browser CSS. 
+-------------------------------------------------------------- */
 body {
     background: none repeat scroll 0 0 #F0F3F6;
     font-family: Helvetica Neue;
+}
+
+img {
+    border:none;
 }
 
 .center{
@@ -102,10 +116,6 @@ header nav ul li {
     line-height: 74px;
     margin: 0;
     padding: 0 15px;
-}
-
-header nav ul li:first-of-type {
-    border: none;
 }
 
 header nav ul li:last-of-type {
@@ -535,6 +545,10 @@ footer nav ul li a {
 
 footer nav ul li a:hover {
     color: #154174;
+}
+
+.menu-footer-menu-container {
+    float:left;
 }
 
 /***********************************
