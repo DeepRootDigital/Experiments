@@ -25,7 +25,7 @@
         <div class="center home-bg">
             <header>
                 <nav>
-                    <ul>
+                    <ul style="float:left; margin-left:-20px; margin-bottom:0px; padding-left:0px;">
                         <li><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/homeimage.png"></a></li>
                     </ul>
                     <?php wp_nav_menu(array('theme_location' => 'Header Nav',)); ?>

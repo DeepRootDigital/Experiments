@@ -1,7 +1,7 @@
 $(function () {
 	$('.connect .bluebox').hover(
 		function () {
-			$(this).css( "background-color","#fe9400" );
+			$(this).css( "background-color","#f69400" );
 			$(this).find('.blueboxcontent').show();
 			$(this).animate({
 				"width":  "283px",
@@ -22,7 +22,7 @@ $(function () {
 		})
 	$('.appeal .bluebox').hover(
 		function () {
-			$(this).css( "background-color","#fe9400" );
+			$(this).css( "background-color","#f69400" );
 			$(this).find('.blueboxcontent').show();
 			$(this).animate({
 				"width":  "314px",
@@ -43,7 +43,7 @@ $(function () {
 		})
 	$('.refund .bluebox').hover(
 		function () {
-			$(this).css( "background-color","#fe9400" );
+			$(this).css( "background-color","#f69400" );
 			$(this).find('.blueboxcontent').show();
 			$(this).animate({
 				"width":  "340px",
@@ -64,7 +64,7 @@ $(function () {
 		})
 	$('.represent .bluebox').hover(
 		function () {
-			$(this).css( "background-color","#fe9400" );
+			$(this).css( "background-color","#f69400" );
 			$(this).find('.blueboxcontent').show();
 			$(this).animate({
 				"width":  "314px",
@@ -85,7 +85,7 @@ $(function () {
 		})
 	$('.evaluate .bluebox').hover(
 		function () {
-			$(this).css( "background-color","#fe9400" );
+			$(this).css( "background-color","#f69400" );
 			$(this).find('.blueboxcontent').show();
 			$(this).animate({
 				"width":  "475px",
@@ -106,7 +106,7 @@ $(function () {
 		})
 	$('.engage .bluebox').hover(
 		function () {
-			$(this).css( "background-color","#fe9400" );
+			$(this).css( "background-color","#f69400" );
 			$(this).find('.blueboxcontent').show();
 			$(this).animate({
 				"width":  "475px",

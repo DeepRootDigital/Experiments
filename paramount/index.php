@@ -18,37 +18,37 @@
     <div class="connect">
         <div class="bluebox">Connect
             <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</div>
+                tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
             </div>
         </div>
         <div class="appeal">
             <div class="bluebox">Appeal
                 <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</div>
+                    tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
                 </div>
             </div>
             <div class="refund">
                 <div class="bluebox">Refund
                     <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</div>
+                        tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
                     </div>
                 </div>
                 <div class="represent">
                     <div class="bluebox">Represent
                         <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</div>
+                            tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
                         </div>
                     </div>
                     <div class="evaluate">
                         <div class="bluebox">Evaluate
                             <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</div>
+                                tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
                             </div>
                         </div>
                         <div class="engage">
                             <div class="bluebox">Engage
                                 <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.</div>
+                                    tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
                                 </div>
                             </div>
                         </div>

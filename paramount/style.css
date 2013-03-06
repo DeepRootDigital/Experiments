@@ -12,6 +12,7 @@ Tags: Paramount, Taxes
 body {
     background: none repeat scroll 0 0 #F0F3F6;
     font-family: Helvetica Neue;
+    margin-top:14px;
 }
 
 img {
@@ -40,12 +41,12 @@ img {
 
 
 .logo {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 24px;
 }
 
 
 .phone {
-    left: 535px;
+    left: 545px;
     position: absolute;
     top: 38px;
 }
@@ -62,7 +63,7 @@ img {
     color: #88898C;
     font-family: arial;
     font-size: 11px;
-    margin: 15px 0 7px 3px;
+    margin: 15px 0 8px 9px;
     text-transform: uppercase;
 }
 
@@ -75,6 +76,7 @@ img {
     height: 30px;
     width: 200px;
     padding: 0 0 0 7px;
+    color:rgb(148, 148, 148);
 }
 
 #signup-button {
@@ -83,7 +85,7 @@ img {
     left: 205px;
     position: absolute;
     text-indent: -9999px;
-    top: 36px;
+    top: 37px;
     width: 33px;
     cursor: pointer;
 }
@@ -100,7 +102,7 @@ img {
 
 
 header nav ul li img {
-    left: 42px;
+    left: 22px;
     position: absolute;
     top: 29px;
 }
@@ -140,7 +142,7 @@ header nav ul li a:hover{
 ************************************/
 
 .topsocialmedia {
-    left: 766px;
+    left: 745px;
     position: absolute;
     top: -16px;
 }
@@ -152,10 +154,9 @@ header nav ul li a:hover{
 
 .social-icons li{
     float: left;
-    padding-left: 2px;
+    padding-left: 10px;
     width: 40px;
     height: 50px;
-    opacity: 0.5;
 }
 
 .social-icons li:hover{
@@ -205,7 +206,7 @@ header nav ul li a:hover{
 
 .slider {
     float: left;
-    margin: 20px 0 0 20px;
+    margin: 0 0 0 20px;
 }
 
 
@@ -214,12 +215,11 @@ header nav ul li a:hover{
 ************************************/
 .submitbox-top{
     margin-right: 22px;
-    margin-top: 20px;
     float: right;
 }
 
 .submitbox-bottom{
-    
+
 }
 
 
@@ -260,10 +260,10 @@ header nav ul li a:hover{
 .submitbox form {
     left: 30px;
     position: absolute;
-    top: 190px;
+    top: 184px;
     width: 200px;
+    margin-left:-6px;
 }
-
 
 
 
@@ -274,11 +274,12 @@ header nav ul li a:hover{
     float: left;
     font-family: arial;
     font-size: 12px;
-    height: 28px;
+    height: 30px;
     margin-bottom: 5px;
     margin-top: 5px;
     padding: 0 0 0 6px;
     width: 202px;
+    color:rgb(148, 148, 148);
 }
 
 #submitbox-submit{
@@ -315,8 +316,8 @@ header nav ul li a:hover{
 .connect {
     float: left;
     width: 293px;
-    height: 288px;
-    padding-right: 5px;
+    height: 287px;
+    margin-right: 3px;
     background-image: url('images/connect.png');
     background-repeat: no-repeat;
     overflow: hidden;
@@ -332,28 +333,39 @@ header nav ul li a:hover{
     background-repeat: repeat;
     background-size: auto auto;
     font-family:'Fenice ITC W01 Bold';
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 20px;
     font-size: 22px; 
     float: left;
     height: 43px;
-    opacity: 0.7;
-    width: 150px;
+    opacity: 0.8;
+    width: 140px;
     color: #fff;
+    overflow:hidden;
 }
 
 .blueboxcontent {
-    font-size:12px;
-    font-family:georgia;
+    font-size:16px;
+    font-family:Helvetica;
+    line-height:19px;
     display:none;
+    max-width:80%;
 }
+
+.blueboxcontent .readmore {
+    padding-left:0px;
+}
+
+.blueboxcontent .readmore a {
+    color:#000;
+    font-style:italic;
+    }
 
 
 .appeal {
     float: left;
     width: 314px;
-    height: 143px;
+    height: 144px;
     background-image: url('images/appeal.png');
-    background-repeat: no-repeat;
     overflow:hidden;
 }
 
@@ -362,8 +374,8 @@ header nav ul li a:hover{
     background-image: url("images/refund.png");
     background-repeat: no-repeat;
     float: right;
-    height: 289px;
-    width: 340px;
+    height: 287px;
+    width: 342px;
     overflow:hidden;
 }
 
@@ -373,7 +385,7 @@ header nav ul li a:hover{
     background-repeat: no-repeat;
     float: left;
     height: 140px;
-    margin-top: 4px;
+    margin-top: 3px;
     width: 314px;
     overflow:hidden;
 }
@@ -383,18 +395,17 @@ header nav ul li a:hover{
     background-repeat: no-repeat;
     float: left;
     height: 116px;
-    margin-top: 2px;
-    width: 475px;
+    margin-top: 3px;
+    width: 473px;
     overflow:hidden;
 }
 
 .engage {
     background-image: url("images/engage.png");
-    background-repeat: no-repeat;
     float: right;
-    height: 115px;
-    margin-top: 1px;
-    width: 480px;
+    height: 116px;
+    margin-top: 3px;
+    width: 479px;
     overflow:hidden;
 }
 
@@ -519,7 +530,6 @@ footer {
 }
 
 footer nav {
-    float: left;
     margin-left: 22px;
     font-family:'GrotesqueMTW01-Condense';
     color: #9d9d9d;
@@ -590,6 +600,7 @@ footer nav ul li a:hover {
     position: absolute;
     top: 0;
     width: 260px;
+    font-family:helvetica;
 }
 
 
@@ -597,6 +608,7 @@ footer nav ul li a:hover {
     border-bottom: 1px dotted #CCCCCC;
     margin: 0 0 5px;
     padding: 0 0 5px;
+    font-size:14px;
 }
 
 .blogbox li:last-of-type{
@@ -766,11 +778,310 @@ footer nav ul li a:hover {
     padding-right: 15px;
     color: #5c5c5c;
     font-size: 13px;
-    font-family: Helvetica Neue;
+    font-family: Helvetica;
+    font-size:14px;
     line-height: 19px;
 }
 
 /***********************************
-**  BLOG
+**  FULL WIDTH
 ************************************/
 
+.service-fullwidth {
+    float: left;
+    width: 950px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.service-fullwidth .personalproperty {
+    float: left;
+    width: 950px;
+    height: 240px;
+    background-image: url('images/personalbluebox.png');
+    background-repeat: no-repeat;
+}
+
+/***********************************
+**  BLOG SUMMARY
+************************************/
+
+.blog-post {
+    width:958px;
+    height:238px;
+    margin-left:20px;
+    font-size:10px;
+    color:#6d6d6d;
+    font-family:Helvetica;
+}
+
+.blog-post .left-col {
+    width:300px;
+    float:left;
+}
+.blog-post .right-col {
+    width:637px;
+    float:right;
+}
+
+.blog-title {
+    background-image:url('images/blogbluebar.png');
+    width:300px;
+    height:52px;
+    font-family: 'GrotesqueMTW01-Condense';
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.blog-title h1 {
+    font-size:30px;
+    font-weight:normal;
+    text-decoration: none;
+    margin-left:68px;
+    padding-top:10px;
+}
+
+.post-title h2 {
+    font-size:30px;
+    font-weight:normal;
+    color:#5c5c5c;
+    font-family: 'GrotesqueMTW01-Condense';
+    text-transform: uppercase;
+    margin-top:8px;
+}
+
+.post-title h3 {
+    font-size:30px;
+    font-weight:normal;
+    color:#5c5c5c;
+    font-family: 'GrotesqueMTW01-Condense';
+    text-transform: uppercase;
+    margin-top:8px;
+}
+
+.date {
+    font-size:12px;
+    font-family: Helvetica Neue;
+    color:#9d9d9d;
+}
+
+.author {
+    color:#9d9d9d;
+    font-size:18px;
+    font-family: 'GrotesqueMTW01-Condense';
+    text-transform: uppercase;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.comments {
+    background-image:url('images/orangecommentsbox.png');
+    width:9px;
+    height:15px;
+    font-family: 'GrotesqueMTW01-Condense';
+    font-size:10px;
+    color:#58585a;
+    padding-left:4px;
+    float:left;
+    margin-right:10px;
+}
+
+.share {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.blog-post .line {
+    background: url("images/blog-line.png");
+    width:100%;
+    height:2px;
+    margin-top:14px;
+    margin-bottom:7px;
+    float:left;
+}
+
+.post-thumbnail {
+    width:638px;
+    height:200px;
+    overflow:hidden;
+}
+
+.post-thumbnail img {
+    width:638px;
+    height:200px;
+    -webkit-filter: grayscale(100%);  
+}
+
+.post-thumbnail .overlay {
+    position:absolute;
+    width:245px;
+    height:200px;
+    background-image:url('images/blog-texture.png');
+    background-color:#133a67;
+    opacity:.8;
+    z-index:1000;
+}
+
+.post-thumbnail .overlay p {
+    color:#fff;
+    opacity:1;
+    padding-left:20px;
+    padding-right:20px;
+    font-size:12px;
+    font-family:Helvetica;
+}
+
+.readmore {
+    color:#f69100;
+    font-size:16px;
+    font-family: 'GrotesqueMTW01-Condense';
+    opacity:1;
+    padding-left:20px;
+    text-transform:lowercase;
+}
+
+.readmore a {
+    color:#f69100;
+    text-decoration: none;
+}
+
+.readmore img {
+    width:auto;
+    height:auto;
+    margin-right:10px;
+}
+
+/***********************************
+**  SINGLE BLOG PAGE
+************************************/
+.single-post-left-col {
+    float:left;
+    width:300px;
+    margin-left:25px;
+}
+
+.single-post-right-col {
+    float:right;
+    width:638px;
+    margin-right:25px;
+    margin-top:20px;
+}
+
+.blog-list h2 {
+    width:236px;
+    height:38px;
+    background-image:url('images/blogbluebar.png');
+    color:#fff;
+    font-family: 'GrotesqueMTW01-Condense';
+    color:#fff;
+    text-transform: uppercase;
+    padding-left:64px;
+    padding-top:14px;
+    font-weight:normal;
+}
+
+.cntr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:5px;
+}
+
+.mini-post {
+    font-size:10px;
+    color:#6d6d6d;
+    font-family:Helvetica;
+}
+
+.mini-post .line {
+    background: url("images/blog-line.png");
+    width:100%;
+    height:2px;
+    margin-top:14px;
+    margin-bottom:7px;
+    float:left;
+}
+
+.personalpropertytext .line {
+    background: url("images/blog-line.png");
+    width:100%;
+    height:2px;
+    float:left;
+}
+
+/***********************************
+**  COMMENTS
+************************************/
+
+.comment-col {
+    margin-top:10px;
+    width:576px;
+    float:left;
+}
+
+.comment-col form input[type=text] {
+    background-color: transparent;
+    background-image: url("images/submitinputs.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    box-shadow: none;
+    height: 30px;
+    width: 200px;
+    padding: 0 0 0 7px;
+}
+
+.comment-col form textarea {
+    background-color: transparent;
+    background-image: url("images/textarea.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    box-shadow: none;
+    height: 160px;
+    width: 572px;
+    padding-left:4px;
+    font-family:helvetica;
+    margin-top:9px;
+    resize: none; 
+}
+
+.comment-col form input[type=image] {
+    float:right;
+    margin-bottom:10px;
+}
+
+.comment-list ul {
+    list-style:none;
+    padding:0px;
+    margin:0px;
+    float:left;
+}
+
+.comment-list ul li {
+    float:left;
+    border-bottom:1px solid #154174;
+    width:100%;
+}
+
+.comment-info {
+    width:200px;
+    vertical-align:top;
+    margin-top:10px;
+    font-size:10px;
+    font-family:helvetica;
+    color:#6d6d6d;
+}
+
+.comment-info img {
+    float:left;
+    padding-right:20px;
+}
+
+.comment-data {
+    float:left;
+    width:100%;
+}
+
+.comment-data p {
+    padding:0px;
+    font-size:13px;
+}
