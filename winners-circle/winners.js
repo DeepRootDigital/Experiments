@@ -1,51 +1,89 @@
 $(document).ready(function(){
 	$('.tour-contact-dropdown form').fadeOut();
+	$(".one-bedroom").fadeOut();
 	$(".two-bedroom").fadeOut();
+	$(".three-bedroom").fadeOut();
+	$(".four-bedroom").fadeOut();
 	$(".tour-contact-bottom").click(function(){
 		$(this).fadeOut(500, function(){		
 		});
 		$('.tour-contact-dropdown').delay(100).animate({
-			height: '185'
+			height: '190'
 		},1200);
 		$('.tour-contact-dropdown form').fadeIn(2500, function(){
 
 		});
 	});
-	// $(".home-option-select li").mouseover(function(){
-	// 	$(this).addClass("bedroom-select");
-	// });
-	// $(".home-option-select li").mouseout(function(){
-	// 	$(this).removeClass("bedroom-select");
-	// });
 
-	// $(".bed-two").click(function(){
-	// 	$(".home-option-img").toggle();
-	// 	$(".two-bedroom").toggle();
-	// 	if ($(".bed-two").is(':visible')){
-	// 		$(".home-option-select li:nth-child(2)").addClass('bedroom-select');
-	// 	} else {$(".home-option-select li:nth-child(2)").removeClass('bedroom-select');}
-	// });
+	$(".bed-one").click(function(){
+		$(".one-bedroom").fadeIn(600);
+		$(".two-bedroom").fadeOut(600);
+		$(".three-bedroom").fadeOut(600);
+		$(".four-bedroom").fadeOut(600);
+		$(".home-option-img").fadeOut(600);
+		$(".home-option-select li:nth-child(2)").removeClass('bedroom-select');
+		$(".home-option-select li:nth-child(3)").removeClass('bedroom-select');
+		$(".home-option-select li:nth-child(4)").removeClass('bedroom-select');
+		if ($(".bed-one").hasClass('bedroom-select') === true){
+			$(".home-option-select li:nth-child(1)").removeClass('bedroom-select');		
+			$(".home-option-img").fadeIn(600);	
+			$(".one-bedroom").fadeOut(600);
+		} else {$(".home-option-select li:nth-child(1)").addClass('bedroom-select');}
+	});
 
 	$(".bed-two").click(function(){
-		$(".home-option-img").toggle();
-		$(".two-bedroom").toggle();
+		$(".one-bedroom").fadeOut(600);
+		$(".two-bedroom").fadeIn(600);
+		$(".three-bedroom").fadeOut(600);
+		$(".four-bedroom").fadeOut(600);
+		$(".home-option-img").fadeOut(600);
+		$(".home-option-select li:nth-child(1)").removeClass('bedroom-select');
+		$(".home-option-select li:nth-child(3)").removeClass('bedroom-select');
+		$(".home-option-select li:nth-child(4)").removeClass('bedroom-select');
 		if ($(".bed-two").hasClass('bedroom-select') === true){
 			$(".home-option-select li:nth-child(2)").removeClass('bedroom-select');
+			$(".home-option-img").fadeIn(600);
+			$(".two-bedroom").fadeOut(600);	
 		} else {$(".home-option-select li:nth-child(2)").addClass('bedroom-select');}
+	});
+
+	$(".bed-three").click(function(){
+		$(".one-bedroom").fadeOut(600);
+		$(".two-bedroom").fadeOut(600);
+		$(".three-bedroom").fadeIn(600);
+		$(".four-bedroom").fadeOut(600);
+		$(".home-option-img").fadeOut(600);
+		$(".home-option-select li:nth-child(1)").removeClass('bedroom-select');
+		$(".home-option-select li:nth-child(2)").removeClass('bedroom-select');
+		$(".home-option-select li:nth-child(4)").removeClass('bedroom-select');
+		if ($(".bed-three").hasClass('bedroom-select') === true){
+			$(".home-option-select li:nth-child(3)").removeClass('bedroom-select');
+			$(".home-option-img").fadeIn(600);
+			$(".three-bedroom").fadeOut(600);	
+		} else {$(".home-option-select li:nth-child(3)").addClass('bedroom-select');}
+	});
+
+	$(".bed-four").click(function(){
+		$(".one-bedroom").fadeOut(600);
+		$(".two-bedroom").fadeOut(600);
+		$(".three-bedroom").fadeOut(600);
+		$(".four-bedroom").fadeIn(600);
+		$(".home-option-img").fadeOut(600);
+		$(".home-option-select li:nth-child(1)").removeClass('bedroom-select');
+		$(".home-option-select li:nth-child(2)").removeClass('bedroom-select');
+		$(".home-option-select li:nth-child(3)").removeClass('bedroom-select');
+		if ($(".bed-four").hasClass('bedroom-select') === true){
+			$(".home-option-select li:nth-child(4)").removeClass('bedroom-select');
+			$(".home-option-img").fadeIn(600);
+			$(".four-bedroom").fadeOut(600);	
+		} else {$(".home-option-select li:nth-child(4)").addClass('bedroom-select');}
+	});
+
+	$(".one-bedroom").mouseOver(function(){
+		
 	});
 });
 
 
-// $(document).ready(function(){
-// 	$(".tour-contact-bottom").click(
-// 	    function () {
-// 	       $(".tour-contact-dropdown").toggle("slow")
-// 	    $(this).css({
-//             'display': 'none'
-//         });
-//         $(".tour-contact-dropdown form").css({
-//         	'display': 'block'
-//         });
-//     });
-// });
+
 

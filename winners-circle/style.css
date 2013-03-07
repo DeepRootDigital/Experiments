@@ -382,21 +382,21 @@ nav ul li ul li:hover img{
 ***      HOME OPTIONS: TWO BEDROOM
 *******************************************/
 
-.two-bedroom {
+.home-option-content {
     left: 70px;
     position: absolute;
     top: 49px;
 }
 
 
-.two-bedroom ul {
+.home-option-content ul {
     float: left;
     list-style: none outside none;
     margin: 0 30px 0 0;
 }
 
 
-.two-bedroom li {
+.home-option-content li {
     background: url("images/green-dotted-border.png") repeat-x scroll 0 20px transparent;
     color: #FFFFFF;
     font-size: 14px;
@@ -411,18 +411,23 @@ nav ul li ul li:hover img{
     -o-transition:      all 0.2s linear; 
     transition:         all 0.2s linear; 
 }
-.two-bedroom li:last-child{
+.home-option-content li:last-child{
     background: none;
 }
 
-.two-bedroom li:hover{
+.home-option-content li:hover{
     color: #f7941d;
 }
 
-.two-bedroom a{
+.home-option-content a{
     color: #FFFFFF;
 }
 
+
+.home-option-content img {
+    height: 109px;
+    width: 226px;
+}
 
 .two-bedroom-img1 {
     background: url("images/home-select-img-bg.jpg") repeat scroll 0 0 transparent;
@@ -619,12 +624,19 @@ footer {
 
 
 
+
+
 .blog-widget li {
+    background: url("images/footer-blog-dotted-border.png") repeat-x scroll 0 1px transparent;
     list-style: none outside none;
-    margin: 0;
     overflow: hidden;
+    padding: 5px 0;
     text-align: center;
     width: 180px;
+}
+
+.blog-widget li:first-of-type {
+    background: none;
 }
 
 .blog-widget a {
@@ -632,10 +644,10 @@ footer {
     font-family: georgia;
     font-size: 13.5px;
     text-decoration: none;
-    -webkit-transition: all 0.2s linear; 
-    -moz-transition:    all 0.2s linear; 
-    -o-transition:      all 0.2s linear; 
-    transition:         all 0.2s linear; 
+    -webkit-transition: all 0.1s linear; 
+    -moz-transition:    all 0.1s linear; 
+    -o-transition:      all 0.1s linear; 
+    transition:         all 0.1s linear; 
 }
 
 .blog-widget a:hover{
@@ -646,14 +658,6 @@ footer {
 .blog-widget p {
     text-shadow: 0 -1px 0 #483A35;
 }
-
-.dotted-line {
-    color: #362B26;
-    font-size: 8px;
-    letter-spacing: 1px;
-    text-shadow: 0 1px 0 #766761;
-}
-
 
 .social-media-widget {
 }

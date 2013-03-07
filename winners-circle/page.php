@@ -18,7 +18,7 @@
 					<ul>
 						<li><a href="#">Apartment Homes</a>
 							<ul>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">Features</a></li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">eatures</a></li>
 								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">Floor plans/Model Home</a></li>
 								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">Gallery</a></li>
 								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">Web Specials</a></li>
