@@ -21,18 +21,11 @@ function main_theme_options_do_page() {
             <?php settings_fields('main_options'); ?>
             <?php $mainoptions = get_option('main_theme_options'); ?>
             <table class="form-table">
-                <th><h3>Page Options</h3></th>
-                <tr valign="top">
-                    <td>Blog Page URL</td>
-                    <td>
-                        <input type="text" size="36" name="main_theme_options[blogpageurl]" value="<?php esc_attr_e($mainoptions['blogpageurl']); ?>" />
-                    </td>
-                </tr>
                 <th><h3>Sharing Options</h3></th>
                 <tr valign="top">
-                    <td>Youtube URL</td>
+                    <td>Linkedin URL</td>
                     <td>
-                        <input type="text" size="36" name="main_theme_options[youtubeurl]" value="<?php esc_attr_e($mainoptions['youtubeurl']); ?>" />
+                        <input type="text" size="36" name="main_theme_options[linkedinurl]" value="<?php esc_attr_e($mainoptions['linkedinurl']); ?>" />
                     </td>
                 </tr>
                 <tr valign="top">

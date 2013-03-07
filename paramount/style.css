@@ -344,20 +344,23 @@ header nav ul li a:hover{
 }
 
 .blueboxcontent {
-    font-size:16px;
+    margin-top:5px;
+    font-size:13px;
     font-family:Helvetica;
     line-height:19px;
     display:none;
     max-width:80%;
+    color:#303030;
 }
 
 .blueboxcontent .readmore {
     padding-left:0px;
+    padding-top:10px;
+    text-transform: uppercase;
 }
 
 .blueboxcontent .readmore a {
-    color:#000;
-    font-style:italic;
+    color:#fff;
     }
 
 
@@ -723,15 +726,12 @@ footer nav ul li a:hover {
     top: 45px;
 }
 
-
-
 .service-list ul li {
     background: url("images/service-left-col-border.png") repeat-x scroll 0 40px transparent;
     height: 22px;
     margin-left: 10px;
     padding: 10px 30px 10px 40px;
-    width: 180px;
-}
+    }
 
 .service-list ul li:last-of-type {
     background: none;

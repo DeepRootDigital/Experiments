@@ -1,4 +1,5 @@
  <footer>
+    <?php $mainoptions = get_option('main_theme_options'); ?>
     <nav>
         <?php wp_nav_menu(array('theme_location' => 'Footer Nav Left',)); ?>
         <?php wp_nav_menu(array('theme_location' => 'Footer Nav Right',)); ?>
@@ -7,19 +8,22 @@
         <span>LATEST BLOG FEED</span>
         <div class="blogbox">
             <ul>
-                <li><a href="#">Cool title for a blog post.</a></li>
-                <li><a href="#">Another cool title for a blog post.</a></li>
-                <li><a href="#">This is a short blog post.</a></li>
-                <li><a href="#">Blogging is good for SEO.</a></li>
+                <?php
+$footerPosts = new WP_Query();
+$footerPosts->query('showposts=4');
+while ($footerPosts->have_posts()) : $footerPosts->the_post();
+    ?>
+                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+            <?php endwhile; ?>
             </ul>
         </div>
     </div>
     <div class="social-icons social-icons-bottom">                  
         <ul>
-            <li class="soc-1"><a href="#"></a></li>
-            <li class="soc-2"><a href="#"></a></li>
-            <li class="soc-3"><a href="#"></a></li>
-            <li class="soc-4"><a href="#"></a></li>
+            <li class="soc-1"><a href="<?php echo $mainoptions['facebookurl'] ?>"></a></li>
+            <li class="soc-2"><a href="<?php echo $mainoptions['twitterurl'] ?>"></a></li>
+            <li class="soc-3"><a href="<?php echo $mainoptions['pinteresturl'] ?>"></a></li>
+            <li class="soc-4"><a href="<?php echo $mainoptions['linkedinurl'] ?>"></a></li>
         </ul>                   
     </div>
     <div class="signup signup-bottom">

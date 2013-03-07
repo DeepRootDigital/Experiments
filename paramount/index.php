@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php $homepageoptions =  get_option('sample_theme_options'); ?>
 <div class="slider">
     <img src="<?php echo get_template_directory_uri(); ?>/images/slider1.png">
 </div>
@@ -16,62 +17,43 @@
 <div class="clear"></div>
 <div class="info-box">
     <div class="connect">
-        <div class="bluebox">Connect
-            <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
+        <div class="bluebox"><?php echo $homepageoptions['p1title'] ?>
+            <div class="blueboxcontent"><?php echo $homepageoptions['p1text'] ?><br/><span class="readmore"><a href="<?php echo $homepageoptions['p1link'] ?>">Read More</a></span></div>
             </div>
         </div>
         <div class="appeal">
-            <div class="bluebox">Appeal
-                <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
+            <div class="bluebox"><?php echo $homepageoptions['p2title'] ?>
+                <div class="blueboxcontent"><?php echo $homepageoptions['p2text'] ?><br/><span class="readmore"><a href="<?php echo $homepageoptions['p2link'] ?>">Read More</a></span></div>
                 </div>
             </div>
             <div class="refund">
-                <div class="bluebox">Refund
-                    <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
+                <div class="bluebox"><?php echo $homepageoptions['p3title'] ?>
+                    <div class="blueboxcontent"><?php echo $homepageoptions['p3text'] ?><br/><span class="readmore"><a href="<?php echo $homepageoptions['p3link'] ?>">Read More</a></span></div>
                     </div>
                 </div>
                 <div class="represent">
-                    <div class="bluebox">Represent
-                        <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
+                    <div class="bluebox"><?php echo $homepageoptions['p4title'] ?>
+                        <div class="blueboxcontent"><?php echo $homepageoptions['p4text'] ?><br/><span class="readmore"><a href="<?php echo $homepageoptions['p4link'] ?>">Read More</a></span></div>
                         </div>
                     </div>
                     <div class="evaluate">
-                        <div class="bluebox">Evaluate
-                            <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
+                        <div class="bluebox"><?php echo $homepageoptions['p5title'] ?>
+                            <div class="blueboxcontent"><?php echo $homepageoptions['p5text'] ?><br/><span class="readmore"><a href="<?php echo $homepageoptions['p5link'] ?>">Read More</a></span></div>
                             </div>
                         </div>
                         <div class="engage">
-                            <div class="bluebox">Engage
-                                <div class="blueboxcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.<br/><span class="readmore"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></span></div>
+                            <div class="bluebox"><?php echo $homepageoptions['p6title'] ?>
+                                <div class="blueboxcontent"><?php echo $homepageoptions['p6text'] ?><br/><span class="readmore"><a href="<?php echo $homepageoptions['p6link'] ?>">Read More</a></span></div>
                                 </div>
                             </div>
                         </div>
                         <div class="clear"></div>
                         <div class="home-content">
                             <div class="lefttext">
-                                <h2>how are we different?</h2>
-                                <p>We pride our selves on our team of experts who are here to service your needs 
-                                    and provide the results you deserve. Property tax appeal is just the first 
-                                    step, our goal is to build a long term relationship with you by servicing all 
-                                    of your real estate needs. We work on a Performance Based Fee, which means 
-                                    that if we don’t save you anything, you pay nothing. Or if you prefer, we 
-                                    will work on an hourly fee basis or flat rate fee.</p>
-                                    <h2>who is paramount?</h2>
-                                    <p>Paramount is more than a commercial brokerage firm. Our Property Tax Appeal 
-                                        Division specializes in reducing secured and unsecured property tax liabilities. 
-                                        Our staff, which includes former supervising county appraisers and senior brokers,
-                                        has helped reduce the tax burden in over 10,000 transactions. When property taxes
-                                        account for 20% – 30% of building owners operating expenses the reduced burden is
-                                        significant. The Tax Appeal process is very complex and time consuming, but with
-                                        Paramount on your side you’ll save time, money and effort by receiving professional
-                                        representation and an appraisal that uses multiple approaches to property valuation
-                                        for the Assessment Appeals Board.</p>
+                                <h2><?php echo $homepageoptions['hp1title'] ?></h2>
+                                <p><?php echo $homepageoptions['hp1text'] ?></p>
+                                    <h2><?php echo $homepageoptions['hp2title'] ?></h2>
+                                    <p><?php echo $homepageoptions['hp2text'] ?></p>
                                     </div>
                                     <div class="rightlogo">
                                         <img src="<?php echo get_template_directory_uri(); ?>/images/rightlogo.png">
@@ -81,8 +63,8 @@
                                 <div class="quote-content">
                                     <div class="quote">
                                         <img class="quoteimage" src="<?php echo get_template_directory_uri(); ?>/images/quote.png" alt="rightlogo"/>
-                                        <h1><span>PARAMOUNT</span> SIGNIFICANTLY REDUCED MY TAX BILL. THEIR CONSTANT COMMUNICATION AND EXPERTISE MADE THE TAX APPEAL PROCESS PAINLESS FOR ME. </h1>
-                                        <h3>– GEORGE MAYER<span>,</span> COASTLINE EQUITY</h3>
+                                        <h1><?php echo $homepageoptions['quotetext'] ?></h1>
+                                        <h3><?php echo $homepageoptions['quoteauthor'] ?></h3>
                                     </div>
                                     <div class="submitbox submitbox-bottom">
                                         <h1>PROPERTY TAX REDUCTION</h1>
