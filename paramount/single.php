@@ -2,7 +2,9 @@
 <div class="single-post-data">
     <div class="single-post-left-col">
         <div class="blog-list">
-            <h2>Blog</h2>
+            <div class="blog-title">
+                <h1>Blog</h1>
+            </div>
             <div class="mini-post">
                 <div class="post-title">
                     <h3><?php the_title(); ?></h3>

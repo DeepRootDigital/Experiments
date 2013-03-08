@@ -15,13 +15,17 @@ body {
     margin-top:14px;
 }
 
+* {
+    outline:none;
+}
+
 img {
     border:none;
 }
 
 .center{
-	width: 1000px;
-	margin: 0 auto;
+    width: 1000px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -54,7 +58,7 @@ img {
 
 .signup {
     float: right;
-    margin: 0 40px 0 0;
+    margin: 0 57px 0 0;
     position: relative;
 }
 
@@ -85,7 +89,7 @@ img {
     left: 205px;
     position: absolute;
     text-indent: -9999px;
-    top: 37px;
+    top: 36px;
     width: 33px;
     cursor: pointer;
 }
@@ -125,7 +129,7 @@ header nav ul li:last-of-type {
 }
 
 
-header nav ul li a{
+header nav ul li a {
     color: #154174;
     text-decoration: none;
     text-transform: uppercase;
@@ -137,6 +141,45 @@ header nav ul li a:hover{
     color: #c8c8c8;
 }
 
+header nav ul li ul {
+    display:none;
+    width:236px;
+    background-image:url('images/dropdown.png');
+    position:absolute;
+    border-left:1px solid #154174;
+    padding:0px;
+    margin-top:-30px;
+    height:auto;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:-16px;
+}
+
+header nav ul li:hover ul {
+    display:block;
+    float:left;
+}
+
+header ul li ul li {
+    float:left;
+    padding:0px;
+    width:210px;
+    border-bottom:1px dotted #ccc;
+    border-left:none;
+    border-right:none;
+    height:30px;
+    margin-left:10px;
+    line-height:29px;
+}
+
+header ul li ul li a {
+    color:#58585a;
+    float:left;
+}
+
+header ul li ul li a:hover {
+    color:#154174;
+}
 /***********************************
 ** SOCIAL ICONS
 ************************************/
@@ -361,7 +404,7 @@ header nav ul li a:hover{
 
 .blueboxcontent .readmore a {
     color:#fff;
-    }
+}
 
 
 .appeal {
@@ -573,6 +616,7 @@ footer nav ul li a:hover {
     width: 300px;
     height: 170px;
     font-family:'GrotesqueMTW01-Condense';
+    margin-top:10px;
 }
 
 
@@ -609,8 +653,8 @@ footer nav ul li a:hover {
 
 .blogbox li {
     border-bottom: 1px dotted #CCCCCC;
-    margin: 0 0 5px;
-    padding: 0 0 5px;
+    margin: 0 0 7px;
+    padding: 0 0 7px;
     font-size:14px;
 }
 
@@ -620,6 +664,7 @@ footer nav ul li a:hover {
 
 .blogbox li:hover{
     color: #154174;
+    font-style:italic;
 }
 
 .blogbox a{
@@ -650,14 +695,14 @@ footer nav ul li a:hover {
 
 
 .signup-bottom {
-    margin: 30px 40px 0 0;
+    margin: 40px 53px 0 0;
 }
 
 
 .phone-bottom {
-    left: 755px;
+    left: 812px;
     position: absolute;
-    top: 120px;
+    top: 128px;
 }
 
 /***********************************
@@ -675,7 +720,7 @@ footer nav ul li a:hover {
 
 .sub-bg{
     background-image: url("images/subpage-bg.png");
-    box-shadow: 0 0 8px -3px #000000;
+    box-shadow: 0px 0px 12px -6px #000000;
     position: relative;
     width: 1000px;
     z-index: 0;
@@ -687,7 +732,7 @@ footer nav ul li a:hover {
 ************************************/
 
 .service-data {
-    padding: 25px 0 0;
+    padding: 1px 0 0;
 }
 
 .service-left-col {
@@ -706,24 +751,26 @@ footer nav ul li a:hover {
 .service-list h2 {
     color: #FFFFFF;
     font-family: 'GrotesqueMTW01-Condense';
-    font-size: 30px;
+    font-size: 26px;
     font-weight: normal;
     left: 70px;
     position: absolute;
     text-transform: uppercase;
-    top: -15px;
+    top: -9px;
+    letter-spacing:-1px;
 }
 
 
 .service-list ul {
     color: #7A7A7C;
     font-family: 'GrotesqueMTW01-Condense';
-    font-size: 18px;
+    font-size: 17px;
     left: -28px;
     list-style-type: none;
     position: absolute;
     text-transform: uppercase;
     top: 45px;
+    letter-spacing: .1em;
 }
 
 .service-list ul li {
@@ -731,16 +778,17 @@ footer nav ul li a:hover {
     height: 22px;
     margin-left: 10px;
     padding: 10px 30px 10px 40px;
-    }
+}
 
 .service-list ul li:last-of-type {
     background: none;
 }
 .service-list ul li a:hover {
-    border-left: 3px solid;
+    border-left: 3px solid #7A7A7C;
     margin: 0 0 0 -11px;
     padding: 0 0 0 8px;
     position: relative;
+    color:#154174;
 }
 
 .service-list ul li a{ 
@@ -806,6 +854,10 @@ footer nav ul li a:hover {
 **  BLOG SUMMARY
 ************************************/
 
+.blog-data {
+    margin-top:-15px;
+}
+
 .blog-post {
     width:958px;
     height:238px;
@@ -834,11 +886,12 @@ footer nav ul li a:hover {
 }
 
 .blog-title h1 {
-    font-size:30px;
+    font-size:26px;
     font-weight:normal;
     text-decoration: none;
     margin-left:68px;
-    padding-top:10px;
+    padding-top:15px;
+    letter-spacing:-1px;    
 }
 
 .post-title h2 {
@@ -848,6 +901,7 @@ footer nav ul li a:hover {
     font-family: 'GrotesqueMTW01-Condense';
     text-transform: uppercase;
     margin-top:8px;
+    margin-bottom:10px;
 }
 
 .post-title h3 {
@@ -857,16 +911,18 @@ footer nav ul li a:hover {
     font-family: 'GrotesqueMTW01-Condense';
     text-transform: uppercase;
     margin-top:8px;
+    margin-bottom:10px;
 }
 
 .date {
     font-size:12px;
     font-family: Helvetica Neue;
     color:#9d9d9d;
+    line-height:17px;
 }
 
 .author {
-    color:#9d9d9d;
+    color:#c2c2c2;
     font-size:18px;
     font-family: 'GrotesqueMTW01-Condense';
     text-transform: uppercase;
@@ -909,7 +965,9 @@ footer nav ul li a:hover {
 .post-thumbnail img {
     width:638px;
     height:200px;
-    -webkit-filter: grayscale(100%);  
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
 
 .post-thumbnail .overlay {
@@ -917,7 +975,7 @@ footer nav ul li a:hover {
     width:245px;
     height:200px;
     background-image:url('images/blog-texture.png');
-    background-color:#133a67;
+    background-color:rgb(38, 83, 129);
     opacity:.8;
     z-index:1000;
 }
@@ -929,6 +987,7 @@ footer nav ul li a:hover {
     padding-right:20px;
     font-size:12px;
     font-family:Helvetica;
+    line-height: 17px;
 }
 
 .readmore {
@@ -954,37 +1013,49 @@ footer nav ul li a:hover {
 /***********************************
 **  SINGLE BLOG PAGE
 ************************************/
+
+.single-post-data {
+    margin-top:-18px;
+
+}
+
 .single-post-left-col {
     float:left;
     width:300px;
-    margin-left:25px;
+    margin-left:20px;
 }
 
 .single-post-right-col {
     float:right;
     width:638px;
-    margin-right:25px;
+    margin-right:21px;
+    margin-top:20px;
+}
+
+.blog-list {
     margin-top:20px;
 }
 
 .blog-list h2 {
-    width:236px;
     height:38px;
     background-image:url('images/blogbluebar.png');
     color:#fff;
     font-family: 'GrotesqueMTW01-Condense';
     color:#fff;
     text-transform: uppercase;
-    padding-left:64px;
-    padding-top:14px;
+    padding-left:68px;
+    padding-top:15px;
     font-weight:normal;
+    margin-bottom:0px;
+    font-size:26px;
+    letter-spacing:-1px; 
 }
 
 .cntr {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:75px;
     padding-top:5px;
+    float:left;
+    margin-right:100px;
 }
 
 .mini-post {
@@ -1026,8 +1097,10 @@ footer nav ul li a:hover {
     border: medium none;
     box-shadow: none;
     height: 30px;
-    width: 200px;
-    padding: 0 0 0 7px;
+    width: 187px;
+    margin-left:-1px;
+    color:#939393;
+    padding-left:15px;
 }
 
 .comment-col form textarea {
@@ -1036,12 +1109,14 @@ footer nav ul li a:hover {
     background-repeat: no-repeat;
     border: medium none;
     box-shadow: none;
-    height: 160px;
-    width: 572px;
-    padding-left:4px;
+    height: 150px;
+    width: 560px;
+    padding-left:15px;
     font-family:helvetica;
     margin-top:9px;
     resize: none; 
+    color:#939393;
+    padding-top:10px;
 }
 
 .comment-col form input[type=image] {
