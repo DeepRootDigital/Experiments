@@ -51,7 +51,9 @@ body{
     position: relative;
 }
 
-
+.clear{
+    clear: both;
+}
 
 .canvas {
     box-shadow: 0 5px 52px -31px #000000;
@@ -732,4 +734,240 @@ footer {
     left: 910px;
     position: absolute;
     top: 10px;
+}
+
+/******************************************
+***      SUBPAGE
+*******************************************/
+
+
+
+.sub-content {
+    background: url("images/content-bg.png") repeat scroll 0 0 transparent;
+    border-radius: 0 0 5px 5px;
+    padding: 0 0 50px;
+    position: relative;
+}
+
+.sub-page-data {
+    margin: 0 0 0 70px;
+    padding: 20px 0 0;
+    position: relative;
+    width: 870px;
+}
+
+/******************************************
+***      SUBPAGE LEFT CONTENT
+*******************************************/
+
+
+.sub-left {
+    width: 650px;
+    float: left;
+}
+
+.sub-left section{
+    border-bottom: 1px solid #D3D2CC;
+    box-shadow: 0 1px 0 0 #FFFFFF;
+    height: 240px;
+}
+
+.sub-left h2 {
+    background: url("images/green-pattern-border.png") repeat-x scroll 0 30px transparent;
+    color: #F7941D;
+    font-family: Soho W01 Bold;
+    font-size: 20px;
+    font-style: normal;
+    padding: 0 0 25px;
+    text-transform: lowercase;
+}
+
+.sub-left h2 span{
+    font-family: Soho W01 Light;
+    color: #5b4942;
+}
+
+.sub-left-text {
+    width: 410px;
+    float: left;
+    position: relative;
+}
+
+
+
+.sub-left-text > h2 {
+    padding: 0 0 25px 40px;
+}
+
+
+.sub-left-text > img {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+
+
+.sub-left-text > p {
+    color: #707070;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.sub-left-features {
+    float: left;
+    margin: 0 0 0 20px;
+    width: 220px;
+}
+
+.sub-left-features ul{
+
+}
+
+.sub-left-features > li {
+    background: url("images/key-features-arrow.png") no-repeat scroll 0 7px transparent;
+    height: 40px;
+    list-style: none outside none;
+    padding: 0 0 20px 15px;
+    width: 200px;
+}
+
+
+.sub-left-features a {
+    color: #56705F;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+.floor-plan {
+    position: relative;
+}
+
+
+
+.floor-plan h2 {
+    background: url("images/green-pattern-vertical-border.png") repeat-x scroll 0 3px transparent;
+    color: #F7941D;
+    font-family: Soho W01 Medium;
+    font-size: 25px;
+    font-style: normal;
+    left: -215px;
+    padding: 10px 0 0;
+    position: absolute;
+    text-shadow: 1px 0 0 #FFFFFF;
+    text-transform: uppercase;
+    top: 241px;
+    width: 460px;
+    -webkit-transform:  rotate(90deg);
+    -moz-transform:     rotate(90deg);
+    -ms-transform:      rotate(90deg);
+    -o-transform:       rotate(90deg);
+    transform:          rotate(90deg);
+}
+
+
+.floor-plan > img {
+    margin: 30px 0 0 60px;
+}
+
+/******************************************
+***      SUBPAGE RIGHT CONTENT
+*******************************************/
+
+.sub-right{
+    width: 200px;
+    float: right;
+    position: relative;
+}
+
+
+
+
+.sub-right > img {
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px -1px #000000;
+    left: 0;
+    position: absolute;
+    top: -30px;
+}
+
+
+.sub-page-list {
+    background: url("images/sub-page-list-bg.png") repeat scroll 0 0 transparent;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px -1px #000000;
+    margin: 170px 0 0;
+    padding: 15px 0 20px;
+    width: 200px;
+}
+
+.sub-page-list ul:first-of-type{
+    margin-top: 0px; 
+}
+
+.sub-page-list ul {
+    margin: -60px 0 0 15px;
+    width: 160px;
+}
+
+
+
+
+.sub-page-list li {
+    background: url("images/green-dotted-border.png") repeat-x scroll 0 25px transparent;
+    height: 27px;
+    list-style: none outside none;
+}
+
+
+
+
+.sub-page-list li:first-of-type {
+    background: url("images/sub-list-double-underline.png") repeat-x scroll 0 23px transparent;
+    color: #F7941D;
+    font-family: Soho W01 Medium;
+    font-size: 16px;
+    font-style: normal;
+    height: 22px;
+    padding: 0 0 4px;
+    position: relative;
+    text-transform: lowercase;
+}
+
+
+.sub-page-list li:first-of-type span {
+    color: #ffffff;
+    font-family: Soho W01 Light;
+}
+
+
+.sub-page-list img {
+    position: absolute;
+    right: 0;
+    top: -6px;
+}
+
+.sub-page-list li:last-of-type{
+    background: none;
+}
+
+.sub-page-list a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear;
+}
+
+.sub-page-list a:hover{
+    color: #F7941D;
+}
+
+.list-shadow {
+    background: url("images/sub-page-list-shade-bg.png") repeat-x scroll 0 0 transparent;
+    height: 85px;
 }

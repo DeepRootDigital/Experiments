@@ -59,121 +59,67 @@
 					</div>
 				</div>
 			</header>
-			<div class="slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slide1.jpg"></div>
-			<div class="home-options">
-				<div class="home-option-img">
-					<ul>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/bedroom1.png"></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/bedroom2.png"></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/bedroom3.png"></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/bedroom4.png"></li>
-					</ul>
+			<div class="slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slide2.jpg"></div>
+			<div class="sub-content">
+				<div class="sub-page-data">
+					<div class="sub-left">
+						<section>
+							<div class="sub-left-text">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/house-icon-small.png">
+								<h2>Churchill Downs</h2>
+								<p>Lorem ipsum dolor sit amet, essent postulant ea ius, ut idque invidunt quo. Dicunt neglegentur ei usu, magna numquam at mel. Dico voluptatum eos at.<br><br>Ne sed primis deseruisse, tation habemus corrumpit in nam, eu legere possit principes. Lorem ipsum dolor sit amet, essent postulant ea ius, ut idque invidunt quo. </p>
+							</div>
+							<div class="sub-left-features">
+								<h2>Key <span>Features</span></h2>
+								<li><a href="#">Lorem ipsum dolor sit amet, essent postulant ea ius.</a></li>
+								<li><a href="#">Dicunt neglegentur ei usu, magna numquam at mel.</a></li>
+								<li><a href="#">Unum deterruisset et vel, no omnesque vituperatoribus has,</a></li>
+							</div>
+						</section>
+						<div class="floor-plan">
+							<h2>Floorplan</h2>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/floor-plan.png">
+						</div>
+					</div>				
+					<div class="sub-right">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/one-month-free.png">
+						<div class="sub-page-list">
+							<ul>
+								<li>One <span>Bedroom</span><img src="<?php echo get_template_directory_uri(); ?>/images/house1-small.png"></li>
+								<li><a href="#">Bermardini</a></li>
+								<li><a href="#">Birdstone</a></li>
+							</ul>
+							<div class="list-shadow"></div>
+							<ul>
+								<li>Two <span>Bedroom</span><img src="<?php echo get_template_directory_uri(); ?>/images/house2-small.png"></li>
+								<li><a href="#">Colonel John</a></li>
+								<li><a href="#">Jalpur</a></li>
+								<li><a href="#">Java Gold</a></li>
+								<li><a href="#">Man O’ War</a></li>
+								<li><a href="#">Native Dancer</a></li>
+							</ul>
+							<div class="list-shadow"></div>
+							<ul>
+								<li>Three <span>Bedroom</span><img src="<?php echo get_template_directory_uri(); ?>/images/house3-small.png"></li>
+								<li><a href="#">Sea Hero</a></li>
+								<li><a href="#">Street Sense</a></li>
+								<li><a href="#">Sword Dancer</a></li>
+							</ul>
+							<div class="list-shadow"></div>
+							<ul>
+								<li>1 & 2 <span>Floor</span><img src="<?php echo get_template_directory_uri(); ?>/images/house4-small.png"></li>
+								<li><a href="#">The Belmont</a></li>
+								<li><a href="#">Churchill Downs</a></li>
+								<li><a href="#">Pimlico</a></li>
+							</ul>	
+						</div>
+					</div>
 					<div class="clear"></div>
-				</div>
-				<div class="one-bedroom home-option-content">
-					<ul>
-						<li>1 Colonel John</li>
-						<li>Jalpur</li>
-						<li>Java Gold</li>
-					</ul>
-					<ul>
-						<li>Man O' War</li>
-						<li>Native Dancer</li>
-					</ul>
-					<div class="clear"></div>
-					<div class="two-bedroom-img1">
-						<img src="<?php echo $slideroptions['p2img'] ?>">
-					</div>
-					<div class="two-bedroom-img2">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home-select-img.jpg">
-					</div>
-				</div>
-				<div class="two-bedroom home-option-content">
-					<ul>
-						<li>2 Colonel John</li>
-						<li>Jalpur</li>
-						<li>Java Gold</li>
-					</ul>
-					<ul>
-						<li>Man O' War</li>
-						<li>Native Dancer</li>
-					</ul>
-					<div class="clear"></div>
-					<div class="two-bedroom-img1">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home-select-img.jpg">
-					</div>
-					<div class="two-bedroom-img2">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home-select-img.jpg">
-					</div>
-				</div>
-				<div class="three-bedroom home-option-content">
-					<ul>
-						<li>3 Colonel John</li>
-						<li>Jalpur</li>
-						<li>Java Gold</li>
-					</ul>
-					<ul>
-						<li>Man O' War</li>
-						<li>Native Dancer</li>
-					</ul>
-					<div class="clear"></div>
-					<div class="two-bedroom-img1">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home-select-img.jpg">
-					</div>
-					<div class="two-bedroom-img2">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home-select-img.jpg">
-					</div>
-				</div>
-				<div class="four-bedroom home-option-content">
-					<ul>
-						<li>4 Colonel John</li>
-						<li>Jalpur</li>
-						<li>Java Gold</li>
-					</ul>
-					<ul>
-						<li>Man O' War</li>
-						<li>Native Dancer</li>
-					</ul>
-					<div class="clear"></div>
-					<div class="two-bedroom-img1">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home-select-img.jpg">
-					</div>
-					<div class="two-bedroom-img2">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/home-select-img.jpg">
-					</div>
-				</div>
-				
-				<div class ="home-option-select">
-					<ul>
-						<li class="bed-one">One<br><span>Bedroom</span></li>
-						<li class="bed-two">Two<br><span>Bedroom</span></li>
-						<li class="bed-three">Three<br><span>Bedroom</span></li>
-						<li class="bed-four">1 <span>&amp;</span> 2 floor<br><span>options</span></li>
-					</ul>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="home-content">
-				<div class="home-col-1 home-col">
-					<h2><?php echo $homepageoptions['p1title'] ?></h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/content-underline.png">
-					<p><?php echo $homepageoptions['p1text'] ?></p>
-					<a href="<?php echo $homepageoptions['p1link']?>">Learn <em>more</em><img src="<?php echo get_template_directory_uri(); ?>/images/learn-more-arrow.png"></a>
-				</div>
-				<div class="home-col-2 home-col">
-					<h2><?php echo $homepageoptions['p2title'] ?></h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/content-underline.png">
-					<p><?php echo $homepageoptions['p2text'] ?></p>
-					<a href="<?php echo $homepageoptions['p2link']?>">Learn <em>more</em><img src="<?php echo get_template_directory_uri(); ?>/images/learn-more-arrow.png"></a>
-				</div>
-				<div class="home-col-3 home-col">
-					<h2><?php echo $homepageoptions['p3title'] ?></h2>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/content-underline.png">
-					<p><?php echo $homepageoptions['p3text'] ?></p>
-					<a href="<?php echo $homepageoptions['p3link']?>">Learn <em>more</em><img src="<?php echo get_template_directory_uri(); ?>/images/learn-more-arrow.png"></a>
 				</div>
 			</div>
+			<div class="clear"></div>			
 		</div><!-- END Canvas -->
+		<div class="clear"></div>
 		<footer>
 			<div class="center">
 				<div class="widgets-container">
