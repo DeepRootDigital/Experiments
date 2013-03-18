@@ -29,7 +29,7 @@ while ($footerPosts->have_posts()) : $footerPosts->the_post();
     <div class="signup signup-bottom">
         <form>
             <p>Sign up for our newsletter</p>
-            <input type="text" value="email">
+            <input type="text" onfocus="if(this.value == 'email') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'email'; }" value="email">
             <input id="signup-button" type="submit">
         </form>
     </div>

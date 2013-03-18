@@ -7,7 +7,7 @@
             </div>
             <div class="mini-post">
                 <div class="post-title">
-                    <h3><?php the_title(); ?></h3>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                 </div>
                 <div class="post-meta">
                     <span class="date"><?php echo get_the_date('F j, Y'); ?><br/>
@@ -25,7 +25,7 @@
                 ?>
                 <div class="mini-post" style="opacity:.7;">   
                     <div class="post-title">
-                        <h3><?php the_title(); ?></h3>
+                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     </div>
                     <div class="post-meta">
                         <span class="date"><?php echo get_the_date('F j, Y'); ?><br/>
@@ -40,12 +40,15 @@
                 <img class="cntr" src="<?php echo get_template_directory_uri(); ?>/images/clickformoreblogs.png">
             </div>
         </div>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="single-post-right-col">
             <div class="personalproperty">
-
+                <h1><?php the_title(); ?></h1> 
+                <?php if ( has_post_thumbnail() ) {
+                    the_post_thumbnail();
+                }  ?>
             </div>
             <div class="personalpropertytext">
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php the_content(); ?>
                 <div class="line"></div>
                 <?php comments_template(); ?>
@@ -59,32 +62,3 @@
 </div><!-- HOME BACKGROUND -->  
 <div class="center">
     <?php get_footer();?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

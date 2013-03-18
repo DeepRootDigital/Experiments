@@ -112,7 +112,7 @@ function theme_options_do_page() {
                 <tr>
                     <td>
                         Panel Text:
-                        <textarea id="sample_theme_options[p2text]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[p2text]"><?php echo esc_textarea($options['p1text']); ?></textarea></td>
+                        <textarea id="sample_theme_options[p2text]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[p2text]"><?php echo esc_textarea($options['p2text']); ?></textarea></td>
                 </tr>
                 <tr valign="top">
                     <td>Panel Link:
@@ -272,7 +272,6 @@ function theme_options_validate($input) {
     $input['sometext'] = wp_filter_nohtml_kses($input['sometext']);
     // Our select option must actually be in our array of select options
     // Say our textarea option must be safe text with the allowed tags for posts
-    $input['sometextarea'] = wp_filter_post_kses($input['sometextarea']);
     return $input;
 }
 ?>

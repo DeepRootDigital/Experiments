@@ -1,15 +1,16 @@
 <?php get_template_part('header', 'sub'); ?>
 <div class="service-data">
     <div class="service-left-col">
-        <div class="service-list">
+          <div class="service-list">
             <h2>Services</h2>   
             <ul>
-                <li><a href="#">Service Number One</a></li>
-                <li><a href="#">REAL PROPERTY</a></li>
-                <li><a href="#">PERSONAL PROPERTY</a></li>
-                <li><a href="#">SERVICE NUMBER THREE</a></li>
-                <li><a href="#">SERVICE NUMBER FOUR</a></li>
-                <li><a href="#">SERVICE NUMBER FIVE</a></li>
+                <?php
+                $ServicePosts = new WP_Query();
+                $ServicePosts->query('showposts=6&post_type=Services');
+                while ($ServicePosts->have_posts()) : $ServicePosts->the_post();
+                ?>
+                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> 
+                <?php endwhile; ?>               
             </ul>
         </div>
     </div>
@@ -30,7 +31,6 @@
 </div><!-- HOME BACKGROUND -->
 <div class="center">
     <?php get_footer();?>
-
 
 
 

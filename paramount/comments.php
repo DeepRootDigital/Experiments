@@ -1,7 +1,7 @@
 <div class="comment-col">
 <form action="<?php echo site_url(); ?>/wp-comments-post.php" method="post">
-    <input name="author" value="name" size="22" tabindex="1" type="text">
-    <input name="email" value="email" size="22" tabindex="2" type="text">
+    <input onfocus="if(this.value == 'name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'name'; }" name="author" value="name" size="22" tabindex="1" type="text">
+    <input onfocus="if(this.value == 'email') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'email'; }" name="email" value="email" size="22" tabindex="2" type="text">
     <textarea name="comment" tabindex="4">message</textarea>
     <input name="submit" tabindex="5" value="Submit Comment" type="image" src="<?php echo get_template_directory_uri(); ?>/images/blogsubmitbutton.png">
     <input name="comment_post_ID" value="1" type="hidden">

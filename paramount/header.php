@@ -7,9 +7,11 @@
  <script type="text/javascript" src="http://fast.fonts.com/jsapi/7fae6fe2-5b59-4099-96aa-619fda1b22d5.js"></script>
  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/overlays.js"></script>
+ <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/slider.js"></script>
 </head>
 <body>
     <?php get_template_part('compile','style'); ?>
+    <?php $mainoptions = get_option('main_theme_options'); ?>
     <div class="canvas">
         <div class="center">
             <a href="<?php echo site_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></a>

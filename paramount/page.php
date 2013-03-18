@@ -14,10 +14,13 @@
             </ul>
         </div>
     </div>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="service-right-col">
         <div class="personalproperty">
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <p><?php the_title();?></p>                     
+            <h1><?php the_title(); ?></h1> 
+            <?php if ( has_post_thumbnail() ) {
+                    the_post_thumbnail();
+                }  ?>                  
         </div>
         <div class="personalpropertytext">
             <?php the_content(); ?>

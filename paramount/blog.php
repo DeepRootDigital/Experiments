@@ -15,7 +15,7 @@ while ($blogPosts->have_posts()) : $blogPosts->the_post();
             </div>
             <?php } ?>
             <div class="post-title">
-                <h2><?php the_title(); ?></h2>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             </div>
             <div class="post-meta">
                 <span class="date"><?php echo get_the_date('F j, Y'); ?><br/>
@@ -25,7 +25,7 @@ while ($blogPosts->have_posts()) : $blogPosts->the_post();
                 <div class="comments"><?php comments_number( '0', '1', '%' ); ?></div> COMMENTS
                 <img class="share" src="<?php echo get_template_directory_uri(); ?>/images/sharethisorangebox.png"> SHARE THIS</div>
                 <div class="right-col">
-                    <div class="post-thumbnail" <?php if ($counter === 0){ ?>style="margin-top:20px;"<?php } else { ?> style="margin-top:8px;" <?php } ?>>
+                    <div class="post-thumbnail" <?php if ($counter === 0){ ?>style="margin-top:17px;"<?php } else { ?> style="margin-top:8px;" <?php } ?>>
                         <div class="overlay">
                             <p><?php the_excerpt(); ?></p>
                             <div class="readmore"><a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/dotted-arrow.png">Read More</a></div>

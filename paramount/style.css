@@ -250,6 +250,24 @@ header ul li ul li a:hover {
 .slider {
     float: left;
     margin: 0 0 0 20px;
+    width:688px;
+    height:403px;
+    overflow:hidden;
+    position:relative;
+}
+
+.slider ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+.slider ul li {
+    position:absolute;
+}
+
+.slider ul li img {
+    width:688px;
 }
 
 
@@ -530,6 +548,7 @@ header ul li ul li a:hover {
     letter-spacing: -2px;
     line-height: 46px;
     margin: 42px 0 0;
+    text-transform: uppercase;
 }
 
 
@@ -547,6 +566,7 @@ header ul li ul li a:hover {
     letter-spacing: 0;
     position: absolute;
     top: 275px;
+    text-transform: uppercase;
 }
 
 .quote h3 span {
@@ -805,9 +825,29 @@ footer nav ul li a:hover {
 .personalproperty {
     float: right;
     width: 638px;
-    height: 200px;
-    background-image: url('images/personalbluebox.png');
     background-repeat: no-repeat;
+    min-height:60px;
+}
+
+.personalproperty img {
+    max-width:638px;
+    width:638px;
+    height:auto;
+}
+
+.personalproperty h1 {
+    min-height:46px;
+    min-width:257px;
+    background-image:url('images/blue-text.png');
+    font-family:'Fenice ITC W01 Bold';
+    font-weight:normal;
+    font-size:25px;
+    margin:0px;
+    position:absolute;
+    color:#fff;
+    letter-spacing: 2px;
+    padding-top:6px;
+    padding-left:15px;
 }
 
 .personalproperty p {
@@ -892,6 +932,11 @@ footer nav ul li a:hover {
     margin-left:68px;
     padding-top:15px;
     letter-spacing:-1px;    
+}
+
+.post-title a {
+    color:inherit;
+    text-decoration: none;
 }
 
 .post-title h2 {
@@ -1090,6 +1135,21 @@ footer nav ul li a:hover {
     float:left;
 }
 
+.comment-col p {
+    float:left;
+    margin-top:5px;
+    color:#58585a;
+    font-family:arial;
+    font-size:12px;
+    padding-left:10px;
+}
+
+.comment-col p a {
+    color:#154174;
+    font-weight:bold;
+    text-decoration: none;
+}
+
 .comment-col form input[type=text] {
     background-color: transparent;
     background-image: url("images/submitinputs.png");
@@ -1159,4 +1219,59 @@ footer nav ul li a:hover {
 .comment-data p {
     padding:0px;
     font-size:13px;
+}
+/* Contact Page */
+
+.contact-data {
+    width:100%;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:1px;
+}
+
+.contact-data-left-col {
+    float: left;
+    width: 300px;
+    height: 415px;
+    background-image: url('images/contactcontentimage.png');
+    background-repeat: no-repeat;
+}
+
+.contact-data-left-col ul {
+    margin:0px;
+    padding:0px;
+    margin-top:60px;
+    list-style: none;
+    font-size:17px;
+    color:#58585a;
+    font-family: 'GrotesqueMTW01-Condense';
+    padding-left:60px;
+    padding-right:30px;
+}
+
+.contact-data-left-col ul li {
+    padding-top:10px;
+    padding-bottom:10px;
+    text-transform: uppercase;
+}
+
+.contact-data-left-col ul li b {
+    color:#517094;
+    display:block;
+    font-weight: normal;
+}
+
+.contact-data-right-col {
+    float:right;
+    width:637px;
+    margin-right:25px;
+}
+
+.contact-line {
+    float:left;
+    background-image:url('images/blogfeed-line.png');
+    height:1px;
+    width:638px;
+    margin-left:-20px;
+    margin-bottom:15px;
 }

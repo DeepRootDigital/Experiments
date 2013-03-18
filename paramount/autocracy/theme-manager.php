@@ -46,18 +46,15 @@ function main_theme_options_do_page() {
                         <input type="text" size="36" name="main_theme_options[pinteresturl]" value="<?php esc_attr_e($mainoptions['pinteresturl']); ?>" />
                     </td>
                 </tr>
-                <th><h3>Header Options</h3></th>
-            <tr valign="top">
-                    <td>Header Subtitle</td>
-                    <td>
-                        <input type="text" size="36" name="main_theme_options[subtitle]" value="<?php esc_attr_e($mainoptions['subtitle']); ?>" />
-                    </td>
-                </tr>
                 <th><h3>Footer Options</h3></th>
                 <tr valign="top">
                     <td>
                         Address Info
                         <textarea id="main_theme_options[addresstext]" class="large-text" style="height:130px; width:375px;" name="main_theme_options[addresstext]"><?php echo esc_textarea($mainoptions['addresstext']); ?></textarea>
+                    </td>
+                    <td>
+                        Mailing Address Info
+                        <textarea id="main_theme_options[mailingaddresstext]" class="large-text" style="height:130px; width:375px;" name="main_theme_options[mailingaddresstext]"><?php echo esc_textarea($mainoptions['mailingaddresstext']); ?></textarea>
                     </td>
                 </tr>
                 <tr valign="top">
