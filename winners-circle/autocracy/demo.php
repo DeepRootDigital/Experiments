@@ -26,11 +26,11 @@ $meta_boxes = array();
 // Employees CCK
 $meta_boxes[] = array(
     // Meta box id, UNIQUE per meta box. Optional since 4.1.5
-    'id' => 'employeescck',
+    'id' => 'house',
     // Meta box title - Will appear at the drag and drop handle bar. Required.
-    'title' => 'Employee Info',
+    'title' => 'Home Info',
     // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
-    'pages' => array('employees'),
+    'pages' => array('houses'),
     // Where the meta box appear: normal (default), advanced, side. Optional.
     'context' => 'normal',
     // Order of meta box: high (default), low. Optional.
@@ -39,18 +39,33 @@ $meta_boxes[] = array(
     'fields' => array(
         // IMAGE UPLOAD
         array(
-            'name' => 'Position',
-            'id' => 'position',
+            'name' => 'House Model',
+            'id' => 'housemodel',
             'type' => 'text',
         ),
         array(
-            'name' => 'Email Address',
-            'id' => 'email',
+            'name' => 'Street Address',
+            'id' => 'streetaddress',
             'type' => 'text',
         ),
         array(
-            'name' => 'Phone Number',
-            'id' => 'ext',
+            'name' => 'Number of Rooms',
+            'id' => 'roomcount',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Feature 1',
+            'id' => 'feature1',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Feature 2',
+            'id' => 'feature2',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Feature 3',
+            'id' => 'feature3',
             'type' => 'text',
         ),
     ),

@@ -79,9 +79,25 @@ $(document).ready(function(){
 		} else {$(".home-option-select li:nth-child(4)").addClass('bedroom-select');}
 	});
 
-	$(".one-bedroom").mouseOver(function(){
-		
-	});
+	$(".faq p").hide();
+	$(".faq-close").hide();
+
+	$(".faq").click(function(){
+		$(this).find("p").toggle('slow');
+		$(this).find(".faq-close").toggle('slow');
+		$(this).find(".faq-open").toggle('slow');
+		console.log($(this).find('h3').css('color'));
+		 if($(this).css("color") == "#f7941d"){
+		 	$(this).find('h3').css({
+			color : "#56705F",
+			fontSize : "17px"
+		}, 500);
+		 }
+		 else {$(this).find("h3").css({
+			color : "#f7941d",
+			fontSize : "20px"
+		}, 500);}
+			});
 });
 
 

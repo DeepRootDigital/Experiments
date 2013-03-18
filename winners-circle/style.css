@@ -51,8 +51,16 @@ body{
     position: relative;
 }
 
+.float-left{
+    float: left;
+}
+
 .clear{
     clear: both;
+}
+
+#clear-margin{
+    margin: 0;
 }
 
 .canvas {
@@ -745,7 +753,7 @@ footer {
 .sub-content {
     background: url("images/content-bg.png") repeat scroll 0 0 transparent;
     border-radius: 0 0 5px 5px;
-    padding: 0 0 50px;
+    padding: 0 0 150px;
     position: relative;
 }
 
@@ -766,11 +774,8 @@ footer {
     float: left;
 }
 
-.sub-left section{
-    border-bottom: 1px solid #D3D2CC;
-    box-shadow: 0 1px 0 0 #FFFFFF;
-    height: 240px;
-}
+
+
 
 .sub-left h2 {
     background: url("images/green-pattern-border.png") repeat-x scroll 0 30px transparent;
@@ -778,7 +783,7 @@ footer {
     font-family: Soho W01 Bold;
     font-size: 20px;
     font-style: normal;
-    padding: 0 0 25px;
+    padding: 0 0 25px 25px;
     text-transform: lowercase;
 }
 
@@ -795,15 +800,15 @@ footer {
 
 
 
+
 .sub-left-text > h2 {
-    padding: 0 0 25px 40px;
+    padding: 0 0 25px 30px;
 }
 
 
+
 .sub-left-text > img {
-    left: 0;
-    position: absolute;
-    top: 0;
+    float: left;
 }
 
 
@@ -818,11 +823,15 @@ footer {
     float: left;
     margin: 0 0 0 20px;
     width: 220px;
-}
-
-.sub-left-features ul{
 
 }
+
+.sub-left-features h2{
+    background: url("images/brown-pattern-border.png") repeat-x scroll 0 30px transparent;
+    padding-left: 0; 
+
+}
+
 
 .sub-left-features > li {
     background: url("images/key-features-arrow.png") no-repeat scroll 0 7px transparent;
@@ -841,8 +850,15 @@ footer {
 }
 
 
+
+
 .floor-plan {
+    border-top: 1px solid #CCCCCC;
+    box-shadow: 0 1px 0 0 #FFFFFF;
+    float: left;
+    margin-top: 20px;
     position: relative;
+    width: 650px;
 }
 
 
@@ -888,6 +904,10 @@ footer {
 .sub-right > img {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 0 5px -1px #000000;
+
+}
+
+#one-month {
     left: 0;
     position: absolute;
     top: -30px;
@@ -915,8 +935,9 @@ footer {
 
 
 
+
 .sub-page-list li {
-    background: url("images/green-dotted-border.png") repeat-x scroll 0 25px transparent;
+    background: url("images/green-dotted-border.png") repeat-x scroll 0 22px transparent;
     height: 27px;
     list-style: none outside none;
 }
@@ -930,7 +951,7 @@ footer {
     font-family: Soho W01 Medium;
     font-size: 16px;
     font-style: normal;
-    height: 22px;
+    height: 25px;
     padding: 0 0 4px;
     position: relative;
     text-transform: lowercase;
@@ -970,4 +991,329 @@ footer {
 .list-shadow {
     background: url("images/sub-page-list-shade-bg.png") repeat-x scroll 0 0 transparent;
     height: 85px;
+}
+
+/******************************************
+***      BLOG SUMMARY PAGE
+*******************************************/
+
+
+
+
+.blog-summary {
+    border-bottom: 1px solid #D8D7D1;
+    box-shadow: 0 1px 0 0 #FFFFFF;
+    height: 200px;
+    margin: 0 0 20px;
+    position: relative;
+}
+
+.blog-summary-img {
+    background: url("images/blog-summary-img-bg.png") no-repeat scroll 0 0 transparent;
+    height: 185px;
+    position: relative;
+    width: 225px;
+    float: left;
+}
+
+
+
+.blog-summary-img > img {
+    height: 153px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 204px;
+}
+
+
+.blog-summary-text {
+    float: left;
+    margin: 10px 0 0 15px;
+    width: 385px;
+}
+
+.blog-summary-text h1 {
+    color: #56705F;
+    font-family: Soho W01 Medium;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.blog-summary-text > p {
+    font-size: 15px;
+    margin: 10px 0 5px;
+}
+
+
+.blog-summary-text a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog-summary-text > span {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+.blog-summary-count {
+    left: 530px;
+    position: absolute;
+    top: 170px;
+}
+
+
+
+.blog-summary-count p {
+    background: url("images/blog-count-icon.png") no-repeat scroll 0 0 transparent;
+    font-size: 11px;
+    font-weight: bold;
+    height: 16px;
+    padding: 0 0 0 1px;
+    width: 22px;
+}
+
+
+
+.blog-summary-count span {
+    font-style: italic;
+    font-weight: normal;
+    padding: 0 0 0 15px;
+}
+
+.blog-summary-count a{
+    text-decoration: none;
+    color: inherit;    
+}
+
+/******************************************
+***      BLOG PAGES
+*******************************************/
+article h1 {
+    color: #56705F;
+    font-family: Soho W01 Medium;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+
+article p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.blog-share {
+    background: url("images/grey-line.png") repeat-x scroll 0 0px, url("images/grey-line.png") repeat-x scroll 0 25px transparent;
+    margin: 25px 0 0;
+    padding: 5px 0;
+}
+
+
+.blog-share > img {
+    float: left;
+}
+
+
+.blog-share > p {
+    float: left;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 14px;
+    margin: 0 25px 0 10px;
+}
+
+
+.blog-comment {
+    background: url("images/dotted-line.png") repeat-x scroll 0 0 transparent;
+    margin: 10px 0 0;
+    padding: 15px 0 0;
+    position: relative;
+}
+
+
+.blog-comment > h2 {
+    background: none repeat scroll 0 0 transparent;
+    color: #556F5E;
+    font-family: georgia;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    left: 60px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-transform: none;
+    top: 13px;
+}
+
+
+
+.blog-comment h3 {
+    color: #707070;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: normal;
+    left: 60px;
+    position: absolute;
+    text-transform: lowercase;
+    top: 30px;
+}
+
+
+.blog-comment > p {
+    color: #707070;
+    font-size: 15px;
+    margin: 15px 0 0;
+}
+
+/******************************************
+***      CONTACT and BLOG FORM
+*******************************************/
+
+.form-input {
+    margin: 20px 0 0;
+}
+
+#form-name {
+    background: url("images/blog-comment-name.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: 0 0 5px 0 #CCCCCC;
+    color: #636363;
+    font-size: 11px;
+    font-style: italic;
+    height: 22px;
+    padding: 0 0 0 30px;
+    width: 112px;
+}
+
+
+#form-email {
+    background: url("images/blog-comment-email.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: 0 0 5px 0 #CCCCCC;
+    color: #636363;
+    font-size: 11px;
+    font-style: italic;
+    height: 22px;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 30px;
+    width: 112px;
+}
+
+#form-comment {
+    background: url("images/blog-comment-textarea.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: 0 0 5px 0 #CCCCCC;
+    color: #636363;
+    font-size: 11px;
+    font-style: italic;
+    height: 126px;
+    margin: 20px 0 0;
+    padding: 5px 0 0 5px;
+    resize: none;
+    width: 404px;
+}
+
+
+#form-submit {
+    background: url("images/blog-comment-submit.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: 0 0 5px 0 #CCCCCC;
+    cursor: pointer;
+    height: 21px;
+    margin: 15px 0 0 340px;
+    text-indent: -9999px;
+    width: 69px;
+}
+
+/******************************************
+***      CONTACT US PAGE
+*******************************************/
+.contact-page > p {
+    border-bottom: 1px solid #D7D6D0;
+    box-shadow: 0 1px 0 0 #FFFFFF;
+    color: #707070;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0 0 10px;
+}
+
+.location-info > h2 {
+    background: none repeat scroll 0 0 transparent;
+    color: #56705F;
+    font-family: georgia;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 8px 0 5px;
+    padding: 0;
+    text-transform: none;
+}
+
+.location-info > p {
+    color: #56705F;
+    font-size: 12px;
+    font-style: italic;
+    margin: 2px 0 0;
+}
+
+#location-email {
+    margin: 20px 0 0;
+}
+
+#email-icon{
+    margin: 4px 0 0;
+}
+
+/******************************************
+***      FAQ PAGE
+*******************************************/
+
+.faq-page section {
+    position: relative;
+    border-bottom: 1px solid #D7D6D0;
+    box-shadow: 0 1px 0 0 #FFFFFF;
+}
+
+
+.faq-page section h3 {
+    color: #56705F;
+    cursor: pointer;
+    font-family: Soho W01 Medium;
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    padding: 5px 0 5px 0;
+    width: 590px;
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear; 
+}
+
+
+.faq-open {
+    left: 625px;
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
+}
+
+
+.faq-close {
+    bottom: 5px;
+    left: 625px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.faq > p {
+    margin: 0 0 40px;
+}
+
+.faq-open p {
+    color: #707070;
+    font-size: 15px;
+    margin: 0 0 20px;
+    width: 590px;
 }
