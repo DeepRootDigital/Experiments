@@ -8,77 +8,80 @@
 						<img class="float-left" src="<?php echo get_template_directory_uri(); ?>/images/blog-quote.png">
 						<h2>FAQ</h2>
 						<div class="faq-page">
+							<?php
+							$onebed = new WP_Query();
+							$onebed->query('showposts=6&post_type=FAQ');
+							while ($onebed->have_posts()) : $onebed->the_post();
+							?>
 							<section class="faq">
-								<h3>How do I get a apartment home?</h3>
+								<h3><?php the_title(); ?></h3>
 								<img class="faq-open" src="<?php echo get_template_directory_uri(); ?>/images/faq-open.png">
 								<img class="faq-close" src="<?php echo get_template_directory_uri(); ?>/images/faq-close.png">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+								<p><?php the_content(); ?></p>
 							</section>
-							<section class="faq">
-								<h3>What kind of apartment homes can I rent?</h3>
-								<img class="faq-open" src="<?php echo get_template_directory_uri(); ?>/images/faq-open.png">
-								<img class="faq-close" src="<?php echo get_template_directory_uri(); ?>/images/faq-close.png">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</section>
-							<section class="faq">
-								<h3>How much is rent for a two bedroom apartment?</h3>
-								<img class="faq-open" src="<?php echo get_template_directory_uri(); ?>/images/faq-open.png">
-								<img class="faq-close" src="<?php echo get_template_directory_uri(); ?>/images/faq-close.png">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</section>
-							<section class="faq">
-								<h3>Are these apartment homes pet friendly?</h3>
-								<img class="faq-open" src="<?php echo get_template_directory_uri(); ?>/images/faq-open.png">
-								<img class="faq-close" src="<?php echo get_template_directory_uri(); ?>/images/faq-close.png">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</section>
-							<section class="faq">
-								<h3>How soon can I move in?</h3>
-								<img class="faq-open" src="<?php echo get_template_directory_uri(); ?>/images/faq-open.png">
-								<img class="faq-close" src="<?php echo get_template_directory_uri(); ?>/images/faq-close.png">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</section>
-							<section class="faq">
-								<h3>How much is the deposit?</h3>
-								<img class="faq-open" src="<?php echo get_template_directory_uri(); ?>/images/faq-open.png">
-								<img class="faq-close" src="<?php echo get_template_directory_uri(); ?>/images/faq-close.png">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</section>
+						<?php endwhile; ?>
 						</div>									
 					</div>				
 					<div class="sub-right">
-						<a href="#" id="one-month"><img src="<?php echo get_template_directory_uri(); ?>/images/one-month-free.png"></a>
-						<div class="sub-page-list">
-							<ul>
-								<li>One <span>Bedroom</span><img src="<?php echo get_template_directory_uri(); ?>/images/house1-small.png"></li>
-								<li><a href="#">Bermardini</a></li>
-								<li><a href="#">Birdstone</a></li>
-							</ul>
-							<div class="list-shadow"></div>
-							<ul>
-								<li>Two <span>Bedroom</span><img src="<?php echo get_template_directory_uri(); ?>/images/house2-small.png"></li>
-								<li><a href="#">Colonel John</a></li>
-								<li><a href="#">Jalpur</a></li>
-								<li><a href="#">Java Gold</a></li>
-								<li><a href="#">Man O’ War</a></li>
-								<li><a href="#">Native Dancer</a></li>
-							</ul>
-							<div class="list-shadow"></div>
-							<ul>
-								<li>Three <span>Bedroom</span><img src="<?php echo get_template_directory_uri(); ?>/images/house3-small.png"></li>
-								<li><a href="#">Sea Hero</a></li>
-								<li><a href="#">Street Sense</a></li>
-								<li><a href="#">Sword Dancer</a></li>
-							</ul>
-							<div class="list-shadow"></div>
-							<ul>
-								<li>1 & 2 <span>Floor</span><img src="<?php echo get_template_directory_uri(); ?>/images/house4-small.png"></li>
-								<li><a href="#">The Belmont</a></li>
-								<li><a href="#">Churchill Downs</a></li>
-								<li><a href="#">Pimlico</a></li>
-							</ul>	
-						</div>
-					</div>
+				<a href="#" id="one-month"><img src="<?php echo get_template_directory_uri(); ?>/images/one-month-free.png"></a>
+				<div class="sub-page-list">
+					<ul>
+						<li>One <span>Bedroom</span><img src="<?php echo get_template_directory_uri(); ?>/images/house1-small.png"></li>
+						<?php
+						$onebed = new WP_Query();
+						$onebed->query('showposts=6&post_type=houses');
+						while ($onebed->have_posts()) : $onebed->the_post();
+						?>
+						<?php 
+						if (get_post_meta( get_the_ID(), 'bedrooms', true ) == 'value1') { ?>
+						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> 
+						<?php } ?>
+					<?php endwhile; ?>    
+				</ul>
+				<div class="list-shadow"></div>
+				<ul>
+					<li>Two <span>Bedroom</span><img src="<?php echo get_template_directory_uri(); ?>/images/house2-small.png"></li>
+					<?php
+						$twobed = new WP_Query();
+						$twobed->query('showposts=6&post_type=houses');
+						while ($twobed->have_posts()) : $twobed->the_post();
+						?>
+						<?php 
+						if (get_post_meta( get_the_ID(), 'bedrooms', true ) == 'value2') { ?>
+						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> 
+						<?php } ?>
+					<?php endwhile; ?>
+				</ul>
+				<div class="list-shadow"></div>
+				<ul>
+					<li>Three <span>Bedroom</span><img src="<?php echo get_template_directory_uri(); ?>/images/house3-small.png"></li>
+					<?php
+						$threebed = new WP_Query();
+						$threebed->query('showposts=6&post_type=houses');
+						while ($threebed->have_posts()) : $threebed->the_post();
+						?>
+						<?php 
+						if (get_post_meta( get_the_ID(), 'bedrooms', true ) == 'value3') { ?>
+						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> 
+						<?php } ?>
+					<?php endwhile; ?>
+				</ul>
+				<div class="list-shadow"></div>
+				<ul>
+					<li>1 & 2 <span>Floor</span><img src="<?php echo get_template_directory_uri(); ?>/images/house4-small.png"></li>
+					<?php
+						$multifloor = new WP_Query();
+						$multifloor->query('showposts=6&post_type=houses');
+						while ($multifloor->have_posts()) : $multifloor->the_post();
+						?>
+						<?php 
+						if (get_post_meta( get_the_ID(), 'floors', true ) == '1') { ?>
+						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li> 
+						<?php } ?>
+					<?php endwhile; ?>
+				</ul>	
+			</div>
+		</div>
 					<div class="clear"></div>
 				</div>
 			</div>

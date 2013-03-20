@@ -53,7 +53,7 @@ function theme_options_do_page() {
                 <h4>Content Text:</h4>
                 <textarea id="sample_theme_options[p1text]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[p1text]"><?php echo esc_textarea($options['p1text']); ?></textarea>
                 <h4>Content Link</h4>
-                <input type="text" size="36" name="sample_theme_options[p1title]" value="<?php esc_attr_e($options['p1link']); ?>" />
+                <input type="text" size="36" name="sample_theme_options[p1link]" value="<?php esc_attr_e($options['p1link']); ?>" />
                 
                 <h3>Homepage Content Area 2</h3>
                 <h4>Content Title</h4>
@@ -61,7 +61,7 @@ function theme_options_do_page() {
                 <h4>Content Text:</h4>
                 <textarea id="sample_theme_options[p2text]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[p2text]"><?php echo esc_textarea($options['p2text']); ?></textarea>
                 <h4>Content Link</h4>
-                <input type="text" size="36" name="sample_theme_options[p1title]" value="<?php esc_attr_e($options['p2link']); ?>" />
+                <input type="text" size="36" name="sample_theme_options[p2link]" value="<?php esc_attr_e($options['p2link']); ?>" />
                 
                 <h3>Homepage Content Area 3</h3>
                 <h4>Content Title</h4>
@@ -69,21 +69,7 @@ function theme_options_do_page() {
                 <h4>Content Text:</h4>
                 <textarea id="sample_theme_options[p3text]" class="large-text" style="height:130px; width:375px;" name="sample_theme_options[p3text]"><?php echo esc_textarea($options['p3text']); ?></textarea>
                 <h4>Content Link</h4>
-                <input type="text" size="36" name="sample_theme_options[p1title]" value="<?php esc_attr_e($options['p3link']); ?>" />
-
-                <!--******************-->
-                <!--   SOCIAL MEDIA   -->
-                <!--******************-->
-                <h1>Social Media Links</h1>                
-                <h4>Youtube URL</h4>                    
-                <input type="text" size="36" name="sample_theme_options[youtubeurl]" value="<?php esc_attr_e($options['youtubeurl']); ?>" />                                    
-                <h4>Facebook URL</h4>                    
-                <input type="text" size="36" name="sample_theme_options[facebookurl]" value="<?php esc_attr_e($options['facebookurl']); ?>" />             
-                <h4>Twitter URL</h4>                    
-                <input type="text" size="36" name="sample_theme_options[twitterurl]" value="<?php esc_attr_e($options['twitterurl']); ?>" />                           
-                <h4>Pinterest URL</h4>
-                <input type="text" size="36" name="sample_theme_options[pinteresturl]" value="<?php esc_attr_e($options['pinteresturl']); ?>" />     
-
+                <input type="text" size="36" name="sample_theme_options[p3link]" value="<?php esc_attr_e($options['p3link']); ?>" />
                 <p class="submit">
                     <input type="submit" class="button-primary" value="<?php _e('Save Options', 'sampletheme'); ?>" />
                 </p>

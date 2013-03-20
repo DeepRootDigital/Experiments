@@ -44,14 +44,14 @@ $meta_boxes[] = array(
             'type' => 'text',
         ),
         array(
-            'name' => 'Street Address',
-            'id' => 'streetaddress',
-            'type' => 'text',
-        ),
-        array(
-            'name' => 'Number of Rooms',
-            'id' => 'roomcount',
-            'type' => 'text',
+            'name' => 'Bedrooms',
+            'id' => 'bedrooms',
+            'type' => 'select',
+            'options' => array (
+                'value1' => 'One Bedroom',
+                'value2' => 'Two Bedrooms',
+                'value3' => 'Three + Bedrooms',
+                ),
         ),
         array(
             'name' => 'Feature 1',
@@ -67,6 +67,39 @@ $meta_boxes[] = array(
             'name' => 'Feature 3',
             'id' => 'feature3',
             'type' => 'text',
+        ),
+        array(
+            'name' => 'Multiple Floors',
+            'id' => 'floors',
+            'type' => 'checkbox',
+        ),
+        array(
+            'name' => 'Main Image Photo',
+            'desc' => '',
+            'id' => "mainimage",
+            'type' => 'plupload_image',
+            'max_file_uploads' => 8,
+        ),
+        array(
+            'name' => 'Floorplan Photo',
+            'desc' => '',
+            'id' => "floorplan",
+            'type' => 'plupload_image',
+            'max_file_uploads' => 1,
+        ),
+        array(
+            'name' => 'Link Image 1 Photo',
+            'desc' => '',
+            'id' => "lnkimage1",
+            'type' => 'plupload_image',
+            'max_file_uploads' => 1,
+        ),
+        array(
+            'name' => 'Link Image 2 Photo',
+            'desc' => '',
+            'id' => "lnkimage2",
+            'type' => 'plupload_image',
+            'max_file_uploads' => 1,
         ),
     ),
 );

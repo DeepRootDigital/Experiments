@@ -7,37 +7,24 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/superfish.css"/>
 	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/winners.js"></script>
-	<?php $slideroptions = get_option('slider_theme_options'); ?>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/port-loader.js"></script>
 	<?php $homepageoptions = get_option('sample_theme_options'); ?>
+	<?php $mainoptions = get_option('main_theme_options'); ?>
 </head>
 <body>
 	<div class="page-wrap">
 		<div class="center canvas">
 			<header>
 				<nav>
-					<ul>
-						<li><a href="#">Apartment Homes</a>
-							<ul>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">Features</a></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">Floor plans/Model Home</a></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">Gallery</a></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">Web Specials</a></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/images/nav-dropdown-arrow.png"><a href="#">Online Applications</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Amenities</a></li>
-						<li><a href="#">Community</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Faq</a></li>
-					</ul>
+					<?php wp_nav_menu(array('theme_location' => 'Header Nav',)); ?>
 				</nav>
 				<div class="clear"></div>
 				<div class="social-media">
 					<ul>
-						<li><a href="<?php echo $homepageoptions['facebookurl']?>">F</a></li>
-						<li><a href="<?php echo $homepageoptions['twitterurl']?>">L</a></li>
-						<li><a href="<?php echo $homepageoptions['youtubeurl']?>">X</a></li>
+						<li><a href="<?php echo $mainoptions['facebookurl']?>">F</a></li>
+						<li><a href="<?php echo $mainoptions['twitterurl']?>">L</a></li>
+						<li><a href="<?php echo $mainoptions['youtubeurl']?>">X</a></li>
 					</ul>
 					<div class="clear"></div>
 				</div>

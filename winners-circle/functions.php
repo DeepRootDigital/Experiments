@@ -8,7 +8,10 @@ define('RWMB_URL', trailingslashit(get_stylesheet_directory_uri() . '/autocracy/
 define('RWMB_DIR', trailingslashit(get_template_directory() . '/autocracy/API/'));
 // Include the meta box script
 require_once RWMB_DIR . '/meta-box.php';
-include get_template_directory() . '/autocracy/demo.php'; 
+include get_template_directory() . '/autocracy/demo.php';
+add_theme_support('post-thumbnails');
+add_theme_support('menus');
+register_nav_menu('Header Nav', 'Navigation Menu');
 
 function create_post_type() {
  register_post_type('Houses', array(
@@ -21,12 +24,22 @@ function create_post_type() {
   'rewrite' => array('slug' => 'Houses'),
   )
  );
+ register_post_type('FAQ', array(
+  'labels' => array(
+   'name' => __('FAQ'),
+   'singular_name' => __('FAQ')
+   ),
+  'public' => true,
+  'has_archive' => true,
+  'rewrite' => array('slug' => 'FAQ'),
+  )
+ );
 }
 add_action('init', 'create_post_type');
 
 //BLOG POST LENGTH LIMIT
 function custom_excerpt_length( $length ) {
-	return 20;
+	return 10;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

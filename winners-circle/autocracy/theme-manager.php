@@ -21,13 +21,6 @@ function main_theme_options_do_page() {
             <?php settings_fields('main_options'); ?>
             <?php $mainoptions = get_option('main_theme_options'); ?>
             <table class="form-table">
-                <th><h3>Page Options</h3></th>
-                <tr valign="top">
-                    <td>Blog Page URL</td>
-                    <td>
-                        <input type="text" size="36" name="main_theme_options[blogpageurl]" value="<?php esc_attr_e($mainoptions['blogpageurl']); ?>" />
-                    </td>
-                </tr>
                 <th><h3>Sharing Options</h3></th>
                 <tr valign="top">
                     <td>Youtube URL</td>
@@ -63,8 +56,21 @@ function main_theme_options_do_page() {
                 <th><h3>Footer Options</h3></th>
                 <tr valign="top">
                     <td>
+                        Copyright Text
+                        <textarea id="main_theme_options[copyrighttxt]" class="large-text" style="height:130px; width:375px;" name="main_theme_options[copyrighttxt]"><?php echo esc_textarea($mainoptions['copyrighttxt']); ?></textarea>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
                         Address Info
                         <textarea id="main_theme_options[addresstext]" class="large-text" style="height:130px; width:375px;" name="main_theme_options[addresstext]"><?php echo esc_textarea($mainoptions['addresstext']); ?></textarea>
+                    </td>
+                </tr>
+                <th><h3>Contact Options</h3></th>
+                <tr valign="top">
+                    <td>Hours</td>
+                    <td>
+                        <input type="text" size="36" name="main_theme_options[hours]" value="<?php esc_attr_e($mainoptions['hours']); ?>" />
                     </td>
                 </tr>
                 <tr valign="top">
