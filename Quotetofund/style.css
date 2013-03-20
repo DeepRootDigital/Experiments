@@ -1,0 +1,127 @@
+/*
+Theme Name: Quote to Fund
+Theme URI: http://businessonmarketst.com/
+Description: Theme for quotetofund website
+Author: Business on Market St dot Com
+Author URI: http://businessonmarketst.com/
+Version: 1.0
+License: Beerware
+License URI: http://businessonmarketst.com/
+*/
+
+
+/************************
+DAN STYLES 
+************************/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.container {
+    width: 880px;
+    max-width: 880px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+	float: left;
+	width: 880px;
+	height: 96px;
+}
+
+.logo {
+	float: left;
+	margin-top: 20px;
+}
+
+.top-nav {
+	margin-top: 20px;
+}
+
+.bottom-nav {
+	float: left;
+	margin-top: 63px;
+	margin-left: 60px;
+}
+
+nav ul {
+	float: right;
+	list-style-type: none;
+
+}
+
+nav ul li {
+	float: left;
+	margin-right: 20px;
+ 	font-family: Avenir;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #454545;
+}
+
+.footer-content {
+	float: left;
+	width: 880px;
+	height: 158px;
+}
+
+.footer-logo {
+	float: left;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
