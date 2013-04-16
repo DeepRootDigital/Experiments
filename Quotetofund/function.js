@@ -93,7 +93,6 @@ $(document).ready(function(){
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
 
-
 	});
 
 
