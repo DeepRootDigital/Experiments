@@ -1,3 +1,14 @@
+/*
+Theme Name: Business on Market St Home Page
+Theme URI: http://businessonmarketst.com/
+Description: Theme for BMS Site
+Author: Ray Sinlao/Alvaro Flores/Aldo Magic
+Version: 1.0
+
+General comments (optional).
+*/
+
+
 @font-face {
     font-family: 'din';
     src: url('fonts/din_medium-webfont.eot');
@@ -52,6 +63,9 @@ body{
     position: relative;
 }
 
+.bottom-page-space{
+    margin-bottom: 50px; 
+}
 
 header {
     background: url("images/header-bg.gif") repeat-x scroll 0 0 transparent;
@@ -158,38 +172,45 @@ header nav ul a:hover {
 /*********************************************
 ***** HOME PAGE
 **********************************************/
-.home-slider{
-    width: 1000px;
+
+.home-slider {
+    border: 1px solid #000000;
     height: 550px;
-    border: 1px solid #000;
+    margin: 0 0 40px;
+    width: 1000px;
 }
 
-
+.about-content,
 .home-content{
-    width: 640px;
+    width: 625px;
     float: left;
 }
 
+.about-content h1,
+.home-bottom-info h1,
 .home-content > h1 {
     border-bottom: 1px solid #464646;
     font-family: rokkitt;
     font-size: 45px;
     font-weight: normal;
+    line-height: 35px;
+    margin: 10px 0 25px;
+    padding: 0 0 5px;
     text-transform: uppercase;
 }
 
-.home-content em{
-    color: #7e1619;
-    font-style: normal;
-}
 
+
+.margin-right-clear{
+    margin-right: 0 !important; 
+}
 
 
 .home-project {
     float: left;
-    margin: 0 30px 25px 0;
+    margin: 0 45px 25px 0;
     position: relative;
-    width: 280px;
+    width: 290px;
 }
 
 
@@ -265,8 +286,219 @@ header nav ul a:hover {
 }
 
 
+.home-project-control {
+    height: 40px;
+    margin: 0 0 0 275px;
+    width: 80px;
+}
 
 
+
+.project-control-left {
+    background: url("images/home-page-arrows.png") repeat scroll 0 0 transparent;
+    margin: 0 10px 0 0;
+    padding: 10px 0 0 30px;
+}
+
+.project-control-left:hover {
+    background: url("images/home-page-arrows.png") repeat scroll 0px -36px transparent;
+    padding: 10px 0 0 30px;
+}
+
+.project-control-right {
+    background: url("images/home-page-arrows.png") repeat scroll -50px 0 transparent;
+    padding: 10px 0 0 30px;
+}
+
+.project-control-right:hover {
+    background: url("images/home-page-arrows.png") repeat scroll -50px -36px transparent;
+    padding: 10px 0 0 30px;
+}
+
+
+
+.home-content p {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Montserrat;
+    line-height: 20px;
+}
+
+
+.home-content p span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #005b7f;
+}
+
+
+.home-bottom-info {
+    margin: 40px 0 0;
+}
+
+.home-bottom-info p {
+    width: 400px;
+    float: left;
+}
+
+
+
+
+.home-bottom-info > ul {
+    background: url("images/disciplines.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 380px;
+    margin: 0 0 0 30px;
+    padding: 15px 0 0 60px;
+}
+
+
+.home-bottom-info li {
+    font-size: 14px;
+    list-style: none outside none;
+    margin: 0 0 55px;
+    text-transform: uppercase;
+}
+
+
+.home-sidebar {
+    float: left;
+    margin: 0 0 0 40px;
+    width: 335px;
+}
+.contact-page-content h1{
+    border-bottom: 1px solid #464646;
+    font-family: rokkitt;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 35px;
+    margin: 10px 0 25px;
+    padding: 0 0 5px;
+    text-transform: uppercase;
+}
+
+
+.bms-talk h1 {
+    border-bottom: 1px solid #464646;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 35px;
+    margin: 10px 0 25px;
+    padding: 0 0 5px;
+    text-transform: uppercase;
+}
+
+
+.bms-talk li:first-of-type {
+    
+    padding-top: 0px;
+}
+
+.bms-talk li:first-of-type img {
+    top: 20px;
+}
+
+.bms-talk li:first-of-type:hover {
+    background: url("images/arrow-right-30px.png") no-repeat scroll 270px 20px transparent;
+}
+
+
+
+
+.bms-talk li {
+    border-bottom: 1px solid #CCCCCC;
+    list-style: none outside none;
+    padding: 20px 0;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+.bms-talk li:hover {
+    background: url("images/arrow-right-30px.png") no-repeat scroll 270px 39px transparent;
+    color: #003663;
+}
+
+.bms-talk img {
+    left: 0;
+    position: absolute;
+    top: 40px;
+}
+
+
+.bms-talk p {
+    width: 200px;
+    margin: 0 0 0 50px;
+}
+
+.bms-talk a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.about-content em,
+.contact-page-content em,
+.bms-talk em,
+.home-content em{
+    color: #7e1619;
+    font-style: normal;
+}
+
+.bms-talk span {
+    color: #7E1619;
+    font-family: 'Comic Sans MS';
+    letter-spacing: -3px;
+    margin: 0 0 0 2px;
+}
+
+
+.home-sidebar-contact {
+    margin: 47px 0 0;
+}
+
+
+
+.home-sidebar-contact input {
+    background: url("images/home-contact-input-bg.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #343533;
+    font-family: verdana;
+    font-size: 11px;
+    height: 30px;
+    margin: 0 0 10px;
+    padding: 0 0 0 10px;
+    text-transform: lowercase;
+    width: 241px;
+}
+
+
+#home-sidebar-contact-submit {
+    background: url("images/submit-button.png") no-repeat scroll 0 0 transparent;
+    height: 33px;
+    margin: 10px 0 0 165px;
+    text-indent: -9999px;
+    width: 82px;
+    cursor: pointer;
+}
+/*********************************************
+***** ABOUT PAGE
+**********************************************/
+.about-content h2{
+    font-size: 16px;
+    font-weight: normal;
+    color: #005b7f;
+    font-family: Montserrat;
+    margin: 0 0 30px 0;
+
+}
+
+.about-content p{
+    font-size: 14px;
+    font-family: Montserrat;
+
+}
 
 /*********************************************
 ***** BLOG SUMMARY PAGE
@@ -440,6 +672,7 @@ header nav ul a:hover {
     text-decoration: none;
 }
 
+
 /*********************************************
 ***** BLOG SUMMARY PAGE (RIGHT SIDE)
 **********************************************/
@@ -453,28 +686,6 @@ header nav ul a:hover {
 }
 
 
-
-.blog-right li {
-    border-bottom: 1px solid #CCCCCC;
-    list-style: none outside none;
-    padding: 25px 0;
-}
-
-
-.blog-right p {
-    font-family: rokkitt;
-    font-size: 20px;
-    margin: 0 0 0 50px;
-    width: 200px;
-}
-
-.blog-right a {
-    color: inherit;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-
 .blog-right-social {
     margin: 0 0 0 50px;
 }
@@ -482,27 +693,11 @@ header nav ul a:hover {
 
 
 .blog-right-social li {
-    border: medium none;
+    border: medium none !important;
     float: left;
     margin: 0 25px 0 0;
 }
 
-
-
-.blog-right h1 {
-    color: #636363;
-    font-size: 35px;
-    line-height: 35px;
-    margin: 0 0 0 50px;
-    text-transform: uppercase;
-    width: 254px;
-}
-
-.blog-right h1 em {
-    color: #7e1619;
-    font-style: normal;
-
-}
 
 .blog-service-nav{
     margin: 10px 0 0 50px;
@@ -510,92 +705,248 @@ header nav ul a:hover {
 }
 
 /*********************************************
-***** SERVICE NAV SIDEBAR
+***** SINGLE BLOG PAGE
 **********************************************/
 
-.service-nav {
-    
-}
 
-.service-nav > ul {
-    font-size: 14px;
-    list-style: none outside none;
-    text-transform: uppercase;
-}
-
-
-
-.service-nav li {
-    background: url("images/services-icons.png") no-repeat scroll 0 0 transparent;
-    border: medium none;
-    height: 50px;
-    margin: 0 0 20px;
-    padding: 0;
-    width: 50px;
+.single-blog-page {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 30px 0 0;
     position: relative;
 }
 
 
-.service-nav ul li a {
-    left: 74px;
-    padding: 22px 0 0;
+.single-blog-slider {
+    
+}
+
+
+
+.single-blog-content {
+    min-height: 1500px;
+    width: 580px;
+    position: relative;
+}
+
+
+.single-blog-content h1 {
+    margin: 190px 0 0;
+}
+
+
+
+.single-blog-image {
+    border-radius: 0 114px 0 0;
+    box-shadow: 0 0 17px -2px #000000;
+    height: 321px;
+    left: 0;
+    margin: 0 0 25px;
     position: absolute;
-    top: -10px;
+    top: 0;
+    width: 580px;
 }
 
 
-.service-nav li:nth-child(2){
-    background-position: 0px -70px;
-}
-
-.service-nav li:nth-child(3){
-    background-position: 0px -140px;
-}
-
-.service-nav li:nth-child(4){
-    background-position: 0px -210px;
-}
-
-.service-nav li:nth-child(5){
-    background-position: 0px -280px;
-}
-.service-nav li:nth-child(6){
-    background-position: 0px -350px;
-}
-.service-nav li:nth-child(7){
-    background-position: 0px -420px;
-}
-
-.service-nav ul li:hover{
-    background-position: -66px 0px;
-}
-
-.service-nav li:nth-child(2):hover{
-    background-position: -66px -70px;
-}
-
-.service-nav li:nth-child(3):hover{
-    background-position: -66px -140px;
-}
-
-.service-nav li:nth-child(4):hover{
-    background-position: -66px -210px;
-}
-
-.service-nav li:nth-child(5):hover{
-    background-position: -66px -280px;
-}
-.service-nav li:nth-child(6):hover{
-    background-position: -66px -350px;
-}
-.service-nav li:nth-child(7):hover{
-    background-position: -66px -420px;
+#single-blog-date {
+    left: -40px;
+    position: relative;
+    top: 40px;
 }
 
 
+#single-blog-date p {
+    color: #FFFFFF;
+    font-family: din !important;
+    font-weight: bold;
+    left: -220px !important;
+    letter-spacing: 1px;
+    position: absolute !important;
+    text-transform: uppercase;
+    top: -143px !important;
+    transform: rotate(270deg);
+}
+
+
+.single-blog-page h1 {
+    font-family: rokkitt;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 35px;
+    text-transform: uppercase;
+    width: 350px;
+}
+
+
+.single-blog-page h2 {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+
+.single-blog-page p {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 20px;
+    width: 490px;
+}
+
+
+.blog-rate {
+    margin: 25px 0 0;
+}
+
+.single-blog-right {
+    left: 650px;
+    position: absolute;
+    top: 0;
+}
+
+.single-blog-comment{
+    position: relative;
+    width: 630px;
+}
 
 
 
+
+.single-blog-comment > h3 {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: normal;
+    left: 410px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 10px;
+}
+
+
+.single-blog-comment > h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: normal;
+    left: 395px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 44px;
+}
+
+
+
+.single-blog-comment > h1 {
+    font-family: din;
+    font-size: 35px;
+    left: 6px;
+    position: absolute;
+    top: 45px;
+}
+
+.single-blog-comment > h1 em{
+    color: #7e1619;
+    font-style: normal;
+}
+.blog-comment{
+    margin-top: 20px;
+}
+
+.level1-comment{
+    border: 1px solid #dbdbdb;
+    width: 630px;
+    height: 220px;
+}
+
+
+.level2-comment {
+    border: 1px solid #DBDBDB;
+    height: 185px;
+    margin-left: 50px;
+    width: 580px;
+}
+
+
+.level3-comment {
+    border: 1px solid #DBDBDB;
+    height: 180px;
+    margin-left: 105px;
+    width: 525px;
+}
+
+/*********************************************
+***** SERVICES PAGE
+**********************************************/
+
+.service-page-header {
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+}
+
+
+.service-page h1 {
+    font-size: 46px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.service-page h1  em{
+    color: #7e1619;
+    font-style: normal;
+}
+
+
+.service-page h1 span {
+    color: #959595;
+    font-size: 40px;
+}
+
+.service-page-sidebar{
+    float: left;
+    width: 260px;
+}
+
+
+
+.service-page-content {
+    float: left;
+    margin: 0 35px 0 20px;
+    padding-bottom: 50px;
+    width: 380px;
+}
+
+.service-page-content > h1 {
+    color: #C8C8C8;
+    font-family: rokkitt;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+
+.service-page-content > h2 {
+    color: #005B7F;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 0 20px;
+}
+
+.service-page-content > p {
+    font-size: 12px;
+    color: #707070;
+}
+
+.service-page-slide{
+    float: left;
+}
+
+
+.service-page-control {
+    margin: 0 0 0 120px;
+}
+
+
+.service-page-control > a {
+    margin: 0 10px 0 0;
+}
 
 /*********************************************
 ***** TESTIMONIAL CASE STUDIES PAGE
@@ -873,11 +1224,225 @@ header nav ul a:hover {
     margin: 0;
 }
 
+/*********************************************
+***** CONTACT PAGE
+**********************************************/
 
-/*****************************
-*  Footer
-******************************/
+.contact-page-slide {
+    margin: 0 0 30px;
+}
 
+#contact-slide{
+    background: url("images/contact-slider-bg.png");
+    width: 1000px;
+    height: 430px;
+}
+
+
+.contact-slide-slogan {
+    float: left;
+    margin: 40px 0 0 35px;
+    width: 215px;
+}
+
+
+.contact-slide-slogan p {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 10px 0 0 3px;
+}
+
+
+
+#contact-slide form {
+    float: left;
+    margin: 40px 0 0 50px;
+    position: relative;
+    width: 255px;
+}
+
+
+
+#contact-slide input {
+    background: url("images/contact-slider-input-bg.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #343533;
+    font-family: verdana;
+    font-size: 11px;
+    height: 32px;
+    margin: 0 0 10px;
+    padding: 0 0 0 10px;
+    text-transform: lowercase;
+    width: 240px;
+}
+
+
+#contact-slide textarea {
+    background: url("images/contact-slider-textarea-bg.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #343533;
+    font-family: verdana;
+    font-size: 11px;
+    height: 159px;
+    padding: 5px 0 0 10px;
+    resize: none;
+    text-transform: lowercase;
+    width: 240px;
+}
+
+.contact-slide-address,
+.contact-slide-select {
+    float: left;
+    margin: 40px 0 0 30px;
+    width: 150px;
+}
+
+.contact-slide-address h1,
+.contact-slide-select h1 {
+    border-bottom: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: din;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.contact-slide-select ul{
+    
+}
+
+.contact-slide-select li {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    height: 41px;
+    list-style: none outside none;
+    margin: 0 0 14px;
+    position: relative;
+    text-transform: uppercase;
+    width: 85px;
+}
+
+
+.contact-slide-select li p {
+    left: 55px;
+    position: absolute;
+    top: 8px;
+    width: 85px;
+}
+
+.contact-slide-select-1{
+    background: url("images/contact-icons.png") no-repeat;
+     background-position: 0 -272px;
+}
+
+.contact-slide-select-1:hover{
+    background-position: -86px -272px;
+}
+
+.contact-slide-select-1-active{
+    background: url("images/contact-icons.png") no-repeat;
+    background-position: -171px -272px !important;
+}
+
+.contact-slide-select-2{
+    background: url("images/contact-icons.png") no-repeat;
+    background-position: 0 0;
+}
+
+.contact-slide-select-2:hover{
+    background-position: -86px 0;
+}
+
+.contact-slide-select-2-active{
+    background: url("images/contact-icons.png") no-repeat;
+    background-position: -171px 0 !important;
+}
+
+.contact-slide-select-3{
+    background: url("images/contact-icons.png") no-repeat;
+     background-position: 0 -86px;
+}
+
+.contact-slide-select-3:hover{
+    background-position: -86px -86px;
+}
+
+.contact-slide-select-3-active{
+    background: url("images/contact-icons.png") no-repeat;
+    background-position: -171px -86px !important;
+}
+
+.contact-slide-select-4{
+    background: url("images/contact-icons.png") no-repeat;
+     background-position: 0 -181px;
+}
+
+.contact-slide-select-4:hover{
+    background-position: -86px -181px;
+}
+
+.contact-slide-select-4-active{
+    background: url("images/contact-icons.png") no-repeat;
+    background-position: -171px -181px !important;
+}
+
+.contact-slide-select-5{
+    background: url("images/contact-icons.png") no-repeat;
+     background-position: 0 -358px;
+}
+
+.contact-slide-select-5:hover{
+    background-position: -86px -358px;
+}
+
+.contact-slide-select-5-active{
+    background: url("images/contact-icons.png") no-repeat;
+    background-position: -171px -358px !important;
+}
+
+#contact-form-submit {
+    background: url("images/submit-button-grey.png") no-repeat scroll 0 0 transparent !important;
+    cursor: pointer;
+    height: 32px !important;
+    left: 465px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 300px;
+    width: 83px !important;
+}
+
+.contact-slide-address li{
+    list-style: none; 
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;   
+}
+
+
+
+
+.contact-page-content {
+    float: left;
+    margin: 0 0 100px;
+    width: 630px;
+}
+
+
+
+.contact-page-sidebar {
+    float: left;
+    margin: 0 0 0 40px;
+    width: 330px;
+}
+/*********************************************
+***** FOOTER
+**********************************************/
 .footer-nav {
     padding: 30px 0 0 120px;
 }
@@ -936,4 +1501,159 @@ footer li:last-child a {
 
 .bms-info > img {
     margin: 0 0 -5px;
+}
+
+
+/*********************************************
+***** BLOG SIDEBAR
+**********************************************/
+.blog-sidebar{
+    width: 365px;
+}
+
+.blog-sidebar li {
+    border-bottom: 1px solid #CCCCCC;
+    list-style: none outside none;
+    padding: 25px 0;
+}
+
+
+.blog-sidebar p {
+    font-family: rokkitt !important;
+    font-size: 20px !important;
+    margin: 0 0 0 50px !important;
+    width: 200px !important;
+}
+
+.blog-sidebar a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.blog-sidebar h1 {
+    color: #636363;
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 0 50px;
+    text-transform: uppercase;
+    width: 254px;
+    font-family: din !important;
+}
+
+.blog-sidebar h1 em {
+    color: #7e1619;
+    font-style: normal;
+
+}
+
+
+
+#blog-sidebar-email-input {
+    background: url("images/sign-up-bg.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #BBBBBB;
+    font-family: din;
+    height: 33px;
+    margin: 0 0 0 50px;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+    width: 268px;
+}
+
+
+#blog-sidebar-email-submit {
+    background: url("images/arrow-right-30px.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 30px;
+    width: 30px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+/*********************************************
+***** SERVICE NAV SIDEBAR
+**********************************************/
+
+#service-nav {
+    
+}
+
+#service-nav > ul {
+    font-size: 14px;
+    list-style: none outside none;
+    text-transform: uppercase;
+}
+
+
+
+#service-nav li {
+    background: url("images/services-icons.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 50px;
+    margin: 0 0 20px;
+    padding: 0;
+    width: 50px;
+    position: relative;
+}
+
+
+
+#service-nav ul li a {
+    color: inherit;
+    left: 74px;
+    padding: 22px 0 0;
+    position: absolute;
+    text-decoration: none;
+    top: -10px;
+    width: 170px;
+}
+
+
+#service-nav li:nth-child(2){
+    background-position: 0px -70px;
+}
+
+#service-nav li:nth-child(3){
+    background-position: 0px -140px;
+}
+
+#service-nav li:nth-child(4){
+    background-position: 0px -210px;
+}
+
+#service-nav li:nth-child(5){
+    background-position: 0px -280px;
+}
+#service-nav li:nth-child(6){
+    background-position: 0px -350px;
+}
+#service-nav li:nth-child(7){
+    background-position: 0px -420px;
+}
+
+#service-nav ul li:hover{
+    background-position: -66px 0px;
+}
+
+#service-nav li:nth-child(2):hover{
+    background-position: -66px -70px;
+}
+
+#service-nav li:nth-child(3):hover{
+    background-position: -66px -140px;
+}
+
+#service-nav li:nth-child(4):hover{
+    background-position: -66px -210px;
+}
+
+#service-nav li:nth-child(5):hover{
+    background-position: -66px -280px;
+}
+#service-nav li:nth-child(6):hover{
+    background-position: -66px -350px;
+}
+#service-nav li:nth-child(7):hover{
+    background-position: -66px -420px;
 }

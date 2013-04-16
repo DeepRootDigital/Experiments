@@ -13,10 +13,10 @@
 				<h1><span>.</span>Your one way to business success<span>.</span></h1>
 				<nav class="header-left-nav">
 					<ul>					
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Services</a></li>
+						<li><a href="testimonials.php">Testimonials</a></li>
+						<li><a href="services.php">Services</a></li>
 						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Home</a></li>
+						<li><a href="index.php">Home</a></li>
 						<div class="clear"></div>
 					</ul>
 				</nav>
@@ -25,10 +25,10 @@
 				</div>
 				<nav class="header-right-nav">
 					<ul>					
-						<li><a href="#">eGuides</a></li>
-						<li><a href="#">Blogs</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact Us</a></li>
+						<li><a href="single-blog.php">eGuides</a></li>
+						<li><a href="blog.php">Blogs</a></li>
+						<li><a href="about.php">About Us</a></li>
+						<li><a href="contact.php">Contact Us</a></li>
 						<div class="clear"></div>
 					</ul>
 				</nav>

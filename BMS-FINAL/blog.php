@@ -53,7 +53,7 @@
 						<h3 class="blog-summary-tags"><a href="#">Augmented Reality, Graphic Design, Graphic Novels, Letterpress, Minneapolis, QR Codes</a></h3>
 					</article>
 				</div>
-				<div class="blog-right">
+				<div class="blog-sidebar blog-right">
 					<ul>
 						<li>
 							<ul class="blog-right-social">
