@@ -24,6 +24,15 @@ font-family:'Avenir LT W01 95 Black';
 font-family:'AvenirLTW01-95BlackObli';
 */
 
+p, h1, h2, h3, ul, li, span, em {
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+ul, li, a {
+	text-decoration: none;
+	list-style-type: none;
+}
 
 /************************
 DAN STYLES 
@@ -41,8 +50,7 @@ body {
     width: 880px;
     max-width: 880px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
 }
 
 .header {
@@ -62,19 +70,15 @@ body {
 
 nav ul {
 	float: right;
-	list-style-type: none;
 }
 
 nav ul li {
 	float: left;
 	margin-right: 20px;
- 	font-family: Avenir;
-	text-transform: uppercase;
-	text-decoration: none;
+ 	font-family:'Avenir LT W01 35 Light';
 }
 
 nav ul li a {
-	text-decoration: none;
 	color: #454545;
 }
 
@@ -102,7 +106,6 @@ BODY STYLES
 .top-slider-text1 {
 	position: absolute;
 	left: 540px;
-	text-transform: uppercase;
 }
 
 .top-slider-text1 p {
@@ -118,7 +121,6 @@ BODY STYLES
 
 .top-slider-text1 span {
 	margin-left: -7px;
-	font-weight: bold;
 	font-family:'AvenirLTW01-95BlackObli';
 }
 
@@ -129,7 +131,6 @@ BODY STYLES
 	font-family:'Avenir LT W01 55 Roman';
 	font-size: 20px;
 	color: #114d78;
-	text-transform: uppercase;
 }
 
 .qtf-money-bag {
@@ -178,12 +179,7 @@ TOP SECOND SLIDE
 	color: #114d78;
 	font-size: 20px;
 	font-family: Avenir;
-	text-transform: uppercase;
 	display: none;
-}
-
-.top-slider-second-text em {
-	font-weight: bold;
 }
 
 .top-slider-second-text span {
@@ -264,7 +260,6 @@ TOP SECOND SLIDE
 	height: auto;
 	top: 110px;
 	left: 60px;
-	text-transform: uppercase;
 }
 
 .qtf-second-slider-bottom-text {
@@ -301,7 +296,6 @@ TOP SECOND SLIDE
 }
 
 .second-slider-box p {
-	text-transform: uppercase;
 	font-family:'Avenir LT W01 35 Light';
 }
 
@@ -335,11 +329,8 @@ APPROVAL SLIDE STYLES
 }
 
 .mini-nav ul {
-	list-style-type: none;
 	font-size: 13px;
 	font-family:'Avenir LT W01 35 Light';
-	text-transform: uppercase;
-	width: 100%;
 }
 
 .mini-nav ul li {
@@ -347,41 +338,33 @@ APPROVAL SLIDE STYLES
 	float: left;
 	margin: -11px 0 0 0;
 	padding: 36px 20px 0 20px;
-	background-image: url('images/mini-nav-slits.png');
-	background-repeat: no-repeat;
 	height: 60px;
-}
-
-.mini-nav a {
-	text-decoration: none;
 	color: #fff;
 }
 
-.mini-nav ul li:first-child {
-	background-image: none;
+.mini-nav a {
+	color: #fff;
 }
 
-.mini-nav ul li a:hover {
+.mini-nav ul li img {
+	position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.mini-nav ul li:hover {
 	color: #faa61a;
 }
 
-.mini-nav ul li a:hover {
-	width: 7px;
-	height: 5px;
-	background-image: url('images/mini-nav-arrow.png');
-	background-repeat: no-repeat;
-	padding-bottom: 15px;
+.mini-nav-back:hover {
+    background: url("images/mini-nav-arrow.png") no-repeat scroll 35px 55px transparent;
+}
+.mini-nav-approval:hover {
+    background: url("images/mini-nav-arrow.png") no-repeat scroll 85px 55px transparent;
 }
 
-.mini-nav-back a {
-	background-position: 15px 21px;
-}
-
-.mini-nav-approval a {
-	background-position: 65px 21px;
-}
-.mini-nav-payment a {
-	background-position: 65px 21px;
+.mini-nav-payment:hover {
+    background: url("images/mini-nav-arrow.png") no-repeat scroll 88px 55px transparent;
 }
 
 .box {
@@ -399,10 +382,6 @@ APPROVAL SLIDE STYLES
 	height: 35px;
 	background-image: url('images/approval-number-one.png');
 	background-repeat: no-repeat;
-}
-
-.section {
-	position: relative;
 }
 
 .number-two {
@@ -426,7 +405,6 @@ APPROVAL SLIDE STYLES
 	left: 50px;
 	font-size: 20px;
 	font-family:'Avenir LT W01 35 Light';
-	text-transform: uppercase;
 	color: #fff;
 }
 
@@ -459,11 +437,11 @@ APPROVAL SLIDE STYLES
 
 .quote {
 	float: left;
-	width: 680px;
+	width: auto;
 	height: 42px;
 	margin: 30px 0 0 65px;
-	font-family: avenir;
-	font-size: 14px;
+	font-family:'AvenirLTW01-35LightObli';
+	font-size: 12px;
 	color: #fff;
 	border-top: 1px dotted #07283f;
 	border-bottom: 1px dotted #07283f;
@@ -509,9 +487,7 @@ BODY CONTENT STYLES
 }
 
 .body-bottom-left-content h1 {
-	margin-left: -2px;
-	margin-top: -1px;
-	text-transform: uppercase;
+	margin: -1px 0 0 -2px;
 	font-family: Avenir;
 	font-weight: normal;
 	color: #114d78;
@@ -525,16 +501,18 @@ BODY CONTENT STYLES
 	position: relative;
 	width: 439px;
 	height: 5px;
-	top: -10px;
+	top: 4px;
 	background-image: url('images/bottom-body-dotted-line.png');
 	background-repeat: no-repeat;
 }
 
 .body-bottom-left-content p {
 	width: 440px;
+	height: auto;
 	color: #454545;
 	font-family: Verdana;
-	font-size: 13px;
+	font-size: 11px;
+	line-height: 20px;
 }
 
 /***************
@@ -542,26 +520,23 @@ SIDEBAR STYLES
 ***************/
 
 aside {
-	position: relative;
 	float: right;
 	width: 302px;
 	height: 511px;
-	margin: -1px 0 0 0;
+	margin: -1px 12px 0 0;
 	background-image: url('images/qtf-side-background.png');
 }
 
 aside h1 {
-	position: relative;
 	margin: 28px 0 0 42px;
 	color: #fff;
-	text-transform: uppercase;
 	font-size: 26px;
-	font-family: Avenir;
-	font-weight: normal;
+	font-family:'Avenir LT W01 85 Heavy';
 }
 
-aside span {
+aside h1 span {
 	color: #114d78;
+	font-family:'Avenir LT W01 35 Light';
 }
 
 .qtf-blog-feed {
@@ -572,7 +547,6 @@ aside span {
 }
 
 .qtf-blog-feed ul {
-	position: relative;
 	top: -10px;
 	font-size: 12px;
 	font-family: verdana;
@@ -582,7 +556,6 @@ aside span {
 	width: 230px;
 	height: 85px;
 	padding-bottom: 15px;
-	list-style-type: none;
 	background-image: url('images/blog-feed-dotted-lines.png');
 	background-repeat: no-repeat;
 	background-position: 11px 77px;
@@ -597,11 +570,10 @@ aside span {
 
 .qtf-blog-feed ul a {
 	color: #454545;
-	text-decoration: none;
 }
 
 .blog-text-hover {
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+	text-shadow: 0px .5px 0px rgba(255, 255, 255, 1);
 }
 
 .qtf-blog-feed img {
@@ -618,9 +590,6 @@ aside span {
 SUB-PAGE STYLES
 ********************/
 
-.sub-page-top-image {
-	float: left;
-}
 
 .sub-page-right-menu {
 	position: relative;
@@ -654,12 +623,10 @@ SUB-PAGE STYLES
 	color: #e9ecf0;
 	width: 190px;
 	line-height: 28px;
-	text-transform: uppercase;
 }
 
 .top span {
 	color: #faa61a;
-	font-weight: bold;
 	font-size: 38px;
 	font-family:'AvenirLTW01-95BlackObli';
 }
@@ -683,32 +650,28 @@ SUB-PAGE STYLES
 
 .bottom p {
 	position: relative;
-	top: 16px;
+	top: 20px;
 	left: 26px;
 	font-family:'Avenir LT W01 35 Light';
 	font-size: 20px;
 	color: #e9ecf0;
 	width: 190px;
 	line-height: 28px;
-	text-transform: uppercase;
 }
 
 .bottom span {
 	color: #faa61a;
-	font-weight: bold;
 	font-size: 38px;
 	font-family:'AvenirLTW01-95BlackObli';
 }
 
 .sub-page-content {
 	float: left;
-	margin-top: -235px;
+	margin-top: -237px;
 	width: 880px;
 	height: 677px;
 	background-image: url('images/sub-page-content-back.png');
-	background-repeat: no-repeat;
-	top: -235px;
-	z-index: -1;
+	background-repeat: no-repeat
 }
 
 .about-info {
@@ -720,15 +683,10 @@ SUB-PAGE STYLES
 }
 
 .sub-page-content h1 {
-	text-transform: uppercase;
-	font-size: 32px;
-	font-family: Avenir;
+	font-size: 26px;
+	font-family:'Avenir LT W01 35 Light';
 	font-weight: normal;
 	color: #114d78;
-}
-
-.sub-page-content span {
-	color: #faa61a;
 }
 
 .about-info img {
@@ -741,38 +699,27 @@ SUB-PAGE STYLES
 }
 
 .about-info p {
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 	font-family: verdana;
-	font-size: 13px;
+	font-size: 11px;
 	color: #454545;
 	line-height: 20px;
 }
 
-.sub-page-blog {
-	float: right;
-	top: 0px;
-	left: 0px;	
-}
-
-.sub-page-blog h1 {
-	position: relative;
-	top: -40px;
-	left:;
+.about-info span {
+	font-family:'Avenir LT W01 85 Heavy';
+	color: #faa61a;
 }
 
 .sub-page-blog ul {
-	position: relative;
 	top: -10px;
 }
 
 .subpage-sidebar aside h1 {
-	position: relative;
 	margin: 28px 0 0 42px;
 	color: #fff;
-	text-transform: uppercase;
 	font-size: 26px;
-	font-family: Avenir;
-	font-weight: normal;
+	font-family:'Avenir LT W01 85 Heavy';
 }
 
 .subpage-sidebar span {
@@ -780,8 +727,7 @@ SUB-PAGE STYLES
 }
 
 .subpage-sidebar {
-	margin-top:235px;
-	margin-right:13px;
+	margin: 235px 1px 0 0;
 }
 
 /********************
@@ -796,14 +742,12 @@ FOOTER STYLES
 
 .footer-logo {
 	float: left;
-	margin-top: 40px;
-	margin-left: 10px;
+	margin: 40px 0 0 10px;
 }
 
 .bottom-nav {
 	float: left;
-	margin-top: 63px;
-	margin-left: 60px;
+	margin: 63px 0 0 60px;
 }
 
 

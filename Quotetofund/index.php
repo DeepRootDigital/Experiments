@@ -7,7 +7,7 @@
 			<p><span>working capital</span> for</p>
 			<p>your business</p>
 		</div>
-		<p class="top-slider-text2">QUICK & HASSLE FREE</p>
+		<p class="top-slider-text2">quick & hassle free</p>
 		<div class="qtf-money-bag"></div>
 		<div class="qtf-graph"></div>
 		<p class="go-button"></p>
@@ -46,9 +46,9 @@
 <!-- APPROVAL/PAYMENT MINI NAVIGATION -->
 <div class="mini-nav">
 	<ul>
-		<li class="mini-nav-back"><a href="#">back</a></li>
-		<li class="mini-nav-approval"><a href="#">calculate approval</a></li>
-		<li class="mini-nav-payment"><a href="#">calculate payments</a/></li>
+		<li class="mini-nav-back">back</li>
+		<li class="mini-nav-approval">calculate approval<img src="<?php echo get_template_directory_uri(); ?>/images/mini-nav-slits.png"></li>
+		<li class="mini-nav-payment">calculate payments<img src="<?php echo get_template_directory_uri(); ?>/images/mini-nav-slits.png"></li>
 	</ul>
 </div>
 <!-- APPROVAL CONTENT -->
