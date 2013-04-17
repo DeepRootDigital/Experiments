@@ -3,6 +3,8 @@
     <head>
          <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
          <link href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" rel="stylesheet" /> 
+
+         <script type="text/javascript" src="http://fast.fonts.com/jsapi/c72313c3-a6c7-4f10-a23c-04455cddea2f.js"></script>
      </head>
 
      <body>

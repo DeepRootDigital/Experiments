@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('.go-button').click(function(){
-		$(this).fadeOut('slow')
+		$(this).fadeOut('fast')
 		$('.qtf-face').animate({
 			'left' : '-2000px'
 		}, 1000);
@@ -18,16 +18,16 @@ $(document).ready(function(){
 		}, 1000);
 
 		// INCOMING SLIDE
-		$('.bank').delay('500').animate({
+		$('.bank').fadeIn('slow').animate({
 			'left' : '95px'
 		}, 1000);
-		$('.women').delay('400').animate({
+		$('.women').fadeIn('fast').animate({
 			'left' : '238px'
 		}, 1000);
-		$('.credit-card').delay('300').animate({
+		$('.credit-card').fadeIn('slow').animate({
 			'left' : '575px'
 		}, 1000);
-		$('.top-slider-second-text').delay('200').animate({
+		$('.top-slider-second-text').fadeIn('fast').animate({
 			'left' : '112px'
 		}, 1000);
 	});
@@ -93,6 +93,21 @@ $(document).ready(function(){
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
 
+	$(".top img").hover(
+		function() {
+			$(this).stop().animate({"opacity": ".5"}, "fast");
+		},
+		function() {
+			$(this).stop().animate({"opacity": "1"}, "fast");
+		});
+
+	$(".bottom img").hover(
+		function() {
+			$(this).stop().animate({"opacity": ".5"}, "fast");
+		},
+		function() {
+			$(this).stop().animate({"opacity": "1"}, "fast");
+		});
 	});
 
 

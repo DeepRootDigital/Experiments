@@ -39,7 +39,7 @@
 				<p>calculate</p>
 				<p><span>payments</span></p>
 			</div>
-			<img class="qtf-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/atf-arrow.png" />
+			<img class="qtf-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/qtf-white-arrow.png" />
 		</div>
 	</form>
 </div>
