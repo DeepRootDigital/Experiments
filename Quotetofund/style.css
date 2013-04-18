@@ -76,6 +76,7 @@ nav ul li {
 	float: left;
 	margin-right: 20px;
  	font-family:'Avenir LT W01 35 Light';
+ 	font-size: 12px;
 }
 
 nav ul li a {
@@ -92,6 +93,7 @@ BODY STYLES
 	height: 400px;
 	background-image: url('images/qtf-top-slider-background.png');
 	background-repeat: no-repeat;
+	float:left;
 }
 
 .qtf-face {
@@ -752,32 +754,33 @@ BLOG SUMMARY PAGE STYLES
 	position: relative;
 	float: left;
 	width: 100%;
-	height: 515px;
+	height: 505px;
 }
 
 .blog-ribbon {
 	position: absolute;
-	top: 22px;
-	left: 66px;
+	top: 34px;
+	left: 64px;
 }
 
 .blog-summary-content h1 {
 	position: absolute;
-	top: 28px;
-	left: 90px;
+	top: 46px;
+	left: 83px;
 	font-family:'Avenir LT W01 35 Light';
 	color: #114d78;
 }
 
 .blog-summary-content span {
+	font-family:'Avenir LT W01 85 Heavy';
 	color: #faa61a;
 }
 
 .blog-posted-by {
 	position: absolute;
 	top: 40px;
-	left: 440px;
-	width: 85px;
+	left: 470px;
+	width: 64px;
 	height: 40px;
 	border-left: 1px dotted;
 	font-size: 10px;
@@ -787,14 +790,14 @@ BLOG SUMMARY PAGE STYLES
 
 .blog-summary-dotted-bar {
 	position: absolute;
-	left: 92px;
-    top: 89px;
+	left: 85px;
+    top: 105px;
 }
 
 .blog-summary-main-image {
 	position: absolute;
 	top: 130px;
-	left: 56px;
+	left: 65px;
 }
 
 .blog-top-image {
@@ -810,12 +813,11 @@ BLOG SUMMARY PAGE STYLES
 
 .blog-description {
 	position: relative;
-	top: 360px;
-	left: 56px;
+	top: 356px;
+	left: 59px;
 	width: 441px;
 	height: auto;
 	padding-bottom: 10px;
-	border-bottom: 1px dotted;	
 }
 
 .blog-description p {
@@ -832,11 +834,17 @@ BLOG SUMMARY PAGE STYLES
 	left: 390px;
 }
 
+.blog-summary-single-dotted-lines {
+	left: 66px;
+    position: absolute;
+    top: 440px;
+}
+
 .blog-summary-content ul {
 	position: relative;
 	float: left;
 	top: 348px;
-	left: 36px;
+	left: 40px;
 	font-family: verdana;
 }
 
@@ -858,9 +866,9 @@ BLOG SUMMARY PAGE STYLES
 }
 
 .blog-bottom-border {
-	left: -2px;
+	left: 5px;
     position: absolute;
-    top: 470px;
+    top: 466px;
 }
 
 .blog-summary-feed {
@@ -872,16 +880,6 @@ BLOG SUMMARY PAGE STYLES
 .blog-last-border {
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
 
 /********************
 FOOTER STYLES
