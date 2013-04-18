@@ -24,7 +24,7 @@ font-family:'Avenir LT W01 95 Black';
 font-family:'AvenirLTW01-95BlackObli';
 */
 
-p, h1, h2, h3, ul, li, span, em {
+h1, h2, h3, ul, li, span, em {
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -590,7 +590,6 @@ aside h1 span {
 SUB-PAGE STYLES
 ********************/
 
-
 .sub-page-right-menu {
 	position: relative;
 	float: right;
@@ -729,6 +728,154 @@ SUB-PAGE STYLES
 .subpage-sidebar {
 	margin: 235px 1px 0 0;
 }
+
+/************************
+BLOG SUMMARY PAGE STYLES
+************************/
+
+.blog-summary-background {
+	position: relative;
+	float: left;
+	width: 880px;
+	height: 1550px;
+	background-image: url('images/blog-summary-background.png');
+	background-repeat: repeat-x;
+}
+
+.blog-summary-side-menu {
+	position: absolute;	
+	top: 274px;
+	left: 580px;
+}
+
+.blog-summary-content {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 505px;
+}
+
+.blog-summary-content img {
+	position: absolute;
+	top: 33px;
+	left: 66px;
+}
+
+.blog-summary-content h1 {
+	position: absolute;
+	top: 40px;
+	left: 90px;
+	font-family:'Avenir LT W01 35 Light';
+	color: #114d78;
+}
+
+.blog-summary-content span {
+	color: #faa61a;
+}
+
+.blog-posted-by {
+	position: absolute;
+	top: 40px;
+	left: 440px;
+	width: 85px;
+	height: 40px;
+	border-left: 1px dotted;
+	font-size: 10px;
+	color: #454545;
+	padding-left: 5px;
+}
+
+.blog-summary-dotted-bar {
+	margin: 70px 0 0 0;
+}
+
+.blog-summary-main-image {
+	position: absolute;
+	top: 130px;
+	left: 56px;
+}
+
+.blog-top-image {
+	width: 460px;
+	height: 220px;
+	background-image: url('images/blog-top-image.png');
+	background-repeat: no-repeat;
+}
+
+.blog-posted-date {
+	margin: -18px 0 0 -115px;
+}
+
+.blog-description {
+	position: relative;
+	top: 360px;
+	left: 56px;
+	width: 441px;
+	height: auto;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted;	
+}
+
+.blog-description p {
+	width: 350px;
+	padding-left: 25px;
+	color: #454545;
+	font-size: 13px;
+	font-family: verdana;
+}
+
+.blog-description img {
+	position: absolute;
+	top: 5px;
+	left: 390px;
+}
+
+.blog-summary-content ul {
+	position: relative;
+	float: left;
+	top: 348px;
+	left: 36px;
+	font-family: verdana;
+}
+
+.blog-summary-content ul li {
+	float: left;
+	margin-left: 5px;
+	font-size: 13px;
+	text-transform: lowercase;
+}
+
+.blog-summary-content ul li:first-child {
+	border-right: 1px solid #faa61a;
+	padding-right: 3px;
+	color: #114d78;
+	text-transform: uppercase;
+}
+
+.blog-bottom-border {
+	float: left;
+	margin: 425px 0 0 -71px;
+}
+
+.blog-summary-feed {
+	left: 565px;
+    position: absolute;
+    top: 506px;
+}
+
+.blog-last-border {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 /********************
 FOOTER STYLES
