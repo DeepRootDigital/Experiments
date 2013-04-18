@@ -1,3 +1,4 @@
+<?php /* Template Name: Testimonial Page */ ?>
  <?php include 'header.php'; ?> 
  	<div class="canvas">
 		<section class="case-nav">

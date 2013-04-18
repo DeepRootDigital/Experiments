@@ -170,16 +170,261 @@ header nav ul a:hover {
 }
 
 /*********************************************
-***** HOME PAGE
+***** HOME SLIDER
 **********************************************/
 
+
 .home-slider {
-    border: 1px solid #000000;
-    height: 550px;
+    height: 548px;
     margin: 0 0 40px;
+    position: relative;
     width: 1000px;
+    overflow: hidden;
+
 }
 
+
+.slide-img {
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear;
+    z-index: 100;
+}
+.slide-img-1 {
+    left: 0;
+}
+.slide-img-2 {
+    left: -186px;
+}
+.slide-img-3 {
+    left: -336px;
+}
+.slide-img-4 {
+    left: -504px;
+}
+.slide-img-5 {
+    left: -672px;
+}
+.slide-img-6 {
+    left: -840px;
+}
+
+
+
+
+/*
+.slide-img-active{
+    width: 160px;
+    height: 555px;
+    -webkit-transition: all 0.8s linear; 
+    -moz-transition:    all 0.8s linear; 
+    -o-transition:      all 0.8s linear; 
+    transition:         all 0.8s linear;
+}
+*/
+.home-slide{
+    -webkit-transition: all 0.5s linear; 
+    -moz-transition:    all 0.5s linear; 
+    -o-transition:      all 0.5s linear; 
+    transition:         all 0.5s linear;
+    background: #fff;
+    width: 160px;
+    height: 555px;
+    overflow: hidden;
+
+}
+
+.home-slide-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home-slide-2{
+    position: absolute;
+    top: 0;
+    left: 168px;
+}
+
+.home-slide-3{
+    position: absolute;
+    top: 0;
+    left: 336px;
+}
+
+.home-slide-4{
+    position: absolute;
+    top: 0;
+    left: 504px;
+}
+
+.home-slide-5{
+    position: absolute;
+    top: 0;
+    left: 672px;
+}
+
+.home-slide-6{
+    position: absolute;
+    top: 0;
+    left: 840px;
+}
+
+.slide-img-active{
+    position: absolute;
+    top: 0;
+}
+
+.slide-img-active-1{
+    left:  0px;
+}
+
+.slide-img-active-2{
+    left: -186px;
+    -webkit-transition: all 0.5s linear; 
+    -moz-transition:    all 0.5s linear; 
+    -o-transition:      all 0.5s linear; 
+    transition:         all 0.5s linear;
+}
+
+.slide-img-active-3{
+    left: -336px;
+    -webkit-transition: all 0.5s linear; 
+    -moz-transition:    all 0.5s linear; 
+    -o-transition:      all 0.5s linear; 
+    transition:         all 0.5s linear;
+}
+.slide-img-active-4{
+    left: -504px;
+    -webkit-transition: all 0.5s linear; 
+    -moz-transition:    all 0.5s linear; 
+    -o-transition:      all 0.5s linear; 
+    transition:         all 0.5s linear;
+}
+.slide-img-active-5{
+    left: -672px;
+    -webkit-transition: all 0.5s linear; 
+    -moz-transition:    all 0.5s linear; 
+    -o-transition:      all 0.5s linear; 
+    transition:         all 0.5s linear;
+}
+.slide-img-active-6{
+    left: -840px;
+    -webkit-transition: all 0.5s linear; 
+    -moz-transition:    all 0.5s linear; 
+    -o-transition:      all 0.5s linear; 
+    transition:         all 0.5s linear;
+}
+
+.slide-nav{
+    position: absolute;
+    top: 480px;
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear;
+    z-index: 1000;
+}
+
+.slide-nav-1{
+    left: 0;
+}
+
+.slide-nav-2{
+    left: 168px;
+}
+
+.slide-nav-3{
+    left: 336px;
+}
+
+.slide-nav-4{
+    left: 504px;
+}
+
+.slide-nav-5{
+    left: 672px;
+}
+
+.slide-nav-6{
+    left: 840px;
+}
+
+.slide-nav:hover {
+    top:434px;
+}
+
+
+.slide-icon {
+    left: 60px;
+    position: absolute;
+    top: 15px;
+}
+
+.slide-icon-contact {
+    left: 40px;
+    position: absolute;
+    top: 15px;
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear;
+    opacity: 1;
+}
+
+
+.slide-icon-active {   
+    position: absolute;
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition:    all 0.2s linear; 
+    -o-transition:      all 0.2s linear; 
+    transition:         all 0.2s linear;
+    opacity: 0;    
+    cursor: pointer;
+    top: -1px;
+}
+.slide-icon-active:hover {   
+    opacity: 1;
+}
+.slide-icon-active-1 {
+    left: 5px;    
+}
+
+.slide-icon-active-2 {
+    left: 0px;
+
+}
+
+.slide-icon-active-3 {
+    left: 0px;
+
+}
+
+.slide-icon-active-4 {
+    left: 0px;
+
+}
+
+.slide-icon-active-5 {
+    left: 0px;
+
+}
+
+.slide-icon-active-6 {
+    left: 5px;
+
+}
+
+
+
+
+
+/*********************************************
+***** HOME PAGE
+**********************************************/
 .about-content,
 .home-content{
     width: 625px;
@@ -333,7 +578,7 @@ header nav ul a:hover {
 
 
 .home-bottom-info {
-    margin: 40px 0 0;
+    margin: 55px 0 0;
 }
 
 .home-bottom-info p {

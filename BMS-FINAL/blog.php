@@ -1,3 +1,5 @@
+<?php /* Template Name: Blog Summary Page */ ?>
+
 <?php include 'header.php'; ?> 
 		<section class="blog">			
 			<div class="blog-slider">

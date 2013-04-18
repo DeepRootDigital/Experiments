@@ -1,3 +1,4 @@
+<?php /* Template Name: About Page */ ?>
 <?php include 'header.php'; ?> 
 		<div class="center">
 			<div class="home-slider">

@@ -1,8 +1,90 @@
 <?php include 'header.php'; ?> 
 		<div class="center">
 			<div class="home-slider">
-				<h1>SLIDER</h1>
-			</div>
+				<!-- SLIDE 1 -->
+				<div class="slide-section">
+					<div class="home-slide home-slide-1">
+						<img class="slide-img slide-img-1" src="images/slide-img.jpg">
+						<img class="slide-img-active slide-img-active-1" src="images/slide-1-active.jpg">					
+					</div>
+					<div class="slide-nav slide-nav-1">
+						<div class="slide-nav-icon">
+							<img class="slide-icon" src="images/slider-tabs/tab-1.png">
+							<img class="slide-icon-active slide-icon-active-1" src="images/slider-tabs/tab-1-active.png">
+						</div><img src="images/slider-bottom-overlay.png">
+					</div>
+				</div>
+				<!-- SLIDE 2 -->
+				<div class="slide-section">
+					<div class="home-slide home-slide-2">
+						<img class="slide-img slide-img-2" src="images/slide-img.jpg">
+						<img class="slide-img-active slide-img-active-2" src="images/slide-2-active.jpg">					
+					</div>
+					<div class="slide-nav slide-nav-2">
+						<div class="slide-nav-icon">
+							<img class="slide-icon" src="images/slider-tabs/tab-2.png">
+							<img class="slide-icon-active slide-icon-active-2" src="images/slider-tabs/tab-2-active.png">
+						</div>
+						<img src="images/slider-bottom-overlay.png">
+					</div>
+				</div>
+				<!-- SLIDE 3 -->
+				<div class="slide-section">
+					<div class="home-slide home-slide-3">
+						<img class="slide-img slide-img-3" src="images/slide-img.jpg">
+						<img class="slide-img-active slide-img-active-3" src="images/slide-3-active.jpg">					
+					</div>
+					<div class="slide-nav slide-nav-3">
+						<div class="slide-nav-icon">
+							<img class="slide-icon" src="images/slider-tabs/tab-3.png">
+							<img class="slide-icon-active slide-icon-active-3" src="images/slider-tabs/tab-3-active.png">
+						</div>
+						<img src="images/slider-bottom-overlay.png">
+					</div>
+				</div>
+				<!-- SLIDE 4 -->
+				<div class="slide-section">
+					<div class="home-slide home-slide-4">
+						<img class="slide-img slide-img-4" src="images/slide-img.jpg">
+						<img class="slide-img-active slide-img-active-4" src="images/slide-4-active.jpg">					
+					</div>
+					<div class="slide-nav slide-nav-4">
+						<div class="slide-nav-icon">
+							<img class="slide-icon" src="images/slider-tabs/tab-4.png">
+							<img class="slide-icon-active slide-icon-active-4" src="images/slider-tabs/tab-4-active.png">
+						</div>
+						<img src="images/slider-bottom-overlay.png">
+					</div>
+				</div>
+				<!-- SLIDE 5 -->
+				<div class="slide-section">
+					<div class="home-slide home-slide-5">
+						<img class="slide-img slide-img-5" src="images/slide-img.jpg">	
+						<img class="slide-img-active slide-img-active-5" src="images/slide-5-active.jpg">				
+					</div>
+					<div class="slide-nav slide-nav-5">
+						<div class="slide-nav-icon">
+							<img class="slide-icon" src="images/slider-tabs/tab-5.png">
+							<img class="slide-icon-active slide-icon-active-5" src="images/slider-tabs/tab-5-active.png">
+						</div>
+						<img src="images/slider-bottom-overlay.png">
+					</div>
+				</div>
+				<!-- SLIDE 6 -->
+				<div class="slide-section">
+					<div class="home-slide home-slide-6">
+						<img class="slide-img slide-img-6" src="images/slide-img.jpg">
+						<img class="slide-img-active slide-img-active-6" src="images/slide-3-active.jpg">					
+					</div>
+					<div class="slide-nav slide-nav-6">
+						<div class="slide-nav-icon">
+							<img class="slide-icon-contact" src="images/slider-tabs/tab-6.png">
+							<img class="slide-icon-active slide-icon-active-6" src="images/slider-tabs/tab-6-active.png">
+						</div>
+						<img src="images/slider-bottom-overlay.png">
+					</div>
+				</div>
+			</div><!-- END HOME SLIDER -->
 			<div class="home-content bottom-page-space">
 				<h1><em>Recent</em> Projects</h1>
 				<article class="home-project">
