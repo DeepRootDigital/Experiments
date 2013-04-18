@@ -737,7 +737,7 @@ BLOG SUMMARY PAGE STYLES
 	position: relative;
 	float: left;
 	width: 880px;
-	height: 1550px;
+	height: auto;
 	background-image: url('images/blog-summary-background.png');
 	background-repeat: repeat-x;
 }
@@ -752,18 +752,18 @@ BLOG SUMMARY PAGE STYLES
 	position: relative;
 	float: left;
 	width: 100%;
-	height: 505px;
+	height: 515px;
 }
 
-.blog-summary-content img {
+.blog-ribbon {
 	position: absolute;
-	top: 33px;
+	top: 22px;
 	left: 66px;
 }
 
 .blog-summary-content h1 {
 	position: absolute;
-	top: 40px;
+	top: 28px;
 	left: 90px;
 	font-family:'Avenir LT W01 35 Light';
 	color: #114d78;
@@ -786,7 +786,9 @@ BLOG SUMMARY PAGE STYLES
 }
 
 .blog-summary-dotted-bar {
-	margin: 70px 0 0 0;
+	position: absolute;
+	left: 92px;
+    top: 89px;
 }
 
 .blog-summary-main-image {
@@ -803,7 +805,7 @@ BLOG SUMMARY PAGE STYLES
 }
 
 .blog-posted-date {
-	margin: -18px 0 0 -115px;
+	margin: 16px 0 0 -55px;
 }
 
 .blog-description {
@@ -843,6 +845,8 @@ BLOG SUMMARY PAGE STYLES
 	margin-left: 5px;
 	font-size: 13px;
 	text-transform: lowercase;
+    font-style: italic;
+    color: #4a4a4a;
 }
 
 .blog-summary-content ul li:first-child {
@@ -850,11 +854,13 @@ BLOG SUMMARY PAGE STYLES
 	padding-right: 3px;
 	color: #114d78;
 	text-transform: uppercase;
+	font-style: normal;
 }
 
 .blog-bottom-border {
-	float: left;
-	margin: 425px 0 0 -71px;
+	left: -2px;
+    position: absolute;
+    top: 470px;
 }
 
 .blog-summary-feed {
