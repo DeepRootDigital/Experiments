@@ -65,8 +65,7 @@ body {
 }
 
 .top-nav {
-	margin-top: 20px;
-}
+	margin: 22px -20px 0 0;}
 
 nav ul {
 	float: right;
@@ -119,6 +118,7 @@ BODY STYLES
 	font-size: 28px;
 	font-family:'Avenir LT W01 35 Light';
 	text-align: right;
+	text-transform: uppercase;
 }
 
 .top-slider-text1 span {
@@ -128,10 +128,11 @@ BODY STYLES
 
 .top-slider-text2 {
 	position: absolute;
-	left:570px;
-	top: 80px;
+	left:565px;
+	top: 83px;
 	font-family:'Avenir LT W01 55 Roman';
 	font-size: 20px;
+	text-transform: uppercase;
 	color: #114d78;
 }
 
@@ -176,11 +177,12 @@ TOP SECOND SLIDE
 	position: absolute;
 	width: 670px;
 	height: 55px;
-	top: 90px;
+	top: 70px;
 	left: 2000px;
 	color: #114d78;
 	font-size: 20px;
 	font-family: Avenir;
+	text-transform: uppercase;
 	display: none;
 }
 
@@ -189,6 +191,7 @@ TOP SECOND SLIDE
 	top: 5px;
 	color: #fff;
 	font-size: 28px;
+	font-family:'Avenir LT W01 35 Light';
 }
 
 .bank {
@@ -227,6 +230,7 @@ TOP SECOND SLIDE
 	height: 428px;
 	background-image: url('images/qtf-top-slider-background2.png');
 	background-repeat: no-repeat;
+	text-transform: uppercase;
 }
 
 .second-slider-box {
@@ -394,7 +398,7 @@ APPROVAL SLIDE STYLES
 }
 
 .number-three {
-	width: 34px;
+
 	height: 35px;
 	background-image: url('images/approval-number-three.png');
 	background-repeat: no-repeat;
@@ -496,6 +500,7 @@ BODY CONTENT STYLES
 }
 
 .body-bottom-left-content span {
+	font-family:'Avenir LT W01 85 Heavy';
 	color: #f5a624;
 }
 
@@ -503,7 +508,8 @@ BODY CONTENT STYLES
 	position: relative;
 	width: 439px;
 	height: 5px;
-	top: 4px;
+	top: 10px;
+	padding: 16px 0 0 0;
 	background-image: url('images/bottom-body-dotted-line.png');
 	background-repeat: no-repeat;
 }
@@ -515,6 +521,7 @@ BODY CONTENT STYLES
 	font-family: Verdana;
 	font-size: 11px;
 	line-height: 20px;
+	text-transform: uppercase;
 }
 
 /***************
@@ -530,7 +537,7 @@ aside {
 }
 
 aside h1 {
-	margin: 28px 0 0 42px;
+	margin: 28px 0 0 44px;
 	color: #fff;
 	font-size: 26px;
 	font-family:'Avenir LT W01 85 Heavy';
@@ -549,7 +556,7 @@ aside h1 span {
 }
 
 .qtf-blog-feed ul {
-	top: -10px;
+	margin: 5px 0 0 0;
 	font-size: 12px;
 	font-family: verdana;
 }
@@ -692,7 +699,7 @@ SUB-PAGE STYLES
 
 .about-info img {
 	position: relative;
-	top: -22px;
+	top: -18px;
 }
 
 .sub-page-about-text {
@@ -705,6 +712,7 @@ SUB-PAGE STYLES
 	font-size: 11px;
 	color: #454545;
 	line-height: 20px;
+	text-transform: uppercase;
 }
 
 .about-info span {
@@ -778,14 +786,16 @@ BLOG SUMMARY PAGE STYLES
 
 .blog-posted-by {
 	position: absolute;
-	top: 40px;
-	left: 470px;
+	top: 56px;
+	left: 454px;
 	width: 64px;
-	height: 40px;
-	border-left: 1px dotted;
+	padding-left: 10px;
+	font-family: verdana;
+	background-image: url('images/blog-posted-by-dotted-line.png');
+	background-repeat: no-repeat;
+	background-position: 0 8px;
 	font-size: 10px;
 	color: #454545;
-	padding-left: 5px;
 }
 
 .blog-summary-dotted-bar {
@@ -898,9 +908,14 @@ FOOTER STYLES
 
 .bottom-nav {
 	float: left;
-	margin: 63px 0 0 60px;
+	margin: 47px 0 0 60px;
 }
 
+.footer-dotted-line {
+	position: relative;
+	left: 113px;
+    top: 55px;
+}
 
 
 

@@ -9,6 +9,7 @@
      			<li><a href = "#">contact</a></li>
      		</ul>
      	</nav>
+     	<img class="footer-dotted-line" src="<?php echo get_template_directory_uri(); ?>/images/footer-dotted-line.png" alt="logo"/>
 </div>
 </div>
 
