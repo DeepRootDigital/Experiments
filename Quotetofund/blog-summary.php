@@ -81,12 +81,19 @@ Template Name: blog-summary
 		<img class="blog-bottom-border blog-last-border" src="<?php echo get_template_directory_uri(); ?>/images/blog-bottom-border.png" />
 	</section>
 
+	<div class="pagination">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/pagination-arrow.png" />
+		<p>Older</p>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/pagination-quote.png" />
+	</div>
+
 	<div class="blog-summary-side-menu">
 		<?php get_template_part('blogfeed','sidemenu'); ?>
 	</div>
 	<div class="blog-summary-feed">
 		<?php get_template_part('sidebar','blogfeed'); ?>
 	</div>
+
 </div>
 
 

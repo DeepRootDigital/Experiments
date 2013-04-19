@@ -20,7 +20,7 @@ Template Name: sub-page
 		<p>Appellantur adversarium eum ut. Vim at fuisset similique sententiae. Graeco salutatus intellegat ad has, graeci oblique ius ut, an pro alii mediocrem. Ex oblique electram voluptaria </p>
 		</div>
 	</div>
-	<div class="subpage-sidebar">
+	<div id="subpage-sidebar">
 <?php get_template_part('sidebar','blogfeed'); ?>
 </div>
 </section>

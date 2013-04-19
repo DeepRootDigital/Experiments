@@ -39,7 +39,7 @@
 				<p>calculate</p>
 				<p><span>payments</span></p>
 			</div>
-			<img class="qtf-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/qtf-white-arrow.png" />
+			<img class="qtf-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/atf-arrow.png" />
 		</div>
 	</form>
 </div>
@@ -73,6 +73,7 @@
 			<p>Vel an velit feugait, meis ignota vis ei. Cu oblique maiorum mel, no quaeque interpretaris quo.</p>
 		</div>
 		<div class="quote">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/homepage-quote-dotted-lines.png" />
 			<p>"Quote 2 Fund's immediate approach was simple and completely hassle free"  - John Smith</p>
 		</div>
 		<input class="submit" type="submit" value="" />
@@ -94,6 +95,7 @@
 			<p>Vel an velit feugait, meis ignota vis ei. Cu oblique maiorum mel, no quaeque interpretaris quo.</p>
 		</div>
 		<div class="quote">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/homepage-quote-dotted-lines.png" />
 			<p>"Quote 2 Fund's immediate approach was simple and completely hassle free"  - John Smith</p>
 		</div>
 		<input class="submit" type="submit" value="" />		

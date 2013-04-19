@@ -37,7 +37,7 @@ $(document).ready(function(){
 	$('.slider-2-payment').hide();
 	$('.mini-nav').hide();
 
-	$('.qtf-arrow-left').click(function(){
+	$('.second-slider-box.left').click(function(){
 		$('.slider2-content').hide();
 		$('.slider-2-approval').show();
 		$('.mini-nav').show();
@@ -49,7 +49,7 @@ $(document).ready(function(){
 	});
 
 	//PAYMENT SLIDE
-	$('.qtf-arrow-right').click(function(){
+	$('.second-slider-box.right').click(function(){
 		$('.mini-nav').show();
 		$('.slider2-content').hide();
 		$('.slider-2-payment').show();
@@ -72,42 +72,63 @@ $(document).ready(function(){
 		$('.slider-2-payment').show();
 		$('.slider-2-approval').hide();
 	});
-});
 
 //APPROVAL & PAYMENTS ARROW HOVER EFFECTS
-
-$(document).ready(function(){
-	$(".qtf-arrow-left").hover(
+	$('.qtf-arrow-left').hover(
 		function() {
-			$(this).stop().animate({"opacity": ".5"}, "fast");
+			$(this).stop().animate({"opacity": ".8"}, "fast");
 		},
 		function() {
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
 
-	$(".qtf-arrow-right").hover(
+	$('.qtf-arrow-right').hover(
 		function() {
-			$(this).stop().animate({"opacity": ".5"}, "fast");
+			$(this).stop().animate({"opacity": ".8"}, "fast");
 		},
 		function() {
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
 
-	$(".top img").hover(
+	$('.top img').hover(
 		function() {
-			$(this).stop().animate({"opacity": ".5"}, "fast");
+			$(this).stop().animate({"opacity": ".8"}, "fast");
 		},
 		function() {
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
 
-	$(".bottom img").hover(
+	$('.bottom img').hover(
 		function() {
-			$(this).stop().animate({"opacity": ".5"}, "fast");
+			$(this).stop().animate({"opacity": ".8"}, "fast");
 		},
 		function() {
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
+
+	$('.second-slider-box').hover(
+  function() {
+   $(this).find('.qtf-second-slider-text').find('p').css( "color", "#f5a624" );
+   $(this).find('.qtf-second-slider-text').find('p span').css( "color", "#fff");
+   $(this).find('.qtf-second-slider-text').find('qtf-second-slider-bottom-text').css( "color", "#f5a624" );
+  },
+  function() {
+   $(this).find('.qtf-second-slider-text').find('p').css( "color", "#fff");
+   $(this).find('.qtf-second-slider-text').find('p span').css( "color", "#f5a624");
+   $(this).find('.qtf-second-slider-text').find('qtf-second-slider-bottom-text').css( "color", "#fff" );
+  });
+
+$('.second-slider-box').hover(
+  function() {
+   $(this).find('.qtf-second-slider-right-text').find('p').css( "color", "#f5a624" );
+   $(this).find('.qtf-second-slider-right-text').find('p span').css( "color", "#fff");
+  },
+  function() {
+   $(this).find('.qtf-second-slider-right-text').find('p').css( "color", "#fff");
+   $(this).find('.qtf-second-slider-right-text').find('p span').css( "color", "#f5a624");
+  });
+
+	
 	});
 
 

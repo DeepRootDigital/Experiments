@@ -24,7 +24,7 @@ font-family:'Avenir LT W01 95 Black';
 font-family:'AvenirLTW01-95BlackObli';
 */
 
-h1, h2, h3, ul, li, span, em {
+h1, h2, h3, span, em {
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -76,6 +76,7 @@ nav ul li {
 	margin-right: 20px;
  	font-family:'Avenir LT W01 35 Light';
  	font-size: 12px;
+ 	text-transform: uppercase;
 }
 
 nav ul li a {
@@ -235,20 +236,22 @@ TOP SECOND SLIDE
 
 .second-slider-box {
 	width: 414px;
-	height: 428px;
+	height: 426px;
 	font-size: 24px;
 	color: #fff;
 }
 
 .left {
-	float: left;
 	position: relative;
+	float: left;
+	cursor: pointer;
 }
 
 .right {
 	position: relative;
 	float: right;
-	top: -366px;
+	top: -365px;
+	cursor: pointer;
 }
 
 .second-slider-box span {
@@ -281,6 +284,11 @@ TOP SECOND SLIDE
 	top: 280px;
 	left: 185px;
 	cursor: pointer;
+	background-image: url('images/qtf-arrow.png');
+}
+
+.qtf-arrow-left:hover {
+	background-image: url('images/qtf-white-arrow.png');
 }
 
 .qtf-second-slider-divider {
@@ -297,7 +305,7 @@ TOP SECOND SLIDE
 	position: absolute;
 	width: 327px;
 	height: 100px;
-	top: 135px;
+	top: 110px;
 	left: 60px;
 }
 
@@ -317,6 +325,13 @@ TOP SECOND SLIDE
 	top: 282px;
 	left: 160px;
 	cursor: pointer;
+	background-image: url('images/qtf-arrow.png');
+	
+}
+
+.qtf-arrow-right:hover {
+	background-image: url('images/qtf-white-arrow.png');
+	bakground-repeat: no-repeat;
 }
 
 /*********************
@@ -434,11 +449,12 @@ APPROVAL SLIDE STYLES
 .section p:last-child {
 	position: relative;
 	top: -65px;
-	left: 50px;
+	left: 53px;
 	width: 185px;
 	font-family: verdana;
 	font-size: 13px;
 	color: #fefefe;
+	text-transform: none;
 }
 
 .quote {
@@ -449,8 +465,11 @@ APPROVAL SLIDE STYLES
 	font-family:'AvenirLTW01-35LightObli';
 	font-size: 12px;
 	color: #fff;
-	border-top: 1px dotted #07283f;
-	border-bottom: 1px dotted #07283f;
+	text-transform: none;	
+}
+
+.quote img {
+	position: absolute;
 }
 
 .submit {
@@ -519,9 +538,8 @@ BODY CONTENT STYLES
 	height: auto;
 	color: #454545;
 	font-family: Verdana;
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 20px;
-	text-transform: uppercase;
 }
 
 /***************
@@ -605,8 +623,8 @@ SUB-PAGE STYLES
 	background-image: url('images/sub-page-menu-back.png');
 	width: 270px;
 	height: 505px;
-	margin-top: -274px;
-	margin-right: 30px;
+	margin: -276px 30px 0 0;
+	text-transform: uppercase;
 }
 
 .side-menu {
@@ -620,6 +638,11 @@ SUB-PAGE STYLES
 	top: 25px;
 	left: 104px;
 	cursor: pointer;
+	background-image: url('images/qtf-arrow.png');
+}
+
+.side-menu-top-arrow:hover {
+	background-image: url('images/qtf-white-arrow');
 }
 
 .top p {
@@ -709,10 +732,9 @@ SUB-PAGE STYLES
 .about-info p {
 	padding-bottom: 20px;
 	font-family: verdana;
-	font-size: 11px;
+	font-size: 12px;
 	color: #454545;
 	line-height: 20px;
-	text-transform: uppercase;
 }
 
 .about-info span {
@@ -720,24 +742,25 @@ SUB-PAGE STYLES
 	color: #faa61a;
 }
 
-.sub-page-blog ul {
+#sub-page-blog ul {
 	top: -10px;
 }
 
-.subpage-sidebar aside h1 {
+#subpage-sidebar aside h1 {
 	margin: 28px 0 0 42px;
 	color: #fff;
 	font-size: 26px;
 	font-family:'Avenir LT W01 85 Heavy';
 }
 
-.subpage-sidebar span {
+#subpage-sidebar span {
 	color:rgb(17, 77, 120) !important;
 }
 
-.subpage-sidebar {
-	margin: 235px 1px 0 0;
+#subpage-sidebar {
+	margin: 234px 1px 0 0;
 }
+
 
 /************************
 BLOG SUMMARY PAGE STYLES
@@ -754,7 +777,7 @@ BLOG SUMMARY PAGE STYLES
 
 .blog-summary-side-menu {
 	position: absolute;	
-	top: 274px;
+	top: 276px;
 	left: 580px;
 }
 
@@ -891,6 +914,29 @@ BLOG SUMMARY PAGE STYLES
 	display: none;
 }
 
+.pagination {
+	position: relative;
+	float: right;
+	width: 100px;
+	height: 20px;
+	top: -55px;
+	left: -164px;
+	font-family: Myriad Pro;
+	font-size: 12px;
+	color: #114d78;
+}
+
+.pagination img {
+	position: relative;
+	padding: 0 10px 0 0;
+	top: 2px;
+}
+
+.pagination p {
+	display: inline;
+	padding: 0 10px 0 0;
+}
+
 /********************
 FOOTER STYLES
 ********************/
@@ -913,7 +959,7 @@ FOOTER STYLES
 
 .footer-dotted-line {
 	position: relative;
-	left: 113px;
+	left: 114px;
     top: 55px;
 }
 
