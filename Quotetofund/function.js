@@ -17,7 +17,7 @@ $(document).ready(function(){
 			'left' : '-2000px'
 		}, 1000);
 
-		// INCOMING SLIDE
+// INCOMING SLIDE
 		$('.bank').fadeIn('slow').animate({
 			'left' : '95px'
 		}, 1000);
@@ -32,48 +32,44 @@ $(document).ready(function(){
 		}, 1000);
 	});
 
-	//APPROVAL SLIDE
-	$('.slider-2-approval').hide();
-	$('.slider-2-payment').hide();
-	$('.mini-nav').hide();
-
+//APPROVAL SLIDE************************************
+		$('.slider-2-approval').hide();
+		$('.slider-2-payment').hide();
+		$('.mini-nav').hide();
 	$('.second-slider-box.left').click(function(){
 		$('.slider2-content').hide();
 		$('.slider-2-approval').show();
 		$('.mini-nav').show();
 	});
-
 	$('.mini-nav-back').click(function(){
 		$('.slider2-content').show();
 		$('.slider-2-approval').hide();
 	});
 
-	//PAYMENT SLIDE
+//PAYMENT SLIDE************************************
 	$('.second-slider-box.right').click(function(){
 		$('.mini-nav').show();
 		$('.slider2-content').hide();
 		$('.slider-2-payment').show();
 	});
 
-	//MINI NAV SECTION
+//MINI NAV SECTION************************************
 	$('.mini-nav-back').click(function(){
 		$('.slider2-content').show();
 		$('.slider-2-approval').hide();
 		$('.slider-2-payment').hide();
 		$('.mini-nav').hide();
 	});
-
 	$('.mini-nav-approval').click(function(){
 		$('.slider-2-approval').show();
 		$('.slider-2-payment').hide();
 	});
-
 	$('.mini-nav-payment').click(function(){
 		$('.slider-2-payment').show();
 		$('.slider-2-approval').hide();
 	});
 
-//APPROVAL & PAYMENTS ARROW HOVER EFFECTS
+//APPROVAL & PAYMENTS ARROW HOVER EFFECTS************************************
 	$('.qtf-arrow-left').hover(
 		function() {
 			$(this).stop().animate({"opacity": ".8"}, "fast");
@@ -81,7 +77,6 @@ $(document).ready(function(){
 		function() {
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
-
 	$('.qtf-arrow-right').hover(
 		function() {
 			$(this).stop().animate({"opacity": ".8"}, "fast");
@@ -89,7 +84,6 @@ $(document).ready(function(){
 		function() {
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
-
 	$('.top img').hover(
 		function() {
 			$(this).stop().animate({"opacity": ".8"}, "fast");
@@ -97,7 +91,6 @@ $(document).ready(function(){
 		function() {
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
-
 	$('.bottom img').hover(
 		function() {
 			$(this).stop().animate({"opacity": ".8"}, "fast");
@@ -106,30 +99,49 @@ $(document).ready(function(){
 			$(this).stop().animate({"opacity": "1"}, "fast");
 		});
 
+//SLIDER TEXT ROLLOVERS (INDEX PAGE)************************************
 	$('.second-slider-box').hover(
-  function() {
-   $(this).find('.qtf-second-slider-text').find('p').css( "color", "#f5a624" );
-   $(this).find('.qtf-second-slider-text').find('p span').css( "color", "#fff");
-   $(this).find('.qtf-second-slider-text').find('qtf-second-slider-bottom-text').css( "color", "#f5a624" );
-  },
-  function() {
-   $(this).find('.qtf-second-slider-text').find('p').css( "color", "#fff");
-   $(this).find('.qtf-second-slider-text').find('p span').css( "color", "#f5a624");
-   $(this).find('.qtf-second-slider-text').find('qtf-second-slider-bottom-text').css( "color", "#fff" );
-  });
-
-$('.second-slider-box').hover(
-  function() {
-   $(this).find('.qtf-second-slider-right-text').find('p').css( "color", "#f5a624" );
-   $(this).find('.qtf-second-slider-right-text').find('p span').css( "color", "#fff");
-  },
-  function() {
-   $(this).find('.qtf-second-slider-right-text').find('p').css( "color", "#fff");
-   $(this).find('.qtf-second-slider-right-text').find('p span').css( "color", "#f5a624");
-  });
-
-	
-	});
+	   function() {
+	   $(this).find('.qtf-second-slider-text').find('p').css( "color", "#f5a624" );
+	   $(this).find('.qtf-second-slider-text').find('p span').css( "color", "#fff");
+	   $(this).find('.qtf-second-slider-text').find('qtf-second-slider-bottom-text').css( "color", "#f5a624" );
+	  },
+	   function() {
+	   $(this).find('.qtf-second-slider-text').find('p').css( "color", "#fff");
+	   $(this).find('.qtf-second-slider-text').find('p span').css( "color", "#f5a624");
+	   $(this).find('.qtf-second-slider-text').find('qtf-second-slider-bottom-text').css( "color", "#fff" );
+	  });
+	$('.second-slider-box').hover(
+	   function() {
+	   $(this).find('.qtf-second-slider-right-text').find('p').css( "color", "#f5a624" );
+	   $(this).find('.qtf-second-slider-right-text').find('p span').css( "color", "#fff");
+	  },
+	  function() {
+	   $(this).find('.qtf-second-slider-right-text').find('p').css( "color", "#fff");
+	   $(this).find('.qtf-second-slider-right-text').find('p span').css( "color", "#f5a624");
+	  });
+//SLIDER TEXT ROLLOVERS (SUBPAGE & BLOG)
+	$('.side-menu').hover(
+	  function() {
+	  $(this).find('p').css("color", "#f5a624");
+	  $(this).find('p span').css("color", "#fff");
+	  $(this).find('em').css("color", "#f5a624");
+	  },
+	  function() {
+	  $(this).find('p').css("color", "#fff");
+	  $(this).find('p span').css("color", "#f5a624");
+	  $(this).find('em').css("color", "#fff");
+	  });
+	  $('.side-menu').hover(
+	  function() {
+	  $(this).find('p').css("color", "#f5a624");
+	  $(this).find('span').css("color", "#fff");
+	  },
+	  function() {
+	  $(this).find('p').css("color", "#fff");
+	  $(this).find('span').css("color", "#f5a624");
+	 });
+	});		
 
 
 

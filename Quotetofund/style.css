@@ -8,7 +8,6 @@ Version: 1.0
 License: Beerware
 License URI: http://businessonmarketst.com/
 /*
-
 /*
 font-family:'Avenir LT W01 35 Light';
 font-family:'AvenirLTW01-35LightObli';
@@ -772,7 +771,7 @@ BLOG SUMMARY PAGE STYLES
 	width: 880px;
 	height: auto;
 	background-image: url('images/blog-summary-background.png');
-	background-repeat: repeat-x;
+	background-repeat: no-repeat;
 }
 
 .blog-summary-side-menu {
@@ -785,7 +784,7 @@ BLOG SUMMARY PAGE STYLES
 	position: relative;
 	float: left;
 	width: 100%;
-	height: 505px;
+	height: auto;	
 }
 
 .blog-ribbon {
@@ -836,6 +835,7 @@ BLOG SUMMARY PAGE STYLES
 .blog-top-image {
 	width: 460px;
 	height: 220px;
+	float: left;
 	background-image: url('images/blog-top-image.png');
 	background-repeat: no-repeat;
 }
@@ -845,12 +845,11 @@ BLOG SUMMARY PAGE STYLES
 }
 
 .blog-description {
-	position: relative;
-	top: 356px;
-	left: 59px;
-	width: 441px;
-	height: auto;
-	padding-bottom: 10px;
+	float: left;
+    height: auto;
+    margin: 350px 80px 0;
+    padding-bottom: 10px;
+    width: 441px;
 }
 
 .blog-description p {
@@ -862,22 +861,19 @@ BLOG SUMMARY PAGE STYLES
 }
 
 .blog-description img {
-	position: absolute;
-	top: 5px;
-	left: 390px;
+	float: right;
+	margin: -54px 11px 0 0;
 }
 
 .blog-summary-single-dotted-lines {
-	left: 66px;
-    position: absolute;
-    top: 440px;
+	float: left;
+	margin: 0 0 0 81px;
 }
 
 .blog-summary-content ul {
-	position: relative;
 	float: left;
-	top: 348px;
-	left: 40px;
+	padding-bottom: 20px;
+	margin: 16px 0 0 54px;
 	font-family: verdana;
 }
 
@@ -885,7 +881,6 @@ BLOG SUMMARY PAGE STYLES
 	float: left;
 	margin-left: 5px;
 	font-size: 13px;
-	text-transform: lowercase;
     font-style: italic;
     color: #4a4a4a;
 }
@@ -899,9 +894,8 @@ BLOG SUMMARY PAGE STYLES
 }
 
 .blog-bottom-border {
-	left: 5px;
-    position: absolute;
-    top: 466px;
+	float: left;
+	margin: -22px 0 0 10px;
 }
 
 .blog-summary-feed {

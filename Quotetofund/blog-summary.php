@@ -17,7 +17,7 @@ Template Name: blog-summary
 			<img class="blog-posted-date" src="<?php echo get_template_directory_uri(); ?>/images/blog-posted-date.png" />
 		</div>
 		<div class="blog-description">
-			<p> Est legere argumentum dissentiet ea, per elit nihil et. Quo quodsi accusata suavitate in, dicit audiam inciderint ei vix. An consulatu prodesset...</p>
+			<p>Est legere argumentum dissentiet ea, per elit nihil et. Quo quodsi accusata suavitate in, dicit audiam inciderint ei vix. An consulatu prodesset...</p>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/blog-more-button.png" />
 		</div>
 		<img class="blog-summary-single-dotted-lines" src="<?php echo get_template_directory_uri(); ?>/images/blog-summary-single-dotted-lines.png" />
@@ -30,7 +30,7 @@ Template Name: blog-summary
 		</ul>
 		<img class="blog-bottom-border" src="<?php echo get_template_directory_uri(); ?>/images/blog-bottom-border.png" />
 	</section>
-
+	
 	<section class="blog-summary-content">
 		<img class="blog-ribbon" src="<?php echo get_template_directory_uri(); ?>/images/blog-business-finance.png" />
 		<h1>blog article <span>title</span></h1>
