@@ -25,7 +25,7 @@
 				<input id="header-form-submit" type="submit" value="" />
 			</form>
 			<div class="header-phone-info">
-				<h5>call us:<span>855.fans.180 [855.326.7180]</span></h5>
+				<h5>call us:<span>855.fans.180 [ 855.326.7180 ]</span></h5>
 			</div>
 		</header>
 		<section class="home-grid">

@@ -1,0 +1,621 @@
+/**************** 
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+	License: none (public domain)
+
+	Theme Name: Fans 180
+	Theme URI: http://businessonmarketst.com/
+	Description: 
+	Author: Business on Market St dot Com
+	Author URI: http://businessonmarketst.com/
+	Version: 1.0
+
+	License: Beerware
+	License URI: http://businessonmarketst.com/
+
+	General comments (optional).
+	*****************/
+
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		font-family: helvetica Neue;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	h1 {
+		
+	}
+
+	h3 {
+			}
+
+	p{
+		color: #4d4d4a;
+	}
+/*******************
+HEADER STYLES
+*******************/
+
+body {
+	background-image: url('images/background.png');
+	width: 100%;
+}
+
+.body-content {
+	width: 1000px;
+	height: 1300px;
+	margin: 0 auto;
+}
+
+header {
+    background-image: url("images/header-line-texture.png");
+    background-repeat: no-repeat;
+    height: 105px;
+}
+
+header form input {
+	width: 137px;
+	height: 20px;
+	margin-top: 5px;
+	margin-right: 31px;
+	padding-left: 5px;	
+	color: #a5a5a7;
+	font-family: Helvetica Neue;
+	background-image: url('images/header-input-box.png');
+	border: none;
+}
+
+header form {
+	float: right;
+	height: 36px;
+	margin-right: -2px;
+	position: relative;
+}
+
+header img {
+	float: left;
+	margin-left: 29px;
+	margin-top: 16;
+}
+
+nav {
+	float: left;
+	height: 30px;
+	margin: 49px 0 0 0;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	float: left;
+	margin-left: 30px;
+	color: #f4f4f4;
+	font-family: Helvetica Neue;
+	text-transform: uppercase;
+}
+
+nav ul li a {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav ul li:hover {
+	color: #36b5e5;
+}
+
+.header-phone-info {
+	float: right;
+	width: 346px;
+	margin-top: 10px;
+	color: #f5f5f5;
+	font-size: 12px;
+	font-family: Helvetica Neue;
+}
+
+.header-phone-info h5 {
+	position: absolute;
+	margin-left: 9px;
+	top: 52px;
+}
+
+.header-phone-info span {
+	margin-left: 10px;
+	font-family: Helvetica Neue;
+	color: #36b5e5;
+}
+
+#header-form-submit {
+	position: absolute;
+	width: 57px;
+	height: 20px;
+	top: 42px;
+	left: 252px;
+	background-image: url('images/sign-in.png');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+}
+
+/*********************
+HOMEPAGE GRID
+*********************/
+
+.grayscale {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+
+}
+
+
+.grid-image {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-overlay {
+    background: url("images/grid-overlay-texture.png") repeat-y scroll 0 0 transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    -webkit-transition: all 0.3s linear; 
+    -moz-transition:    all 0.3s linear; 
+    -o-transition:      all 0.3s linear; 
+    transition:         all 0.3s linear; 
+}
+
+.grid-overlay:hover {
+	opacity: 0;
+}
+
+
+
+.grid-info {
+    background: none repeat scroll 0 0 #000000;
+    bottom: 0;
+    height: 25px;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    z-index: 500;
+    overflow: hidden;
+}
+
+
+
+.grid-info > img {
+    left: 0;
+    position: absolute;
+    top: 5px;
+}
+
+.grid-info > h1 {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin: 4px 0 0 15px;
+}
+
+
+.grid-info > p {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 15px;
+    margin: 6px 0 0 15px;
+    width: 90%;
+}
+
+
+.home-grid {
+    float: left;
+    height: 951px;
+    position: relative;
+    width: 626px;
+
+}
+
+.home-grid-photography {
+	width: 213px;
+	height: 222px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.home-grid-music {
+    height: 410px;
+    left: 214px;
+    position: absolute;
+    top: 0;
+    width: 413px;
+}
+
+
+.home-grid-movies {
+    height: 432px;
+    left: 0;
+    position: absolute;
+    top: 220px;
+    width: 213px;
+}
+
+
+.home-grid-gaming {
+    height: 244px;
+    left: 213px;
+    position: absolute;
+    top: 408px;
+    width: 413px;
+}
+
+
+.home-grid-software {
+    height: 125px;
+    position: absolute;
+    top: 651px;
+    width: 213px;
+}
+
+
+.home-grid-celebs {
+    height: 300px;
+    left: 214px;
+    position: absolute;
+    top: 651px;
+    width: 213px;
+}
+
+
+.home-grid-textbooks {
+    height: 176px;
+    position: absolute;
+    top: 775px;
+    left: 0;
+    width: 213px;
+}
+
+
+
+.home-grid-publishing {
+    height: 300px;
+    left: 426px;
+    position: absolute;
+    top: 651px;
+    width: 200px;
+}
+
+/*******************
+HOMEPAGE SIDEBAR
+*******************/
+
+.home-sidebar {
+	float: right;
+	width: 361px;
+	height: auto;
+	background-image: url('images/sidebar-background.png');
+}
+
+.home-sidebar-top {
+	position: relative;
+	width: 270px;
+	margin-left: 20px;
+	}
+
+.home-sidebar-top h1 {
+	font-size: 50px;
+	color: #0e4459;
+	font-family: Helvetica Neue;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.home-sidebar-top ul {
+	margin-top: 15px;
+	padding-bottom: 25px;
+}
+
+
+
+.home-sidebar-top ul li {
+    background: url("images/blue-list-billet.png") no-repeat scroll 0 4px transparent;
+    color: #4D4D4A;
+    font-family: helvetica;
+    line-height: 20px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.home-sidebar-bottom {
+	position: relative;
+	width: 330px;
+	margin-left: 20px;
+	font-family: Helvetica Neue;
+}
+
+.home-sidebar-bottom h1 {
+	margin-top: 10px;
+	color: #f46249;
+	font-family: Helvetica Neue;
+}
+
+.home-sidebar-bottom span {
+	text-transform: uppercase;
+	color: #f46249;
+}
+
+
+.home-sidebar-bottom p {
+    font-family: helvetica;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+/*****************
+FOOTER STYLES
+*****************/
+
+footer {
+	float: left;
+	background-image: url('images/footer-texture.png');
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	height: 130px;
+	width: 100%;
+	font-family: Helvetica Neue;
+	position: relative;
+}
+
+
+.home-footer-media-icons {
+    left: 550px;
+    position: absolute;
+    top: 5px;
+    width: 70px;
+}
+
+.home-footer-media-icons a {
+	padding-left: 10px;
+}
+
+
+
+footer p {
+    background-image: url("images/phone-info-back.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 12px;
+    height: 20px;
+    left: 660px;
+    padding-left: 6px;
+    padding-top: 4px;
+    position: relative;
+    top: 6px;
+}
+
+footer p span {
+    color: #39B8E8;
+    text-transform: uppercase;
+}
+
+footer ul {
+	float: left;
+	width: 550px;
+	margin-top: 30px;
+	margin-left: -10px;
+	font-size: 12px;
+}
+
+footer ul li {
+	float: left;
+	margin-left: 40px;
+}
+
+footer ul li a {
+	color: #39b8e8;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+footer ul li a:hover {
+	color: #fff;
+}
+
+.home-footer-banner {
+	float: right;
+	margin: 18px 0 0 0;
+}
+
+
+/*********************
+SUBPAGE CONTENT STYLES
+*********************/
+
+.sub-page-content {
+	float: right;
+	width: 778px;
+	height: 955px;
+	background-image: url('images/sub-page-background.png');
+	font-family: Helvetica Neue;
+}
+
+.sub-page-left-content {
+	position: relative;
+	float: left;
+	width: 550px;
+	height: 917px;
+	margin: 10px 0 0 20px;
+	color: #d3d3d2;
+	border-right: 1px solid #b0b0ae;
+}
+
+.sub-page-left-content img + p {
+	margin-top: 27px;
+	margin-bottom: 35px;
+}
+
+.sub-page-left-content h1 {
+	color: #f46249;
+	font-size: 28px;
+}
+
+.sub-page-left-content span {
+	text-transform: uppercase;
+}
+
+.sub-page-left-content p {
+	width: 525px;
+	margin: 15px 0 30px 0;
+	font-size: 14px;
+	line-height: 18px;
+}
+ 
+.sub-page-right-content {
+	float: right;
+	width: 205px;
+	height: 670px;
+	margin: 15px 0 0 0;
+	color: #7c7c7a;
+}
+article {
+	position: relative;
+	margin-left: 10px;
+	width: 180px;
+	height: auto;
+}
+
+article h1 {
+	font-size: 18px;
+}
+
+article p {
+	width: 180px;
+	height: auto;
+	margin-bottom: 26px;
+	margin-top: 15px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+article p a {
+	color: #39b8e8;
+	line-height: 16px;
+	text-decoration: none;
+}
+
+article ul {
+	margin-top: 15px;	
+}
+
+article ul li {
+	padding-bottom: 24px;
+}
+
+article ul li a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #39b8e8;
+}
+
+.sub-page-horizontal-slit + p {
+	font-size: 12px;
+	line-height: 17px;
+	color: #717171;
+}
+
+article span a {
+	text-decoration: none;
+	color: #39b8e8;
+}
+
+.sub-page-horizontal-slit {
+	position: absolute;
+	width: 209px;
+	height: 2px;
+	top: 263px;
+	right: -14px;
+	background-image: url('images/sub-page-horizontal-slit.png');
+	background-repeat: no-repeat;
+}
+
+/*****************
+SUB FOOTER STYLES
+*****************/
+
+.sub-footer {
+	float: left;
+	background-image: url('images/sub-page-footer-texture.png');
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 120px;	
+}
+
+.sub-footer-media-icons  {
+	position: absolute;
+	top: 7px;
+}
+
+.sub-footer-media-icons a img {
+	margin-left: 15px;
+}
+
+.sub-footer ul {
+	margin-top: 42px;
+}
+
+.sub-footer ul li {
+	float: none;
+	margin-bottom: 15px;
+}
+
+.sub-footer-banner {
+	position: absolute;
+	top: 40px;
+	left: 222px;
+}
