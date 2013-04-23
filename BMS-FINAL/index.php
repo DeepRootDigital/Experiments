@@ -1,3 +1,4 @@
+
 <?php include 'header.php'; ?> 
 		<div class="center">
 			<div class="home-slider">
@@ -74,7 +75,40 @@
 				<div class="slide-section">
 					<div class="home-slide home-slide-6">
 						<img class="slide-img slide-img-6" src="images/slide-img.jpg">
-						<img class="slide-img-active slide-img-active-6" src="images/slide-3-active.jpg">					
+						<div id="contact-slide">
+							<div class="contact-slide-slogan">
+								<img src="images/contact-slider-slogan.png" alt="Let's connect and get started">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							</div>
+							<form>
+								<input name="name" value="Name" type="text"><br>
+								<input name="email" value="Email" type="text"><br>
+								<input name="phone" value="Phone" type="text"><br>
+								<input name="industry" value="Industry" type="text"><br>
+								<textarea name="message">Message</textarea>
+								<input id="contact-form-submit" type="submit" value="submit">
+							</form>
+							<div class="contact-slide-select">
+								<h1>Select all that apply</h1>
+								<ul>
+									<li class="contact-slide-select-1"><p>Research and<br>planning</p></li>
+									<li class="contact-slide-select-3"><p>Branding</p></li>
+									<li class="contact-slide-select-2"><p>Business<br>development</p></li>
+									<li class="contact-slide-select-5"><p>Web<br>development</p></li>
+									<li class="contact-slide-select-4"><p>Marketing</p></li>														
+								</ul>
+							</div>
+							<div class="contact-slide-address">
+								<h1>BMS<br>CONTACT</h1>
+								<ul>
+									<li>7975</li>
+									<li>Raytheon RD Suite 310</li>
+									<li>San Diego, CA 92115</li><br>
+									<li>P // 858.598.5477</li>
+								</ul>	
+							</div>
+							<div class="clear"></div>
+						</div><!--END CONTACT SLIDE -->					
 					</div>
 					<div class="slide-nav slide-nav-6">
 						<div class="slide-nav-icon">
@@ -87,74 +121,283 @@
 			</div><!-- END HOME SLIDER -->
 			<div class="home-content bottom-page-space">
 				<h1><em>Recent</em> Projects</h1>
-				<article class="home-project">
-					<img src="images/home-img.png">
-					<img class="home-project-overlay" src="images/home-project-overlay.png">
-					<h2>Digital Abduction <em>//</em></h2>
-					<h1>Web Development</h1>
-					<div class="home-project-hover">
-						<img src="images/home-project-overlay-icons.png">
-						<ul>
-							<li>Web Development /</li>
-							<li>Branding / Business</li>
-							<li>Development /</li>
-							<li>Marketing</li>
-						</ul>
-						<a href="#"><img src="images/home-project-overlay-button.png"></a>
+				<section class="home-project-section">
+					<div class="home-project-wrapper">
+						<div class="home-project-block">
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>1 Digital Abduction <em>//</em></h2>
+								<h1>Web Development</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>2 Peashake House <em>//</em></h2>
+								<h1>Marketing</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>3 Aeogea <em>//</em></h2>
+								<h1>Branding</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>4 Barrellymadeit <em>//</em></h2>
+								<h1>Marketing</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<div class="clear"></div>
+						</div><!-- END FIRST SECTION PROJECT SLIDE -->
+						<div class="home-project-block">
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>5 Digital Abduction <em>//</em></h2>
+								<h1>Web Development</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>6 Peashake House <em>//</em></h2>
+								<h1>Marketing</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>7 Aeogea <em>//</em></h2>
+								<h1>Branding</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>8 Barrellymadeit <em>//</em></h2>
+								<h1>Marketing</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<div class="clear"></div>
+						</div><!-- END SECOND SECTION PROJECT SLIDE  -->
+						<div class="home-project-block">
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>1 Digital Abduction <em>//</em></h2>
+								<h1>Web Development</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>2 Peashake House <em>//</em></h2>
+								<h1>Marketing</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>3 Aeogea <em>//</em></h2>
+								<h1>Branding</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>4 Barrellymadeit <em>//</em></h2>
+								<h1>Marketing</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<div class="clear"></div>
+						</div><!-- END THIRD SECTION PROJECT SLIDE -->
+						<div class="home-project-block">
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>5 Digital Abduction <em>//</em></h2>
+								<h1>Web Development</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>6 Peashake House <em>//</em></h2>
+								<h1>Marketing</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>7 Aeogea <em>//</em></h2>
+								<h1>Branding</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<article class="home-project">
+								<img src="images/home-img.png">
+								<img class="home-project-overlay" src="images/home-project-overlay.png">
+								<h2>8 Barrellymadeit <em>//</em></h2>
+								<h1>Marketing</h1>
+								<div class="home-project-hover">
+									<img src="images/home-project-overlay-icons.png">
+									<ul>
+										<li>Web Development /</li>
+										<li>Branding / Business</li>
+										<li>Development /</li>
+										<li>Marketing</li>
+									</ul>
+									<a href="#"><img src="images/home-project-overlay-button.png"></a>
+								</div>
+							</article>
+							<div class="clear"></div>
+						</div><!-- END FOURTH SECTION PROJECT SLIDE -->
+						<div class="clear"></div>
 					</div>
-				</article>
-				<article class="home-project margin-right-clear">
-					<img src="images/home-img.png">
-					<img class="home-project-overlay" src="images/home-project-overlay.png">
-					<h2>Peashake House <em>//</em></h2>
-					<h1>Marketing</h1>
-					<div class="home-project-hover">
-						<img src="images/home-project-overlay-icons.png">
-						<ul>
-							<li>Web Development /</li>
-							<li>Branding / Business</li>
-							<li>Development /</li>
-							<li>Marketing</li>
-						</ul>
-						<a href="#"><img src="images/home-project-overlay-button.png"></a>
-					</div>
-				</article>
-				<article class="home-project">
-					<img src="images/home-img.png">
-					<img class="home-project-overlay" src="images/home-project-overlay.png">
-					<h2>Aeogea <em>//</em></h2>
-					<h1>Branding</h1>
-					<div class="home-project-hover">
-						<img src="images/home-project-overlay-icons.png">
-						<ul>
-							<li>Web Development /</li>
-							<li>Branding / Business</li>
-							<li>Development /</li>
-							<li>Marketing</li>
-						</ul>
-						<a href="#"><img src="images/home-project-overlay-button.png"></a>
-					</div>
-				</article>
-				<article class="home-project margin-right-clear">
-					<img src="images/home-img.png">
-					<img class="home-project-overlay" src="images/home-project-overlay.png">
-					<h2>Barrellymadeit <em>//</em></h2>
-					<h1>Marketing</h1>
-					<div class="home-project-hover">
-						<img src="images/home-project-overlay-icons.png">
-						<ul>
-							<li>Web Development /</li>
-							<li>Branding / Business</li>
-							<li>Development /</li>
-							<li>Marketing</li>
-						</ul>
-						<a href="#"><img src="images/home-project-overlay-button.png"></a>
-					</div>
-				</article>
-				<div class="clear"></div>
+				</section>
 				<div class="home-project-control">
-					<a class="project-control-left" href="#"></a>
-					<a class="project-control-right" href="#"></a>
+					<p class="project-control-left"></p>
+					<p class="project-control-right"></p>
+					<div class="clear"></div>
 				</div>
 				
 				<div class="home-bottom-info">

@@ -187,17 +187,13 @@ header nav ul a:hover {
 .slide-img {
     position: absolute;
     top: 0;
-    -webkit-transition: all 0.2s linear; 
-    -moz-transition:    all 0.2s linear; 
-    -o-transition:      all 0.2s linear; 
-    transition:         all 0.2s linear;
     z-index: 100;
 }
 .slide-img-1 {
     left: 0;
 }
 .slide-img-2 {
-    left: -186px;
+    left: -170px;
 }
 .slide-img-3 {
     left: -336px;
@@ -212,25 +208,8 @@ header nav ul a:hover {
     left: -840px;
 }
 
-
-
-
-/*
-.slide-img-active{
-    width: 160px;
-    height: 555px;
-    -webkit-transition: all 0.8s linear; 
-    -moz-transition:    all 0.8s linear; 
-    -o-transition:      all 0.8s linear; 
-    transition:         all 0.8s linear;
-}
-*/
 .home-slide{
-    -webkit-transition: all 0.5s linear; 
-    -moz-transition:    all 0.5s linear; 
-    -o-transition:      all 0.5s linear; 
-    transition:         all 0.5s linear;
-    background: #fff;
+    background: #30312f;
     width: 160px;
     height: 555px;
     overflow: hidden;
@@ -284,39 +263,19 @@ header nav ul a:hover {
 
 .slide-img-active-2{
     left: -186px;
-    -webkit-transition: all 0.5s linear; 
-    -moz-transition:    all 0.5s linear; 
-    -o-transition:      all 0.5s linear; 
-    transition:         all 0.5s linear;
 }
 
 .slide-img-active-3{
     left: -336px;
-    -webkit-transition: all 0.5s linear; 
-    -moz-transition:    all 0.5s linear; 
-    -o-transition:      all 0.5s linear; 
-    transition:         all 0.5s linear;
 }
 .slide-img-active-4{
     left: -504px;
-    -webkit-transition: all 0.5s linear; 
-    -moz-transition:    all 0.5s linear; 
-    -o-transition:      all 0.5s linear; 
-    transition:         all 0.5s linear;
 }
 .slide-img-active-5{
     left: -672px;
-    -webkit-transition: all 0.5s linear; 
-    -moz-transition:    all 0.5s linear; 
-    -o-transition:      all 0.5s linear; 
-    transition:         all 0.5s linear;
 }
 .slide-img-active-6{
     left: -840px;
-    -webkit-transition: all 0.5s linear; 
-    -moz-transition:    all 0.5s linear; 
-    -o-transition:      all 0.5s linear; 
-    transition:         all 0.5s linear;
 }
 
 .slide-nav{
@@ -378,17 +337,16 @@ header nav ul a:hover {
 
 .slide-icon-active {   
     position: absolute;
-    -webkit-transition: all 0.2s linear; 
-    -moz-transition:    all 0.2s linear; 
-    -o-transition:      all 0.2s linear; 
-    transition:         all 0.2s linear;
     opacity: 0;    
     cursor: pointer;
     top: -1px;
+    border-right: 8px solid transparent;
 }
+
 .slide-icon-active:hover {   
     opacity: 1;
 }
+
 .slide-icon-active-1 {
     left: 5px;    
 }
@@ -450,12 +408,32 @@ header nav ul a:hover {
     margin-right: 0 !important; 
 }
 
+.home-project-section{
+    position: relative;
+    overflow: hidden;
+}
+
+.home-project-block{
+    float: left;
+    height: 500px;
+    width: 672px;
+}
+
+
+
+
+.home-project-wrapper {
+    left: -699px;
+    position: relative;
+    top: 0;
+    width: 2700px;
+}
 
 .home-project {
     float: left;
-    margin: 0 45px 25px 0;
+    margin: 0 25px 25px;
     position: relative;
-    width: 290px;
+    width: 286px;
 }
 
 
@@ -531,33 +509,38 @@ header nav ul a:hover {
 }
 
 
+
 .home-project-control {
     height: 40px;
-    margin: 0 0 0 275px;
-    width: 80px;
+    margin: 0 0 0 280px;
+    width: 70px;
 }
 
 
 
 .project-control-left {
     background: url("images/home-page-arrows.png") repeat scroll 0 0 transparent;
+    height: 30px;
     margin: 0 10px 0 0;
-    padding: 10px 0 0 30px;
+    width: 30px;
+    float: left;
+    cursor: pointer;
 }
 
 .project-control-left:hover {
     background: url("images/home-page-arrows.png") repeat scroll 0px -36px transparent;
-    padding: 10px 0 0 30px;
 }
 
 .project-control-right {
     background: url("images/home-page-arrows.png") repeat scroll -50px 0 transparent;
-    padding: 10px 0 0 30px;
+    height: 30px;
+    width: 30px;
+    float: right;
+    cursor: pointer;
 }
 
 .project-control-right:hover {
     background: url("images/home-page-arrows.png") repeat scroll -50px -36px transparent;
-    padding: 10px 0 0 30px;
 }
 
 
@@ -1196,123 +1179,23 @@ header nav ul a:hover {
 /*********************************************
 ***** TESTIMONIAL CASE STUDIES PAGE
 **********************************************/
-.case-nav {
-    background: none repeat scroll 0 0 #484947;
-    height: 250px;
+
+/*** INDIVIDUAL CASE STUDY TOP SLIDER ***/
+
+.case-slider {
+    overflow: hidden;
+    width: 956px;
 }
 
 
 
-
-.testimonial-quote > h1 {
-    color: #FFFFFF;
-    font-size: 34px;
-    font-weight: normal;
-    padding: 15px 0 5px;
-    text-align: center;
-    text-shadow: 3px 3px 2px #111111;
-}
-
-.testimonial-quote p {
-    color: #C2C2C2;
-    font-size: 12px;
-    text-align: center;
-}
-
-
-.testimonial-quote p em {
-    color: #F7941D;
-}
-
-
-.case-number {
-    margin: 20px 0 0;
-}
-
-.case-number ul {
-    border-top: 1px solid #5b5b5b;
-    border-bottom: 1px solid #5b5b5b;
-}
-
-
-
-.case-number li {
-    background: url("images/case-nav-side-border.jpg") no-repeat scroll 76px 32px transparent;
-    float: left;
-    font-size: 106px;
-    line-height: 90px;
-    list-style: none outside none;
-    padding: 5px 37px 10px 4px;
+.case-slider-wrapper {
+    left: 0px;
     position: relative;
+    top: 0;
+    width: 3900px;
 }
 
-
-.case-number li:last-of-type {
-    background: none repeat scroll 0 0 transparent;
-    margin: 0 0 0 -15px;
-    padding-right: 0;
-}
-
-
-.case-number a {
-    color: #A4A4A4;
-    text-decoration: none;
-    -webkit-transition: all 0.2s linear; 
-    -moz-transition:    all 0.2s linear; 
-    -o-transition:      all 0.2s linear; 
-    transition:         all 0.2s linear;
-}
-
-.case-number a:hover {
-    color: #f3921d;
-}
-
-
-
-.case-number p {
-    color: #D0D0D0;
-    font-family: libre baskerville;
-    font-size: 15px;
-    height: 20px;
-    left: 1px;
-    position: absolute;
-    text-transform: uppercase;
-    top: -64px;
-    display: none;
-}
-
-
-.case-number em {
-    color: #FFFFFF;
-    font-style: normal;
-}
-
-
-
-.case-content {
-    background: none repeat scroll 0 0 #FFFFFF;
-    padding: 0 0 40px;
-}
-
-
-
-.case-content > h1 {
-    color: #555555;
-    font-size: 46px;
-    padding: 30px 0 20px;
-    text-transform: uppercase;
-    font-weight: normal;
-}
-
-
-.case-content h1 em {
-    color: #7e1619;
-    font-style: normal;
-}
-
-.case-content h1 span {
-    color: #959595;
-}
 
 .testimonial-slide-control{
     border-bottom: 1px solid #CCCCCC;
@@ -1362,6 +1245,137 @@ header nav ul a:hover {
 
 
 
+
+
+/*** CASE STUDY WHOLE PAGE SLIDER ***/
+.case-nav {
+    background: none repeat scroll 0 0 #484947;
+    height: 250px;
+}
+
+.testimonial-quote > h1 {
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: normal;
+    padding: 15px 0 5px;
+    text-align: center;
+    text-shadow: 3px 3px 2px #111111;
+}
+
+.testimonial-quote p {
+    color: #C2C2C2;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.testimonial-quote p em {
+    color: #F7941D;
+}
+
+
+.case-number {
+    margin: 20px 0 0;
+}
+
+.case-number ul {
+    border-top: 1px solid #5b5b5b;
+    border-bottom: 1px solid #5b5b5b;
+}
+
+.case-number li {
+    background: url("images/case-nav-side-border.jpg") no-repeat scroll 76px 32px transparent;
+    float: left;
+    font-size: 106px;
+    line-height: 90px;
+    list-style: none outside none;
+    padding: 5px 37px 10px 4px;
+    position: relative;
+}
+
+
+.case-number li:last-of-type {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0 0 0 -15px;
+    padding-right: 0;
+}
+
+.case-number h2 {
+    color: #A4A4A4;
+    font-size: inherit;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.case-number h2:hover {
+    color: #f3921d;
+}
+
+.case-number p {
+    color: #D0D0D0;
+    font-family: libre baskerville;
+    font-size: 15px;
+    height: 20px;
+    left: 1px;
+    position: absolute;
+    text-transform: uppercase;
+    top: -64px;
+    display: none;
+}
+
+
+.case-number em {
+    color: #FFFFFF;
+    font-style: normal;
+}
+
+
+
+.case-container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    overflow: hidden;
+}
+
+.case-wrapper {
+    left: -1200px;
+    position: relative;
+    top: 0;
+    width: 15000px;
+    background: #fff;
+}
+
+.case-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    margin: 0 120px 0 120px;
+    padding: 0 0 40px;
+    width: 960px;
+}
+
+
+.case-content > h1 {
+    color: #555555;
+    font-size: 46px;
+    padding: 30px 0 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+.case-content h1 em {
+    color: #7e1619;
+    font-style: normal;
+}
+
+.case-content h1 span {
+    color: #959595;
+}
+
+
+
+
+
 .case-info-nav {
     float: left;
     position: relative;
@@ -1385,11 +1399,15 @@ header nav ul a:hover {
 
 
 
+
+
 .case-info-nav h3 {
     font-size: 260px;
+    height: 191px;
     left: 7px;
+    line-height: 180px;
     position: absolute;
-    top: 0;
+    top: 73px;
 }
 
 
@@ -1398,6 +1416,8 @@ header nav ul a:hover {
     position: absolute;
     top: 149px;
     z-index: 100;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -1407,6 +1427,8 @@ header nav ul a:hover {
     position: absolute;
     top: 149px;
     z-index: 100;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -1415,13 +1437,14 @@ header nav ul a:hover {
 .case-info > h1 {
     border-left: 1px solid #CCCCCC;
     float: left;
-    font-family: Georgia;
+    font-family: Rokkitt;
     font-size: 63px;
     font-weight: normal;
     line-height: 64px;
     margin: 0 0 0 25px;
     padding: 10px 0 0 25px;
     width: 730px;
+    color: #555555;
 }
 
 
@@ -1433,7 +1456,7 @@ header nav ul a:hover {
 
 .case-text {
     border-top: 1px solid #CCCCCC;
-    font-family: Roboto Condensed;
+    font-family: Montserrat;
     margin: 20px 0 0;
     padding: 20px 0 0;
 }
