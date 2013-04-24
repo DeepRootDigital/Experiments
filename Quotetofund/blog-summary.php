@@ -93,42 +93,5 @@ Template Name: blog-summary
 	<div class="blog-summary-feed">
 		<?php get_template_part('sidebar','blogfeed'); ?>
 	</div>
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<?php get_template_part('sidebar','blogfeed'); ?>
--->
 <?php get_footer(); ?>
