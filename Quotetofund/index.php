@@ -31,7 +31,7 @@
 				<p><span>approval</span></p>
 				<p class="qtf-second-slider-bottom-text">estimates</p>
 			</div>
-			<img class="qtf-arrow-left" src="<?php echo get_template_directory_uri(); ?>/images/atf-arrow.png" />
+			<div class="qtf-arrow-left"></div>
 		</div>
 		<div class="qtf-second-slider-divider"></div>
 		<div class="second-slider-box right">
@@ -39,7 +39,7 @@
 				<p>calculate</p>
 				<p><span>payments</span></p>
 			</div>
-			<img class="qtf-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/atf-arrow.png" />
+			<div class="qtf-arrow-right"></div>
 		</div>
 	</form>
 </div>

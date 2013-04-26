@@ -120,7 +120,7 @@ $(document).ready(function(){
 	   $(this).find('.qtf-second-slider-right-text').find('p').css( "color", "#fff");
 	   $(this).find('.qtf-second-slider-right-text').find('p span').css( "color", "#f5a624");
 	  });
-//SLIDER TEXT ROLLOVERS (SUBPAGE & BLOG)
+//SLIDER TEXT ROLLOVERS (SUBPAGE & BLOG PAGES)************************
 	$('.side-menu').hover(
 	  function() {
 	  $(this).find('p').css("color", "#f5a624");
@@ -141,6 +141,11 @@ $(document).ready(function(){
 	  $(this).find('p').css("color", "#fff");
 	  $(this).find('span').css("color", "#f5a624");
 	 });
+
+//LIGHTBOX CONTROLS ***************************
+
+
+
 	});		
 
 

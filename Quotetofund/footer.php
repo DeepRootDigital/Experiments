@@ -12,9 +12,5 @@
      	<img class="footer-dotted-line" src="<?php echo get_template_directory_uri(); ?>/images/footer-dotted-line.png" alt="logo"/>
 </div>
 </div>
-
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/function.js"></script>
 </body>
 </html>

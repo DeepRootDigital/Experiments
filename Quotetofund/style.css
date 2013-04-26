@@ -37,6 +37,17 @@ ul, li, a {
 DAN STYLES 
 ************************/
 
+.fancybox-inner {
+	max-height: 500px;
+	overflow: hidden;
+	background-image: url('images/qtf-top-slider-background2.png');
+	border-radius: 5px;
+}
+
+#lightbox-font-color  {
+	color: #fff
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -254,8 +265,12 @@ TOP SECOND SLIDE
 }
 
 .second-slider-box span {
-	color: #f5a624;
 	font-size: 52px;
+	color: #f5a624;
+}
+
+.form p {
+	color: #fff;
 }
 
 .second-slider-box p {
@@ -268,6 +283,7 @@ TOP SECOND SLIDE
 	height: auto;
 	top: 110px;
 	left: 60px;
+	font-family:'Avenir LT W01 95 Black';
 }
 
 .qtf-second-slider-bottom-text {
@@ -313,7 +329,7 @@ TOP SECOND SLIDE
 }
 
 .second-slider-box span {
-	color: #f5a624;
+	
 	font-family:'Avenir LT W01 95 Black';
 }
 
@@ -452,7 +468,7 @@ APPROVAL SLIDE STYLES
 	width: 185px;
 	font-family: verdana;
 	font-size: 13px;
-	color: #fefefe;
+	color: #fefefe !important;
 	text-transform: none;
 }
 
@@ -463,8 +479,11 @@ APPROVAL SLIDE STYLES
 	margin: 30px 0 0 65px;
 	font-family:'AvenirLTW01-35LightObli';
 	font-size: 12px;
-	color: #fff;
 	text-transform: none;	
+}
+
+.quote p {
+	color: #fefefe !important;
 }
 
 .quote img {
@@ -519,7 +538,7 @@ BODY CONTENT STYLES
 
 .body-bottom-left-content span {
 	font-family:'Avenir LT W01 85 Heavy';
-	color: #f5a624;
+	color: #faa61a;
 }
 
 .bottom-body-dotted-line {
@@ -1203,7 +1222,6 @@ textarea {
 .contact-us p {
 	font-size: 13px;
 	font-family: verdana;
-	color: #114d78;
 	line-height: 10px;
 	margin-left: 15px;
 }

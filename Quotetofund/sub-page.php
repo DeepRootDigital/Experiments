@@ -4,6 +4,7 @@
 Template Name: sub-page
 */
 ?>
+
 <section class="sub-page-top-image">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/sub-page-top-image.png" />
 </section>
@@ -20,6 +21,7 @@ Template Name: sub-page
 			<p>Appellantur adversarium eum ut. Vim at fuisset similique sententiae. Graeco salutatus intellegat ad has, graeci oblique ius ut, an pro alii mediocrem. Ex oblique electram voluptaria </p>
 		</div>
 	</div>
+
 	<div id="subpage-sidebar">
 		<?php get_template_part('sidebar','blogfeed'); ?>
 	</div>
