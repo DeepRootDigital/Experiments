@@ -21,10 +21,10 @@
 	.person-info img {position: absolute; top: 9px;}
 	.person-description { position: absolute; width: auto; height: auto; top: -5px; left: 180px}
 	.person-description h2 {font-family: gill sans; font-weight: normal; color: #0082c9}
-	.person-description p {position: relative; top: -20px; font-family: arial; font-size: 15px}
+	.person-description p {position: relative; top: -17px; font-family: arial; font-size: 15px}
 	.person-description p:last-child {top: -32px; font-size: 13px; font-style: italic}
-	#ca-dre-info {margin-top: -10px}
-	#person-location {margin-top: -10px}
+	#ca-dre-info {margin-top: -12px}
+	#person-location {margin-top: -12px}
 	</style>
 </head>
 <body>
@@ -63,6 +63,7 @@
 				<div class="person-description">
 					<h2>Steve Games</h2>
 					<p>Chairman of the Board</p>
+					<p id="ca-dre-info">CA DRE#004944238</p>
 					<p>858.926.3060</p>
 					<p>SCGames@PacificSIR.com</p>
 				</div>
