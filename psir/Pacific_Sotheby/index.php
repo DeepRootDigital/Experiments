@@ -21,7 +21,7 @@
 	.person-info img {position: absolute; top: 9px;}
 	.person-description { position: absolute; width: auto; height: auto; top: -5px; left: 180px}
 	.person-description h2 {font-family: gill sans; font-weight: normal; color: #0082c9}
-	.person-description p {position: relative; top: -17px; font-family: arial; font-size: 15px}
+	.person-description p {position: relative; top: -17px; font-family: arial; font-size: 15px; color: #464546}
 	.person-description p:last-child {top: -32px; font-size: 13px; font-style: italic}
 	#ca-dre-info {margin-top: -12px}
 	#person-location {margin-top: -12px}
@@ -54,7 +54,7 @@
 				<div class="person-description">
 					<h2>Colby Arrington</h2>
 					<p>Communication Director</p>
-					<p>619.871.1321</p>
+					<p><b>619.871.1321</b></p>
 					<p>CArrington@PacificSIR.com</p>
 				</div>
 			</div>
@@ -64,7 +64,7 @@
 					<h2>Steve Games</h2>
 					<p>Chairman of the Board</p>
 					<p id="ca-dre-info">CA DRE#004944238</p>
-					<p>858.926.3060</p>
+					<p><b>858.926.3060</b></p>
 					<p>SCGames@PacificSIR.com</p>
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 					<h2>Brian Arrington</h2>
 					<p>Founding Partner & CEO</p>
 					<p id="ca-dre-info">CA DRE# 01126410</p>
-					<p>619.993.4641</p>
+					<p><b>619.993.4641</b></p>
 					<p>brian.arrington@sothbysrealty.com</p>
 				</div>
 			</div>
@@ -87,7 +87,7 @@
 					<p>Assistant Branch Manager</p>
 					<p id="person-location">Point Loma</p>
 					<p id="ca-dre-info">CA DRE#00814799</p>
-					<p>858.926.3060</p>
+					<p><b>858.926.3060</b></p>
 					<p>Ineedanemail@PacificSIR.com</p>
 				</div>
 			</div>
