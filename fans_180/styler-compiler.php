@@ -26,6 +26,17 @@ $styles = array (
 	/* Bottom Sidebar */
 	'sidebar-image-url' => '',
 	'bottom-sidebar-headline-color' => '',
+
+	/* Image Locations */
+	'top-left-img' => '',
+	'mid-left-img' => '',
+	'top-left-small-img' => '',
+	'bottom-left-img' => '',
+
+	'top-right-img' => '',
+	'mid-right-img' => '',
+	'bottom-mid-left-img' => '',
+	'bottom-right-img' => '',
 	);
 
 	?>
