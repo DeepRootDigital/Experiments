@@ -1,9 +1,9 @@
-<?php get_header() ?>
 <?php 
 /*
 Template Name: Contact
 */
 ?>
+<?php get_header() ?>
 <div class="contact-page-background">
 	<section class="contact-page-content">
 		<form>

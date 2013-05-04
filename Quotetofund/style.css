@@ -49,18 +49,18 @@ DAN STYLES
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    background-image: url('images/qtf-body-background.png');
-    background-repeat: repeat-x;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background-image: url('images/qtf-body-background.png');
+	background-repeat: repeat-x;
 }
 
 .container {
-    width: 880px;
-    max-width: 880px;
-    height: auto;
-    margin: 0 auto 0 auto;
+	width: 880px;
+	max-width: 880px;
+	height: auto;
+	margin: 0 auto 0 auto;
 }
 
 .header {
@@ -77,21 +77,21 @@ body {
 .top-nav {
 	margin: 22px -20px 0 0;}
 
-nav ul {
-	float: right;
-}
+	nav ul {
+		float: right;
+	}
 
-nav ul li {
-	float: left;
-	margin-right: 20px;
- 	font-family:'Avenir LT W01 35 Light';
- 	font-size: 12px;
- 	text-transform: uppercase;
-}
+	nav ul li {
+		float: left;
+		margin-right: 20px;
+		font-family:'Avenir LT W01 35 Light';
+		font-size: 12px;
+		text-transform: uppercase;
+	}
 
-nav ul li a {
-	color: #454545;
-}
+	nav ul li a {
+		color: #454545;
+	}
 
 /******************
 BODY STYLES
@@ -384,8 +384,8 @@ APPROVAL SLIDE STYLES
 
 .mini-nav ul li img {
 	position: absolute;
-    left: 0px;
-    top: 0px;
+	left: 0px;
+	top: 0px;
 }
 
 .mini-nav ul li:hover {
@@ -393,14 +393,14 @@ APPROVAL SLIDE STYLES
 }
 
 .mini-nav-back:hover {
-    background: url("images/mini-nav-arrow.png") no-repeat scroll 35px 55px transparent;
+	background: url("images/mini-nav-arrow.png") no-repeat scroll 35px 55px transparent;
 }
 .mini-nav-approval:hover {
-    background: url("images/mini-nav-arrow.png") no-repeat scroll 85px 55px transparent;
+	background: url("images/mini-nav-arrow.png") no-repeat scroll 85px 55px transparent;
 }
 
 .mini-nav-payment:hover {
-    background: url("images/mini-nav-arrow.png") no-repeat scroll 88px 55px transparent;
+	background: url("images/mini-nav-arrow.png") no-repeat scroll 88px 55px transparent;
 }
 
 .box {
@@ -807,17 +807,24 @@ BLOG SUMMARY PAGE STYLES
 }
 
 .blog-ribbon {
-	position: absolute;
-	top: 34px;
-	left: 64px;
+	float:left;
+	margin-top:30px;
+	clear:both;
+}
+
+.blog-post {
+	max-width:441px;
+	margin-left:63px;
+	float:left;
 }
 
 .blog-summary-content h1 {
-	position: absolute;
-	top: 46px;
-	left: 83px;
+	float:left;
 	font-family:'Avenir LT W01 35 Light';
 	color: #114d78;
+	clear:left;
+	margin-bottom:6px;
+	margin-top:6px;
 }
 
 .blog-summary-content span {
@@ -826,9 +833,7 @@ BLOG SUMMARY PAGE STYLES
 }
 
 .blog-posted-by {
-	position: absolute;
-	top: 56px;
-	left: 454px;
+	float:right;
 	width: 64px;
 	padding-left: 10px;
 	font-family: verdana;
@@ -840,35 +845,41 @@ BLOG SUMMARY PAGE STYLES
 }
 
 .blog-summary-dotted-bar {
-	position: absolute;
-	left: 85px;
-    top: 105px;
+	float:left;
 }
 
 .blog-summary-main-image {
-	position: absolute;
-	top: 130px;
-	left: 65px;
+	float:left;
 }
 
 .blog-top-image {
 	width: 460px;
 	height: 220px;
+	margin-top:20px;
 	float: left;
-	background-image: url('images/blog-top-image.png');
+	background-color:#fff;
 	background-repeat: no-repeat;
 }
 
+.blog-summary-main-image img {
+	width:444px;
+	height:204px;
+	padding-top:8px;
+	padding-left:8px;
+}
+
 .blog-posted-date {
-	margin: 16px 0 0 -55px;
+	position:absolute;
+	margin: 16px 0 0 -495px;
+	width:85px !important;
+	height:58px !important;
 }
 
 .blog-description {
 	float: left;
-    height: auto;
-    margin: 350px 80px 0;
-    padding-bottom: 10px;
-    width: 441px;
+	height: auto;
+	padding-bottom: 10px;
+	width: 441px;
 }
 
 .blog-description p {
@@ -886,22 +897,30 @@ BLOG SUMMARY PAGE STYLES
 
 .blog-summary-single-dotted-lines {
 	float: left;
-	margin: 0 0 0 81px;
 }
 
 .blog-summary-content ul {
 	float: left;
 	padding-bottom: 20px;
-	margin: 16px 0 0 54px;
+	width:100%;
+	margin:0px;
+	padding:0px;
 	font-family: verdana;
+	margin-top:10px;
+	margin-bottom:20px;
+	margin-left:20px;
 }
 
 .blog-summary-content ul li {
 	float: left;
 	margin-left: 5px;
 	font-size: 13px;
-    font-style: italic;
-    color: #4a4a4a;
+	font-style: italic;
+	color: #4a4a4a;
+}
+
+.blog-summary-content ul li a {
+	color:#4a4a4a;
 }
 
 .blog-summary-content ul li:first-child {
@@ -919,8 +938,8 @@ BLOG SUMMARY PAGE STYLES
 
 .blog-summary-feed {
 	left: 565px;
-    position: absolute;
-    top: 506px;
+	position: absolute;
+	top: 506px;
 }
 
 .blog-last-border {
@@ -956,14 +975,14 @@ BLOG-ARTICLE STYLES
 
 #blog-article-top-right-mini-menu {
 	left: 580px;
-    position: absolute;
-    top: 276px;
+	position: absolute;
+	top: 276px;
 }
 
 #blog-article-top-right-blog-menu {
 	left: 565px;
-    position: absolute;
-    top: 506px;
+	position: absolute;
+	top: 506px;
 }
 
 .blog-article-leave-comment {
@@ -1110,7 +1129,7 @@ CONTACT PAGE STYLES
 }
 
 .contact-page-content p {
-    font-family:'Avenir LT W01 35 Light';
+	font-family:'Avenir LT W01 35 Light';
 	font-size: 26px;
 	text-transform: uppercase;
 	color: #114d78;
@@ -1300,7 +1319,7 @@ FOOTER STYLES
 .footer-dotted-line {
 	position: relative;
 	left: 114px;
-    top: 55px;
+	top: 55px;
 }
 
 
