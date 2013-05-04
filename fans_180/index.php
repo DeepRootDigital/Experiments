@@ -39,9 +39,8 @@
 				<div class="grid-overlay"></div>
 				<div class="grid-info">
 					<img src="images/grid-info-arrow.png">
-					<h1>Music</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.</p>
+					<h1><?php echo $content['panel2-title']?></h1>
+					<p><?php echo $content['panel2-content']?></p>
 					</div>
 				</div>
 				<div class="home-grid-music grid-block">
@@ -54,9 +53,8 @@
 					<div class="grid-overlay"></div>
 					<div class="grid-info">
 						<img src="images/grid-info-arrow.png">
-						<h1>Photography</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
+						<h1><?php echo $content['panel1-title']?></h1>
+						<p><?php echo $content['panel1-content']?></p>
 						</div>
 					</div>
 					<div class="home-grid-movies grid-block">
@@ -69,9 +67,8 @@
 						<div class="grid-overlay"></div>
 						<div class="grid-info">
 							<img src="images/grid-info-arrow.png">
-							<h1>Photography</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h1><?php echo $content['panel3-title']?></h1>
+						<p><?php echo $content['panel3-content']?></p>
 							</div>
 						</div>
 						<div class="home-grid-gaming grid-block">
@@ -83,9 +80,8 @@
 							<div class="grid-overlay"></div>
 							<div class="grid-info">
 								<img src="images/grid-info-arrow.png">
-								<h1>Photography</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua.</p>
+								<h1><?php echo $content['panel7-title']?></h1>
+						<p><?php echo $content['panel7-content']?></p>
 								</div>
 							</div>
 							<div class="home-grid-software grid-block">
@@ -97,9 +93,8 @@
 								<div class="grid-overlay"></div>
 								<div class="grid-info">
 									<img src="images/grid-info-arrow.png">
-									<h1>Photography</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h1><?php echo $content['panel4-title']?></h1>
+						<p><?php echo $content['panel4-content']?></p>
 									</div>
 								</div>
 								<div class="home-grid-celebs grid-block">
@@ -111,9 +106,8 @@
 									<div class="grid-overlay"></div>
 									<div class="grid-info">
 										<img src="images/grid-info-arrow.png">
-										<h1>Celebrities</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua.</p>
+										<h1><?php echo $content['panel6-title']?></h1>
+						<p><?php echo $content['panel6-content']?></p>
 										</div>
 									</div>
 									<div class="home-grid-publishing grid-block">
@@ -125,9 +119,8 @@
 										<div class="grid-overlay"></div>
 										<div class="grid-info">
 											<img src="images/grid-info-arrow.png">
-											<h1>Photography</h1>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-												tempor incididunt ut labore et dolore magna aliqua.</p>
+											<h1><?php echo $content['panel8-title']?></h1>
+						<p><?php echo $content['panel8-content']?></p>
 											</div>
 										</div>
 										<div class="home-grid-textbooks grid-block">
@@ -139,9 +132,8 @@
 											<div class="grid-overlay"></div>
 											<div class="grid-info">
 												<img src="images/grid-info-arrow.png">
-												<h1>Photography</h1>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-													tempor incididunt ut labore et dolore magna aliqua.</p>
+												<h1><?php echo $content['panel5-title']?></h1>
+						<p><?php echo $content['panel5-content']?></p>
 												</div>
 											</div>
 										</section>
