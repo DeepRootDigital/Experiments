@@ -10,12 +10,12 @@ Template Name: Contact
 			<p class="contact-page-intro-text">we want to hear <span>from you</span></p>
 			<img class="contact-us-title-dotted-lines" src="<?php echo get_template_directory_uri(); ?>/images/blog-article-dotted-lines.png" />
 			<div class="contact-input-boxes">
-			<input type="text" value="name" />
-			<input type="text" value="phone" />
-			<input type="text" value="email" />
-			<input type="checkbox" value="" />
+			<input type="text" name="name" value="name" />
+			<input type="text" name="phone" value="phone" />
+			<input type="text" name="email" value="email" />
+			<input type="checkbox" name="subscribe" value="" />
 			<p id="contact-checkbox-text">Subscribe to our newsletter</p>
-			<textarea>
+			<textarea name="message">
 			</textarea>
 			<div id="add-to-verify-info">
 				<p>Add to verify: <b>2 + 2 =</b></p>

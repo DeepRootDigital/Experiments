@@ -1,7 +1,6 @@
 <?php
 require_once ( get_template_directory() . '/autocracy/autocracy.php' );
 require_once ( get_template_directory() . '/autocracy/homepage-manager.php' );
-require_once ( get_template_directory() . '/autocracy/sidebar-manager.php' );
 require_once ( get_template_directory() . '/autocracy/theme-manager.php' );
 // Re-define meta box path and URL
 define('RWMB_URL', trailingslashit(get_stylesheet_directory_uri() . '/autocracy/API/'));
@@ -13,4 +12,15 @@ add_theme_support('menus');
 add_theme_support('post-thumbnails');
 register_nav_menu('Header Nav', 'Header Navigation Menu');
 register_nav_menu('Footer Nav', 'Footer Navigation Menu');
+function send_email($to) {
+	if (isset($_REQUEST['email']))
+	{
+		$name = $_REQUEST['name'];
+		$email = $_REQUEST['email'] ;
+		$message = $_REQUEST['message'] . 'Phone Number: ' . $_REQUEST['phone'];
+		$subject = 'Contact Form Request';
+		mail($to, $subject,
+			$message, "From:" . $email);
+	}
+}
 ?>

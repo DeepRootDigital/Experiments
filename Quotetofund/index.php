@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php $homeoptions = get_option('sample_theme_options'); ?>
 <section class="qtf-first-slider">
 	<!-- FIRST TOP SLIDE CONTENT-->
 	<div class="slider1-content">
@@ -104,22 +105,10 @@
 </section>
 <section class="body-bottom-content">
 	<div class="body-bottom-left-content">
-		<h1>homepage copy <span>headline</span></h1>
+		<h1><?php echo $homeoptions['p1title']; ?></h1>
 		<div class="bottom-body-dotted-line"></div>
-		<p>Est legere argumentum dissentiet ea, per elit nihil et. 
-			Quo quodsi accusata suavitate in, dicit audiam inciderint 
-			ei vix. An consulatu prodesset pro, falli noluisse mea ne, 
-			vivendu m dissentiet at mel. Ut nibh periculis honestatis 
-			nam, has an epicuri eleifend.</p>
-			<p>Ea brute intellegam eam, id mei facete deserunt. An albucius 
-				pericula cum, magna albucius sapientem ius cu, id sed nobis 
-				quidam. Et solet nonumy voluptaria mei, habeo everti noluisse 
-				ius ad, eos no postulant maiestatis. Ex mentitum splendide vis.
-				Duo tamquam volumus et. Ad his diam ceteros.</p>
-				<p>Pro in dolor semper, qui esse reque ut. No oblique omittantur 
-					vim, vix ad euismod voluptua. Qui simul lobortis eloquentiam ne, 
-					vix enim movet tractatos in.</p>
-				</div>
-				<?php get_template_part('sidebar','blogfeed'); ?>
-			</section>
-			<?php get_footer(); ?>
+		<p><?php echo $homeoptions['p1text']; ?></p>
+	</div>
+	<?php get_template_part('sidebar','blogfeed'); ?>
+</section>
+<?php get_footer(); ?>

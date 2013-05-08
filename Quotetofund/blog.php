@@ -12,7 +12,13 @@ Template Name: blog-summary
 		?>
 		<div class="blog-post"> 
 			<img class="blog-ribbon" src="<?php echo get_template_directory_uri(); ?>/images/blog-business-finance.png" />
-			<h1><?php the_title(); ?></h1>
+			<div class="post-category">
+				<?php
+				$category = get_the_category(); 
+				echo $category[0]->cat_name;
+				?>
+			</div>
+			<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 			<div class="blog-posted-by">
 				<p>posted by <?php the_author(); ?></p>
 			</div>
@@ -21,6 +27,7 @@ Template Name: blog-summary
 			<div class="blog-summary-main-image blog-top-image">
 				<?php the_post_thumbnail(); ?>
 				<img class="blog-posted-date" src="<?php echo get_template_directory_uri(); ?>/images/blog-posted-date.png" />
+				<div class="blog-post-date">POSTED:<br/><?php the_date('Y-m-d'); ?></div>
 			</div>
 			<?php }  ?>			<div class="blog-description">
 			<?php the_excerpt(); ?>

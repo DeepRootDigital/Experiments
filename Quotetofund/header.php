@@ -3,6 +3,7 @@
 <head>
  <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
  <link href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" rel="stylesheet" />
+ <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
  <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/function.js"></script> 
@@ -19,7 +20,7 @@
 <body>
   <div class="container">
    <div class="header">
-    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo"/>
+    <a href="<?php echo get_site_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo"/></a>
     <nav class="top-nav">
      <?php wp_nav_menu(array('theme_location' => 'Header Nav',)); ?>
   </nav>
