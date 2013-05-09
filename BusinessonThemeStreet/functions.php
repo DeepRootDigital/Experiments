@@ -38,7 +38,9 @@ function create_post_type() {
 }
 add_action('init', 'create_post_type');
 
-function email_form($to) {
+function email_form() {
+		$mainoptions = get_option('main_theme_options');
+		$to = $mainoptions['emailaddress'];
 	    $email = $_REQUEST['email'];
 		$firstname = $_REQUEST['firstname'];
 		$lastname = $_REQUEST['lastname'];

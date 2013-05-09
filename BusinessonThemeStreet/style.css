@@ -2,7 +2,7 @@
 Theme Name: Business on Market St Home Page
 Theme URI: http://businessonmarketst.com/
 Description: Theme for BMS Site
-Author: Ray Sinlao/Alvaro Flores/Aldo Magic
+Author: Ray Sinlao/Alvaro Flores/Aldo Jacobo/Nicholas Koskowski
 Version: 1.0
 
 General comments (optional).
@@ -136,6 +136,28 @@ header nav ul a{
 header nav ul a:hover {
     border-bottom: 3px solid #000000;
     padding: 0 0 5px;
+}
+
+header nav ul li ul {
+    display:none;
+}
+
+header nav ul li:hover ul {
+    display:block;
+    position:absolute;
+    max-width:180px;
+    opacity:.8;
+    background-color:#ddd;
+    padding:10px;
+    z-index:10000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+
+header nav ul li ul li {
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .header-left-nav {
@@ -561,7 +583,7 @@ header nav ul a:hover {
 
 
 .home-bottom-info {
-    margin: 55px 0 0;
+    margin: 47px 0 0;
 }
 
 .home-bottom-info p {
@@ -623,10 +645,6 @@ header nav ul a:hover {
     padding-top: 0px;
 }
 
-.bms-talk li:first-of-type img {
-    top: 20px;
-}
-
 .bms-talk li:first-of-type:hover {
     background: url("images/arrow-right-30px.png") no-repeat scroll 270px 20px transparent;
 }
@@ -652,7 +670,6 @@ header nav ul a:hover {
 .bms-talk img {
     left: 0;
     position: absolute;
-    top: 40px;
 }
 
 
@@ -779,7 +796,7 @@ header nav ul a:hover {
 
 
 .blog-summary {
-    margin: 0 0 120px;
+    margin: 0 0 20px;
     position: relative;
 }
 
@@ -794,12 +811,16 @@ header nav ul a:hover {
     color: #FFFFFF;
     font-family: Roboto Condensed;
     font-weight: bold;
-    left: -25px;
+    left: -27px;
     letter-spacing: 1px;
     position: absolute;
     text-transform: uppercase;
     top: 50px;
-    transform: rotate(270deg);
+    transform: rotate(270deg) ;
+-webkit-transform: rotate(270deg) ;
+-moz-transform: rotate(270deg) ;
+-o-transform: rotate(270deg) ;
+-ms-transform: rotate(270deg) ;
 }
 
 .blog-image-preview {
@@ -994,7 +1015,11 @@ header nav ul a:hover {
     position: absolute !important;
     text-transform: uppercase;
     top: -143px !important;
-    transform: rotate(270deg);
+     transform: rotate(270deg) ;
+-webkit-transform: rotate(270deg) ;
+-moz-transform: rotate(270deg) ;
+-o-transform: rotate(270deg) ;
+-ms-transform: rotate(270deg) ;
 }
 
 

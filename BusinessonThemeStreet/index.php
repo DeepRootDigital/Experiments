@@ -424,7 +424,7 @@
 				</ul> -->
 				<div class="home-sidebar-contact">
 					<h1><em>Intrigued</em>?</h1>
-					<form method="POST" action="<?php email_form('nickkoskowski@.com'); ?>">
+					<form method="POST" action="<?php email_form(); ?>">
 						<input type="text" value="name" name="firstname">
 						<input type="text" value="last" name="lastname">
 						<input type="text" value="email" name="email">

@@ -14,7 +14,7 @@
 			<article class="blog-summary">
 				<div class="blog-date">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/blog-blue-flag.png">
-					<p><?php the_time('F j, Y'); ?></p>
+					<p><?php the_time('D, j, Y'); ?></p>
 				</div>
 
 				<div class="blog-image-preview">
@@ -25,10 +25,12 @@
 				<p><?php the_excerpt(); ?></p>
 				<div class="blog-summary-social">
 					<ul>
-						<li class="blog-summary-fb"><a href="#">20</a></li>
-						<li class="blog-summary-tweet"><a href="#">20</a></li>
-						<li class="blog-summary-pinterest"><a href="#">20</a></li>
-					</ul>
+					<li><div class="fb-like" data-send="false" data-layout="button_count" data-width="35" data-show-faces="false"></div></li>
+					<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>">Tweet</a></li>
+					<li><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					<a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); echo $thumb['0']; ?>&description=<?php the_title(); ?>" class="pin-it-button" count-layout="horizontal"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+				</li>
+			</ul>
 				</div>
 				<div class="clear"></div>
 				<h3 class="blog-summary-tags">
@@ -39,28 +41,7 @@
 			</article>
 		<?php endwhile; ?>
 	</div>
-	<div class="blog-sidebar blog-right">
-		<ul>
-			<li>
-				<ul class="blog-right-social">
-					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/blog-right-fb.png"></a></li>
-					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/blog-right-pin.png"></a></li>
-					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/blog-right-twitter.png"></a></li>
-					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/blog-right-youtube.png"></a></li>
-				</ul>
-				<div class="clear"></div>
-			</li>
-			<li><a href="#"><p>improving your proposals mobile experience</p></a></li>
-			<li><a href="#"><p>OTHER TITLE OR ARTICLE HEADLINE CAN GO HERE</p></a></li>
-			<li><a href="#"><p>OTHER TITLE OR ARTICLE HEADLINE CAN GO HERE</p></a></li>
-			<li><h1>Read our clients<br><em>case studies</em></h1></li>
-			<li>
-				<div class="blog-service-nav">
-					<?php include 'service-sidebar.php'; ?> 
-				</div>
-			</li>
-		</ul>
-	</div>
+	<?php get_template_part('blog','sidebar'); ?>
 	<div class="clear"></div>
 </div>
 </section>

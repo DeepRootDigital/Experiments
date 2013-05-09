@@ -1,13 +1,8 @@
 
 		<footer>
-			<ul class="footer-nav">
-				<li><a href="#">Case Studies//</a></li>
-				<li><a href="#">Services//</a></li>
-				<li><a href="#">Testimonials//</a></li>
-				<li><a href="#">Blog//</a></li>
-				<li><a href="#">About Us//</a></li>
-				<li><a href="#">Contact Us//</a></li>
-			</ul>
+			<div class="footer-nav">
+				<?php wp_nav_menu(array('theme_location' => 'Footer Nav',)); ?>
+			</div>
 			<div class="clear"></div>
 			
 			<ul class="bms-info">

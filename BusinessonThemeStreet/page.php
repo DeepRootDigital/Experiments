@@ -8,9 +8,9 @@
 				<h1><?php the_title(); ?></h1>
 				<h2><?php the_excerpt(); ?></h2>
 				<?php the_content(); ?>
-			</div>			
+			</div>
+			<?php endwhile; endif; ?>			
 			<?php get_template_part('page','sidebar'); ?>
 			<div class="clear"></div>
 		</div>
-	<?php endwhile; endif; ?>
 	<?php get_footer(); ?>
