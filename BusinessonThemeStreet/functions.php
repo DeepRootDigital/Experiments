@@ -14,7 +14,7 @@ include get_template_directory() . '/autocracy/demo.php';
 
 /* Add Theme Supports */
 add_theme_support('menus');
-add_theme_support('thumbnails');
+add_theme_support('post-thumbnails');
 
 /* Register Menu Areas */
 register_nav_menu('Header Nav - Left', 'Left Navigation Menu');

@@ -16,10 +16,12 @@
 					<?php the_content(); ?>
 				</div>
 				<div class="service-page-slide">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/article-pic.png">
+					<div class="service-page-slide-wrapper">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/article-pic.png"><img src="<?php echo get_template_directory_uri(); ?>/images/article-pic.png"><img src="<?php echo get_template_directory_uri(); ?>/images/article-pic.png"><img src="<?php echo get_template_directory_uri(); ?>/images/article-pic.png"><img src="<?php echo get_template_directory_uri(); ?>/images/article-pic.png">
+					</div>
 					<div class="service-page-control">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/arrow-left.png"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.png"></a>
+						<img class="service-page-control-left" src="<?php echo get_template_directory_uri(); ?>/images/arrow-left.png">
+						<img class="service-page-control-right" src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.png">
 					</div>
 				</div>
 				<div class="clear"></div>

@@ -119,8 +119,9 @@
 					</div>
 				</div>
 			</div><!-- END HOME SLIDER -->
+			
 			<div class="home-content bottom-page-space">
-				<!--<h1><em>Recent</em> Projects</h1>
+			<!--	<h1><em>Recent</em> Projects</h1>
 				<section class="home-project-section">
 					<div class="home-project-wrapper">
 						<div class="home-project-block">
