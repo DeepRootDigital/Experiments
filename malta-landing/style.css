@@ -1,0 +1,354 @@
+
+
+/*====================================
+BODY FORMAT STYLES
+====================================*/
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-image: url('images/back-texture.png');
+	background-repeat: repeat-x;
+}
+
+.container {
+	width: 1000px;
+	height: 1770px;
+	margin: 0 auto 0 auto;
+	background-image: url('images/container-texture.png');
+	background-repeat: repeat-x;
+}
+
+/*====================================
+HEADER STYLES
+====================================*/
+
+.header {
+	width: 100%;
+	height: 133px;
+}
+
+.home-link {
+	position: relative;
+    font-family: avenir;
+    font-size: 12px;
+    left: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: -60px;
+    width: 60px;	
+    color: #309568;
+}
+
+.logo {
+	position: relative;
+	top: 27px;
+	left: 400px;
+}
+
+.header ul {
+	float: right;
+	width: 200px;
+	margin: 27px -41px 0 0;
+	list-style-type: none;
+}
+
+.header ul li a {
+	float: left;
+	margin: 0 0 0 9px;
+}
+
+.header-divider {
+	position: relative;
+	display: block;
+	margin: 0 auto 0 auto;
+	top: -46px;
+}
+
+/*====================================
+SLIDER STYLES
+====================================*/
+
+.slider {
+	display: block;
+	width: 939px;
+	height: 511px;
+	margin: 19px auto 0 auto;
+	background-image: url('images/slide-one.png');
+	background-repeat: no-repeat;
+}
+
+.slider-shadows {
+	width: 941px;
+	height: 576px;
+	margin: -30px 0 0 0;
+}
+
+.lakeview-landing {
+	position: relative;
+	top: -551px;
+	left: -3px;
+}
+
+.banner {
+	position: relative;
+	top: -554px;
+	left: 290px;
+}
+
+/*====================================
+BODY STYLES
+====================================*/
+
+.body-content {
+	display: block;
+	margin: 31px auto 0 auto;
+	width: 940px;
+	height: 538px;
+}
+
+.top-section {
+	width: 100%;
+	height: 215px;
+	border-bottom: 1px dotted #989898;
+}
+
+.left-box {
+	float: left;
+	width: 617px;
+	height: 100%;
+}
+
+.left-box h1 {
+	margin: 0;
+	font-family: arial;
+	font-size: 22px;
+	color: #87772d;
+	font-weight: normal;
+}
+
+.left-box h1 em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.title-line {
+	margin: 8px 0 0 0;
+}
+
+.left-box p {
+	font-size: 15px;
+	font-family: georgia;
+	color: #444444;
+}
+
+.left-box p span {
+	text-transform: uppercase;
+	color: #309568;	
+}
+
+.right-box {
+	float: right;
+	width: 299px;
+	height: 100%;
+}
+
+.right-box h1 {
+	margin: 0;
+	font-size: 18px;
+	font-family: avenir;
+	text-transform: uppercase;
+	color: #309568;
+}
+
+.right-box h1 span {
+	color: #efd61b;
+}
+
+.community-title-line {
+	margin: 8px 0 0 0;
+}
+
+.right-box ul {
+	margin: 0 0 0 -24px;
+	list-style-type: none;
+}
+
+.right-box ul li {
+	margin: 10px 0 0 0;
+	padding: 0 0 0 25px;
+	background-image: url('images/list-icons.png');
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	font-size: 15px;
+	color: #84762d;
+}
+
+.bottom-section {
+	width: 100%;
+	height: 320px;
+}
+
+.house-types {
+	float: left;
+	margin: 24px 40px 0 50px;
+	width: 220px;
+	height: 245px;
+	
+}
+
+.house-type-ribbon {
+	margin: 9px 0 0 0;
+}
+
+.house-types p {
+	font-family: georgia;
+	font-size: 16px;
+	text-align: center;
+	color: #444444;
+}
+
+.schedule-section {
+	float: left;
+	width: 100%;
+	height: 347px;
+	background-image: url('images/schedule-background.png');
+	background-repeat: no-repeat;
+}
+
+.tour-information {
+	position: relative;
+	width: 390px;
+	height: 210px;
+	margin: 45px 0 0 180px;
+}
+
+.tour-info-top-intro-text {
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+.tour-information p {
+	font-family: georgia;
+	font-size: 13px;
+	color: #444444;
+}
+
+form [type=text] {
+	width: 165px;
+	height: 20px;
+	margin: 10px 0 0 0;
+	padding-left: 10px;
+	background-image: url('images/text-form.png');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+	font-family: georgia;	
+	color: #808080;
+}
+
+.left-form {
+	float: left;
+	width: 170px;
+}
+
+textarea {
+	float: right;
+	width: 202px;
+	height: 50px;
+	margin: 10px 0 0 0;
+	padding-left: 10px;
+	padding-top: 3px;
+	background-image: url('images/text-box.png');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+	font-family: georgia;
+	resize: none;
+	font-size: 11px;
+	color: #808080;
+}
+
+form [type=submit] {
+	width: 83px;
+	height: 19px;
+	margin: 10px 0 0 137px;
+	background-image: url('images/submit.png');
+	background-repeat: no-repeat;
+	background-color: none;
+	border: none;
+	cursor: pointer;
+}
+
+.tour-ribbon {
+	float: right;
+	margin: -255px 90px 0 0;
+}
+
+/*====================================
+FOOTER STYLES
+====================================*/
+
+.footer {
+	float: left;
+	display: block;
+	margin: 0 auto 0 auto;
+	width: 100%;
+	height: 170px;
+}
+
+.footer-ribbon {
+	margin: 0 0 0 -6px;
+}
+
+.footer-top-content {
+	width: 100%;
+	height: 70px;
+}
+
+.footer-top-content ul {
+	float: right;
+	list-style-type: none;
+}
+
+.footer-top-content ul li {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+.footer-bottom-content {
+	width: 100%;
+	height: 55px;
+	margin: 5px 0 0 0;
+}
+
+.footer-bottom-content p {
+	width: 280px;
+	margin: 20px 0 -20px 0;
+	font-family: avenir;
+	font-size: 10px;
+	color: fff;
+}
+
+.footer-bottom-content p + p {
+	color: #efd61b;
+}
+
+.footer-bottom-content ul {
+	float: right;
+	margin: 0 0 0 0 !important;
+	list-style-type: none;
+}
+
+.footer-bottom-content ul li {
+	float: left;
+	margin: 0 0 0 44px;
+}
+
+
+
+
+
+
+

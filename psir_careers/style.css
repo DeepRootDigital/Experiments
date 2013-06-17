@@ -1,0 +1,188 @@
+
+.careers-section {
+	width: 960px;
+	height: 1340px;
+	margin: 0 auto 0 auto;
+}
+
+.careers-image {
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+.careers-info {
+	display: block;
+	margin: 0 auto 0 auto;
+	width: 862px;
+	height: 405px;
+}
+
+.careers-info h3 {
+	margin: 24px 0 0 0;
+	text-align: center;
+	font-size: 15px;
+	font-family: gill sans;
+	color: #464546;
+}
+
+.info-lines {
+	position: absolute;
+	top: 275px;
+	z-index: -1;
+}
+
+.careers-info p {
+	font-family: arial;
+	font-size: 13px;
+	color: #464546;
+}
+
+.careers-info p:nth-child(7) {
+	font-style: italic;
+} 
+
+.careers-info p:nth-child(8) {
+	font-style: italic;
+} 
+
+.careers-info p a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #0082c9;
+}
+
+.testimonial {
+	display: block;
+	margin: -23px auto 0 auto;
+	width: 860px;
+	height: 278px;
+	background-image: url('images/testimonial-background.png');
+	background-repeat: no-repeat;
+}
+
+object {
+	float: left;
+	height: 277px;
+	margin: 1px 0 0 0;
+}
+
+.testimonial-info {
+	float: right;
+	width: 200px;
+	height: 265px;
+	margin: 0 100px 0 0;
+	text-align: left;
+}
+
+.testimonial-info ul li {
+	margin: 13px 0 0 0;
+}
+
+.testimonial-info ul {
+	width: 150px;
+	margin: 9px 0 0 -20px;
+	list-style-type: none;
+}
+
+.testimonial-info ul li:nth-child(1) {
+	font-family: gill sans;
+	font-size: 25px;
+	color: #0082c9;
+}
+
+.testimonial-info ul li:nth-child(2) {
+	font-size: 15px;
+	font-family: arial;
+	color: #464546;
+}
+
+.testimonial-info ul li:nth-child(3) {
+	font-family: arial;
+	font-size: 13px;
+	font-weight: bold;
+	color: #464546;
+}
+
+.testimonial-info ul li:nth-child(4) {
+	padding: 0 0 37px 0;
+	font-family: arial;
+	font-size: 13px;
+	font-style: italic;
+	color: #464546;
+}
+
+.testimonial-info a {
+	font-size: 13px;
+	font-family: arial;
+	font-weight: bold;
+	text-decoration: none;
+	color: #0082c9;
+}
+
+.career-perks {
+	display: block;
+	margin: 0 auto 0 auto;
+	width: 860px;
+	height: 300px;
+}
+
+.career-perks ul {
+	font-size: 20px;
+	font-family: gill sans;
+	color: #464546;
+	list-style-type: none;
+	margin: 0 0 0 -38px;
+}
+
+.career-perks ul li {
+	background-image: url("images/perk-list-image.png");
+    background-position: -1px 8px;
+    background-repeat: no-repeat;
+    margin: 18px 0 0;
+    padding: 0 0 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

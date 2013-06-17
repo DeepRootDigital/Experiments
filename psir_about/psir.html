@@ -1,0 +1,49 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<title>PSIR</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    <script src="function.js"></script>
+    
+    <script type="text/javascript">
+    	$(function() {
+    		$(".thumbnail-two").click(function() {
+    			$(".agent-1").hide("slow");
+    			$(".agent-2").show("slow");
+    		});
+    		$(".thumbnail-one").click(function() {
+    			$(".agent-3").hide("slow");
+    			$(".agent-1").show("slow");
+    		});
+    		$(".thumbnail-three").click(function() {
+    			$(".agent-2, .agent-1").hide("slow");
+    			$(".agent-3").show("slow");
+    		});
+    	});
+    </script>
+
+</head>
+<body>
+	<div class="container-slides">
+		<p class="agent-about-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div class="agent-section-thumbnails">
+		<img class="thumbnail-one" src="images/pp-anderson.jpg" alt="" />
+		<img class="thumbnail-two" src="images/pp-crigler_crown.jpg" alt="" />
+		<img class="thumbnail-three" src="images/pp-hernholmgroup.jpg" alt="" />
+	</div>
+	<div class="agent-section">
+		<div class="agent-1"><img src="images/pp-anderson.jpg" alt="" /></div>
+		<div class="agent-2" style="display:none;"><img src="images/pp-crigler_crown.jpg" alt="" /></div>
+		<div class="agent-3" style="display:none;"><img src="images/pp-hernholmgroup.jpg" alt="" /></div>
+	</div>
+</div>
+</body>
+</html>

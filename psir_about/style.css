@@ -1,0 +1,88 @@
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+.container-slides {
+	width: 960px;
+	height: 613px;
+	margin: 0 auto 0 auto;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.agent-about-section {
+	position: relative;
+	width: 95%;
+	height: auto;
+	top: 15px;
+	margin: 0 auto 0 auto;
+	font-family: arial;
+	font-size: 13px;
+	color: #464546;
+	overflow: hidden;
+}
+
+.agent-section-thumbnails {
+	width: 90%;
+	display: block;
+	margin: 0 auto 0 auto;
+	position: relative;
+}
+
+.thumbnail-one, .thumbnail-two, .thumbnail-three {
+	position: relative;
+	width: 97px;
+	height: 43px;
+	top: 30px;
+	margin: 0 0 0 10px;
+	cursor: pointer;
+}
+
+.agent-section {
+	display: block;
+	width: 940px;
+	height: 400px;
+	margin: 100px auto 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
