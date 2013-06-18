@@ -1,0 +1,279 @@
+/*
+Theme Name: Baby's First Theme
+Theme URI: http://wordpress.org/
+Description: This is the theme that I am making for gluestick marketing as a practice run.
+Author: Paul McMahon
+Author URI: http://wordpress.org/
+Version: 1.0
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu (optional)
+
+License:
+License URI:
+
+General comments (optional).
+*/
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 100%; }
+
+body {
+  background: #9AABA8;
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana;
+  font-style: normal;
+  font-size:1em;
+  line-height: 1;
+  position: relative; }
+
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto; }
+
+a {
+	color:white;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#ffd44f;
+}
+
+ol,ul {
+	list-style-type:none;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle; }
+
+h1 {
+	font-family: 'Signika Negative', sans-serif;
+	font-size:1.5em;
+	font-weight:400;
+}
+
+h2 {
+	font-family: 'Signika Negative', sans-serif;
+	font-size:1em;
+	font-weight:400;
+}
+
+h3 {
+	font-family: 'Signika Negative', sans-serif;
+	font-size:1em;
+	color:#838383;
+	font-weight:400;
+}
+
+h4 {
+	font-family: 'Signika Negative', sans-serif;
+	font-size:1em;
+	color:#838383;
+	font-weight:300;
+}
+
+h5 {
+	font-family: 'Signika Negative', sans-serif;
+}
+
+
+/* Typography Reset */
+
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  direction: ltr; }
+
+.row {
+	position:relative;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  *zoom: 1; }
+  .row .row {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1; }
+
+.column,
+.columns {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 100%;
+  float: left; }
+
+.title {
+	position:relative;
+	width:650px;
+	color:#343533;
+}
+
+.title p {
+	margin-left:0px;
+	margin-top:25px;
+	margin-bottom:25px;
+	font-family: 'Signika Negative', sans-serif;
+}
+
+.social {
+	position:relative;
+	width:250px;
+	float:right;
+}
+
+.social img {
+	margin:1em;
+	margin-top:25px;
+}
+
+.topbar {
+	position:relative;
+	width:900px;
+	background:#d27e2e;
+	float:left;
+}
+
+.topbar img{
+	margin:1px;
+}
+
+.main {
+	position:relative;
+	width:100%;
+	float:left;
+	background-image: url('images/extraordinary-architecture.jpg');
+	background-repeat:no-repeat;
+	min-width:900px;
+	min-height:511px;
+}
+
+.randomwhite {
+	position:relative;
+	float:left;
+	width:10px;
+	height:321px;
+	margin-top:65px;
+	background-color:white;
+}
+
+.textbig {
+	position:relative;
+	width:300px;
+	margin-top:65px;
+	margin-left:12px;
+	height:321px;
+	background-color:black;
+	opacity:.6;
+}
+
+.textbottom {
+	position:relative;
+	width:900px;
+	margin-top:75px;
+	margin-left:0px;
+	height:50px;
+	background-color:white;
+	opacity:.9;
+}
+
+.icons {
+	width:300px;
+	height:200px;
+	float:left;
+	position:relative;
+	background-color:white;
+}
+
+.icons h1 {
+	margin-top:47px;
+	margin-left:75px;
+}
+
+.icons img{
+	margin-left:85px;
+}
+
+.infotext {
+	position:relative;
+	float:left;
+	width:600px;
+	height:200px;
+	background-color:white;
+}
+
+.infotext p {
+	margin-left:40px;
+	margin-right:40px;
+	text-align:left;
+}
+
+.checkout{
+	position:relative;
+	float:left;
+	width:900px;
+	height:100px;
+	background-color:white;
+	text-align:left;
+}
+
+.checkout h5{
+	margin-top:45px;
+	margin-bottom:;
+}
+
+.checkout img{
+	position:relative;
+	float:left;
+	margin-left:10px;
+	margin-top:24px;
+	margin-bottom:29px;
+}
+
+.checkusout {
+	position:relative;
+	float:left;
+	margin-left:175px;
+	font-size:1.85em;
+	color:#a1a1a1;
+}
+
+.readmore {
+
+}
+
+.footer {
+	position:relative;
+	float:left;
+	width:900px;
+	height:100px;
+	background-color:#656567;
+}
