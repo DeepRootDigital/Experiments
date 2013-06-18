@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	background-image: url('images/background.png');
+	background-image: url('lp-images/background.png');
 }
 
 .back-ribbon {
@@ -12,7 +12,7 @@ body {
 	left: 0px;
 	width: 100%;
 	height: 311px;
-	background-image: url('images/back-ribbon.png');
+	background-image: url('lp-images/back-ribbon.png');
 	background-repeat: no-repeat;
 }
 
@@ -27,7 +27,7 @@ body {
 	width: 1000px;
 	height: 504px;
 	top: 35px;
-	background-image: url('images/top-background.png');
+	background-image: url('lp-images/top-background.png');
 }
 
 .vivioptal-intro-text {
@@ -108,7 +108,7 @@ form [type=text] {
 	height: 26px;
 	margin: 0 25px 0 0;
 	padding-left: 10px;
-	background-image: url('images/input-background.png');
+	background-image: url('lp-images/input-background.png');
 	background-repeat: no-repeat;
 	background-color: transparent;
 	border: none;
@@ -122,7 +122,7 @@ button {
 	width: 152px;
 	height: 38px;
 	margin: -33px 0 0 0;
-	background-image: url('images/submit-button.png');
+	background-image: url('lp-images/submit-button.png');
 	background-repeat: no-repeat;
 	background-color: transparent;
 	border: none;
@@ -134,7 +134,7 @@ button {
 	top: 40px;
 	width: 1138px;
 	height: 619px;
-	background-image: url('images/bottom-section-background.png');
+	background-image: url('lp-images/bottom-section-background.png');
 	background-repeat: no-repeat;
 }
 
