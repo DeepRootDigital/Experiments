@@ -22,6 +22,10 @@
 			echo get_template_directory_uri();
 			?>
 			/images/socialbuttons.png" />
+			<a href="" class="socialbuttona"></a>
+			<a href="" class="socialbuttonb"></a>
+			<a href="" class="socialbuttonc"></a>
+			<a href="" class="socialbuttond"></a>
 		</div>
 	</div>
 
@@ -167,16 +171,14 @@
 
 	<div class="row">
 		<div class="footer">
-			<div class="footerborder">
-				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About Us</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Team</a></li>
-					<li><a href="">Contact Us</a></li>
-				</ul>
-			</div>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Team</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
 		</div>
 	</div>
 
