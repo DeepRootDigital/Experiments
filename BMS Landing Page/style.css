@@ -1,0 +1,281 @@
+body {
+	margin:0px;
+	padding:0px;
+	background-color:#eceded;
+	color:#343533;
+}
+
+@font-face {
+	font-family: 'din';
+	src: url('fonts/din_medium-webfont.eot');
+	src: url('fonts/din_medium-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/din_medium-webfont.woff') format('woff'),
+	url('fonts/din_medium-webfont.ttf') format('truetype'),
+	url('fonts/din_medium-webfont.svg#din_mediumregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: din;
+	text-transform: uppercase;
+	margin:0px;
+	font-weight:normal;
+}
+
+h1 {
+	font-size:60px;
+	font-weight:normal;
+	text-transform: uppercase;
+	border-bottom:7px solid #343533;
+}
+
+h1 span {
+	color:#7e1619;
+}
+
+h1 img {
+	float:right;
+	margin-top: -39px;
+	margin-right: 45px;
+}
+
+.container {
+	max-width:980px;
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+.header {
+	float:left;
+	margin-top:40px;
+	min-width: 100%;
+	border-bottom:1px solid #c7c8c8;
+	padding-bottom:17px;
+}
+
+.logo {
+	float:left;
+}
+
+.slogan {
+	float:left;
+	margin-left:211px;
+	margin-top:14px;
+}
+
+.phone {
+	float:right;
+	margin-top:12px;
+}
+
+.content {
+	min-width:100%;
+	float:left;
+}
+
+.top-wrap {
+	margin-top:10px;
+}
+
+#slider-wrapper {
+	float:left;
+	max-width:644px;
+}
+
+.slider {
+	float:left;
+	max-width:644px;
+}
+
+.slider ul {
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	width:644px;
+	height:348px;
+	overflow: hidden;
+}
+
+.slider ul li {
+	height:348px;
+}
+
+#slider-wrapper h2 {
+	font-size:18px;
+	margin-top:10px;
+	text-align: center;
+}
+
+#slider-wrapper h2 span {
+	font-size:28px;
+	color:#7e1619;
+	border-bottom:1px solid #343533;
+	padding-bottom:2px;
+}
+
+.call-to-action {
+	float:right;
+	height:396px;
+	width:320px;
+	background-image:url('images/cta-bkg.png');
+	position: relative;
+	z-index:300;
+}
+
+.call-to-action input[type=text] {
+	width:258px;
+	padding-left:10px;
+	height:24px;
+	border:1px solid rgba(255,255,255, 0.6);
+	background-color: transparent;
+	background-image:url('images/field-bkg.png');
+	border-radius:6px;
+	color:#fff;
+	margin-top:4px;
+	margin-bottom:4px;
+}
+
+.call-to-action input[type=image] {
+	float:right;
+	margin-right:15px;
+	margin-top:15px;
+}
+
+.call-to-action form {
+	margin-top:202px;
+	margin-left:27px;
+}
+
+.bottom-wrap {
+	margin-top:55px;
+	float:left;
+	width:100%;
+}
+
+.article-area {
+	width:100%;
+	float:left;
+	margin-bottom:40px;
+}
+
+.view-port {
+	float:left;
+	margin-right:18px;
+}
+
+.article-area h3 {
+	font-size:32px;
+	text-align: right;
+	float:left;
+	max-width:170px;
+	max-height: 85px;
+	-webkit-margin-before: -6px;
+}
+
+.article-area p {
+	float:right;
+	max-width:270px;
+	font-size:14px;
+	font-family:Helvetica, Arial;
+	margin:0px;
+}
+
+.article-area ul {
+	float:left;
+	list-style: none;
+	font-family: Helvetica, Arial;
+	font-size:14px;
+	margin:0px;
+	padding:0px;
+	margin-right:44px;
+}
+
+.article-content {
+	float:left;
+	max-width:460px;
+	margin-top:10px;
+}
+
+.article-content img {
+	padding-left:26px;
+	padding-right:26px;
+}
+
+.article-button {
+	float:right;
+	margin-right:-10px;
+}
+
+.article-area ul.thumbnails {
+	margin-top:10px;
+}
+
+.thumbnails li {
+	float:left;
+	margin-left:3px;
+	margin-right:3px;
+}
+.thumbnails li:first-of-type {
+	margin-left:0px;
+}
+
+.clouds {
+	position:absolute;
+	top:1520px;
+	left:0px;
+	width:100%;
+	height:281px;
+	background-image:url('images/cloud-combo.png');
+	z-index:-1;
+}
+
+.clouds-top {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:281px;
+	background-image:url('images/cloud-combo.png');
+	z-index:-1;
+}
+
+.helicopter {
+	position:absolute;
+	top:1558px;
+	margin-left:-792px;
+	z-index:200;
+}
+
+.string {
+	position: absolute;
+	top:1548px;
+	margin-left:-607px;
+	z-index:200;
+}
+
+.footer {
+	width:100%;
+	float:left;
+	border-top:7px solid #343533;
+	border-bottom:2px solid #343533;
+	margin-bottom:40px;
+	margin-top:40px;
+}
+.footer img {
+	float:left;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.footer p:first-of-type {
+	float:left;
+	margin-left:70px;
+}
+.footer p {
+	float:right;
+	padding-top:20px;
+	text-transform: uppercase;
+	font-size:11px;
+	font-family:Helvetica, Arial;
+}
