@@ -1,0 +1,211 @@
+/*
+Theme Name: Inteplast
+Theme URI: http://wordpress.org/
+Description: This is the theme that I am making for Inteplast as a practice run.
+Author: Paul McMahon
+Author URI: http://wordpress.org/
+Version: 1.0
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu (optional)
+
+License:
+License URI:
+
+General comments (optional).
+*/
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+  html,
+  body {
+    font-size: 100%; }
+
+    body {
+      background-image:url('images/background.png');
+      background-size:100% 100%;
+      color: black;
+      padding: 0;
+      margin: 0;
+      font-family: Verdana;
+      font-style: normal;
+      font-size:1em;
+      line-height: 1;
+      position: relative; }
+
+      img,
+      object,
+      embed {
+        max-width: 100%;
+        height: auto; }
+
+        a {
+         color:white;
+         text-decoration:none;
+       }
+
+       a:hover {
+         color:#ffd44f;
+       }
+
+       ol,ul {
+         list-style-type:none;
+       }
+
+       /* Typography Reset */
+
+       ul,
+       ol,
+       li,
+       h1,
+       h2,
+       h3,
+       h4,
+       h5,
+       h6,
+       div,
+       p {
+        margin: 0;
+        padding: 0;
+        direction: ltr; }
+
+        .row {
+          position:relative;
+          width: 900px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0;
+          margin-bottom: 0;
+          *zoom: 1; }
+          .row .row {
+            width: 900px;
+            margin-top: 0;
+            margin-bottom: 0;
+            max-width: none;
+            *zoom: 1; }
+
+            .column,
+            .columns {
+              position: relative;
+              padding-left: 0.9375em;
+              padding-right: 0.9375em;
+              width: 100%;
+              float: left; }
+
+
+
+
+              /* Actual Content */
+
+.logo {
+  float:left;
+  position:relative;
+  height:55px;
+  width:230px;
+  margin-top:25px;
+}
+
+.search{
+  float:right;
+  position:relative;
+  height:55px;
+  width:260px;
+  margin-top:23px;
+}
+
+.search input {
+  border-radius:.3em;
+  border-width:1px;
+  width:185px;
+  height:30px;
+  position:relative;
+  float:left;
+  display:inline;
+  background-image: -ms-linear-gradient(bottom, #FEFEFE 0%, #E3E6E7 100%);
+  background-image: -moz-linear-gradient(bottom, #FEFEFE 0%, #E3E6E7 100%);
+  background-image: -o-linear-gradient(bottom, #FEFEFE 0%, #E3E6E7 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FEFEFE), color-stop(1, #E3E6E7));
+  background-image: -webkit-linear-gradient(bottom, #FEFEFE 0%, #E3E6E7 100%);
+  background-image: linear-gradient(to top, #FEFEFE 0%, #E3E6E7 100%);
+  margin-top:3px;
+}
+
+.search img {
+  position:relative;
+  float:left;
+  padding:0;
+  display:inline;
+  margin-left:10px;
+}
+
+.navigation{
+  position:relative;
+  width:900px;
+  height:80px;
+  background-color:rgba(255,255,255,0);
+  float:left;
+}
+
+.navigation li{
+  height:59px;
+  width:105px;
+  margin-right:7px;
+  text-align: center;
+  vertical-align: center;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  float:left;
+  color:#004677;
+  text-shadow:0px 1px white;
+  background-image:url('images/navbutton.png');
+}
+
+.main {
+  width:670px;
+  position:relative;
+  float:left;
+}
+
+.main h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.98em;
+  font-weight:400;
+  color:#376091;
+  text-transform:uppercase;
+}
+
+.main h5,p {
+  font-family:Helvetica, sans-serif;
+  margin-top:18px;
+}
+
+.sidenav {
+  width:223px;
+  height:931px;
+  background-image:url('images/sidenav.png');
+  position:relative;
+  float:left;
+  font-size:.85em;
+}
+
+.sidenav ul>:first-child {
+  color:#004677;
+}
+
+.footer{
+  width:900px;
+}
+
+.footerlist {
+  position:relative;
+  float:left;
+  width:180px;
+}
+
+.footerlist ul>:first-child{
+  color:#004677;
+}
