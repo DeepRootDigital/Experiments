@@ -1,0 +1,108 @@
+<!DOCTYPEhtnl>
+<html>
+<head>
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="http://vivioptalvitamins.com/wp-content/themes/Vivioptal/fonts/stylesheet.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    <script src="function.js"></script>
+
+        
+    <script type="text/javascript">
+    	$(function() {
+            $(".active").click(function() {
+                $(".thumbnail-multi, .thumbnail-mens, .thumbnail-womens").fadeOut("slow");
+                $(".thumbnail-active").fadeIn("slow");
+            });
+    		$(".multi").click(function() {
+    			$(".thumbnail-active, .thumbnail-mens, .thumbnail-womens").fadeOut("slow");
+    			$(".thumbnail-multi").fadeIn("slow");
+    		}); 
+    		$(".mens").click(function() {
+    			$(".thumbnail-multi, .thumbnail-active, .thumbnail-womens").fadeOut("slow");
+    			$(".thumbnail-mens").fadeIn("slow");
+    		}); 
+            $(".womens").click(function() {
+                $(".thumbnail-multi, .thumbnail-mens, .thumbnail-active").fadeOut("slow");
+                $(".thumbnail-womens").fadeIn("slow");
+            }); 
+    	});
+    </script>
+
+</head>
+<body>
+	<div class="homecontainer">
+		<div class="home-slider">
+			<ul>
+				<li class="thumbnail-multi"><img src="images/vivio_adSlide_multi.jpg" /></li>
+				<li class="thumbnail-active"><img src="images/vivio_adSlide_active.jpg" /></li>
+				<li class="thumbnail-mens"><img src="images/vivio_ad_men.jpg" /></li>
+				<li class="thumbnail-womens"><img src="images/vivio_ad_women.jpg" /></li>
+			</ul>
+		</div>
+		<div class="home-slider-menu">
+			<ul>
+				<li><img class="multi" src="images/multi-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
+				<li><img class="active" src="images/active-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
+				<li><img class="mens" src="images/mens-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
+				<li><img class="womens" src="images/womens-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
+				<li><img src="images/kids-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
+				<li>Online<br/><span style="color:#f1801f;">Special</span></li>
+			</ul>
+		</div>
+		<div class="home-panel-top">
+			<img src="images/beakers.png">
+			<div class="home-panel-content">
+				<h1>German <b>Engineering</b> for your body</h1>
+				<p>Vivioptal's exclusive German formula is what makes it an excellent source of vitamins. From its development at Dr. Gerhard Mann's laboratory in Berlin, to its Mexican debut, the formula became known all over the world for its quality, value and positive testimonials. [Read More] </p>
+			</div>
+		</div>
+		<div class="home-panel-mid">
+			<img src="images/girl-jump.png">
+			<div class="home-panel-content">
+				<h1>Vitamins <b>Tailored</b><br/> for You</h1>
+				<p>The Vivioptal mission is to provide you with an all-encompassing program of essential vitamins that your body needs to thrive. We understand that contributing factors such as age, gender, and activity level determine the amount of nutrients we must get from vitamins. Are you looking for multivitamins that will ensure the life-long healthy habits of your child? Are you seeking a program of vitamins aimed at improving your athletic performance? [Read More] </p>
+			</div>
+		</div>
+		<div class="home-panel-bottom">
+			<img src="images/vitamin-packet.png">
+			<div class="home-panel-content">
+				<h1>Vitamns <b>Tailored</b><br/> For Quality</h1>
+				<p>The informed consumer understands that not all vitamins or multivitamins are created equally. At Vivioptal, we hold ourselves to the highest quality standards of testing and manufacturing to ensure that our vitamins deliver the results you seek. Our multivitamin packages provide a complex and comprehensive program with a well-balanced spectrum of vital ingredients. [Read More] </p>
+			</div>
+		</div>
+		<div class="home-panel-download">
+			<img src="images/ebook.png">
+			<div class="home-panel-content">
+				<h1><b>Free</b> eBook</h1>
+				<p>Get your hands on this FREE B vitamins ebook and inform yourself on B vitamins and the crucial role they play on your body.</p>
+			</div>
+			<div class="e-book-form">
+				<form action="">
+					<input type="text" name="name" value="name">
+					<input type="text" name="email" value="email">
+					<div class="form-right-aligner">
+						<input class="gender" type="text" name="gender" value="gender">
+						<input class="half-form" type="text" name="age" value="age">
+					</div>
+					<input type="image" src="images/download-button.png">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="home-bottom-container" class="homecontainer">
+		<img class="topper" src="images/topper-bkg.png">
+		<div class="seo-content-area">
+			<h2>The Vivioptal <b>LifeStyle</b></h1>
+			<p>Vivioptal Vitamins is not simply a multivitamin or a supplement; our goal is to provide a healthier and active lifestyle to our consumers and their families. Aware of the daily demands of today's hectic life, we carefully investigated, selected and developed a whole line of multivitamins and multiminerals to support you 24/7 and promote vitality and well-being. [ Read More ]</p>
+			<img src="images/fitness-girl.png">
+		</div>
+		<div class="home-sidebar-right">
+			<h3>Buy<br/> Vivioptal <b>Active</b> & take the workout challenge</h3>
+			<img src="images/active-box.png">
+			<img class="buy-now-button-challenge" src="http://vivioptalvitamins.com/wp-content/themes/Vivioptal/images/buynow.png">
+		</div>
+	</div>
+</body>
+</html>

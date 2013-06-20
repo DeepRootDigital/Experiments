@@ -1,0 +1,321 @@
+body {
+	background-image:url('http://vivioptalvitamins.com/wp-content/themes/Vivioptal/images/background.png');
+}
+.homecontainer {
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url('images/homepage-bkg.png');
+}
+
+.home-slider {
+	height:526px;
+	width:1000px;
+	overflow:hidden;
+}
+
+.home-slider ul {
+	float:left;
+	max-width:1000px;
+	max-height:526px;
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	list-style: none;
+}
+
+.home-slider ul li {
+	width:1000px;
+	height:526px;
+	float:left;
+}
+
+.home-slider-menu {
+	width:1000px;
+	height:124px;
+	background-image:url('images/slider-menu-nav.png');
+}
+
+.home-slider-menu ul {
+	margin:0px;
+	padding:0px;
+	padding-top:44px;
+	float:left;
+	font-family:'museo_sans_700regular';
+	font-size:16px;
+	color:#414042;
+	text-transform: uppercase;
+}
+
+.home-slider-menu ul li {
+	width:165px;
+	float:left;
+	list-style:none;
+	text-align: center;
+}
+
+.home-slider-menu ul li:first-of-type {
+	border:none;
+}
+.home-slider-menu ul li:last-of-type {
+	border:none;
+}
+
+.v-dots {
+	float:right;
+	padding-top:10px;
+}
+
+.home-panel-top {
+	height:412px;
+}
+
+.home-panel-mid {
+	height:423px;
+}
+
+.home-panel-bottom {
+	height:396px;
+}
+
+.home-panel-top img {
+	float:left;
+	margin-left:184px;
+	margin-top:52px;
+}
+
+.home-panel-top .home-panel-content {
+	float:right;
+	max-width:354px;
+	margin-top:37px;
+	margin-right:126px;
+}
+
+.home-panel-mid img {
+	float:right;
+	margin-right:135px;
+}
+
+
+.home-panel-mid .home-panel-content {
+	float:left;
+	margin-left:113px;
+	max-width:357px;
+	text-align:right;
+}
+
+.home-panel-bottom img {
+	float:left;
+	margin-left:100px;
+}
+
+.home-panel-bottom .home-panel-content {
+	float:right;
+	max-width:357px;
+	margin-right:125px;
+}
+
+.home-panel-content h1 {
+	font-family:'museo_sans_100regular';
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#3a3a3b;
+	border-bottom:5px solid #f1801f;
+	padding-bottom:5px;
+	margin-bottom:8px;
+	letter-spacing:-1px;
+}
+
+.home-panel-content h1 b {
+	font-weight:normal;
+	font-family:'museo_sans_700regular';
+}
+
+.home-panel-content p {
+	font-family:arial;
+	font-size:15px;
+	word-spacing:3px;
+	line-height:20px;
+	margin-top:0px;
+	color:#585858;
+}
+
+.home-panel-download {
+	height:381px;
+}
+
+.home-panel-download img {
+	float:right;
+	margin-right:150px;
+}
+
+.home-panel-download .home-panel-content {
+	text-align:right;
+	max-width:352px;
+	margin-left:114px;
+	margin-top:-15px;
+	float:left;
+}
+
+.home-panel-download .home-panel-content p {
+	font-size:11px;
+}
+
+.e-book-form {
+	max-height:122px;
+	min-height:122px;
+	width:468px;
+	float:left;
+	background-image:url('images/e-book-texture.png');
+}
+
+.e-book-form form {
+	float:right;
+	margin-top:7px;
+}
+
+.e-book-form input[type="text"] {
+	height:28px;
+	border:1px solid #bdbdbd;
+	clear:both;
+	width:224px;
+	float:right;
+	margin-top:4px;
+	margin-bottom:4px;
+}
+
+.e-book-form input[type="image"] {
+	margin-top:12px;
+	float:right;
+	clear:both;
+}
+
+.form-right-aligner {
+	float:right;
+}
+
+.half-form {
+	width:112px !important;
+	float:none !important;
+}
+
+.gender {
+	width:100px !important;
+	float:none !important;
+	margin-right:8px;
+}
+
+.home-topper {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url('images/topper-bkg.png');
+	height:65px;
+	margin-top:4px;
+	margin-bottom:-20px;
+}
+
+.seo-content-area {
+	width:637px;
+	padding-left:30px;
+	padding-right:30px;
+	height:567px;
+	float:left;
+	border-right:2px groove #fff;
+}
+.seo-content-area h2 {
+	font-family:'museo_sans_100regular';
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#3a3a3b;
+	border-bottom:5px solid #f1801f;
+	padding-bottom:5px;
+	margin-bottom:8px;
+}
+
+.seo-content-area h2 b {
+	font-weight:normal;
+	font-family:'museo_sans_700regular';
+}
+
+.seo-content-area img {
+	margin-left:266px;
+}
+
+.seo-content-area p {
+	font-family:arial;
+	font-size:15px;
+	word-spacing:3px;
+	line-height:20px;
+	margin-top:0px;
+	color:#585858;
+}
+
+.home-sidebar-right {
+	float:right;
+	width:276px;
+	margin-left:25px;
+}
+
+.home-sidebar-right h3 {
+	font-family:'museo_sans_500regular';
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#3a3a3b;
+	font-size:34px;
+	line-height:45px;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+}
+
+.home-sidebar-right h3 b {
+	font-weight:normal;
+	color:#da132e;
+}
+
+#home-bottom-container {
+	max-height:567px; 
+	min-height:567px; 
+	margin-top:4px;
+	border-top-right-radius: 55px;
+}
+
+.topper {
+	position:absolute;
+	margin-left:935px;
+	background-image:url('http://vivioptalvitamins.com/wp-content/themes/Vivioptal/images/background.png');
+}
+
+.buy-now-button-challenge {
+	margin-left:140px;
+	margin-top:25px;
+}
+
+@media (max-width: 1024px) { 
+
+	.home-slider-menu {
+		max-width:1000px;
+		width:auto;
+		min-height:124px;
+		height:auto;
+	}
+
+	.home-slider-menu ul {
+		padding-top:0px !important;
+	}
+
+	.home-slider-menu ul li {
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+}
+
+
+@media (min-width: 640px) { 
+
+	.home-slider-menu ul {
+		padding-top:47px;
+	}
+
+
+}
+
