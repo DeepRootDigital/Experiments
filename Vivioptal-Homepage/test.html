@@ -1,25 +1,52 @@
+<!DOCTYPEhtnl>
 <html>
 <head>
 	<title>test</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="http://vivioptalvitamins.com/wp-content/themes/Vivioptal/fonts/stylesheet.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    <script src="function.js"></script>
+
+        
+    <script type="text/javascript">
+    	$(function() {
+            $(".active").click(function() {
+                $(".thumbnail-multi, .thumbnail-mens, .thumbnail-womens").fadeOut("slow");
+                $(".thumbnail-active").fadeIn("slow");
+            });
+    		$(".multi").click(function() {
+    			$(".thumbnail-active, .thumbnail-mens, .thumbnail-womens").fadeOut("slow");
+    			$(".thumbnail-multi").fadeIn("slow");
+    		}); 
+    		$(".mens").click(function() {
+    			$(".thumbnail-multi, .thumbnail-active, .thumbnail-womens").fadeOut("slow");
+    			$(".thumbnail-mens").fadeIn("slow");
+    		}); 
+            $(".womens").click(function() {
+                $(".thumbnail-multi, .thumbnail-mens, .thumbnail-active").fadeOut("slow");
+                $(".thumbnail-womens").fadeIn("slow");
+            }); 
+    	});
+    </script>
+
 </head>
 <body>
 	<div class="homecontainer">
 		<div class="home-slider">
 			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li class="thumbnail-multi"><img src="images/vivio_adSlide_multi.jpg" /></li>
+				<li class="thumbnail-active"><img src="images/vivio_adSlide_active.jpg" /></li>
+				<li class="thumbnail-mens"><img src="images/vivio_ad_men.jpg" /></li>
+				<li class="thumbnail-womens"><img src="images/vivio_ad_women.jpg" /></li>
 			</ul>
 		</div>
 		<div class="home-slider-menu">
 			<ul>
-				<li><img src="images/multi-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
-				<li><img src="images/active-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
-				<li><img src="images/mens-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
-				<li><img src="images/womens-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
+				<li><img class="multi" src="images/multi-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
+				<li><img class="active" src="images/active-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
+				<li><img class="mens" src="images/mens-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
+				<li><img class="womens" src="images/womens-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
 				<li><img src="images/kids-v.png"/><img class="v-dots" src="images/v-dots.png"></li>
 				<li>Online<br/><span style="color:#f1801f;">Special</span></li>
 			</ul>
