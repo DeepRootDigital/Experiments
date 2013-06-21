@@ -66,76 +66,98 @@
 
 
 <div class="row">
-
-	<div class="main">
+	<div class="maindoc">
 		<h2>Contact Us</h2>
 		<img src="<?php
 			echo get_template_directory_uri();
 			?>
-			/images/maindivider.png" />
-		<form>
-        	<input type="text" name="name" value="" placeholder="name" class="mailer">
-        	<input type="text" name="email" value="" placeholder="email" class="mailer">
-        	<input type="text" name="phone" value="" placeholder="phone number" class="mailer">
-        	<textarea name="message" placeholder="message"></textarea>
-      	</form>
+			/images/longdivider.png" />
+		<ul class="sorting">
+			<li>Accounting</li>
+			<li>Corporate Internal</li>
+			<li>Credit</li>
+			<li>Divisional</li>
+			<li>HR</li>
+			<li>Marketing</li>
+			<li>Material &amp; Purchasing</li>
+			<li>Operations</li>
+			<li>TQM</li>
+		</ul>
 
-      	<p class="contactpage"> Please select the department you are trying to reach.</p>
-
-      	<img src="<?php
-			echo get_template_directory_uri();
-			?>
-			/images/submit.png" class="submit" />
-			<br />
-		<form class="checkboxes">
-			<ul>
-				<li><input type="checkbox" name="department" value="Department1" class="check"><h4>Department 1</h4></li>
-				<li><input type="checkbox" name="department" value="Department2" class="check"><h4>Department 2</h4></li>
-				<li><input type="checkbox" name="department" value="Department3" class="check"><h4>Department 3</h4></li>
-				<li><input type="checkbox" name="department" value="Department4" class="check"><h4>Department 4</h4></li>
+		<div class="docinfo">
+			<ul class="indivinfotop">
+				<li>Name</li>
+				<li>Date Uploaded</li>
+				<li>File Type</li>
+				<li>Size</li>
+				<li>Category</li>
 			</ul>
-		</form>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/word.png" />
+			<ul class="indivinfo">
+				<li>ImportantDocument1.doc</li>
+				<li>04/18/2013</li>
+				<li>Word Document</li>
+				<li>2.5 MB</li>
+				<li>Health Benefits</li>
+			</ul>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/excel.png" />
+			<ul class="indivinfo">
+				<li>ImportantDocument1.doc</li>
+				<li>04/18/2013</li>
+				<li>Excel Document</li>
+				<li>2.5 MB</li>
+				<li>Company Policies</li>
+			</ul>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/pp.png" />
+			<ul class="indivinfo">
+				<li>ImportantDocument1.doc</li>
+				<li>04/18/2013</li>
+				<li>Power Point Document</li>
+				<li>2.5 MB</li>
+				<li>Category 3</li>
+			</ul>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/pdf.png" />
+			<ul class="indivinfo">
+				<li>ImportantDocument1.doc</li>
+				<li>04/18/2013</li>
+				<li>PDF Document</li>
+				<li>2.5 MB</li>
+				<li>Category 4</li>
+			</ul>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/word.png" />
+			<ul class="indivinfo">
+				<li>ImportantDocument1.doc</li>
+				<li>04/18/2013</li>
+				<li>Word Document</li>
+				<li>2.5 MB</li>
+				<li>Category 5</li>
+			</ul>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/excel.png" />
+			<ul class="indivinfo">
+				<li>ImportantDocument1.doc</li>
+				<li>04/18/2013</li>
+				<li>Excel Document</li>
+				<li>2.5 MB</li>
+				<li>Category 6</li>
+			</ul>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/pp.png" />
+			<ul class="indivinfo">
+				<li>ImportantDocument1.doc</li>
+				<li>04/18/2013</li>
+				<li>Power Point Document</li>
+				<li>2.5 MB</li>
+				<li>Category 7</li>
+			</ul>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/pdf.png" />
+			<ul class="indivinfo">
+				<li>ImportantDocument1.doc</li>
+				<li>04/18/2013</li>
+				<li>PDF Document</li>
+				<li>2.5 MB</li>
+				<li>Category 8</li>
+			</ul>
+		</div>
 	</div>
-
-	<div class="sidenav">
-		<ul>
-			<li>Document Center</li>
-			<li>Employee Handbook</li>
-			<li>Corporate rules and...</li>
-			<li>Basic Work Etiquette</li>
-			<li>Casual Fridays</li>
-			<li>Web Usage Limitations</li>
-			<li>Company Transportation</li>
-		</ul>
-		<ul>
-			<li>Useful Links</li>
-			<li>Employee Handbook</li>
-			<li>Corporate rules and...</li>
-			<li>Basic Work Etiquette</li>
-			<li>Casual Fridays</li>
-			<li>Web Usage Limitations</li>
-			<li>Company Transportation</li>
-		</ul>
-		<ul>
-			<li>Training Materials</li>
-			<li>Employee Handbook</li>
-			<li>Corporate rules and...</li>
-			<li>Basic Work Etiquette</li>
-			<li>Casual Fridays</li>
-			<li>Web Usage Limitations</li>
-			<li>Company Transportation</li>
-		</ul>
-		<ul>
-			<li>News Feeds</li>
-			<li>Employee Handbook</li>
-			<li>Corporate rules and...</li>
-			<li>Basic Work Etiquette</li>
-			<li>Casual Fridays</li>
-			<li>Web Usage Limitations</li>
-			<li>Company Transportation</li>
-		</ul>
-	</div>
-
 </div>
 
 <div class="row">
