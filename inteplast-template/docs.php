@@ -27,61 +27,19 @@ Template Name: Documents
 		</ul>
 
 		<div class="docinfo">
-			<div class="docheaders">
-				<div class="one">Name</div>
-				<div class="two">Date Uploaded</div>
-				<div class="three">File Type</div>
-				<div class="four">Size</div>
-				<div class="five">Category</div>
-			</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/word.png" />
-				<div class="one">ImportantDocument1.doc</div>
-				<div class="two">04/18/2013</div>
-				<div class="three">Word Document</div>
-				<div class="four">2.5 MB</div>
-				<div class="five">Health Benefits</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/excel.png" />
-				<div class="one">ImportantDocument1.doc</div>
-				<div class="two">04/18/2013</div>
-				<div class="three">Excel Document</div>
-				<div class="four">2.5 MB</div>
-				<div class="five">Company Policies</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/pp.png" />
-				<div class="one">ImportantDocument1.doc</div>
-				<div class="two">04/18/2013</div>
-				<div class="three">Power Point Document</div>
-				<div class="four">2.5 MB</div>
-				<div class="five">Category 3</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/pdf.png" />
-				<div class="one">ImportantDocument1.doc</div>
-				<div class="two">04/18/2013</div>
-				<div class="three">PDF Document</div>
-				<div class="four">2.5 MB</div>
-				<div class="five">Category 4</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/word.png" />
-				<div class="one">ImportantDocument1.doc</div>
-				<div class="two">04/18/2013</div>
-				<div class="three">Word Document</div>
-				<div class="four">2.5 MB</div>
-				<div class="five">Category 5</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/excel.png" />
-				<div class="one">ImportantDocument1.doc</div>
-				<div class="two">04/18/2013</div>
-				<div class="three">Excel Document</div>
-				<div class="four">2.5 MB</div>
-				<div class="five">Category 6</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/pp.png" />
-				<div class="one">ImportantDocument1.doc</div>
-				<div class="two">04/18/2013</div>
-				<div class="three">Power Point Document</div>
-				<div class="four">2.5 MB</div>
-				<div class="five">Category 7</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/pdf.png" />
-				<div class="one">ImportantDocument1.doc</div>
-				<div class="two">04/18/2013</div>
-				<div class="three">PDF Document</div>
-				<div class="four">2.5 MB</div>
-				<div class="five">Category 8</div>
+
+				<?php 
+		$args=array(
+			'post_type' => 'inteplast_documents');
+
+		$blogPosts = new WP_Query($args);
+
+ 			 while ($blogPosts->have_posts()) : $blogPosts->the_post();
+  		?>
+			<?php the_post_thumbnail(); ?> 
+			<?php the_content(); ?>
+
+  		<?php endwhile; ?>
 		</div>
 	</div>
 </div>

@@ -14,102 +14,25 @@ get_header();
 			?>
 			/images/maindivider.png" />
 
-		<div class="profile">
+		<?php 
+		$args=array(
+			'post_type' => 'inteplast_employees');
+
+		$blogPosts = new WP_Query($args);
+
+ 			 while ($blogPosts->have_posts()) : $blogPosts->the_post();
+  		?>
+
+  		<div class="profile">
 			<div class="profpic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/employee1.png" />
+				<?php the_post_thumbnail(); ?> 
 			</div>
-			<div class="profinfo">
-				<h3>John Smith</h3>
-				<h3>Manager</h3>
-				<h3>Section A</h3>
-				<h3>johnsmith@inteplast.com</h3>
-				<h3>EXT# 1234</h3>
-			</div>
+
+			<?php the_content(); ?>
 		</div>
-		<div class="profile">
-			<div class="profpic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/employee2.png" />
-			</div>
-			<div class="profinfo">
-				<h3>John Smith</h3>
-				<h3>Manager</h3>
-				<h3>Section A</h3>
-				<h3>johnsmith@inteplast.com</h3>
-				<h3>EXT# 1234</h3>
-			</div>
-		</div>
-		<div class="profile">
-			<div class="profpic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/employee3.png" />
-			</div>
-			<div class="profinfo">
-				<h3>John Smith</h3>
-				<h3>Manager</h3>
-				<h3>Section A</h3>
-				<h3>johnsmith@inteplast.com</h3>
-				<h3>EXT# 1234</h3>
-			</div>
-		</div>
-		<div class="profile">
-			<div class="profpic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/employee4.png" />
-			</div>
-			<div class="profinfo">
-				<h3>John Smith</h3>
-				<h3>Manager</h3>
-				<h3>Section A</h3>
-				<h3>johnsmith@inteplast.com</h3>
-				<h3>EXT# 1234</h3>
-			</div>
-		</div>
-		<div class="profile">
-			<div class="profpic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/employee5.png" />
-			</div>
-			<div class="profinfo">
-				<h3>John Smith</h3>
-				<h3>Manager</h3>
-				<h3>Section A</h3>
-				<h3>johnsmith@inteplast.com</h3>
-				<h3>EXT# 1234</h3>
-			</div>
-		</div>
-		<div class="profile">
-			<div class="profpic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/employee6.png" />
-			</div>
-			<div class="profinfo">
-				<h3>John Smith</h3>
-				<h3>Manager</h3>
-				<h3>Section A</h3>
-				<h3>johnsmith@inteplast.com</h3>
-				<h3>EXT# 1234</h3>
-			</div>
-		</div>
-		<div class="profile">
-			<div class="profpic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/employee7.png" />
-			</div>
-			<div class="profinfo">
-				<h3>John Smith</h3>
-				<h3>Manager</h3>
-				<h3>Section A</h3>
-				<h3>johnsmith@inteplast.com</h3>
-				<h3>EXT# 1234</h3>
-			</div>
-		</div>
-		<div class="profile">
-			<div class="profpic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/employee8.png" />
-			</div>
-			<div class="profinfo">
-				<h3>John Smith</h3>
-				<h3>Manager</h3>
-				<h3>Section A</h3>
-				<h3>johnsmith@inteplast.com</h3>
-				<h3>EXT# 1234</h3>
-			</div>
-		</div>
+
+  		<?php endwhile; ?>
+
 	</div>
 	<?php
 		get_sidebar();
