@@ -1,13 +1,7 @@
-<html>
-<head>
-	<title>Redline Restorations</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-	<div class="container">
-		<div class="logo">
-			<img src="images/logo.png" alt="logo" />
-		</div>
+<?php
+	get_header();
+?>
+
 		<div class="description">
 			<div class="intro-text">
 				<p>A world class automotive restoration facility. 
@@ -22,13 +16,15 @@
 			</div>
 		</div>
 		<div class="twitter-feed">
-			<div class="feed-section">
-			<p>FOR SALE 1964 PONTIAC GTO CONVERTIBLE</p>
-			<p><a href="#">http://FerrariChat.com http://j.mp/tV1MGm</a></p>
+			<div class="the-tweets">
+				<a class="twitter-timeline" href="https://twitter.com/Colpanius" data-widget-id="349588048218042370" data-tweet-limit="2" data-chrome="nofooter transparent">Tweets by @Colpanius</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+				fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 		</div>
 		<div class="company-info">
-			<img src="images/company-info-line.png" alt="company-info-line" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/company-info-line.png" alt="company-info-line" />
 			<div class="block sales">
 				<p>sales @</p>
 				<p><span>redlinerestorations.net</span></p>
@@ -47,17 +43,9 @@
 			</div>
 		</div>
 		<div class="map">
-			<img src="images/map.png" alt="map" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/map.png" alt="map" />
 		</div>
-		<div class="social-media">
-			<ul>
-				<li><a href="#"><img src="images/facebook.png" alt="facebook" /></a></li>
-				<li><a href="#"><img src="images/twitter.png" alt="twitter" /></a></li>
-				<li><a href="#"><img src="images/four-square.png" alt="four-square" /></a></li>
-				<li><a href="#"><img src="images/youtube.png" alt="youtube" /></a></li>
-			</ul>
-			<p>Copyright © 2013 Redline Restoration LLC.</p>
-		</div>
-</div>
-</body>
-</html>
+
+<?php
+	get_footer();
+?>
