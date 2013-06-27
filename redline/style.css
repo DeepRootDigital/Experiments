@@ -1,17 +1,28 @@
+@font-face {
+  font-family:Geddes;
+  src:url('fonts/Geddes.ttf') format("truetype");
+}
+
+@font-face {
+  font-family:GeddesBold;
+  src:url('fonts/Geddes-Bold.ttf') format("truetype");
+}
 
 body {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	background-image: url('images/body-background.png');
+	background-image: url('images/bodybackground.png');
+	background-size:100% 100%;
 	background-repeat: repeat-x;
 }
 
 .container {
 	margin: 0 auto 0 auto;
 	width: 960px;
-	height: 1222px;
-	background-image: url('images/container-background.png');
+	height: 1172px;
+	background-image: url('images/containerbackground.png');
+	background-size:100% 100%;
 	background-repeat: repeat-x;
 }
 
@@ -44,27 +55,43 @@ body {
 .intro-text p {
 	font-family: georgia;
 	font-size: 16px;
-	text-align: center;
+	text-align: justify;
 	color: #fff;
+	line-height:24px;
+	margin-top:11px;
+}
+
+.hiddeniframe {
+	display:none;
 }
 
 .enter-email {
 	float: right;
-	width: 367px;
+	width: 360px;
 	height: 136px;
 	border-top: 1px dotted #878787;
 }
 
-.enter-email p {
+.entering-email {
+	width:360px;
+	height:54px;
+}
+
+.entering-email p {
 	font-size: 16px;
 	font-style: italic;
 	font-family: georgia;
 	color: #fff;
+	margin-bottom:1em;
+	line-height:24px;
+	margin-top:11px;
+	text-align:justify;
 }
 
 .email-text-box {
-	width: 366px;
+	width: 355px;
 	height: 38px;
+	margin-top:55px;
 	padding-left: 12px;
 	background-image: url('images/email-text-box.png');
 	background-repeat: no-repeat;
@@ -75,24 +102,49 @@ body {
 	color: #a5a5a5;
 }
 
+.email-text-box:focus {
+	border-top: 1px dotted #878787;
+}
+
 .submit {
 	position: relative;
 	width: 119px;
 	height: 34px;
-	top: -37px;
+	top: -39px;
 	left: 246px;
 	background-image: url('images/submit.png');
 	background-repeat: no-repeat;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	color:rgba(0,0,0,0);
+}
+
+.confirmation{
+
+	position:absolute;
+	margin-top:60px;
+	margin-left:-270px;
+	height:28px;
+	width:271px;
+	background-color:rgba(0,0,0,0);
+	overflow:hidden;
+}
+
+#confirmed {
+	position:relative;
+	float:left;
+	background-color:rgba(0,0,0,0);
+	height:28px;
+	width:271px;
 }
 
 .twitter-feed {
 	display: block;
 	margin: 0 auto 0 auto;
 	width: 861px;
-	height: 440px;
+	height: 380px;
+	margin-top:50px;
 	background-image: url('images/twitter-feed-background.png');
 	background-repeat: no-repeat;
 }
@@ -103,6 +155,19 @@ body {
 	margin-top:100px;
 	width:461px;
 }
+
+/*
+.holder { border: 0px solid #d4d4d4; padding-top: 8px; border-top: none; max-height: 403px; padding-bottom: 8px; }
+.tweet { overflow: hidden; clear: both; text-align: left; margin-bottom: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-left: 8px; margin-right: 8px; }
+.tweet.first { border: none; margin-bottom: 0px; }
+.tweet_foto { float: left; margin-right: 8px; }
+.tweet_text { float: left; font-size: 13px; width: 292px; line-height: 16px; }
+.tweet_text a { color: #000; }
+.tweet_text a:hover { color: yellow; }
+.tweet_text a.profile { color: #990000; text-decoration: none; font-weight: bold; }
+.tweet_text a.profile:hover { color: yellow; text-decoration: none; font-weight: bold; }
+.tweet_text span { display: block; color: #990000; }
+*/
 
 .company-info {
 	float: left;
@@ -132,6 +197,7 @@ body {
 	position: relative;
 	margin: 0 0 0 0;
 	top: 12px;
+	font-family:Geddes;
 }
 
 .block p em {
@@ -148,8 +214,8 @@ body {
 	float: left;
 	width: 710px;
 	height: 60px;
-	margin: 60px 0 0 0;
-	padding-bottom:34px;
+	margin: 25px 0 0 0;
+	padding-bottom:35px;
 }
 
 .social-media ul {
@@ -172,7 +238,53 @@ body {
 	color: #636c6f;
 }
 
+#facebook {
+	background-image:url('images/facebook.png');
+	background-repeat:no-repeat;
+	background-position:0 0;
+	width:45px;
+	height:45px;
+}
 
+#facebook:hover {
+	background-image:url('images/facebook-rollover.png');
+}
+
+#socialtwitter {
+	background-image:url('images/twitter.png');
+	background-repeat:no-repeat;
+	background-position:0 0;
+	width:45px;
+	height:45px;
+}
+
+#socialtwitter:hover {
+	background-image:url('images/twitter-rollover.png');
+}
+
+#foursquare {
+	background-image:url('images/four-square.png');
+	background-repeat:no-repeat;
+	background-position:0 0;
+	width:45px;
+	height:45px;
+}
+
+#foursquare:hover {
+	background-image:url('images/four-square-rollover.png');
+}
+
+#youtube {
+	background-image:url('images/youtube.png');
+	background-repeat:no-repeat;
+	background-position:0 0;
+	width:50px;
+	height:45px;
+}
+
+#youtube:hover {
+	background-image:url('images/youtube-rollover.png');
+}
 
 
 

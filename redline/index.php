@@ -1,6 +1,17 @@
-<?php
-	get_header();
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Redline Restorations</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="images/logo.png" alt="logo" />
+		</div>
 
 		<div class="description">
 			<div class="intro-text">
@@ -8,26 +19,29 @@
 					Our TUV-certified staff prides themselves on our extensive research and attention to detail.</p>
 			</div>
 			<div class="enter-email">
-				<p>Enter your email address below now, and we will notify you when we launch our brand new website.</p>
-				<form>
-				<input class="email-text-box" type="text" name="" placeholder="your email" />
-				<input class="submit" type="submit" name="" value="" />
+				<div class="entering-email"><p>Enter your email address below now, and we will notify you when we launch our brand new website.</p></div>
+				<div class="confirmation"><img src="images/confirmation.png" id="confirmed" /></div>
+				<form action="https://docs.google.com/forms/d/1D_CgYcrN_xg8bQdeQRDpAgjpzCNTzIG-akpD00ZMuCg/formResponse?embedded=true" method="POST" id="ss-form" target="hiddeniframe" onsubmit>
+					<input type="email" name="entry.1429264908" value="" class="ss-q-short email-text-box" id="entry_1429264908" dir="auto" aria-required="true">
+					<input class="submit" type="submit" name="submit" value="Submit" id="ss-submit">
 				</form>
+				<iframe name="hiddeniframe" class="hiddeniframe">
+				</iframe>
 			</div>
 		</div>
 		<div class="twitter-feed">
 			<div class="the-tweets">
-				<a class="twitter-timeline" href="https://twitter.com/Colpanius" data-widget-id="349588048218042370" data-tweet-limit="2" data-chrome="nofooter transparent">Tweets by @Colpanius</a>
+				<a class="twitter-timeline" href="https://twitter.com/Redlineresto" data-widget-id="349941594641805312" data-tweet-limit="2" data-link-color="#263B44" data-chrome="nofooter transparent noborders">Tweets by @Redlineresto</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
 				if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
 				fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 		</div>
 		<div class="company-info">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/company-info-line.png" alt="company-info-line" />
+			<img src="images/company-info-line.png" alt="company-info-line" />
 			<div class="block sales">
 				<p>sales @</p>
-				<p><span>redlinerestorations.net</span></p>
+				<p><a href="http://www.redlinerestorations.net" style="text-decoration:none"><span>redlinerestorations.net</span></a></p>
 			</div>
 			<div class="block hours">
 				<p><span>m - s</span> 9am - 5pm</p>
@@ -43,9 +57,26 @@
 			</div>
 		</div>
 		<div class="map">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/map.png" alt="map" />
+			<iframe width="471" height="278" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=2316+FAIRFIELD+AVE+BLACK+ROCK,+CT+06605&amp;ie=UTF8&amp;hq=&amp;hnear=2316+Fairfield+Ave,+Bridgeport,+Connecticut+06605&amp;gl=us&amp;ll=41.163306,-73.220987&amp;spn=0.009741,0.01354&amp;t=m&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=2316+FAIRFIELD+AVE+BLACK+ROCK,+CT+06605&amp;ie=UTF8&amp;hq=&amp;hnear=2316+Fairfield+Ave,+Bridgeport,+Connecticut+06605&amp;gl=us&amp;ll=41.163306,-73.220987&amp;spn=0.009741,0.01354&amp;t=m&amp;z=14&amp;source=embed" style="color:#d91f2d;text-align:left">View Larger Map</a></small>
 		</div>
 
-<?php
-	get_footer();
-?>
+		<div class="social-media">
+			<ul>
+				<li><a href="http://www.facebook.com/redlineresto"><div id="facebook"></div></a></li>
+				<li><a href="https://twitter.com/Redlineresto"><div id="socialtwitter"></div></a></li>
+				<li><a href="https://foursquare.com/redlineresto?ref=atw"><div id="foursquare"></div></a></li>
+				<li><a href="http://www.youtube.com/user/redlineresto"><div id="youtube"></div></a></li>
+			</ul>
+			<p>Copyright © 2013 Redline Restoration LLC.</p>
+		</div>
+</div>
+	<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+		$("#confirmed").hide();
+		$("#ss-submit").click(function(){
+			$("#confirmed").show("slide",{direction:'right'}, 2000).delay(2000).hide("slide",{direction:'right'}, 2000);
+		});
+	});
+	</script>
+</body>
+</html>
