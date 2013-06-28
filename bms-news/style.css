@@ -1,0 +1,221 @@
+/*
+Theme Name: Business on Market St News
+Theme URI: http://businessonmarketst.com/
+Description: Theme for BMS Site
+Author: Ray Sinlao/Alvaro Flores/Aldo Jacobo/Nicholas Koskowski
+Version: 1.0
+
+General comments (optional).
+*/
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+	background-image:url('images/news-body-background.png');
+	padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#wrapper {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+	width:1000px;
+}
+
+.row {
+	position:relative;
+	float:left;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	*zoom: 1; 
+}
+
+.column,.columns {
+	position: relative;
+	padding-left: 0.9375em;
+	padding-right: 0.9375em;
+	width: 100%;
+	float: left; 
+}
+
+.news-header {
+	position:relative;
+	float:left;
+	display:block;
+	width:1000px;
+	height:102px;
+	border-width:0;
+	border-bottom:14px solid #343533;
+}
+
+.news-header-header {
+	position:relative;
+	float:left;
+	display:block;
+	height:88px;
+	width:700px;
+	border-width:0;
+}
+
+.news-header-header h1 {
+	font-family:din;
+}
+
+.news-header-price {
+	position:relative;
+	float:right;
+	display:block;
+	height:88px;
+	width:200px;
+	border-width:0;
+	text-align:right;
+	margin-right:-15px;
+	margin-top:0px;
+}
+
+.news-header-price span {
+	font-family:din;
+	font-size:15px;
+	line-height:22px;
+}
+
+.news-header-price p {
+	font-family:din-light;
+	font-size:15px;
+	line-height:16px;
+	margin:0;
+}
+
+.main-headline {
+	position:relative;
+	float:left;
+	display:block;
+	margin-top:5px;
+	margin-bottom:5px;
+	border-top:1px solid #343533;
+	border-bottom:1px solid #343533;
+	height:156px;
+	width:1000px;
+}
+
+.main-headline p {
+	font-family:din-light;
+}
+
+.main-headline span {
+	font-family:din;
+}
+
+.news-area {
+	position:relative;
+	float:left;
+	display:block;
+	border-top:1px solid #343533;
+	border-bottom:5px solid #343533;
+	height:1664px;
+	width:1000px;
+}
+
+.left-news-column {
+	position:relative;
+	float:left;
+	display:block;
+	height:1644px;
+	width:525px;
+	border-right:1px solid #a4a5a4;
+	margin-top:10px;
+	padding:0;
+}
+
+.left-news-column-heading {
+	position:relative;
+	float:left;
+	display:block;
+	border-width:0;
+	border-bottom:5px solid #464646;
+	width:506px;
+	height:98px;
+	margin-top:20px;
+	margin-bottom:3px;
+}
+
+.left-news-column-content {
+	position:relative;
+	float:left;
+	display:block;
+	border-width:0;
+	border-top:1px solid #464646;
+	border-bottom:1px solid #464646;
+	width:506px;
+	height:405px;
+}
+
+.right-news-column {
+	position:relative;
+	float:left;
+	display:block;
+	height:1644px;
+	width:475px;
+	margin-top:10px;
+}
+
+.right-news-headliner {
+	position:relative;
+	float:left;
+	display:block;
+	height:814px;
+	width:460px;
+	border-width:0;
+	border-bottom:5px solid #464646;
+}
+
+.right-news-quote {
+	position:relative;
+	float:left;
+	display:block;
+	width:460px;
+	height:255px;
+	margin-top:3px;
+	border-top:1px solid #464646;
+	border-bottom:1px solid #464646;
+}
+
+.right-news-article-left {
+	position:relative;
+	float:left;
+	display:block;
+	height:788px;
+	width:225px;
+	border-width:0;
+	border-right:1px solid #464646;
+}
+
+.right-news-article-right {
+	position:relative;
+	float:left;
+	display:block;
+	height:788px;
+	width:225px;
+	border-width:0;
+}
+
+.back-to-top {
+	position:relative;
+	float:left;
+	display:block;
+	margin-top:3px;
+	border-top:1px solid #343533;
+	width:1000px;
+	height:30px;
+}
