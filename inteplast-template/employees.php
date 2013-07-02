@@ -27,8 +27,14 @@ get_header();
 			<div class="profpic">
 				<?php the_post_thumbnail(); ?> 
 			</div>
+			<div class="profinfo">
+				<h3><?php the_title() ?></h3>
+				<h3><?php echo get_post_meta(get_the_ID(),'position',true); ?></h3>
+				<h3><?php echo get_post_meta(get_the_ID(),'company',true); ?></h3>
+				<h3><?php echo get_post_meta(get_the_ID(),'email',true); ?></h3>
+				<h3><?php echo get_post_meta(get_the_ID(),'ext',true); ?></h3>
+			</div>
 
-			<?php the_content(); ?>
 		</div>
 
   		<?php endwhile; ?>

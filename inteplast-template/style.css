@@ -191,6 +191,31 @@ General comments (optional).
   text-shadow:0px 1px white;
 }
 
+.menu-topmenuinteplast-container ul ul {
+  display: none;
+}
+
+/*
+
+.menu-topmenuinteplast-container ul ul li {
+  background-image:none;
+}
+
+.menu-topmenuinteplast-container ul li:hover > ul {
+  display: block;
+  }
+
+ .menu-topmenuinteplast-container ul li:hover {
+  background-image:url('images/hovermenu.png');
+  } 
+
+  .menu-topmenuinteplast-container ul li:hover a {
+    color:#ffffff;
+    text-shadow:0px -1px #779cb6;
+  }
+
+  */
+
 /* Main Body */
 
 .main {
