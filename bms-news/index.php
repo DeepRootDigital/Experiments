@@ -106,6 +106,10 @@
 	</div>
 	<div class="row">
 		<div class="back-to-top">
+			<div class="back-to-top-pos">
+				<h1>Back to top</h1>
+				<img src="images/back-to-top-button.png" />
+			</div>
 		</div>
 	</div>
 	</div>
