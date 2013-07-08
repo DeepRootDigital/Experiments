@@ -24,7 +24,9 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
             <b>Al Khan Foodstuff, LLC</b>
             <p>
-                <?php echo $mainoptions['addresstext']; ?><br/>            
+                <?php echo $mainoptions['addresstext']; ?><br/>   
+	</p>
+	<p>         
                 TEL. <?php echo $mainoptions['telnumber']; ?><br/>
                 FAX <?php echo $mainoptions['faxnumber']; ?>            
                 <a href="mailto:<?php echo $mainoptions['emailaddress']; ?>"><?php echo $mainoptions['emailaddress']; ?></a>
