@@ -10,19 +10,19 @@
 				</ul>
 			</div>
 			<div class="slide-div slide-1-div">
-				<img id="active-1" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg">
+				<img id="active-1" name="slide1" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg" onMouseOver="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-hover.jpg'" onMouseOut="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg'">
 			</div>
 			<div class="slide-div slide-2-div">
-				<img id="active-2" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg">
+				<img id="active-2" name="slide2" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg" onMouseOver="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-hover.jpg'" onMouseOut="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg'">
 			</div>
 			<div class="slide-div slide-3-div">
-				<img id="active-3" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg">
+				<img id="active-3" name="slide3" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg" onMouseOver="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-hover.jpg'" onMouseOut="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg'">
 			</div>
 			<div class="slide-div slide-4-div">
-				<img id="active-4" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg">
+				<img id="active-4" name="slide4" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg" onMouseOver="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-hover.jpg'" onMouseOut="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg'">
 			</div>
 			<div class="slide-div slide-5-div">
-				<img id="active-5" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg">
+				<img id="active-5" name="slide5" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg" onMouseOver="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-hover.jpg'" onMouseOut="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg'">
 			</div>
 			<div class ="contact-page-slide">
 				<div class="contact-slide">
@@ -82,8 +82,8 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-5.png" class="tab-img">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-5-active.png" class="tab-hovers">
 			</div>
-			<div id="activator-6" class="slide-overlay">
-				<img class="contact tab-img" src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6.png">
+			<div id="activator-6" class="slide-overlay" onMouseOver="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/tab-6-active.png'" onMouseOut="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6.png'">
+				<img class="contact tab-img" name="contacttab" src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6.png">
 			</div>
 		</div>
 	</div>
