@@ -345,6 +345,18 @@ background-image:none;
     height:233px;
 }
 
+.article-item-shadow{
+    position: absolute;
+    width: 16px;
+    height: 233px;
+    margin-left: 345px;
+    margin-top: 39px;
+}
+
+.article-item-shadow img {
+    display:block;
+}
+
 .dropdown-title-shadow img{
     display:block;
 }

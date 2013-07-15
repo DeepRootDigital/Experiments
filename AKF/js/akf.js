@@ -44,8 +44,8 @@ $(".sub-menu-inject").append($('.dropdown-bigbluetriangle'));
 
 							// Load in the Subnav Items
 							if ($(".hovered").find(".subnav-items").css('display') == 'none') {						
-								$(".hovered").find(".subnav-items").slideDown(100);
-								$(".hovered").find(".article-item").slideDown(100);
+								$(".hovered").find(".subnav-items").fadeIn(100);
+								$(".hovered").find(".article-item").fadeIn(100);
 							}
 							else {
 							}
@@ -94,7 +94,7 @@ $(".sub-menu-inject").append($('.dropdown-bigbluetriangle'));
 
 					$('.hovereded a').css("color","#f69320");
 					$('.hovereded div ul li a').css("color","#ffffff");
-					$('<img src="http://localhost/wordpress/wp-content/uploads/2013/07/dropdown-whitetrianglepointer.png" />').prependTo('.hovereded a');
+					$('<img src="http://alkhanfoods.com/wp-content/themes/AKF/images/dropdown-whitetrianglepointer.png" />').prependTo('.hovereded a');
 					$('.hovereded div ul li a img').remove();
 
 					if ($(".hovereded").find("ul").length > 0) {
@@ -111,7 +111,7 @@ $(".sub-menu-inject").append($('.dropdown-bigbluetriangle'));
 										$('.hovereded div ul li a').css("color","#FFFFFF");
 										$($(this)).css("color","#f69320");
 										$('.hovereded div ul li a img').remove();
-										$('<img src="http://localhost/wordpress/wp-content/uploads/2013/07/dropdown-orangetrianglepointer.png" />').prependTo($(this));
+										$('<img src="http://alkhanfoods.com/wp-content/themes/AKF/images/dropdown-orangetrianglepointer.png" />').prependTo($(this));
 									},
 									function(){
 										$('.hovereded div ul li a img').remove();

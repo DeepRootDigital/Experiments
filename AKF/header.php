@@ -55,6 +55,9 @@
                             <p>The Sultanate of Oman is an Arab state in southwest Asia on the southeast coast of the Arabian Peninsula...
                             [<a href=""> Read More</a>]</p>
                         </div>
+                        <div class="article-item-shadow">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/dropdown-title-shadow.png" />
+                        </div>
                         <div class="article-item">
                             <h2>Csr/Csv</h2>
                             <div class="item-thumbnail-bg">
