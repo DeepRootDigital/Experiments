@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php $mainoptions = get_option('main_theme_options'); ?>	
 <head>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<?php wp_head(); ?>
@@ -14,24 +15,50 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
 	<div class="canvas">
-		<header>			
+<div class="header-fw"></div>
+		<header>
+<?php get_template_part('feedback','form'); ?>			
 			<div class="center">
-				<h1><span>.</span>Your one way to business success<span>.</span></h1>
-				<!-- <div class="login-form">
+				<h1><span>.</span>Curb the Competition<span>.</span></h1>
+				<div class="login-form">
+					<ul>	
+						<li><a href="<?php echo $mainoptions['facebookurl']; ?>">
+							<img name="fbicon" src="<?php echo get_template_directory_uri(); ?>/images/social-icon-fb.png" onMouseOver="fbicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-fb-twitter.png'" onMouseOut="fbicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-fb.png'"></a>
+						</li>
+						<li>
+							<a href="<?php echo $mainoptions['pinteresturl']; ?>">
+								<img name="pinicon" onMouseOver="pinicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-pin-hover.png'" onMouseOut="pinicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-pin.png'"
+								src="<?php echo get_template_directory_uri(); ?>/images/social-icon-pin.png">
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo $mainoptions['twitterurl']; ?>">
+								<img name="twittericon" onMouseOver="twittericon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-twitter-hover.png'" onMouseOut="twittericon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-twitter.png'"
+								src="<?php echo get_template_directory_uri(); ?>/images/social-icon-twitter.png">
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo $mainoptions['gglplusurl']; ?>">
+								<img name="youtubeicon" onMouseOver="youtubeicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-ggl-hover.png'" onMouseOut="youtubeicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-ggl.png'"
+								src="<?php echo get_template_directory_uri(); ?>/images/social-icon-ggl.png">
+							</a>
+						</li>
+					</ul>
+					<!--
 					<form>
 					<input type="text" placeholder="username">
 					<input type="password" placeholder="password">
-					</form>
-				</div> -->
-				<nav class="header-left-nav">
-					<?php wp_nav_menu(array('theme_location' => 'Header Nav - Left',)); ?>
-				</nav>
-				<div class="logo">
-					<a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></a>
-				</div>
-				<nav class="header-right-nav">
-					<?php wp_nav_menu(array('theme_location' => 'Header Nav - Right',)); ?>
-				</nav>
+				</form> -->
 			</div>
-			<div class="clear"></div>
-		</header>
+			<nav class="header-left-nav">
+				<?php wp_nav_menu(array('theme_location' => 'Header Nav - Left',)); ?>
+			</nav>
+			<div class="logo">
+				<a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></a>
+			</div>
+			<nav class="header-right-nav">
+				<?php wp_nav_menu(array('theme_location' => 'Header Nav - Right',)); ?>
+			</nav>
+		</div>
+		<div class="clear"></div>
+	</header>

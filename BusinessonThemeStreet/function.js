@@ -1,11 +1,34 @@
 $(document).ready(function(){
 
+	//Contact Slide CheckMarks
+	
+	$('.contact-slide-select-1').click(function(){
+		$(this).toggleClass('contact-slide-select-1-active active');
+	});
+
+	$('.contact-slide-select-2').click(function(){
+		$(this).toggleClass('contact-slide-select-2-active active');
+	});
+
+	$('.contact-slide-select-3').click(function(){
+		$(this).toggleClass('contact-slide-select-3-active active');
+	});
+
+	$('.contact-slide-select-4').click(function(){
+		$(this).toggleClass('contact-slide-select-4-active active');
+	});
+
+	$('.contact-slide-select-5').click(function(){
+		$(this).toggleClass('contact-slide-select-5-active active');
+	});
+
+
 
 	//Home Slider Overlay Animation
 
 	$('.slide-overlay').hover(
 		function() {
-			$(this).animate({marginTop:"-20px"});
+			$(this).animate({marginTop:"-26px"});
 			$(this).find(".tab-hovers").css({'display':'block'});
 		},
 		function() {
@@ -42,7 +65,7 @@ $(document).ready(function(){
 			var active = slide.find('.slideImg');
 
 			if (slide.css('width') == '1000px'){
-				slide.animate({'width':'160px'},200,function(){
+				slide.animate({'width':'160px'},500,function(){
 					active.animate({'top':'548px'},200);
 				});
 			}
@@ -50,7 +73,7 @@ $(document).ready(function(){
 				$(".contact-page-slide").css({'z-index':'2000'});
 				$(".slide-div").css({'z-index':'3000'});
 				slide.css({'z-index':'4000'});
-				active.animate({'top':'0'},200,function() {
+				active.animate({'top':'0'},500,function() {
 					slide.animate({
 						'width' : '1000px',
 						'left' : '0'
@@ -88,7 +111,7 @@ if (this.id == "activator-2") {
 	var active = slide.find('.slideImg');
 
 	if (slide.css('width') == '1000px'){
-		slide.animate({'width':'160px','left':'168px'},200,function(){
+		slide.animate({'width':'160px','left':'168px'},500,function(){
 			active.animate({'top':'548px'},200);
 		});
 	}
@@ -96,7 +119,7 @@ if (this.id == "activator-2") {
 		$(".contact-page-slide").css({'z-index':'2000'});
 		$(".slide-div").css({'z-index':'3000'});
 		slide.css({'z-index':'4000'});
-		active.animate({'top':'0'},200,function() {
+		active.animate({'top':'0'},500,function() {
 			slide.animate({
 				'width' : '1000px',
 				'left' : '0'
@@ -134,7 +157,7 @@ if (this.id == "activator-3") {
 	var active = slide.find('.slideImg');
 
 	if (slide.css('width') == '1000px'){
-		slide.animate({'width':'160px','left':'336px'},200,function(){
+		slide.animate({'width':'160px','left':'336px'},500,function(){
 			active.animate({'top':'548px'},200);
 		});
 	}
@@ -142,7 +165,7 @@ if (this.id == "activator-3") {
 		$(".contact-page-slide").css({'z-index':'2000'});
 		$(".slide-div").css({'z-index':'3000'});
 		slide.css({'z-index':'4000'});
-		active.animate({'top':'0'},200,function() {
+		active.animate({'top':'0'},500,function() {
 			slide.animate({
 				'width' : '1000px',
 				'left' : '0'
@@ -180,7 +203,7 @@ if (this.id == "activator-4") {
 	var active = slide.find('.slideImg');
 
 	if (slide.css('width') == '1000px'){
-		slide.animate({'width':'160px','left':'504px'},200,function(){
+		slide.animate({'width':'160px','left':'504px'},500,function(){
 			active.animate({'top':'548px'},200);
 		});
 	}
@@ -188,7 +211,7 @@ if (this.id == "activator-4") {
 		$(".contact-page-slide").css({'z-index':'2000'});
 		$(".slide-div").css({'z-index':'3000'});
 		slide.css({'z-index':'4000'});
-		active.animate({'top':'0'},200,function() {
+		active.animate({'top':'0'},500,function() {
 			slide.animate({
 				'width' : '1000px',
 				'left' : '0'
@@ -226,7 +249,7 @@ if (this.id == "activator-5") {
 	var active = slide.find('.slideImg');
 
 	if (slide.css('width') == '1000px'){
-		slide.animate({'width':'160px','left':'672px'},200,function(){
+		slide.animate({'width':'160px','left':'672px'},500,function(){
 			active.animate({'top':'548px'},200);
 		});
 	}
@@ -234,7 +257,7 @@ if (this.id == "activator-5") {
 		$(".contact-page-slide").css({'z-index':'2000'});
 		$(".slide-div").css({'z-index':'3000'});
 		slide.css({'z-index':'4000'});
-		active.animate({'top':'0'},200,function() {
+		active.animate({'top':'0'},500,function() {
 			slide.animate({
 				'width' : '1000px',
 				'left' : '0'
@@ -459,8 +482,8 @@ if (this.id == "activator-6") {
 
 	//SERVICE PAGE SLIDER LEFT/RIGHT NAV
 	$('.service-page-control-left').click(function(){
-		if($('.service-page-slide-wrapper').css('left') === '-305px' === true){
-			$('.service-page-slide-wrapper').css('left', '-1220px').animate({
+		if($('.service-page-slide-wrapper').css('left') === '0px' === true){
+			$('.service-page-slide-wrapper').css('left', '-915px').animate({
 				left : '+=305px'
 			},300);
 		} else {
@@ -471,8 +494,8 @@ if (this.id == "activator-6") {
 	});
 
 	$('.service-page-control-right').click(function(){
-		if($('.service-page-slide-wrapper').css('left') === '-1220px' === true){
-			$('.service-page-slide-wrapper').css('left', '0px').animate({
+		if($('.service-page-slide-wrapper').css('left') === '-610px' === true){
+			$('.service-page-slide-wrapper').css('left', '305px').animate({
 				left : '-=305px'
 			},300);
 		} else {

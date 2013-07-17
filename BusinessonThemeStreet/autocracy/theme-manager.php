@@ -46,6 +46,12 @@ function main_theme_options_do_page() {
                         <input type="text" size="36" name="main_theme_options[pinteresturl]" value="<?php esc_attr_e($mainoptions['pinteresturl']); ?>" />
                     </td>
                 </tr>
+                 <tr valign="top">
+                    <td>Google Plus URL</td>
+                    <td>
+                        <input type="text" size="36" name="main_theme_options[gglplusurl]" value="<?php esc_attr_e($mainoptions['gglplusurl']); ?>" />
+                    </td>
+                </tr>
                 <th><h3>Footer Options</h3></th>
                 <tr valign="top">
                     <td>

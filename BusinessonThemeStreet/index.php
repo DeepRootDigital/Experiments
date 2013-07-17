@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <?php $homepageoptions = get_option('sample_theme_options'); ?>
+<?php $serviceoptions = get_option('service_theme_options'); ?>	
 <div class="center">
 	<div class="home-slider">
 		<div class="slider-bank">
@@ -8,34 +9,49 @@
 					<li><img src="<?php echo get_template_directory_uri(); ?>/images/slide-img.jpg"></li>
 					<li><img src="<?php echo get_template_directory_uri(); ?>/images/main-slider.jpg"></li>
 				</ul>
+				<div class="guttersnipe"></div>
+				<div class="guttersnipe"></div>
+				<div class="guttersnipe"></div>
+				<div class="guttersnipe"></div>
+				<div class="guttersnipe"></div>
 			</div>
 			<div class="slide-div slide-1-div">
-				<img id="active-1" name="slide1" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg" onMouseOver="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-hover.jpg'" onMouseOut="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg'">
+				<a href="<?php echo $serviceoptions['randplink']; ?>">
+					<img id="active-1" name="slide1" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg" onMouseOver="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-hover.jpg'" onMouseOut="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg'">
+				</a>
 			</div>
 			<div class="slide-div slide-2-div">
-				<img id="active-2" name="slide2" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg" onMouseOver="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-hover.jpg'" onMouseOut="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg'">
+				<a href="<?php echo $serviceoptions['brandinglink']; ?>">
+					<img id="active-2" name="slide2" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg" onMouseOver="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-hover.jpg'" onMouseOut="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg'">
+				</a>
 			</div>
 			<div class="slide-div slide-3-div">
-				<img id="active-3" name="slide3" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg" onMouseOver="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-hover.jpg'" onMouseOut="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg'">
+				<a href="<?php echo $serviceoptions['webdevlink']; ?>">
+					<img id="active-3" name="slide3" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg" onMouseOver="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-hover.jpg'" onMouseOut="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg'">
+				</a>
 			</div>
 			<div class="slide-div slide-4-div">
-				<img id="active-4" name="slide4" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg" onMouseOver="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-hover.jpg'" onMouseOut="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg'">
+				<a href="<?php echo $serviceoptions['bdlink']; ?>">
+					<img id="active-4" name="slide4" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg" onMouseOver="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-hover.jpg'" onMouseOut="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg'">
+				</a>
 			</div>
 			<div class="slide-div slide-5-div">
-				<img id="active-5" name="slide5" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg" onMouseOver="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-hover.jpg'" onMouseOut="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg'">
+				<a href="<?php echo $serviceoptions['marketinglink']; ?>">
+					<img id="active-5" name="slide5" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg" onMouseOver="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-hover.jpg'" onMouseOut="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg'">
+				</a>
 			</div>
 			<div class ="contact-page-slide">
 				<div class="contact-slide">
 					<div class="contact-slide-slogan">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/contact-slider-slogan.png" alt="Let's connect and get started">
-						<p><?php the_content(); ?></p>
+						
 					</div>
 					<form>
-						<input name="name" value="Name" type="text"><br>
-						<input name="email" value="Email" type="text"><br>
-						<input name="phone" value="Phone" type="text"><br>
-						<input name="industry" value="Industry" type="text"><br>
-						<textarea name="message">Message</textarea>
+						<input name="name" placeholder="name*" value="" type="text"><br>
+						<input name="email" placeholder="email*" value="" type="text"><br>
+						<input name="phone" placeholder="phone" value="" type="text"><br>
+						<input name="industry" placeholder="industry" value="" type="text"><br>
+						<textarea placeholder="message" name="message"></textarea>
 						<input id="contact-form-submit" type="submit" value="submit">
 					</form>
 					<div class="contact-slide-select">
@@ -150,8 +166,7 @@
 
 		<div class="home-bottom-info">
 			<h1><?php echo $homepageoptions['hp-content-title']; ?></h1>
-			<p><?php echo $homepageoptions['hp-content']; ?></p>
-			<?php $serviceoptions = get_option('service_theme_options'); ?>						
+			<p><?php echo $homepageoptions['hp-content']; ?></p>					
 			<ul>
 				<li>
 					<a href="<?php echo $serviceoptions['brandinglink']; ?>">

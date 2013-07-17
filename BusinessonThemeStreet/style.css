@@ -99,6 +99,10 @@ General comments (optional).
 
 *{margin: 0; padding: 0;}
 
+img {
+border:none;
+}
+
 body{
 	font-family: din, helvetica;
 	color: #343533;
@@ -112,9 +116,21 @@ body{
 
 .canvas {
     background: none repeat scroll 0 0 #ECEDED;
-    box-shadow: 3px 3px 5px 6px #CCCCCC;
     margin: 0 auto;
     width: 1200px;
+}
+
+.login-form {
+position:absolute;
+right:50px;
+}
+
+.login-form ul li {
+float:left;
+padding-left:5px;
+padding-right:5px;
+list-style:none;
+padding-top:10px;
 }
 
 
@@ -141,8 +157,16 @@ body{
 }
 
 header {
-    background: url("images/header-bg.gif") repeat-x scroll 0 0 transparent;
     height: 140px;
+}
+
+.header-fw {
+position:absolute;
+left:0px;
+background: url("images/header-bg.gif") repeat-x scroll 0 0 transparent;
+    height: 140px;
+width:100%;
+
 }
 
 header h1 {
@@ -153,23 +177,24 @@ header h1 {
     font-size: 15.5px;
     font-weight: normal;
     left: 14px;
-    padding: 8px 0 5px 11px;
+    padding: 8px 0 5px 0px;
     position: absolute;
     text-transform: uppercase;
     top: 10px;
+text-align:center;
     width: 301px;
 }
 
 
 header h1 span {
     font-size: 20px;
-    margin: -9px 0 0 -13px;
+    margin: -9px 0 0 -53px;
     position: absolute;
 }
 
 
 header h1 span:last-of-type {
-    padding: 0 0 0 21px;
+    padding: 0 0 0 81px;
 }
 
 
@@ -190,10 +215,10 @@ header nav ul{
     color: #343533;
     text-transform: uppercase;
     list-style: none;
-    border-bottom: 1px solid #000000;
-    width: 390px;
+    border-bottom: 1px solid #343533;
+    width: 414px;
     font-size: 12px;
-    padding: 0 0 20px;
+    padding: 0 0 17px;
 }
 
 header nav li {
@@ -262,6 +287,14 @@ header nav ul li ul li {
 .header-right-nav li {
     float: left;
     margin: 0 20px 0 0;
+}
+
+#menu-right-nav {
+margin-right:-25px;
+}
+
+#menu-left-nav {
+margin-left:-25px;
 }
 
 /*********************************************
@@ -562,7 +595,8 @@ header nav ul li ul li {
 
 .home-project-thumbnailimage img {
     max-width:270px;
-    height:148px;
+    height:158px;
+margin-top:-10px;
     border-top-right-radius: 30px;
 }
 
@@ -647,7 +681,7 @@ header nav ul li ul li {
 .home-sidebar {
     float: left;
     margin: 0 0 0 40px;
-    width: 335px;
+    width: 293px;
 }
 .contact-page-content h1{
     border-bottom: 1px solid #464646;
@@ -679,7 +713,7 @@ header nav ul li ul li {
 }
 
 .bms-talk li:first-of-type:hover {
-    background: url("images/arrow-right-30px.png") no-repeat scroll 270px 50% transparent;
+    background: url("images/arrow-right-30px.png") no-repeat scroll 250px 50% transparent;
 }
 
 
@@ -696,7 +730,7 @@ header nav ul li ul li {
 
 
 .bms-talk li:hover {
-    background: url("images/arrow-right-30px.png") no-repeat scroll 270px 50% transparent;
+    background: url("images/arrow-right-30px.png") no-repeat scroll 250px 50% transparent;
     color: #003663;
 }
 
@@ -760,6 +794,16 @@ margin-bottom:20px;
     text-indent: -9999px;
     width: 82px;
     cursor: pointer;
+}
+
+.guttersnipe {
+    background:none repeat scroll 0 0 #ECEDED;
+    height:548px;
+    width:8px;
+    display:block;
+    float:left;
+    position:relative;
+    margin-left:160px;
 }
 /*********************************************
 ***** ABOUT PAGE
@@ -832,6 +876,7 @@ margin-bottom:20px;
 .blog-summary {
     margin: 0 0 20px;
     position: relative;
+	border-bottom:1px solid #ccc;
 }
 
 
@@ -1014,13 +1059,11 @@ margin-bottom:20px;
     background: none repeat scroll 0 0 #FFFFFF;
     padding: 30px 0 0;
     position: relative;
-float:left;
 width:100%;
 }
 
 
 .single-blog-slider {
-float:left;
 height:420px;
 }
 
@@ -1048,6 +1091,9 @@ margin-bottom:10px;
 .single-blog-content ul, ol {
 font-size:12px;
 font-weight:normal;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:35px;
 }
 
 
@@ -1176,11 +1222,6 @@ color:#7e1619;
 /*********************************************
 ***** BLOG COMMENTS
 **********************************************/
-
-
-.comments-section {
-    float:left;
-}
 
 .comments-section h4 {
     font-family: din;
@@ -1337,8 +1378,10 @@ color:#7e1619;
 }
 
 .service-page-content > p {
-    font-size: 12px;
+font-family:Montserrat;
+    font-size: 14px;
     color: #707070;
+line-height:20px;
 }
 
 .service-page-slide {
@@ -1430,7 +1473,7 @@ color:#7e1619;
 /*** CASE STUDY WHOLE PAGE SLIDER ***/
 .case-nav {
     background: none repeat scroll 0 0 #484947;
-    height: 250px;
+    height: 200px;
 }
 
 .testimonial-quote > h1 {
@@ -1456,6 +1499,7 @@ color:#7e1619;
 
 .case-number {
     margin: 20px 0 0;
+padding-top:30px;
 }
 
 .case-number ul {
@@ -1903,10 +1947,18 @@ color:#7e1619;
     padding: 30px 0 0 120px;
 }
 
-footer{
-    background: url("images/footer-bg.png") no-repeat scroll 0% 0%, #30312f;
+.footer-fw {
+background: url("images/footer-bg.png") repeat scroll 0% 0%, #30312f;
+width:100%;
+left:0px;
+height: 375px;
+position:absolute;
+}
+
+footer {
     height: 375px;
-float:left;
+margin-left:auto;
+margin-right:auto;
 width:1200px;
 }
 
@@ -2064,4 +2116,39 @@ margin-top:30px;
 #service-nav ul li a {
     text-decoration: none;
     color:inherit;
+}
+
+.contact-page .contact-page-slide {
+float:left;
+overflow:visible;
+position:relative;
+}
+
+.contact-page .contact-slide {
+position:relative;
+left:0px;
+}
+
+.pagination {
+float:left;
+padding-top:20px;
+padding-bottom:20px;
+}
+
+.pagination img {
+vertical-align:middle;
+padding-left:80px;
+padding-right:4px;
+}
+
+.pagination a {
+text-decoration:none;
+color:inherit;
+font-size:22px;
+font-family:Rokkitt;
+}
+
+.fb-footer {
+position:absolute;
+margin-left:540px;
 }

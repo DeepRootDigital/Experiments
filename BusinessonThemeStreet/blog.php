@@ -9,7 +9,7 @@
 	</div>
 	<div class="center">
 		<div class="blog-left">
-			<?php $wp_query->query('showposts=16&orderby=title&order=desc' . '&paged=' . $paged);
+			<?php $wp_query->query('showposts=16&order=DESC' . '&paged=' . $paged);
 			while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 			<article class="blog-summary">
 				<?php if ( has_post_thumbnail() ) { ?>
@@ -43,7 +43,9 @@
 			</h3>
 		</article>
 	<?php endwhile; ?>
-	<?php posts_nav_link(); ?>
+	<div class="pagination">
+		<?php posts_nav_link( ' ', '<img src="' . get_template_directory_uri() . '/images/arrow-left.png" /> Previous', '<img src="' . get_template_directory_uri() . '/images/arrow-right.png" /> Next' ); ?>
+	</div>
 </div>
 <?php get_template_part('blog','sidebar'); ?>
 <div class="clear"></div>
