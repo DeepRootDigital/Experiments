@@ -172,26 +172,23 @@ $meta_boxes[] = array(
     'fields' => array(
         // IMAGE UPLOAD
         array(
+            'name' => 'Employee Name',
+            'id' => 'arabic-name',
+            'type' => 'text',
+            ),
+         array(
             'name' => 'Position',
             'id' => 'arabic-position',
             'type' => 'text',
             ),
-        array(
-            'name' => 'Email Address',
-            'id' => 'arabic-email',
-            'type' => 'text',
-            ),
-        array(
-            'name' => 'Phone Number',
-            'id' => 'arabic-ext',
-            'type' => 'text',
-            ),
-        array(
-            'name' => 'Employee photo',
-            'desc' => '',
-            'id' => "arabic-lnkimage1",
-            'type' => 'plupload_image',
-            'max_file_uploads' => 1,
+         array(
+            'name' => 'Bio',
+            'desc' => "",
+            'id' => "arabic-bio",
+            'type' => 'wysiwyg',
+            'std' => "",
+            'cols' => '20',
+            'rows' => '8',
             ),
         ),
     );
@@ -497,6 +494,37 @@ $meta_boxes[] = array(
             ),
         ),
 );
+
+//FAQ Post Metadata CCK
+$meta_boxes[] = array(
+    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
+    'id' => 'faqpostcck',
+    // Meta box title - Will appear at the drag and drop handle bar. Required.
+    'title' => 'FAQ Information - Arabic',
+    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
+    'pages' => array('faq'),
+    // Where the meta box appear: normal (default), advanced, side. Optional.
+    'context' => 'normal',
+    // Order of meta box: high (default), low. Optional.
+    'priority' => 'high',
+    // List of meta fields
+    'fields' => array(
+       array(
+        'name' => 'Question',
+        'id' => 'arabic-title',
+        'type' => 'text',
+        ),
+       array(
+        'name' => 'Answer',
+        'desc' => "",
+        'id' => "arabic-content",
+        'type' => 'wysiwyg',
+        'std' => "",
+        'cols' => '20',
+        'rows' => '8',
+        ),
+       ),
+    );
 
 
 

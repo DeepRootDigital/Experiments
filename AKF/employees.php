@@ -24,48 +24,98 @@
                     }
                     ?>
                 </div>
-                <div class="overlay"><a class="sngl-button"><?php the_title(); ?></a>
+                <div class="overlay">
+                    <a class="sngl-button"> 
+                        <?php if($_COOKIE['setLanguageAKF'] == 'Arabic'){
+                            echo get_post_meta(get_the_ID(), 'arabic-name', true);
+                        }
+                        else 
+                        {
+                            the_title();
+                        } 
+                        ?>
+                    </a>
                     <ul class="list">
-                        <li><?php echo get_post_meta(get_the_ID(), 'position', true); ?></li>
-                        <li><?php echo get_post_meta(get_the_ID(), 'email', true); ?></li>
-                        <li><?php echo get_post_meta(get_the_ID(), 'ext', true); ?></li>
-                    </ul>
-                </div>
-                <div class="employeelbx">
-                    <div class="toplbx">
-                        <div class="lbximg">
-                           <?php autoc_get_img('lnkimage1'); ?>
-                       </div>
-                       <div class="lbxmeta">
-                        <h1><?php the_title(); ?></h1>
-                        <div class="dott"></div>
-                        <ul>
-                            <li><?php echo get_post_meta(get_the_ID(), 'position', true); ?></li>
-                            <li><?php echo get_post_meta(get_the_ID(), 'email', true); ?></li>
-                            <li><?php echo get_post_meta(get_the_ID(), 'ext', true); ?></li>
-                        </ul>
-                    </div></div>
-                    <div class="lbxbar">
-                        <img class="snf" src="<?php echo get_template_directory_uri(); ?>/images/snowflake2.png" />
-                        <h1><?php echo get_post_meta(get_the_ID(), 'position', true); ?></h1>
-                        <div class="lbxshare">
-                            <a href="<?php echo $mainoptions['twitterurl']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png"/></a>
-                            <a href="<?php echo $mainoptions['facebookurl']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png"/></a>
-                            <a href="<?php echo $mainoptions['pinteresturl']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/pinterest.png"/></a>
-                            <a href="<?php echo $mainoptions['youtubeurl']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png"/></a>
-                        </div>
-                    </div>
-                    <article>
-                        <div class="bio">ABOUT ME</div>
-                        <div class="bioline"></div>
-                        <?php the_content(); ?>
-                    </article>
-                </div>
-            </li>
-        <?php endwhile; ?>
-    </ul>
-    <div class="lightbox-overlay">
-    </div>     
+                        <li>
+                            <?php if($_COOKIE['setLanguageAKF'] == 'Arabic'){
+                                echo get_post_meta(get_the_ID(), 'arabic-position', true);
+                            }
+                            else 
+                            {
+                               echo get_post_meta(get_the_ID(), 'position', true);
+                           } 
+                           ?>
+                       </li>
+                       <li><?php echo get_post_meta(get_the_ID(), 'email', true); ?></li>
+                       <li><?php echo get_post_meta(get_the_ID(), 'ext', true); ?></li>
+                   </ul>
+               </div>
+               <div class="employeelbx">
+                <div class="toplbx">
+                    <div class="lbximg">
+                     <?php autoc_get_img('lnkimage1'); ?>
+                 </div>
+                 <div class="lbxmeta">
+                    <h1><?php if($_COOKIE['setLanguageAKF'] == 'Arabic'){
+                        echo get_post_meta(get_the_ID(), 'arabic-name', true);
+                    }
+                    else 
+                    {
+                        the_title();
+                    } 
+                    ?>
+                </h1>
+                <div class="dott"></div>
+                <ul>
+                    <li>
+                        <?php if($_COOKIE['setLanguageAKF'] == 'Arabic') {
+                            echo get_post_meta(get_the_ID(), 'arabic-position', true);
+                        }
+                        else 
+                        {
+                           echo get_post_meta(get_the_ID(), 'position', true);
+                       } 
+                       ?>
+                   </li>
+                   <li><?php echo get_post_meta(get_the_ID(), 'email', true); ?></li>
+                   <li><?php echo get_post_meta(get_the_ID(), 'ext', true); ?></li>
+               </ul>
+           </div></div>
+           <div class="lbxbar">
+            <img class="snf" src="<?php echo get_template_directory_uri(); ?>/images/snowflake2.png" />
+            <h1><?php if($_COOKIE['setLanguageAKF'] == 'Arabic') {
+                echo get_post_meta(get_the_ID(), 'arabic-position', true);
+            }
+            else 
+            {
+               echo get_post_meta(get_the_ID(), 'position', true);
+           } 
+           ?></h1>
+           <div class="lbxshare">
+            <a href="<?php echo $mainoptions['twitterurl']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png"/></a>
+            <a href="<?php echo $mainoptions['facebookurl']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png"/></a>
+            <a href="<?php echo $mainoptions['pinteresturl']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/pinterest.png"/></a>
+            <a href="<?php echo $mainoptions['youtubeurl']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png"/></a>
+        </div>
+    </div>
+    <article>
+        <div class="bio">ABOUT ME</div>
+        <div class="bioline"></div>
+        <?php if($_COOKIE['setLanguageAKF'] == 'Arabic') {
+            echo get_post_meta(get_the_ID(), 'arabic-bio', true);
+        }
+        else 
+        {
+           the_content();
+       } 
+       ?>
+   </article>
+</div>
+</li>
+<?php endwhile; ?>
+</ul>
+<div class="lightbox-overlay">
+</div>     
 </div>
 <?php get_sidebar(); ?>
 </div>

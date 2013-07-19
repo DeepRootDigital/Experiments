@@ -5,11 +5,11 @@
         <div class="pagecontent">            
             <div class="pageimage blog-img">
                 <?php
-                    if (has_post_thumbnail()) {
-                        the_post_thumbnail('post-img');
-                    } else {
-                        echo '<img src="http://placehold.it/580x285" />';
-                    }
+                if (has_post_thumbnail()) {
+                    the_post_thumbnail('post-img');
+                } else {
+                    echo '<img src="http://placehold.it/580x285" />';
+                }
                 ?> 
             </div>
             <div class="postmeta">
@@ -24,18 +24,28 @@
                 <div class="postback">[<a href="<?php echo $mainoptions['blogpageurl']; ?>"> back to articles</a>]</div>
             </div>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <h1 id="single-blog-title"><?php the_title(); ?></h1>
-                    <div class="postinfo">
-                        <span style="font-size:14px; font-style:normal;">  Author:</span> <?php the_author(); ?><br>
-                        <?php the_date(); ?>
-                    </div>
-                    <div class="pageline"></div>
-                    <div class="postcontent"><?php the_content(); ?><br>
-                        <div class="postback">[<a href="<?php echo $mainoptions['blogpageurl']; ?>">back to articles</a> ]</div>
-                    </div>
+            <h1 id="single-blog-title">
+                <?php if($_COOKIE['setLanguageAKF'] == 'Arabic') { ?>
+                <?php echo get_post_meta(get_the_ID(), 'arabic-title', true); ?>
+                <?php } 
+                else { ?>
+                <?php the_title(); ?>
+                <?php } ?></h1>
+                <div class="postinfo">
+                    <span style="font-size:14px; font-style:normal;">  Author:</span> <?php the_author(); ?><br>
+                    <?php the_date(); ?>
+                </div>
+                <div class="pageline"></div>
+                <div class="postcontent">
+                    <?php if($_COOKIE['setLanguageAKF'] == 'Arabic') { ?>
+                    <?php echo get_post_meta(get_the_ID(), 'arabic-content', true); ?>
+                    <?php } 
+                    else { the_content(); } ?>                        <br>
+                    <div class="postback">[<a href="<?php echo $mainoptions['blogpageurl']; ?>">back to articles</a> ]</div>
+                </div>
                 <?php endwhile; endif;
-            ?>            
+                ?>            
+            </div>
+            <?php get_template_part( 'sidebar' ); ?>
         </div>
-    <?php get_template_part( 'sidebar' ); ?>
-    </div>
-<?php get_footer(); ?>
+        <?php get_footer(); ?>
