@@ -149,4 +149,20 @@ function autoc_get_img($id) {
 
 }
 
+//Language Cookie Handler
+
+if(isset($_GET['setArabic'])) {
+    //Sets to english
+     if($_COOKIE['setLanguageAKF'] == 'Arabic') {
+        setcookie("setLanguageAKF", "Arabic", time()-(10 * 365 * 24 * 60 * 60));
+     }
+     else {
+// Sets to arabic
+    setcookie("setLanguageAKF", "Arabic", time() + (10 * 365 * 24 * 60 * 60));
+}
+// Reload the webpage
+Header('Location: '. $_SERVER['HTTP_REFERER']);
+    exit;
+}
+
 ?>

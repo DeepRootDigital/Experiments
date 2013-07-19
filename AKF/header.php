@@ -14,6 +14,7 @@
     <link href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+    <div class="language-switch"><a href="?setArabic">Arabic</a></div>
     <div id="header">
         <div class="topmenu">
             <div class="container">

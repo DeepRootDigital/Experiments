@@ -2665,5 +2665,16 @@ background-image:url(images/pattern2.png);
 position:absolute;
 }
 
+.language-switch {
+    position:fixed;
+    padding:20px;
+    top:50%;
+    left:0px;
+    background-color: #ccc;
+    -webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+}
+
 
 /* Plugin Styles */
