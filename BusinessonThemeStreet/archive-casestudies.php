@@ -2,10 +2,7 @@
  <div class="canvas">
  	<section class="case-nav">
  		<div class="center">
- 			<div class="testimonial-quote">
- 				<h1>"BMS realizes dreams through inspired design"</h1>
- 				<p><em>Jon Belore</em> // R2 Alpha Squared</p>
- 			</div>
+ 			
  			<nav class="case-number">
  				<img src="<?php echo get_template_directory_uri(); ?>/images/case-top.png">
  				<ul>
@@ -61,7 +58,7 @@
  						<h3 style="letter-spacing:-20px; font-size:135px;">10</h3>
  						<img class="case-info-nav-right" src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.png">
  					</div>
- 					<h1>"They made our business a reality. Simply the best creative force out there at the moment"<span><em>John Belore</em>//R2 Alpha Squared</span></h1>
+ 					<h1>"They made our business a reality. Simply the best creative force out there at the moment"</h1>
  					<div class="clear"></div>
  					<div class="case-text">
  						<div>
@@ -114,7 +111,7 @@
  					<h3 <?php if ($counter == 10) { echo 'style="letter-spacing:-20px; font-size:135px;"'; } ?>><?php echo $counter; $counter++; ?></h3>
  					<img class="case-info-nav-right" src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.png">
  				</div>
- 				<h1>"<?php echo get_post_meta(get_the_ID(), 'resultquote', true) ?>"<span><em>John Belore</em>//R2 Alpha Squared</span></h1>
+ 				<h1>"<?php echo get_post_meta(get_the_ID(), 'resultquote', true) ?>"</h1>
  				<div class="clear"></div>
  				<div class="case-text">
  					<div>

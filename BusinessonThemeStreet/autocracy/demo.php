@@ -129,6 +129,68 @@ $meta_boxes[] = array(
         ),
     );
 
+$meta_boxes[] = array(
+    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
+    'id' => 'employeeprofiles',
+    // Meta box title - Will appear at the drag and drop handle bar. Required.
+    'title' => 'Employee Info',
+    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
+    'pages' => array('bms_employees'),
+    // Where the meta box appear: normal (default), advanced, side. Optional.
+    'context' => 'normal',
+    // Order of meta box: high (default), low. Optional.
+    'priority' => 'high',
+    // List of meta fields
+    'fields' => array(
+        array(
+            'name' => 'Position',
+            'id' => 'position',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Special Position',
+            'id' => 'specialposition',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Quote',
+            'id' => 'quotation',
+            'type' => 'text',
+        ),
+        array(
+            'name' => 'Last Name',
+            'id' => 'lastname',
+            'type' => 'text',
+        ),
+        array(
+            'name'     => 'Division',
+            'id'       => "division",
+            'type'     => 'select',
+            // Array of 'value' => 'Label' pairs for select box
+            'options'  => array(
+                'businesspeople' => 'Business People',
+                'designers' => 'Designers',
+                'wombats' => 'Wombats',
+            ),
+            // Select multiple values, optional. Default is false.
+            'multiple' => false,
+        ),
+        array(
+            'name'     => 'Which side',
+            'id'       => "side",
+            'type'     => 'select',
+            // Array of 'value' => 'Label' pairs for select box
+            'options'  => array(
+                'left' => 'Left',
+                'right' => 'Right',
+            ),
+            // Select multiple values, optional. Default is false.
+            'multiple' => false,
+        ),
+        
+    ),
+);
+
 /* * ******************* META BOX REGISTERING ********************** */
 
 /**

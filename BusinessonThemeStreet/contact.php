@@ -2,41 +2,46 @@
 <?php get_header(); ?>
 <div class="contact-page">
 	<div class="center">
-		<div class ="contact-page-slide">
-			<div id="contact-slide">
-				<div class="contact-slide-slogan">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/contact-slider-slogan.png" alt="Let's connect and get started">
-					<p><?php the_content(); ?></p>
-				</div>
-				<form>
-					<input name="name" value="Name" type="text"><br>
-					<input name="email" value="Email" type="text"><br>
-					<input name="phone" value="Phone" type="text"><br>
-					<input name="industry" value="Industry" type="text"><br>
-					<textarea name="message">Message</textarea>
-					<input id="contact-form-submit" type="submit" value="submit">
-				</form>
-				<div class="contact-slide-select">
-					<h1>Select all that apply</h1>
-					<ul>
-						<li class="contact-slide-select-1"><p>Research and<br>planning</p></li>
-						<li class="contact-slide-select-3"><p>Branding</p></li>
-						<li class="contact-slide-select-2"><p>Business<br>development</p></li>
-						<li class="contact-slide-select-5"><p>Web<br>development</p></li>
-						<li class="contact-slide-select-4"><p>Marketing</p></li>														
-					</ul>
-				</div>
-				<div class="contact-slide-address">
-					<h1>BMS<br>CONTACT</h1>
-					<ul>
-						<li>7975</li>
-						<li>Raytheon RD Suite 310</li>
-						<li>San Diego, CA 92115</li><br>
-						<li>P // 858.598.5477</li>
-					</ul>	
-				</div>
-				<div class="clear"></div>
-			</div><!--END CONTACT SLIDE -->
+	<div class ="contact-page-slide">
+				<div class="contact-slide">
+					<div class="contact-slide-slogan">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/contact-slider-slogan.png" alt="Let's connect and get started">
+						<p><?php the_content(); ?></p>
+					</div>
+					<form method="POST" action="<?php echo get_template_directory_uri(); ?>/contactslideform.php">
+						<input name="nameslider" placeholder="name*" type="text"><br>
+						<input name="emailslider" placeholder="email*" type="text"><br>
+						<input name="phoneslider" placeholder="phone" type="text"><br>
+						<input name="industryslider" placeholder="industry" type="text"><br>
+						<textarea placeholder="message" name="messageslider"></textarea>
+						<input name="randp" value="no" type="hidden">
+						<input name="branding" value="no" type="hidden">
+						<input name="bisdev" value="no" type="hidden">
+						<input name="webdev" value="no" type="hidden">
+						<input name="marketing" value="no" type="hidden">
+						<input id="contact-form-submit" type="submit" value="submit">
+					</form>
+					<div class="contact-slide-select">
+						<h1>Select all that apply</h1>
+						<ul>
+							<li class="contact-slide-select-1"><p>Research and<br>planning</p></li>
+							<li class="contact-slide-select-3"><p>Branding</p></li>
+							<li class="contact-slide-select-2"><p>Business<br>development</p></li>
+							<li class="contact-slide-select-5"><p>Web<br>development</p></li>
+							<li class="contact-slide-select-4"><p>Marketing</p></li>														
+						</ul>
+					</div>
+					<div class="contact-slide-address">
+						<h1>BMS<br>CONTACT</h1>
+						<ul>
+							<li>7975</li>
+							<li>Raytheon RD Suite 310</li>
+							<li>San Diego, CA 92115</li><br>
+							<li>P // 858.598.5477</li>
+						</ul>	
+					</div>
+					<div class="clear"></div>
+				</div><!--END CONTACT SLIDE -->
 		</div>
 		<div class="contact-page-content">
 			<h1><em>Located in</em> Kearny Mesa</h1>

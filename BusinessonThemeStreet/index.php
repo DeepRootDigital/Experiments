@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <?php $homepageoptions = get_option('sample_theme_options'); ?>
+<?php $serviceoptions = get_option('service_theme_options'); ?>	
 <div class="center">
 	<div class="home-slider">
 		<div class="slider-bank">
@@ -8,34 +9,51 @@
 					<li><img src="<?php echo get_template_directory_uri(); ?>/images/slide-img.jpg"></li>
 					<li><img src="<?php echo get_template_directory_uri(); ?>/images/main-slider.jpg"></li>
 				</ul>
+				<div class="guttersnipe"></div>
+				<div class="guttersnipe"></div>
+				<div class="guttersnipe"></div>
+				<div class="guttersnipe"></div>
+				<div class="guttersnipe"></div>
 			</div>
 			<div class="slide-div slide-1-div">
-				<img id="active-1" name="slide1" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg" onMouseOver="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-hover.jpg'" onMouseOut="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg'">
+				<a href="<?php echo $serviceoptions['randplink']; ?>">
+					<img id="active-1" name="slide1" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg" onMouseOver="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-hover.jpg'" onMouseOut="slide1.src='<?php echo get_template_directory_uri(); ?>/images/slide-1-active.jpg'">
+				</a>
 			</div>
 			<div class="slide-div slide-2-div">
-				<img id="active-2" name="slide2" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg" onMouseOver="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-hover.jpg'" onMouseOut="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg'">
+				<a href="<?php echo $serviceoptions['brandinglink']; ?>">
+					<img id="active-2" name="slide2" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg" onMouseOver="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-hover.jpg'" onMouseOut="slide2.src='<?php echo get_template_directory_uri(); ?>/images/slide-2-active.jpg'">
+				</a>
 			</div>
 			<div class="slide-div slide-3-div">
-				<img id="active-3" name="slide3" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg" onMouseOver="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-hover.jpg'" onMouseOut="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg'">
+				<a href="<?php echo $serviceoptions['webdevlink']; ?>">
+					<img id="active-3" name="slide3" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg" onMouseOver="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-hover.jpg'" onMouseOut="slide3.src='<?php echo get_template_directory_uri(); ?>/images/slide-3-active.jpg'">
+				</a>
 			</div>
 			<div class="slide-div slide-4-div">
-				<img id="active-4" name="slide4" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg" onMouseOver="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-hover.jpg'" onMouseOut="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg'">
+				<a href="<?php echo $serviceoptions['bdlink']; ?>">
+					<img id="active-4" name="slide4" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg" onMouseOver="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-hover.jpg'" onMouseOut="slide4.src='<?php echo get_template_directory_uri(); ?>/images/slide-4-active.jpg'">
+				</a>
 			</div>
 			<div class="slide-div slide-5-div">
-				<img id="active-5" name="slide5" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg" onMouseOver="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-hover.jpg'" onMouseOut="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg'">
+				<a href="<?php echo $serviceoptions['marketinglink']; ?>">
+					<img id="active-5" name="slide5" class="slideImg" src="<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg" onMouseOver="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-hover.jpg'" onMouseOut="slide5.src='<?php echo get_template_directory_uri(); ?>/images/slide-5-active.jpg'">
+				</a>
 			</div>
 			<div class ="contact-page-slide">
 				<div class="contact-slide">
-					<div class="contact-slide-slogan">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/contact-slider-slogan.png" alt="Let's connect and get started">
-						<p><?php the_content(); ?></p>
-					</div>
-					<form>
-						<input name="name" value="Name" type="text"><br>
-						<input name="email" value="Email" type="text"><br>
-						<input name="phone" value="Phone" type="text"><br>
-						<input name="industry" value="Industry" type="text"><br>
-						<textarea name="message">Message</textarea>
+					<div class="contact-slide-slogan"></div>
+					<form method="POST" action="<?php echo get_template_directory_uri(); ?>/contactslideform.php">
+						<input name="nameslider" placeholder="name*" type="text"><br>
+						<input name="emailslider" placeholder="email*" type="text"><br>
+						<input name="phoneslider" placeholder="phone" type="text"><br>
+						<input name="industryslider" placeholder="industry" type="text"><br>
+						<textarea placeholder="message" name="messageslider"></textarea>
+						<input name="randp" value="no" type="hidden">
+						<input name="branding" value="no" type="hidden">
+						<input name="bisdev" value="no" type="hidden">
+						<input name="webdev" value="no" type="hidden">
+						<input name="marketing" value="no" type="hidden">
 						<input id="contact-form-submit" type="submit" value="submit">
 					</form>
 					<div class="contact-slide-select">
@@ -82,7 +100,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-5.png" class="tab-img">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-5-active.png" class="tab-hovers">
 			</div>
-			<div id="activator-6" class="slide-overlay" onMouseOver="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/tab-6-active.png'" onMouseOut="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6.png'">
+			<div id="activator-6" class="slide-overlay" onMouseOver="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6-active.png'" onMouseOut="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6.png'">
 				<img class="contact tab-img" name="contacttab" src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6.png">
 			</div>
 		</div>
@@ -109,28 +127,38 @@
 							<div class="home-project-thumbnailimage">
 								<?php the_post_thumbnail(); ?> 
 							</div>
-							<img class="home-project-overlay" src="<?php echo get_template_directory_uri(); ?>/images/home-project-overlay.png">
+							
 							<h2><?php the_title(); ?> <em>//</em></h2>
 							<h1><?php
 							$category = get_the_category();
-							echo $category[0]->cat_name;
+							$countercat = count($category);
+							$randomentry = rand(0,$countercat-1);
+							echo $category[$randomentry]->cat_name;
 							?></h1>
-							<div class="home-project-hover">
+							
+							<div class="home-project-hover"><a href="<?php the_permalink(); ?>" class="home-project-hover-link">
+								<img class="home-project-overlay" src="<?php echo get_template_directory_uri(); ?>/images/home-project-overlay.png">
+								<img class="z-set" src="<?php echo get_template_directory_uri(); ?>/images/home-img.png">
+								<div class="icon-group-hover">
 								<?php if(get_post_meta(get_the_ID(), 'brandingbox', true) == true) { ?>
-								<img width="30" height="30" src="<?php echo get_template_directory_uri(); ?>/images/service-icons/branding-icon-hover.png">
+								<div class="branding-nocolor"></div>
 								<?php } ?>
 								<?php if(get_post_meta(get_the_ID(), 'marketingbox', true) == true) { ?>
-								<img width="30" height="30" src="<?php echo get_template_directory_uri(); ?>/images/service-icons/marketing-icon-hover.png">
+								<div class="marketing-nocolor"></div>
 								<?php } ?>
 								<?php if(get_post_meta(get_the_ID(), 'developmentbox', true) == true) { ?>
-								<img width="30" height="30" src="<?php echo get_template_directory_uri(); ?>/images/service-icons/bd-icon-hover.png">
+								<div class="bd-nocolor"></div>
 								<?php } ?>
 								<?php if(get_post_meta(get_the_ID(), 'technologybox', true) == true) { ?>
-								<img width="30" height="30" src="<?php echo get_template_directory_uri(); ?>/images/service-icons/technology-icon-hover.png">
+								<div class="technology-nocolor"></div>
 								<?php } ?>
+								</div>
+
 								<?php echo get_the_category_list(); ?>
-								<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/home-project-overlay-button.png"></a>
-							</div>
+<a href="<?php the_permalink(); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/home-project-overlay-button2.png" class="submitbuttonthing"></a>
+							</a></div>
+							
 						</article>
 						<?php $counter++; ?>
 						<?php if ($counter % 4 == 0) { ?>
@@ -150,37 +178,45 @@
 
 		<div class="home-bottom-info">
 			<h1><?php echo $homepageoptions['hp-content-title']; ?></h1>
-			<p><?php echo $homepageoptions['hp-content']; ?></p>
-			<?php $serviceoptions = get_option('service_theme_options'); ?>						
+			<p><?php echo $homepageoptions['hp-content']; ?></p>					
 			<ul>
 				<li>
+					<a href="<?php echo $serviceoptions['randplink']; ?>">
+						<div class="randp-color"></div>
+						<div class="stackedtext">
+						Research &amp; <br />
+						Planning
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="<?php echo $serviceoptions['bdlink']; ?>">
+						<div class="bd-color"></div>
+						<div class="stackedtext">
+						Business <br />
+						Development
+						</div>
+					</a>
+				</li>
+				<li>
 					<a href="<?php echo $serviceoptions['brandinglink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/branding-icon.png">
+						<div class="branding-color"></div>
 						Branding
 					</a>
 				</li>
 				<li>
 					<a href="<?php echo $serviceoptions['marketinglink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/marketing-icon.png">
+						<div class="market-color"></div>
 						Marketing
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo $serviceoptions['bdlink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/bd-icon.png">
-						Business Development
-					</a>
-				</li>
-				<li>
 					<a href="<?php echo $serviceoptions['webdevlink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/technology-icon.png">
-						Web Development
-					</a>
-				</li>
-				<li>
-					<a href="<?php echo $serviceoptions['randplink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/randp-red.png">
-						Research and Planning
+						<div class="tech-color"></div>
+						<div class="stackedtext">
+						Web <br />
+						Development
+						</div>
 					</a>
 				</li>
 			</ul>

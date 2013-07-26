@@ -1,11 +1,67 @@
 $(document).ready(function(){
+	
+	
+
+	
+	//Contact Slide CheckMarks
+	
+	$('.contact-slide-select-1').click(function(){
+		$(this).toggleClass('contact-slide-select-1-active active');
+		if ($(this).hasClass('active')) {
+			$('input[name=randp]').val('yes');
+		}
+		else {
+			$('input[name=randp]').val('no');
+		}
+	});
+
+	$('.contact-slide-select-2').click(function(){
+		$(this).toggleClass('contact-slide-select-2-active active');
+		if ($(this).hasClass('active')) {
+			$('input[name=bisdev]').val('yes');
+		}
+		else {
+			$('input[name=bisdev]').val('no');
+		}
+	});
+
+	$('.contact-slide-select-3').click(function(){
+		$(this).toggleClass('contact-slide-select-3-active active');
+		if ($(this).hasClass('active')) {
+			$('input[name=branding]').val('yes');
+		}
+		else {
+			$('input[name=branding]').val('no');
+		}
+	});
+
+	$('.contact-slide-select-4').click(function(){
+		$(this).toggleClass('contact-slide-select-4-active active');
+		if ($(this).hasClass('active')) {
+			$('input[name=marketing]').val('yes');
+		}
+		else {
+			$('input[name=marketing]').val('no');
+		}
+	});
+
+	$('.contact-slide-select-5').click(function(){
+		$(this).toggleClass('contact-slide-select-5-active active');
+		if ($(this).hasClass('active')) {
+			$('input[name=webdev]').val('yes');
+		}
+		else {
+			$('input[name=webdev]').val('no');
+		}
+	});
+
 
 
 	//Home Slider Overlay Animation
 
 	$('.slide-overlay').hover(
 		function() {
-			$(this).animate({marginTop:"-20px"});
+			$(this).animate({marginTop:"-26px"});
 			$(this).find(".tab-hovers").css({'display':'block'});
 		},
 		function() {
@@ -42,7 +98,7 @@ $(document).ready(function(){
 			var active = slide.find('.slideImg');
 
 			if (slide.css('width') == '1000px'){
-				slide.animate({'width':'160px'},200,function(){
+				slide.animate({'width':'160px'},500,function(){
 					active.animate({'top':'548px'},200);
 				});
 			}
@@ -50,7 +106,7 @@ $(document).ready(function(){
 				$(".contact-page-slide").css({'z-index':'2000'});
 				$(".slide-div").css({'z-index':'3000'});
 				slide.css({'z-index':'4000'});
-				active.animate({'top':'0'},200,function() {
+				active.animate({'top':'0'},500,function() {
 					slide.animate({
 						'width' : '1000px',
 						'left' : '0'
@@ -88,7 +144,7 @@ if (this.id == "activator-2") {
 	var active = slide.find('.slideImg');
 
 	if (slide.css('width') == '1000px'){
-		slide.animate({'width':'160px','left':'168px'},200,function(){
+		slide.animate({'width':'160px','left':'168px'},500,function(){
 			active.animate({'top':'548px'},200);
 		});
 	}
@@ -96,7 +152,7 @@ if (this.id == "activator-2") {
 		$(".contact-page-slide").css({'z-index':'2000'});
 		$(".slide-div").css({'z-index':'3000'});
 		slide.css({'z-index':'4000'});
-		active.animate({'top':'0'},200,function() {
+		active.animate({'top':'0'},500,function() {
 			slide.animate({
 				'width' : '1000px',
 				'left' : '0'
@@ -134,7 +190,7 @@ if (this.id == "activator-3") {
 	var active = slide.find('.slideImg');
 
 	if (slide.css('width') == '1000px'){
-		slide.animate({'width':'160px','left':'336px'},200,function(){
+		slide.animate({'width':'160px','left':'336px'},500,function(){
 			active.animate({'top':'548px'},200);
 		});
 	}
@@ -142,7 +198,7 @@ if (this.id == "activator-3") {
 		$(".contact-page-slide").css({'z-index':'2000'});
 		$(".slide-div").css({'z-index':'3000'});
 		slide.css({'z-index':'4000'});
-		active.animate({'top':'0'},200,function() {
+		active.animate({'top':'0'},500,function() {
 			slide.animate({
 				'width' : '1000px',
 				'left' : '0'
@@ -180,7 +236,7 @@ if (this.id == "activator-4") {
 	var active = slide.find('.slideImg');
 
 	if (slide.css('width') == '1000px'){
-		slide.animate({'width':'160px','left':'504px'},200,function(){
+		slide.animate({'width':'160px','left':'504px'},500,function(){
 			active.animate({'top':'548px'},200);
 		});
 	}
@@ -188,7 +244,7 @@ if (this.id == "activator-4") {
 		$(".contact-page-slide").css({'z-index':'2000'});
 		$(".slide-div").css({'z-index':'3000'});
 		slide.css({'z-index':'4000'});
-		active.animate({'top':'0'},200,function() {
+		active.animate({'top':'0'},500,function() {
 			slide.animate({
 				'width' : '1000px',
 				'left' : '0'
@@ -226,7 +282,7 @@ if (this.id == "activator-5") {
 	var active = slide.find('.slideImg');
 
 	if (slide.css('width') == '1000px'){
-		slide.animate({'width':'160px','left':'672px'},200,function(){
+		slide.animate({'width':'160px','left':'672px'},500,function(){
 			active.animate({'top':'548px'},200);
 		});
 	}
@@ -234,7 +290,7 @@ if (this.id == "activator-5") {
 		$(".contact-page-slide").css({'z-index':'2000'});
 		$(".slide-div").css({'z-index':'3000'});
 		slide.css({'z-index':'4000'});
-		active.animate({'top':'0'},200,function() {
+		active.animate({'top':'0'},500,function() {
 			slide.animate({
 				'width' : '1000px',
 				'left' : '0'
@@ -322,7 +378,7 @@ if (this.id == "activator-6") {
 	//HOMEPAGE RECENT PROJECTS SLIDER
 	$('.project-control-left').click(function(){
 		if ($('.home-project-wrapper').css('left') === '-27px' === true){
-			$('.home-project-wrapper').css('left', '-1371px').animate({
+			$('.home-project-wrapper').css('left', '-2043px').animate({
 				left : '+=672px'
 			}, 200);
 		} else {
@@ -333,13 +389,13 @@ if (this.id == "activator-6") {
 	});
 
 	$('.project-control-right').click(function(){
-		if ($('.home-project-wrapper').css('left') === '-27px' === true){
-			$('.home-project-wrapper').css('left', '-1371px').animate({
-				left : '+=672px'
+		if ($('.home-project-wrapper').css('left') === '-1371px' === true){
+			$('.home-project-wrapper').css('left', '645px').animate({
+				left : '-=672px'
 			}, 200);
 		} else {
 			$('.home-project-wrapper').animate({
-				left : '+=672px'
+				left : '-=672px'
 			}, 200);
 		}
 	});
@@ -459,8 +515,11 @@ if (this.id == "activator-6") {
 
 	//SERVICE PAGE SLIDER LEFT/RIGHT NAV
 	$('.service-page-control-left').click(function(){
-		if($('.service-page-slide-wrapper').css('left') === '-305px' === true){
-			$('.service-page-slide-wrapper').css('left', '-1220px').animate({
+		var slidecounter = $('.service-page-slide-wrapper img').length;
+		var slidelength = slidecounter * 305;
+		var slidelength = "-"+slidelength+"px";
+		if($('.service-page-slide-wrapper').css('left') === '0px' === true){
+			$('.service-page-slide-wrapper').css('left',slidelength).animate({
 				left : '+=305px'
 			},300);
 		} else {
@@ -471,8 +530,11 @@ if (this.id == "activator-6") {
 	});
 
 	$('.service-page-control-right').click(function(){
-		if($('.service-page-slide-wrapper').css('left') === '-1220px' === true){
-			$('.service-page-slide-wrapper').css('left', '0px').animate({
+		var slidecounter = $('.service-page-slide-wrapper img').length;
+		var slidelength = (slidecounter-1) * 305;
+		var slidelength = "-"+slidelength+"px";
+		if($('.service-page-slide-wrapper').css('left') === slidelength === true){
+			$('.service-page-slide-wrapper').css('left', '305px').animate({
 				left : '-=305px'
 			},300);
 		} else {
@@ -481,4 +543,32 @@ if (this.id == "activator-6") {
 			},300);
 		}
 	});
+
+
+	//About Us Page Activators
+	$('.aboutus-tree-leaf').click(function(){
+		var heightofbox = $(this).find('.aboutus-tree-petal-text').height();
+		var heightofleaf = heightofbox + 84;
+		heightofleaf = heightofleaf + "px";
+			
+		if ($(this).find('.aboutus-tree-petal-text').css('display') == 'none'){
+			$(this).find('.aboutus-tree-petal-text').css('height','0');
+			$(this).find('.aboutus-tree-petal-text').css('display','block');
+			$(this).find('.aboutus-tree-petal-text').animate({'height':heightofbox},300,function(){
+				$(this).find('.aboutus-tree-petal-text').css('height','');
+			});
+			$(this).animate({'height':heightofleaf},300);
+			$(this).find('.aboutus-tree-petal-picture img:last-of-type').fadeIn(300);
+		}
+		else{
+			$(this).find('.aboutus-tree-petal-text').animate({'height':'0'},300);
+			$(this).animate({'height':'146px'},300,function(){
+				$(this).find('.aboutus-tree-petal-text').css('display','none');
+				$(this).find('.aboutus-tree-petal-text').css('height','');
+			});
+			$(this).find('.aboutus-tree-petal-picture img:last-of-type').fadeOut(300);
+		}
+		});
+
+		
 });
