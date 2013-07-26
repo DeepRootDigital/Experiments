@@ -3,7 +3,7 @@
 	<ul>
 		<?php query_posts('posts_per_page=3'); ?>
 		<?php while (have_posts()) : the_post(); ?>
-		<li><img src="<?php echo get_template_directory_uri(); ?>/images/bms-logo-small.png"><p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><span>>></span></p></li>
+		<li><div class="bms-logo-small"></div><p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><span>>></span></p></li>
 	<?php endwhile; ?>
 </ul>
 <div class="home-sidebar-contact">

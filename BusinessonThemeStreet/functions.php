@@ -73,6 +73,18 @@ function create_post_type() {
 		'supports' => array( 'title', 'editor', 'author', 'thumbnail',),
 		)
 	);
+	register_post_type('bms_employees', array(
+		'labels' => array(
+			'name' => __('Employee Profiles'),
+			'singular_name' => __('Employee Profile'),
+			),
+		'taxonomies'=>array('category'),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'Employees'),
+		'supports' => array( 'title', 'editor', 'author', 'thumbnail',),
+		)
+	);
 }
 add_action('init', 'create_post_type');
 

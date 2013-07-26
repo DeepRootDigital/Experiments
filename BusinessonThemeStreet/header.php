@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <?php $mainoptions = get_option('main_theme_options'); ?>	
-<head>
+<head>	
+	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/8732fb8c-7669-455f-a795-b783768d6394.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -17,13 +19,21 @@
 	<div class="canvas">
 <div class="header-fw"></div>
 		<header>
-<?php get_template_part('feedback','form'); ?>			
+<?php // get_template_part('feedback','form'); 
+?>			
 			<div class="center">
 				<h1><span>.</span>Curb the Competition<span>.</span></h1>
 				<div class="login-form">
-					<ul>	
+					<div class="fbicon social-icons-top"></div>
+					<div class="pinicon social-icons-top"></div>
+					<div class="twittericon social-icons-top"></div>
+					<div class="gglicon social-icons-top"></div>
+					<div class="linkedinicon social-icons-top"></div>
+					
+					
+					<!-- <ul>	
 						<li><a href="<?php echo $mainoptions['facebookurl']; ?>">
-							<img name="fbicon" src="<?php echo get_template_directory_uri(); ?>/images/social-icon-fb.png" onMouseOver="fbicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-fb-twitter.png'" onMouseOut="fbicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-fb.png'"></a>
+							<img name="fbicon" src="<?php echo get_template_directory_uri(); ?>/images/social-icon-fb.png" onMouseOver="fbicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-fb-hover.png'" onMouseOut="fbicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-fb.png'"></a>
 						</li>
 						<li>
 							<a href="<?php echo $mainoptions['pinteresturl']; ?>">
@@ -43,7 +53,13 @@
 								src="<?php echo get_template_directory_uri(); ?>/images/social-icon-ggl.png">
 							</a>
 						</li>
-					</ul>
+						<li>
+							<a href="http://www.linkedin.com/company/business-on-market-st">
+								<img name="linkedinicon" onMouseOver="linkedinicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-linkedin-hover.png'" onMouseOut="linkedinicon.src='<?php echo get_template_directory_uri(); ?>/images/social-icon-linkedin.png'"
+								src="<?php echo get_template_directory_uri(); ?>/images/social-icon-linkedin.png">
+							</a>
+						</li>
+					</ul> -->
 					<!--
 					<form>
 					<input type="text" placeholder="username">

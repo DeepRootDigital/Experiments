@@ -8,12 +8,17 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/images/contact-slider-slogan.png" alt="Let's connect and get started">
 						<p><?php the_content(); ?></p>
 					</div>
-					<form>
-						<input name="name" placeholder="name*" value="" type="text"><br>
-						<input name="email" placeholder="email*" value="" type="text"><br>
-						<input name="phone" placeholder="phone" value="" type="text"><br>
-						<input name="industry" placeholder="industry" value="" type="text"><br>
-						<textarea placeholder="message" name="message"></textarea>
+					<form method="POST" action="<?php echo get_template_directory_uri(); ?>/contactslideform.php">
+						<input name="nameslider" placeholder="name*" type="text"><br>
+						<input name="emailslider" placeholder="email*" type="text"><br>
+						<input name="phoneslider" placeholder="phone" type="text"><br>
+						<input name="industryslider" placeholder="industry" type="text"><br>
+						<textarea placeholder="message" name="messageslider"></textarea>
+						<input name="randp" value="no" type="hidden">
+						<input name="branding" value="no" type="hidden">
+						<input name="bisdev" value="no" type="hidden">
+						<input name="webdev" value="no" type="hidden">
+						<input name="marketing" value="no" type="hidden">
 						<input id="contact-form-submit" type="submit" value="submit">
 					</form>
 					<div class="contact-slide-select">

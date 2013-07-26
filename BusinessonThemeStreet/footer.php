@@ -7,7 +7,7 @@
 <div class="fb-facepile" data-href="https://www.facebook.com/BusinessOnMarketSt" data-max-rows="2" data-size="large" data-width="300" data-colorscheme="dark"></div>
 </div>
 			<ul class="bms-info">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/footer-logo.png">
+				<div class="footer-logo"></div>
 				<li><h1>Business on<br>Market St</h1></li>
 				<li>858 598 5477</li>
 				<li>Info@<br>businessonmarketst.com</li>

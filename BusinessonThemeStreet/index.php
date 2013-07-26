@@ -42,16 +42,18 @@
 			</div>
 			<div class ="contact-page-slide">
 				<div class="contact-slide">
-					<div class="contact-slide-slogan">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/contact-slider-slogan.png" alt="Let's connect and get started">
-						
-					</div>
-					<form>
-						<input name="name" placeholder="name*" value="" type="text"><br>
-						<input name="email" placeholder="email*" value="" type="text"><br>
-						<input name="phone" placeholder="phone" value="" type="text"><br>
-						<input name="industry" placeholder="industry" value="" type="text"><br>
-						<textarea placeholder="message" name="message"></textarea>
+					<div class="contact-slide-slogan"></div>
+					<form method="POST" action="<?php echo get_template_directory_uri(); ?>/contactslideform.php">
+						<input name="nameslider" placeholder="name*" type="text"><br>
+						<input name="emailslider" placeholder="email*" type="text"><br>
+						<input name="phoneslider" placeholder="phone" type="text"><br>
+						<input name="industryslider" placeholder="industry" type="text"><br>
+						<textarea placeholder="message" name="messageslider"></textarea>
+						<input name="randp" value="no" type="hidden">
+						<input name="branding" value="no" type="hidden">
+						<input name="bisdev" value="no" type="hidden">
+						<input name="webdev" value="no" type="hidden">
+						<input name="marketing" value="no" type="hidden">
 						<input id="contact-form-submit" type="submit" value="submit">
 					</form>
 					<div class="contact-slide-select">
@@ -98,7 +100,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-5.png" class="tab-img">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-5-active.png" class="tab-hovers">
 			</div>
-			<div id="activator-6" class="slide-overlay" onMouseOver="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/tab-6-active.png'" onMouseOut="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6.png'">
+			<div id="activator-6" class="slide-overlay" onMouseOver="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6-active.png'" onMouseOut="contacttab.src='<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6.png'">
 				<img class="contact tab-img" name="contacttab" src="<?php echo get_template_directory_uri(); ?>/images/slider-tabs/tab-6.png">
 			</div>
 		</div>
@@ -125,28 +127,38 @@
 							<div class="home-project-thumbnailimage">
 								<?php the_post_thumbnail(); ?> 
 							</div>
-							<img class="home-project-overlay" src="<?php echo get_template_directory_uri(); ?>/images/home-project-overlay.png">
+							
 							<h2><?php the_title(); ?> <em>//</em></h2>
 							<h1><?php
 							$category = get_the_category();
-							echo $category[0]->cat_name;
+							$countercat = count($category);
+							$randomentry = rand(0,$countercat-1);
+							echo $category[$randomentry]->cat_name;
 							?></h1>
-							<div class="home-project-hover">
+							
+							<div class="home-project-hover"><a href="<?php the_permalink(); ?>" class="home-project-hover-link">
+								<img class="home-project-overlay" src="<?php echo get_template_directory_uri(); ?>/images/home-project-overlay.png">
+								<img class="z-set" src="<?php echo get_template_directory_uri(); ?>/images/home-img.png">
+								<div class="icon-group-hover">
 								<?php if(get_post_meta(get_the_ID(), 'brandingbox', true) == true) { ?>
-								<img width="30" height="30" src="<?php echo get_template_directory_uri(); ?>/images/service-icons/branding-icon-hover.png">
+								<div class="branding-nocolor"></div>
 								<?php } ?>
 								<?php if(get_post_meta(get_the_ID(), 'marketingbox', true) == true) { ?>
-								<img width="30" height="30" src="<?php echo get_template_directory_uri(); ?>/images/service-icons/marketing-icon-hover.png">
+								<div class="marketing-nocolor"></div>
 								<?php } ?>
 								<?php if(get_post_meta(get_the_ID(), 'developmentbox', true) == true) { ?>
-								<img width="30" height="30" src="<?php echo get_template_directory_uri(); ?>/images/service-icons/bd-icon-hover.png">
+								<div class="bd-nocolor"></div>
 								<?php } ?>
 								<?php if(get_post_meta(get_the_ID(), 'technologybox', true) == true) { ?>
-								<img width="30" height="30" src="<?php echo get_template_directory_uri(); ?>/images/service-icons/technology-icon-hover.png">
+								<div class="technology-nocolor"></div>
 								<?php } ?>
+								</div>
+
 								<?php echo get_the_category_list(); ?>
-								<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/home-project-overlay-button.png"></a>
-							</div>
+<a href="<?php the_permalink(); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/home-project-overlay-button2.png" class="submitbuttonthing"></a>
+							</a></div>
+							
 						</article>
 						<?php $counter++; ?>
 						<?php if ($counter % 4 == 0) { ?>
@@ -169,33 +181,42 @@
 			<p><?php echo $homepageoptions['hp-content']; ?></p>					
 			<ul>
 				<li>
+					<a href="<?php echo $serviceoptions['randplink']; ?>">
+						<div class="randp-color"></div>
+						<div class="stackedtext">
+						Research &amp; <br />
+						Planning
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="<?php echo $serviceoptions['bdlink']; ?>">
+						<div class="bd-color"></div>
+						<div class="stackedtext">
+						Business <br />
+						Development
+						</div>
+					</a>
+				</li>
+				<li>
 					<a href="<?php echo $serviceoptions['brandinglink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/branding-icon.png">
+						<div class="branding-color"></div>
 						Branding
 					</a>
 				</li>
 				<li>
 					<a href="<?php echo $serviceoptions['marketinglink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/marketing-icon.png">
+						<div class="market-color"></div>
 						Marketing
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo $serviceoptions['bdlink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/bd-icon.png">
-						Business Development
-					</a>
-				</li>
-				<li>
 					<a href="<?php echo $serviceoptions['webdevlink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/technology-icon.png">
-						Web Development
-					</a>
-				</li>
-				<li>
-					<a href="<?php echo $serviceoptions['randplink']; ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/service-icons/randp-red.png">
-						Research and Planning
+						<div class="tech-color"></div>
+						<div class="stackedtext">
+						Web <br />
+						Development
+						</div>
 					</a>
 				</li>
 			</ul>
