@@ -57,7 +57,7 @@ function create_post_type() {
 			'singular_name' => __('Services')
 			),
 		'public' => true,
-		'has_archive' => true,
+		'has_archive' => false,
 		'rewrite' => array('slug' => 'Services'),
 		)
 	);
@@ -82,6 +82,18 @@ function create_post_type() {
 		'public' => true,
 		'has_archive' => true,
 		'rewrite' => array('slug' => 'Employees'),
+		'supports' => array( 'title', 'editor', 'author', 'thumbnail',),
+		)
+	);
+	register_post_type('bms_news', array(
+		'labels' => array(
+			'name' => __('bms_news'),
+			'singular_name' => __('bms_news'),
+			),
+		'taxonomies'=>array('category'),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'news'),
 		'supports' => array( 'title', 'editor', 'author', 'thumbnail',),
 		)
 	);

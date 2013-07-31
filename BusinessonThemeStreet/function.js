@@ -514,38 +514,69 @@ if (this.id == "activator-6") {
 	});
 
 	//SERVICE PAGE SLIDER LEFT/RIGHT NAV
+	
+	var firstslidecopy = $(".service-page-slide-wrapper.Business img:first-of-type").clone();
+	var lastslidecopy = $(".service-page-slide-wrapper.Business img:last-of-type").clone();
+	firstslidecopy.appendTo('.service-page-slide-wrapper.Business');
+	lastslidecopy.prependTo('.service-page-slide-wrapper.Business');
+	
+	var firstslidecopy = $(".service-page-slide-wrapper.Marketing img:first-of-type").clone();
+	var lastslidecopy = $(".service-page-slide-wrapper.Marketing img:last-of-type").clone();
+	firstslidecopy.appendTo('.service-page-slide-wrapper.Marketing');
+	lastslidecopy.prependTo('.service-page-slide-wrapper.Marketing');
+	
+	var firstslidecopy = $(".service-page-slide-wrapper.Web img:first-of-type").clone();
+	var lastslidecopy = $(".service-page-slide-wrapper.Web img:last-of-type").clone();
+	firstslidecopy.appendTo('.service-page-slide-wrapper.Web');
+	lastslidecopy.prependTo('.service-page-slide-wrapper.Web');
+	
+	var firstslidecopy = $(".service-page-slide-wrapper.Research img:first-of-type").clone();
+	var lastslidecopy = $(".service-page-slide-wrapper.Research img:last-of-type").clone();
+	firstslidecopy.appendTo('.service-page-slide-wrapper.Research');
+	lastslidecopy.prependTo('.service-page-slide-wrapper.Research');
+	
+	var firstslidecopy = $(".service-page-slide-wrapper.Branding img:first-of-type").clone();
+	var lastslidecopy = $(".service-page-slide-wrapper.Branding img:last-of-type").clone();
+	firstslidecopy.appendTo('.service-page-slide-wrapper.Branding');
+	lastslidecopy.prependTo('.service-page-slide-wrapper.Branding');
+	
+	
 	$('.service-page-control-left').click(function(){
-		var slidecounter = $('.service-page-slide-wrapper img').length;
-		var slidelength = slidecounter * 305;
-		var slidelength = "-"+slidelength+"px";
-		if($('.service-page-slide-wrapper').css('left') === '0px' === true){
-			$('.service-page-slide-wrapper').css('left',slidelength).animate({
+		var slidecounter = $(this).parent().parent().find('.service-page-slide-wrapper img').length;
+		var slidelengthh = slidecounter * 305;
+		var slidelength = "-"+slidelengthh+"px";
+		if($(this).parent().parent().find('.service-page-slide-wrapper').css('left') === '-305px' === true){
+			$(this).parent().parent().find('.service-page-slide-wrapper').animate({
 				left : '+=305px'
-			},300);
+			},300,function(){
+				var secondtolast = '-'+(slidelengthh-610)+'px';
+				$(this).parent().parent().find('.service-page-slide-wrapper').css('left',secondtolast);
+			});
 		} else {
-			$('.service-page-slide-wrapper').animate({
+			$(this).parent().parent().find('.service-page-slide-wrapper').animate({
 				left : '+=305px'
 			},300);
 		}
 	});
 
 	$('.service-page-control-right').click(function(){
-		var slidecounter = $('.service-page-slide-wrapper img').length;
-		var slidelength = (slidecounter-1) * 305;
-		var slidelength = "-"+slidelength+"px";
-		if($('.service-page-slide-wrapper').css('left') === slidelength === true){
-			$('.service-page-slide-wrapper').css('left', '305px').animate({
+		var slidecounter = $(this).parent().parent().find('.service-page-slide-wrapper img').length;
+		var slidelength = (slidecounter-2) * 305;
+		var slidelength = "-"+(slidelength)+"px";
+		if($(this).parent().parent().find('.service-page-slide-wrapper').css('left') === slidelength === true){
+			$(this).parent().parent().find('.service-page-slide-wrapper').animate({
 				left : '-=305px'
-			},300);
+			},300,function(){
+				$(this).parent().parent().find('.service-page-slide-wrapper').css('left', '-305px');
+			});
 		} else {
-			$('.service-page-slide-wrapper').animate({
+			$(this).parent().parent().find('.service-page-slide-wrapper').animate({
 				left : '-=305px'
 			},300);
 		}
 	});
 
-
-	//About Us Page Activators
+        //About Us Page Activators
 	$('.aboutus-tree-leaf').click(function(){
 		var heightofbox = $(this).find('.aboutus-tree-petal-text').height();
 		var heightofleaf = heightofbox + 84;
@@ -558,7 +589,7 @@ if (this.id == "activator-6") {
 				$(this).find('.aboutus-tree-petal-text').css('height','');
 			});
 			$(this).animate({'height':heightofleaf},300);
-			$(this).find('.aboutus-tree-petal-picture img:last-of-type').fadeIn(300);
+
 		}
 		else{
 			$(this).find('.aboutus-tree-petal-text').animate({'height':'0'},300);
@@ -566,9 +597,68 @@ if (this.id == "activator-6") {
 				$(this).find('.aboutus-tree-petal-text').css('display','none');
 				$(this).find('.aboutus-tree-petal-text').css('height','');
 			});
-			$(this).find('.aboutus-tree-petal-picture img:last-of-type').fadeOut(300);
+
 		}
 		});
-
 		
+		
+		
+	//Service Page Buttons
+	$('#service-nav ul li').click(function(){
+		if (this.id == "branding") {
+			$(".service-content-box").animate({
+				'margin-top' : '-3440px'
+			}, 800,'easeOutCubic');
+			$(".service-content-box-archive").animate({
+				'margin-top' : '-1400px'
+			}, 800,'easeOutCubic',function(){
+			$(".individual-page-archive").css('opacity','.4');
+			$(".individual-page-archive.Branding").css('opacity','1');
+			});	
+		}
+		if (this.id == "marketing") {
+			$(".service-content-box").animate({
+				'margin-top' : '-860px'
+			}, 800,'easeOutCubic');
+			$(".service-content-box-archive").animate({
+				'margin-top' : '-200px'
+			}, 800,'easeOutCubic',function(){
+			$(".individual-page-archive").css('opacity','.4');
+			$(".individual-page-archive.Marketing").css('opacity','1');
+			});
+		}
+		if (this.id == "bisdev") {
+			$(".service-content-box").animate({
+				'margin-top' : '0px'
+			}, 800,'easeOutCubic');
+			$(".service-content-box-archive").animate({
+				'margin-top' : '200px'
+			}, 800,'easeOutCubic',function(){
+			$(".individual-page-archive").css('opacity','.4');
+			$(".individual-page-archive.Business").css('opacity','1');
+			});
+		}
+		if (this.id == "webdev") {
+			$(".service-content-box").animate({
+				'margin-top' : '-1720px'
+			}, 800,'easeOutCubic');
+			$(".service-content-box-archive").animate({
+				'margin-top' : '-600px'
+			}, 800,'easeOutCubic',function(){
+			$(".individual-page-archive").css('opacity','.4');
+			$(".individual-page-archive.Web").css('opacity','1');
+			});
+		}
+		if (this.id == "research") {
+			$(".service-content-box").animate({
+				'margin-top' : '-2580px'
+			}, 800,'easeOutCubic');
+			$(".service-content-box-archive").animate({
+				'margin-top' : '-1000px'
+			}, 800,'easeOutCubic',function(){
+			$(".individual-page-archive").css('opacity','.4');
+			$(".individual-page-archive.Research").css('opacity','1');
+			});
+		}
+	});
 });

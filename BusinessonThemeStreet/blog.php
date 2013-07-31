@@ -28,7 +28,7 @@
 				<p><?php the_excerpt(); ?></p>
 				<div class="blog-summary-social">
 					<ul>
-						<li><div class="fb-like" data-send="false" data-layout="button_count" data-width="35" data-show-faces="false"></div></li>
+						<li><div class="fb-like" data-send="false" data-layout="button_count" data-width="35" data-show-faces="false"  data-href="<?php the_permalink(); ?>" ></div></li>
 						<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>">Tweet</a></li>
 						<li><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 						<a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); echo $thumb['0']; ?>&description=<?php the_title(); ?>" class="pin-it-button" count-layout="horizontal"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>

@@ -3,7 +3,7 @@
 <head>	
 	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/8732fb8c-7669-455f-a795-b783768d6394.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
-
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
 	<?php wp_head(); ?>
 </head>
 <body>

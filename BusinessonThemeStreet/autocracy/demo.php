@@ -128,7 +128,7 @@ $meta_boxes[] = array(
             ),
         ),
     );
-
+    
 $meta_boxes[] = array(
     // Meta box id, UNIQUE per meta box. Optional since 4.1.5
     'id' => 'employeeprofiles',
@@ -169,6 +169,7 @@ $meta_boxes[] = array(
             // Array of 'value' => 'Label' pairs for select box
             'options'  => array(
                 'businesspeople' => 'Business People',
+                'brandingpeople' => 'Branding People',
                 'designers' => 'Designers',
                 'wombats' => 'Wombats',
             ),
@@ -188,6 +189,45 @@ $meta_boxes[] = array(
             'multiple' => false,
         ),
         
+    ),
+);
+
+$meta_boxes[] = array(
+    // Meta box id, UNIQUE per meta box. Optional since 4.1.5
+    'id' => 'bms_news',
+    // Meta box title - Will appear at the drag and drop handle bar. Required.
+    'title' => 'bms_news',
+    // Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
+    'pages' => array('bms_news'),
+    // Where the meta box appear: normal (default), advanced, side. Optional.
+    'context' => 'normal',
+    // Order of meta box: high (default), low. Optional.
+    'priority' => 'high',
+    // List of meta fields
+    'fields' => array(
+        array(
+            'name'     => 'Position',
+            'id'       => "position",
+            'type'     => 'select',
+            // Array of 'value' => 'Label' pairs for select box
+            'options'  => array(
+                'lefttop' => 'Left Column Top Row',
+                'leftmiddle' => 'Left Column Middle Row',
+                'leftbottom' => 'Left Column Bottom Row',
+                'topheadline' => 'Top Headline',
+                'featuredquote' => 'Featured Area',
+                'rightleft' => 'Right Column First News',
+                'rightright' => 'Right Column Second News',
+                'none' => 'Dont Show',
+            ),
+            // Select multiple values, optional. Default is false.
+            'multiple' => false,
+        ),
+        array(
+            'name' => 'Quote',
+            'id' => 'quotation',
+            'type' => 'text',
+        ),
     ),
 );
 
