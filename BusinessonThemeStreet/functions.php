@@ -85,10 +85,10 @@ function create_post_type() {
 		'supports' => array( 'title', 'editor', 'author', 'thumbnail',),
 		)
 	);
-	register_post_type('bms_news', array(
+	register_post_type('news', array(
 		'labels' => array(
-			'name' => __('bms_news'),
-			'singular_name' => __('bms_news'),
+			'name' => __('News'),
+			'singular_name' => __('News'),
 			),
 		'taxonomies'=>array('category'),
 		'public' => true,

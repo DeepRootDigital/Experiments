@@ -17,7 +17,7 @@
 			<div class="row">
 				<?php 
 					$args=array(
-						'post_type' => 'bms_news',
+						'post_type' => 'news',
 						);
 
 					$blogPosts = new WP_Query($args);
@@ -33,7 +33,7 @@
 				<div class="left-news-column column">
 				<?php 
 					$args=array(
-						'post_type' => 'bms_news',
+						'post_type' => 'news',
 						);
 
 					$blogPosts = new WP_Query($args);
@@ -53,7 +53,7 @@
 				<?php endwhile; ?>
 				<?php 
 					$args=array(
-						'post_type' => 'bms_news',
+						'post_type' => 'news',
 						);
 
 					$blogPosts = new WP_Query($args);
@@ -72,7 +72,7 @@
 				<?php endwhile; ?>
 				<?php 
 					$args=array(
-						'post_type' => 'bms_news',
+						'post_type' => 'news',
 						);
 
 					$blogPosts = new WP_Query($args);
@@ -93,7 +93,7 @@
 				<div class="right-news-column column">
 					<?php 
 					$args=array(
-						'post_type' => 'bms_news',
+						'post_type' => 'news',
 						);
 
 						$blogPosts = new WP_Query($args);
@@ -112,7 +112,7 @@
 					<?php endwhile; ?>
 				<?php 
 					$args=array(
-						'post_type' => 'bms_news',
+						'post_type' => 'news',
 						);
 
 						$blogPosts = new WP_Query($args);
@@ -131,7 +131,7 @@
 					<?php endwhile; ?>
 				<?php 
 					$args=array(
-						'post_type' => 'bms_news',
+						'post_type' => 'news',
 						);
 
 						$blogPosts = new WP_Query($args);
