@@ -41,9 +41,8 @@
 				</div>
 				<div class="page-body-right-content">
 					<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-						incididunt ut labore et dolore magna aliqua.</span> <br />
-					<br />
-					<?php the_content(); ?></p>
+						incididunt ut labore et dolore magna aliqua.</span> </p>
+					<?php the_content(); ?>
 				</div>
 				<div class="page-body-social-media">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/page-social-placeholder.png" />

@@ -228,7 +228,7 @@ left:0px;
 background: url("images/header-bg.gif") repeat-x scroll 0 0 transparent;
     height: 140px;
 width:100%;
-
+min-width:1280px
 }
 
 header h1 {
@@ -1973,14 +1973,13 @@ margin-top:-2580px;
 
 .service-archive-page{
 display:block;
-height:800px;
+height:781px;
 }
 
 .service-archive-header{
 	margin: auto;
 width: 1000px;
 margin-top: 20px;
-margin-left: -180px;
 }
 
 .service-archive-header h1{
@@ -1988,6 +1987,16 @@ font-size:45px;
 text-transform:uppercase;
 color:#7e1619;
 font-family:'FMittelschriftDIN1451W0';
+}
+
+.service-archive-header a {
+margin-left: 227px;
+position: absolute;
+z-index: 2000;
+}
+
+.service-archive-header img{
+margin-top: 14px;
 }
 
 .service-archive-header span{
@@ -2009,22 +2018,20 @@ position:absolute;
 
 .service-page-contentarea{
 position: absolute;
-margin-top: 130px;
+margin-top: 60px;
 }
 
 .fullwidth-shadow{
-width:107%;
 height:100px;
 display:block;
 position:absolute;
-margin-bottom:30px;
 z-index:1000;
-margin-left:-3%;
+left:0;
+margin-top:-20px;
 text-align:center;
-vertical-align:middle;
--webkit-box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.33);
--moz-box-shadow:    0px 8px 12px rgba(0, 0, 0, 0.33);
-box-shadow:         0px 8px 12px rgba(0, 0, 0, 0.33);
+-webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.33);
+box-shadow:         0px 8px 8px rgba(0, 0, 0, 0.33);
+-moz-box-shadow:    0px 8px 8px rgba(0, 0, 0, 0.33);
 }
 
 .aboutus-archive-header{
@@ -2051,12 +2058,15 @@ padding-top:30px;}
 
 
 .service-page-content > h1 {
-    color: #7e1519;
+    color: #7e1619;
     font-family: rokkitt;
     font-size: 21px;
     font-weight: normal;
 }
 
+.service-page-content span {
+color:#7e1619;
+}
 
 .service-page-content > h2 {
     color: #005B7F;
@@ -2639,6 +2649,7 @@ float:left;
 .footer-fw {
 background: url("images/footer-bg.png") repeat scroll 0% 0%, #30312f;
 width:100%;
+min-width:1280px;
 left:0px;
 height: 375px;
 position:absolute;
@@ -3123,6 +3134,7 @@ margin-left:540px;
   	font-style: normal;
   	font-weight: 400;
   	font-size:13px;
+margin-top:17px;
   	line-height:20px;
   	color:#464646;
   	-moz-box-sizing: border-box;
@@ -3139,6 +3151,7 @@ margin-left:540px;
   	font-style: normal;
 font-size:13px;
 line-height:20px;
+margin-top:17px;
   	font-weight: 400;
   	color:#464646;
   	-moz-box-sizing: border-box;
@@ -3174,7 +3187,7 @@ line-height:20px;
 	border-top:1px solid #464646;
 	border-bottom:1px solid #464646;
 	width:506px;
-	height:460px;
+	height:470px;
 	-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3187,6 +3200,7 @@ line-height:20px;
 	width:506px;
 	line-height:20px;
 	font-size:13px;
+margin-top:17px;
 	font-family: Montserrat;
   	font-style: normal;
   	font-weight: 400;
@@ -3194,6 +3208,10 @@ line-height:20px;
   	-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.left-news-column-content-middle > a {
+margin-left:0px !important;
 }
 
 .left-news-column-content-middle img {
@@ -3275,8 +3293,9 @@ line-height:20px;
   	color:#464646;
   	text-align:left;
   	font-size:13px;
+
   	line-height:20px;
-  	margin-top:-35px;
+  	margin-top:-15px;
   	-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3294,6 +3313,16 @@ line-height:20px;
 	-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.right-news-article-left a {
+margin-left:0 !important;
+margin-bottom:7px;
+}
+
+.right-news-article-right a {
+margin-left:0 !important;
+margin-bottom:7px;
 }
 
 .right-news-article-title {
@@ -3627,6 +3656,23 @@ line-height:20px;
   	-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.news-area a {
+display: inline-block;
+margin-left: 20px;
+font-size: 13px;
+font-family: Montserrat;
+color: #7e1619;
+text-decoration:none;
+}
+
+.news-area a > span {
+color:#464646;
+}
+
+.page-body-right-content p:first-of-type{
+margin-top:14px;
 }
 
 .page-body-right-content span {

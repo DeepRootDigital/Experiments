@@ -2,11 +2,11 @@
 <?php get_header(); ?>
 <div class="service-archive-page">
 <div class="fullwidth-shadow">
-	<div class="service-archive-header">
-		<h1>BMS <span>Services</span> <span>//</span> <span>See Client Case Studies</span></h1>
-	</div>
-</div>
 
+</div>
+	<div class="service-archive-header">
+		<h1>BMS <span>Services</span> <span>//</span> <span>See Client Case Studies </span><a href="http://businessonmarketst.com/Casestudies/"><img name="plussign" src="<?php echo get_template_directory_uri(); ?>/images/case-studies-plus-sign.png" onMouseOver="plussign.src='<?php echo get_template_directory_uri(); ?>/images/case-studies-plus-sign-hover.png'" onMouseOut="plussign.src='<?php echo get_template_directory_uri(); ?>/images/case-studies-plus-sign.png'"/></a></h1>
+	</div>
 <div class="center">
 <div class="service-page-contentarea">
 <div class="service-page-sidebar">
@@ -25,13 +25,16 @@
 
 		while ($blogPosts->have_posts()) : $blogPosts->the_post();
 		?>
-
+		
 		<div class="individual-page-archive <?php the_title(); ?>">
+			<a href="<?php the_permalink(); ?>">
 			<div class="service-page-content">
 				<h1><?php the_title(); ?></h1>
 				<h2><?php echo get_post_meta(get_the_ID(), 'empparagraph', true) ?></h2>
 				<?php the_excerpt(); ?>
+				<p>[ <span>Read More</span> ] <p>
 			</div>
+			</a>
 			<div class="service-page-slide">
 				<div class="service-page-slide-wrapper <?php the_title(); ?>">
 					<?php autoc_get_img('serviceimages'); ?>
@@ -42,6 +45,7 @@
 				</div>
 			</div>
 		</div>
+		
 
 	<?php endwhile; ?>
 	</div>

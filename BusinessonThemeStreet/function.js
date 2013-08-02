@@ -610,7 +610,7 @@ if (this.id == "activator-6") {
 				'margin-top' : '-3440px'
 			}, 800,'easeOutCubic');
 			$(".service-content-box-archive").animate({
-				'margin-top' : '-1400px'
+				'top' : '-1400px'
 			}, 800,'easeOutCubic',function(){
 			$(".individual-page-archive").css('opacity','.4');
 			$(".individual-page-archive.Branding").css('opacity','1');
@@ -621,7 +621,7 @@ if (this.id == "activator-6") {
 				'margin-top' : '-860px'
 			}, 800,'easeOutCubic');
 			$(".service-content-box-archive").animate({
-				'margin-top' : '-200px'
+				'top' : '-200px'
 			}, 800,'easeOutCubic',function(){
 			$(".individual-page-archive").css('opacity','.4');
 			$(".individual-page-archive.Marketing").css('opacity','1');
@@ -632,7 +632,7 @@ if (this.id == "activator-6") {
 				'margin-top' : '0px'
 			}, 800,'easeOutCubic');
 			$(".service-content-box-archive").animate({
-				'margin-top' : '200px'
+				'top' : '200px'
 			}, 800,'easeOutCubic',function(){
 			$(".individual-page-archive").css('opacity','.4');
 			$(".individual-page-archive.Business").css('opacity','1');
@@ -643,7 +643,7 @@ if (this.id == "activator-6") {
 				'margin-top' : '-1720px'
 			}, 800,'easeOutCubic');
 			$(".service-content-box-archive").animate({
-				'margin-top' : '-600px'
+				'top' : '-600px'
 			}, 800,'easeOutCubic',function(){
 			$(".individual-page-archive").css('opacity','.4');
 			$(".individual-page-archive.Web").css('opacity','1');
@@ -654,11 +654,28 @@ if (this.id == "activator-6") {
 				'margin-top' : '-2580px'
 			}, 800,'easeOutCubic');
 			$(".service-content-box-archive").animate({
-				'margin-top' : '-1000px'
+				'top' : '-1000px'
 			}, 800,'easeOutCubic',function(){
 			$(".individual-page-archive").css('opacity','.4');
 			$(".individual-page-archive.Research").css('opacity','1');
 			});
 		}
 	});
+	
+	// Fix for Shadowbox
+	resizeShadow();
+	
+	window.onresize = function(event) {
+		resizeShadow();
+	}
+	
+	function resizeShadow(){
+		var vph = $(window).width();
+		$(".fullwidth-shadow").css({"width":vph+"px"});
+                $(".fullwidth-shadow").css({"min-width":"1280px"});
+	}
+
+         // Make content draggable
+         $( ".service-content-box-archive" ).draggable({ axis: "y" });
+
 });

@@ -18,10 +18,11 @@ San Diego, CA 92115</li>
 		</footer>
 </div>
 	</div><!-- END CANVAS -->
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/jquery.easing.1.3.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/function.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/jquery-ui-1.10.3.custom.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/function.js"></script>
 	<?php wp_footer(); ?>
 </body>
 </html>

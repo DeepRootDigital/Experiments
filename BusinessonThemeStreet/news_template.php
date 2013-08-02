@@ -45,8 +45,9 @@
 							<h1><?php the_title(); ?></h1>
 						</div>
 						<div class="left-news-column-content">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/news-image-texture-tall.png" />
-							<p><?php the_content(); ?></p>
+							<?php the_post_thumbnail(); ?>
+							<?php the_content(); ?>
+                                                       <a href="<?php the_permalink(); ?>"><span>[</span> Read More <span>]</span></a>
 						</div>
 					</div>
 				<?php } ?>
@@ -65,7 +66,9 @@
 						</div>
 						<div class="left-news-column-content-middle">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/news-image-texture-wide.png" />
-							<p><?php the_content(); ?></p>
+							<?php the_content(); ?>
+<a href="<?php the_permalink(); ?>"><span>[</span> Read More <span>]</span></a>
+
 						</div>
 					</div>
 					<?php } ?>
@@ -84,7 +87,8 @@
 						</div>
 						<div class="left-news-column-content-bottom">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/news-image-texture-tall.png" />
-							<p><?php the_content(); ?></p>
+							<?php the_content(); ?>
+<a href="<?php the_permalink(); ?>"><span>[</span> Read More <span>]</span></a>
 						</div>
 					</div>
 						<?php } ?>
@@ -106,7 +110,7 @@
 							<h1>&ldquo;<br />
 							<?php echo get_post_meta(get_the_ID(),'quotation',true); ?><br /> 
 							&rdquo;</h1>
-							<p><?php the_content(); ?></p>
+							<?php the_content(); ?>
 						</div>
 						<?php } ?>
 					<?php endwhile; ?>
@@ -124,7 +128,8 @@
 							</div>
 							<div class="right-news-article-content">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/news-image-texture.png" />
-								<p><?php the_content(); ?></p>
+								<?php the_content(); ?>
+<a href="<?php the_permalink(); ?>"><span>[</span> Read More <span>]</span></a>
 							</div>
 						</div>
 						<?php } ?>
@@ -143,7 +148,8 @@
 							</div>
 							<div class="right-news-article-content-right">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/news-image-texture.png" />
-								<p><?php the_content(); ?></p>
+								<?php the_content(); ?>
+<a href="<?php the_permalink(); ?>"><span>[</span> Read More <span>]</span></a>
 							</div>
 						</div>
 						<?php } ?>
