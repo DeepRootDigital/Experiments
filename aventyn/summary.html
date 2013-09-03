@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aventyn</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+    		//VITALBEAT ROLLOVER CONTROLS
+    		$(".vitalbeat-rollover, .clip-suite-rollover, .clip-lock-rollover").hover(function() {
+    			$(this).find(".section-info").animate({"top": "203px"}); //ASSIGN CONTAINER
+    			$(this).find(".block-1").animate({"top": "136px"}, 1000); //ASSIGN FIRST LEVEL OF TEXT
+    			$(this).find(".block-2").animate({"top": "130px"}, 1100); //ASSIGN SECOND LEVEL OF TEXT
+    			$(this).find(".block-3").animate({"top": "206px"}, 1100); //ASSIGN ANCHOR 
+    		},
+    			function() {
+    				$(this).find(".section-info").animate({"top": "326px"});
+    				$(this).find(".block-1").animate({"top": "326px"});
+    				$(this).find(".block-2").animate({"top": "326px"});
+    				$(this).find(".block-3").animate({"top": "326px"});
+    		}
+    		); 		
+		});
+</script>
+
+</head>
+<body>
+	<section class="random-container">
+		<!-- HEADER SECTION -->
+		<header>
+			<img class="logo" src="images/logo.png" alt="" />
+				<img class="social-media" src="images/social-media.png" alt="" />
+					<p>Follow Us</p>
+				<nav class="top-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Vision</a></li>
+						<li><a href="#">Innovation</a></li>
+						<li><a href="#">Digital Health</a></li>
+						<li><a href="#">Media</a></li>
+					</ul>
+				</nav>
+				<aside class="search">
+					<form>
+						<input type="text" value="" placeholder="search" />
+						<button></button>
+					</form>
+				</aside>
+		</header>
+		<!-- HOME BODY SECTION -->
+			<section class="random-rollovers">
+			<!-- FIRST ROLLOVER -->
+				<article class="vitalbeat-rollover">
+					<aside class="section-info">
+						<img class="vitalbeat-banner" src="images/vitalbeat-banner.png" alt="" />
+							<p class="block-1">Chronic Disease Management 
+							for Independent Living.
+							</p>
+							<p class="block-2">Perceptual Health.</p>
+							<a class="block-3" href="#">Learn More</a>
+							<img class="rollover-cross" src="images/rollover-cross.png" alt="" />
+					</aside>
+				</article>
+
+			<!-- SECOND ROLLOVER -->
+					
+				<article class="clip-suite-rollover">
+					<aside class="section-info">
+						<img class="vitalbeat-banner" src="images/clip-suite.png" alt="" />
+							<p class="block-1">Chronic Disease Management 
+							for Independent Living.
+							</p>
+							<p class="block-2">Perceptual Health.</p>
+							<a class="block-3" href="#">Learn More</a>
+							<img class="rollover-cross" src="images/rollover-cross.png" alt="" />
+					</aside>
+				</article>
+
+			<!-- THIRD ROLLOVER -->
+					
+				<article class="clip-lock-rollover">
+					<aside class="section-info">
+						<img class="vitalbeat-banner" src="images/clip-lock.png" alt="" />
+							<p class="block-1">Chronic Disease Management 
+							for Independent Living.
+							</p>
+							<p class="block-2">Perceptual Health.</p>
+							<a class="block-3" href="#">Learn More</a>
+							<img class="rollover-cross" src="images/rollover-cross.png" alt="" />
+					</aside>
+				</article>
+				<img class="dotted-divider" src="images/dotted-divider.png" alt="" />
+				<img class="gutter1" src="images/gutters.png" alt="" />
+			<img class="gutter2" src="images/gutters.png" alt="" />
+			</section>
+
+			
+
+			
+
+
+		<!-- FOOTER SECTIONS -->
+		<footer>
+			<section class="footer-top">
+				<article class="footer-nav">
+					<img class="footer-logo" src="images/footer-logo.png" alt="" />
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Vision</a></li>
+						<li><a href="#">Innovation</a></li>
+						<li><a href="#">Digital Health</a></li>
+						<li><a href="#">Media</a></li>
+					</ul>
+					<img class="footer-nav-divider" src="images/footer-nav-divider.png" alt="" />
+				</article>
+				<article class="news">
+					<img src="images/news-icon.png" alt="" />
+					<p>news</p>
+						<aside class="twitter-feed">
+							<p>Winner! BritWeek UKTI Business Innovation Award</p>
+							<p>Aventyn Company of the Month</p>
+							<p>FNIH mHealthSummit Coverage</p>
+							<p>BMSHT Health Innovation</p>
+							<p>Remote - HF - FDA Clinical Trial</p>
+							<p>Medical Design Brief on ECG</p>
+						</aside>
+				</article>
+				<article class="contact">
+					<img class="envelope" src="images/contact.png" alt="" />
+					<p><span>info</span>@aventyn.com</p>
+					<p><span>sales</span>@aventyn.com</p>
+					<img class="contact-divider" src="images/contact-divider.png" alt="" />
+				</article>
+			</section>
+			<section class="footer-bottom">
+				<article class="aventyn">
+					<img src="images/footer-logo2.png" alt="" />
+					<p>300 Carlsbad Village Drive</p>
+					<p>Suite 108A – 383
+					   Carlsbad, CA 92008
+					   USA
+					</p>
+				</article>
+				<article class="karolinska">
+					<img src="images/karolinska.png" alt="" />
+					<p>Aventyn AB</p>
+					<p>Karolisnka University Hospital
+					   M4 Plan 9 Huddinge 
+					   141 86 Stockholm SWEDEN
+					   P: +46 (0) 73 661 3031
+					</p>
+				</article>
+				<article class="hospital-trust">
+					<img src="images/hospital-trust.png" alt="" />
+					<p>Aventyn India</p>
+					<p>BMS Hospital Trust Bull Temple Road,
+                       Basavanaqudi Bangalore 560 019
+					</p>
+				</article>
+				<img class="footer-bottom-dividers" src="images/footer-bottom-dividers.png" alt="" />
+			</section>
+			<section class="outro">
+				<p>Copyright&#169; 2004-2012 Aventyn, Inc. All Rights Reserved.</p>
+				<p>Designed by <a href="http://businessonmarketst.com/">Business on Market St.</a></p>
+			</section>
+		</footer>
+</section>
+</body>
+</html>
